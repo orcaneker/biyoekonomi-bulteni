@@ -159,8 +159,24 @@ def search_perplexity(query_text):
         return "", []
 
 
+def is_list_or_index_page(url):
+    """Liste/duyuru/index sayfasi mi kontrol eder (spesifik makale degil)."""
+    u = url.lower().rstrip("/")
+    # Bu kaliplarla BITEN URL ler liste sayfasidir, spesifik makale degil
+    list_endings = [
+        "/news", "/press-releases", "/press", "/events", "/blog",
+        "/media", "/publications", "/articles", "/updates", "/newsroom",
+        "/press-corner", "/all-news", "/category", "/tag", "/topics"
+    ]
+    for ending in list_endings:
+        if u.endswith(ending):
+            return True
+    return False
+
+
 def gather_all_news(queries):
-    """Tum sorgulari calistirir. Perplexity citations URL lerini gercekten fetch eder."""
+    """Tum sorgulari calistirir. Her sayfayi NUMARALI olarak kendi URL siyle dondurur.
+    Claude URL secmez - sadece KAYNAK_NO verir, biz gercek URL yi koyariz."""
     all_summaries = []
     all_citations = []
 
@@ -168,36 +184,60 @@ def gather_all_news(queries):
         print(f"  -> Sorgu: {q['id']}")
         ptext, citations = search_perplexity(q["query"])
         if ptext:
-            all_summaries.append(f"[ALAN: {q['id']}]\n{ptext[:1500]}")
+            all_summaries.append(f"[GENEL OZET - {q['id']}]\n{ptext[:1200]}")
         for c in citations:
             if c not in all_citations:
                 all_citations.append(c)
 
     print(f"  Perplexity {len(all_citations)} gercek kaynak URL donurdu.")
 
-    # Her gercek URL yi fetch et
     SOSYAL = ["instagram.com", "twitter.com", "x.com", "facebook.com",
               "linkedin.com", "youtube.com", "tiktok.com"]
-    fetched = []
-    for i, url in enumerate(all_citations[:20]):
+
+    # url_map: numara -> gercek URL  (Claude bu numarayi kullanacak)
+    url_map = {}
+    fetched_blocks = []
+    kaynak_no = 0
+
+    for url in all_citations[:25]:
         if any(s in url.lower() for s in SOSYAL):
             print(f"    - Atlandi (sosyal medya): {url[:50]}")
             continue
-        print(f"    Fetch {i+1}: {url[:60]}...")
-        page = fetch_url_content(url, max_chars=2000)
-        if page and len(page) > 100:
-            fetched.append(f"[KAYNAK_URL: {url}]\n{page}")
+        if is_list_or_index_page(url):
+            print(f"    - Atlandi (liste/duyuru sayfasi): {url[:50]}")
+            continue
+        print(f"    Fetch: {url[:65]}...")
+        page = fetch_url_content(url, max_chars=2200)
+        if page and len(page) > 150:
+            kaynak_no += 1
+            url_map[kaynak_no] = url
+            fetched_blocks.append(
+                f"===== KAYNAK_NO: {kaynak_no} =====\n"
+                f"URL: {url}\n"
+                f"ICERIK:\n{page}\n"
+            )
         else:
-            print(f"    ! Acilamadi veya bos, atlandı.")
+            print(f"    ! Acilamadi/bos, atlandi.")
 
-    print(f"  {len(fetched)} kaynak basariyla okundu.")
+    print(f"  {kaynak_no} kaynak basariyla okundu ve numaralandi.")
 
-    parts = all_summaries + fetched
-    combined = "\n\n---\n\n".join(parts)
-    if len(combined) > 35000:
-        combined = combined[:35000] + "\n[veri kisaltildi]"
+    # Genel ozetler + numarali kaynak sayfalari
+    summary_block = "\n\n".join(all_summaries)
+    sources_block = "\n".join(fetched_blocks)
+
+    combined = (
+        "BOLUM 1 - GENEL OZETLER (sadece baglamsal bilgi, URL kaynagi DEGIL):\n"
+        + summary_block
+        + "\n\n========================================\n"
+        + "BOLUM 2 - NUMARALI KAYNAK SAYFALARI (haberler SADECE buradan cikarilacak):\n\n"
+        + sources_block
+    )
+
+    if len(combined) > 40000:
+        combined = combined[:40000] + "\n[veri kisaltildi]"
     print(f"  Toplam ham veri: {len(combined)} karakter")
-    return combined
+
+    return combined, url_map
 
 
 
@@ -224,10 +264,11 @@ def is_valid_article_url(url):
     return True
 
 
-def parse_claude_blocks(text):
+def parse_claude_blocks(text, url_map):
     """Claude dan gelen ##HABER## blok formatini parse eder."""
     import datetime as _dt
     haberler = []
+    used_kaynak_no = set()
     blocks = text.split("##HABER_BASLANGIC##")
     for block in blocks[1:]:
         if "##HABER_BITIS##" not in block:
@@ -256,8 +297,12 @@ def parse_claude_blocks(text):
                 h["detail_raw"] = "\n".join(detay_lines).strip()
             elif line.startswith("KAYNAK:"):
                 h["source"] = line[7:].strip()
-            elif line.startswith("URL:"):
-                h["url"] = line[4:].strip() or "#"
+            elif line.startswith("KAYNAK_NO:"):
+                no_str = line[10:].strip()
+                try:
+                    h["kaynak_no"] = int("".join(ch for ch in no_str if ch.isdigit()))
+                except (ValueError, TypeError):
+                    h["kaynak_no"] = None
             elif line.startswith("KATEGORI:"):
                 cat = line[9:].strip().lower()
                 valid = ["mevzuat", "piyasa", "teknoloji", "uluslararasi", "haber", "akademik"]
@@ -269,10 +314,16 @@ def parse_claude_blocks(text):
             i += 1
 
         if h.get("title"):
-            url = h.get("url", "").strip()
-            if not is_valid_article_url(url):
-                print(f"  - Elendi (gecersiz URL): {h.get('title','')[:50]}")
+            # KAYNAK_NO dan gercek URL yi bul (Claude URL secemez, biz koyariz)
+            kno = h.get("kaynak_no")
+            if kno is None or kno not in url_map:
+                print(f"  - Elendi (gecersiz KAYNAK_NO {kno}): {h.get('title','')[:45]}")
                 continue
+            if kno in used_kaynak_no:
+                print(f"  - Elendi (tekrar KAYNAK_NO {kno}): {h.get('title','')[:45]}")
+                continue
+            used_kaynak_no.add(kno)
+            h["url"] = url_map[kno]
             raw = h.get("detail_raw", h.get("excerpt", ""))
             paragraphs = [p.strip() for p in raw.split("\n") if p.strip()]
             if not paragraphs:
@@ -320,7 +371,7 @@ def parse_claude_blocks(text):
         }
     }
 
-def process_with_claude(raw_news, claude_prompt):
+def process_with_claude(raw_news, claude_prompt, url_map):
     """Ham haberleri Claude'a gönderir, işlenmiş JSON döner."""
     today = datetime.date.today()
     week_ago = today - datetime.timedelta(days=7)
@@ -348,7 +399,7 @@ BASLIK: [aciklayici haber basligi, 10-15 kelime]
 OZET: [2-3 cumlelik kisa ozet, kartta gorunecek]
 DETAY: [En az 4 paragraf, her paragraf 3-5 cumle. Gelismenin tum detaylarini, rakamlari, tarihleri, ilgili kurumlari ve baglami acikla. Her paragrafi yeni satirda yaz.]
 KAYNAK: [kaynak adi ve tarih]
-URL: [tam url veya bos]
+KAYNAK_NO: [bu haberin cikarildigi sayfanin KAYNAK_NO numarasi - SADECE numara yaz]
 KATEGORI: [mevzuat veya piyasa veya teknoloji veya uluslararasi veya haber veya akademik]
 TARIH: [YYYY-MM-DD formatinda]
 ONCELIK: [1=manset, 2=normal]
@@ -356,28 +407,32 @@ ONCELIK: [1=manset, 2=normal]
 
 ZORUNLU KURALLAR (KESINLIKLE UYULACAK):
 
-KAYNAK ELEME:
-- URL'si olmayan haberleri DAHIL ETME.
-- URL'si sadece ana site/domain olan (orn: gov.cn, whitehouse.gov, europa.eu gibi
-  spesifik makale linki olmayan) haberleri DAHIL ETME.
-- Sosyal medya (Instagram, X, Facebook) kaynakli haberleri DAHIL ETME.
-- Tarihi 14 gunden eski olan haberleri DAHIL ETME.
+KAYNAK KURALI (EN ONEMLI):
+- Haberleri SADECE "BOLUM 2 - NUMARALI KAYNAK SAYFALARI" icindeki sayfalardan cikar.
+- Her haber icin KAYNAK_NO alanina, haberin cikarildigi sayfanin numarasini yaz.
+- BOLUM 1 (genel ozetler) SADECE baglam icindir; oradan haber cikarma, URL alma.
+- Bir sayfadan haber cikariyorsan, o sayfanin KAYNAK_NO numarasini DOGRU yaz.
+- Ayni KAYNAK_NO yu birden fazla habere verme (her sayfa bir habere karsilik gelir).
+- Eger bir sayfa gercek bir haber/gelisme icermiyorsa (sadece etkinlik duyurusu,
+  liste sayfasi, genel tanitim ise) o sayfadan haber CIKARMA.
 
-YORUM YASAGI:
+YORUM VE ZAMAN YASAGI:
 - KESINLIKLE kendi yorumunu, cikariminizi veya sonucunu EKLEME.
-- Su tarz cumleler YASAK: "...adimlarini yansitiyor", "...gosteriyor",
-  "...one cikiyor", "...isaret ediyor", "...vurguluyor", "Bu gelisme...".
-- Sadece kaynakta ACIKCA yazilan bilgileri aktar. Kaynakta olmayan hicbir
-  baglanti, cikarim veya degerlendirme ekleme.
+- Su cumleler YASAK: "...yansitiyor", "...gosteriyor", "...one cikiyor",
+  "...isaret ediyor", "...vurguluyor", "Bu gelisme...".
+- ZAMAN UYDURMA: Sayfada "etkinlik olacak/duzenlenecek" yaziyorsa, bunu
+  "etkinlik degerlendirdi/yapildi" diye GECMIS ZAMANA cevirme. Sayfada ne
+  yaziyorsa o zamani koru.
+- Sadece kaynakta ACIKCA yazilan bilgileri aktar.
 
 BIRLESTIRME YASAGI:
 - Iki AYRI gelismeyi tek haberde BIRLESTIRME.
-- Eger bir haber gercekten biyoekonomi ile DOGRUDAN ilgili degilse, DAHIL ETME.
-- Suphede kaldiginda haberi dahil etme (az ama dogru haber daha iyi).
+- Biyoekonomi ile DOGRUDAN ilgili olmayan haberleri DAHIL ETME.
+- Suphede kaldiginda haberi dahil etme (az ama dogru daha iyi).
 
 ICERIK:
-- Turkiye ile ilgili en onemli (ve kurallari saglayan) haberi ONCELIK:1 yap.
-- Kurallari saglayan en fazla 14, en az olabildigince cok haber ver.
+- Turkiye ile ilgili en onemli haberi ONCELIK:1 yap.
+- Her gercek kaynak sayfasindan en fazla 1 haber cikar.
 - DETAY bolumu kaynaktaki bilgilerle DOLU olmali: 3-4 paragraf, sadece olgular.
 - Her DETAY paragrafini ayri satirda yaz."""
 
@@ -397,7 +452,7 @@ ICERIK:
         data = r.json()
         text = "".join(block.get("text", "") for block in data["content"] if block.get("type") == "text")
         print(f"  Claude yanit uzunlugu: {len(text)} karakter")
-        return parse_claude_blocks(text)
+        return parse_claude_blocks(text, url_map)
     except Exception as e:
         print(f"  ! Claude API hatasi: {e}")
         raise
@@ -602,11 +657,11 @@ def main():
     print(f"   {len(config['queries'])} sorgu bulundu.\n")
 
     print("2. Perplexity ile haberler aranıyor...")
-    raw_news = gather_all_news(config["queries"])
-    print(f"   Ham veri toplandı ({len(raw_news)} karakter).\n")
+    raw_news, url_map = gather_all_news(config["queries"])
+    print(f"   Ham veri toplandı ({len(raw_news)} karakter, {len(url_map)} kaynak).\n")
 
     print("3. Claude ile işleniyor...")
-    processed = process_with_claude(raw_news, config["claude_prompt"])
+    processed = process_with_claude(raw_news, config["claude_prompt"], url_map)
     rapor = processed.get("rapor", {})
     print(f"   {rapor.get('yayinlanan','?')} haber seçildi.\n")
 
