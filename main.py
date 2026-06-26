@@ -202,12 +202,39 @@ detail alanı HTML paragraflar içermeli: <p>...</p><p>...</p>"""
         r.raise_for_status()
         data = r.json()
         text = "".join(block.get("text", "") for block in data["content"] if block.get("type") == "text")
-        # JSON'u ayıkla
-        clean = text.replace("```json", "").replace("```", "").strip()
-        match = re.search(r"\{[\s\S]*\}", clean)
-        return json.loads(match.group(0) if match else clean)
+        print(f"  Claude yanit uzunlugu: {len(text)} karakter")
+
+        # JSON ayikla
+        clean = text.strip()
+        if "```json" in clean:
+            clean = clean.split("```json", 1)[1].split("```")[0].strip()
+        elif "```" in clean:
+            clean = clean.split("```", 1)[1].split("```")[0].strip()
+
+        start = clean.find("{")
+        end = clean.rfind("}") + 1
+        if start >= 0 and end > start:
+            clean = clean[start:end]
+
+        try:
+            return json.loads(clean)
+        except json.JSONDecodeError as je:
+            print(f"  ! JSON parse hatasi: {je}")
+            print(f"  ! Sorunlu bolge: ...{clean[max(0,je.pos-100):je.pos+100]}...")
+            return {
+                "lead": {
+                    "title": "Bulten bu hafta uretilemedi",
+                    "excerpt": "JSON parse hatasi olustu.",
+                    "detail": "<p>Otomatik bulten uretiminde hata olustu.</p>",
+                    "source": "Sistem", "url": "#",
+                    "category": "haber",
+                    "date": str(__import__("datetime").date.today())
+                },
+                "stories": [],
+                "rapor": {"bulunan_toplam": 0, "elenen": 0, "yayinlanan": 0, "pencere": "hata"}
+            }
     except Exception as e:
-        print(f"  ! Claude hatası: {e}")
+        print(f"  ! Claude API hatasi: {e}")
         raise
 
 
