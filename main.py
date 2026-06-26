@@ -119,15 +119,28 @@ def search_perplexity(query_text):
             {
                 "role": "system",
                 "content": (
-                    "You are a research assistant. Find the 8 most important recent news items "
-                    "from the last 7-14 days only. For each item output EXACTLY this format:\n"
+                    "You are a strict news research assistant. Find recent news items "
+                    "ONLY from the last 14 days. Follow these rules WITHOUT EXCEPTION:\n\n"
+                    "1. ONLY include items with a SPECIFIC ARTICLE URL (a direct link to the "
+                    "news article or press release page).\n"
+                    "2. NEVER provide a homepage or domain-only URL (e.g. gov.cn, "
+                    "whitehouse.gov, europa.eu). If you cannot find the specific article "
+                    "URL, DO NOT include that item at all.\n"
+                    "3. NEVER use social media posts (Instagram, X/Twitter, Facebook, "
+                    "LinkedIn) as a source.\n"
+                    "4. VERIFY the publication date. If it is older than 14 days, SKIP it.\n"
+                    "5. Each item must be a SINGLE distinct development. Do NOT merge two "
+                    "separate events into one item.\n"
+                    "6. Only report what the source actually states. No interpretation.\n\n"
+                    "Output EACH valid item in EXACTLY this format:\n"
                     "TITLE: [headline]\n"
-                    "SUMMARY: [3-4 sentence detailed summary with key facts and figures]\n"
-                    "SOURCE: [source name]\n"
-                    "DATE: [publication date]\n"
-                    "URL: [url]\n"
+                    "SUMMARY: [3-4 factual sentences with specific data and figures]\n"
+                    "SOURCE: [publication or institution name]\n"
+                    "DATE: [publication date YYYY-MM-DD]\n"
+                    "URL: [specific article URL - never a homepage]\n"
                     "---\n"
-                    "Include specific data, numbers, and context. No extra commentary."
+                    "If you find fewer than 8 items meeting these rules, that is acceptable. "
+                    "Quality over quantity. Better to return 3 verified items than 8 weak ones."
                 )
             },
             {"role": "user", "content": query_text},
@@ -165,6 +178,43 @@ def gather_all_news(queries):
 # ============================================================
 # 3. CLAUDE İLE İŞLE
 # ============================================================
+
+
+def is_valid_article_url(url):
+    """URL'nin spesifik bir makale linki olup olmadigini kontrol eder.
+    Ana site/domain linklerini ve sosyal medyayi reddeder."""
+    if not url or url == "#":
+        return False
+    url = url.strip().lower()
+    if not url.startswith("http"):
+        return False
+
+    # Sosyal medya reddet
+    social = ["instagram.com", "twitter.com", "x.com", "facebook.com",
+              "linkedin.com", "youtube.com", "tiktok.com", "t.me"]
+    if any(s in url for s in social):
+        return False
+
+    # URL'yi parcala: domain ve path
+    from urllib.parse import urlparse
+    try:
+        parsed = urlparse(url)
+        path = parsed.path.strip("/")
+    except Exception:
+        return False
+
+    # Path bos veya cok kisa ise (sadece ana sayfa) reddet
+    # Orn: gov.cn/ veya whitehouse.gov/ -> path bos -> reddet
+    if len(path) < 8:
+        return False
+
+    # Path'te en az bir "/" veya anlamli uzunluk olmali (makale slug'i)
+    # Orn: /news/article-title-2026 gibi
+    if "/" not in path and len(path) < 15:
+        return False
+
+    return True
+
 
 def parse_claude_blocks(text):
     """Claude'dan gelen ##HABER## blok formatini parse eder, dict dondurecek."""
@@ -211,6 +261,11 @@ def parse_claude_blocks(text):
                 h["priority"] = line[8:].strip()
             i += 1
         if h.get("title"):
+            # KAYNAK DOGRULAMA: ana site linki veya gecersiz URL'leri ele
+            url = h.get("url", "").strip()
+            if not is_valid_article_url(url):
+                print(f"  - Elendi (gecersiz kaynak): {h.get('title','')[:50]}")
+                continue
             # Detail'i HTML paragraflarına cevir
             raw = h.get("detail_raw", h.get("excerpt",""))
             paragraphs = [p.strip() for p in raw.split("\n") if p.strip()]
@@ -287,12 +342,32 @@ TARIH: [YYYY-MM-DD formatinda]
 ONCELIK: [1=manset, 2=normal]
 ##HABER_BITIS##
 
-ONEMLI KURALLAR:
-- Turkiye ile ilgili en onemli haberi ONCELIK:1 yap, digerlerini ONCELIK:2 yap.
-- En fazla 14 haber ver, en az 10 haber vermeye calis.
-- DETAY bolumu DOLU olmali: en az 4 paragraf, her biri bilgilendirici. Kisa gecme.
-- Her DETAY paragrafini ayri satirda yaz (paragraflar arasi bos satir birak).
-- Sadece gelismeleri aktar, kendi yorumunu/analizini EKLEME."""
+ZORUNLU KURALLAR (KESINLIKLE UYULACAK):
+
+KAYNAK ELEME:
+- URL'si olmayan haberleri DAHIL ETME.
+- URL'si sadece ana site/domain olan (orn: gov.cn, whitehouse.gov, europa.eu gibi
+  spesifik makale linki olmayan) haberleri DAHIL ETME.
+- Sosyal medya (Instagram, X, Facebook) kaynakli haberleri DAHIL ETME.
+- Tarihi 14 gunden eski olan haberleri DAHIL ETME.
+
+YORUM YASAGI:
+- KESINLIKLE kendi yorumunu, cikariminizi veya sonucunu EKLEME.
+- Su tarz cumleler YASAK: "...adimlarini yansitiyor", "...gosteriyor",
+  "...one cikiyor", "...isaret ediyor", "...vurguluyor", "Bu gelisme...".
+- Sadece kaynakta ACIKCA yazilan bilgileri aktar. Kaynakta olmayan hicbir
+  baglanti, cikarim veya degerlendirme ekleme.
+
+BIRLESTIRME YASAGI:
+- Iki AYRI gelismeyi tek haberde BIRLESTIRME.
+- Eger bir haber gercekten biyoekonomi ile DOGRUDAN ilgili degilse, DAHIL ETME.
+- Suphede kaldiginda haberi dahil etme (az ama dogru haber daha iyi).
+
+ICERIK:
+- Turkiye ile ilgili en onemli (ve kurallari saglayan) haberi ONCELIK:1 yap.
+- Kurallari saglayan en fazla 14, en az olabildigince cok haber ver.
+- DETAY bolumu kaynaktaki bilgilerle DOLU olmali: 3-4 paragraf, sadece olgular.
+- Her DETAY paragrafini ayri satirda yaz."""
 
     headers = {
         "x-api-key": ANTHROPIC_API_KEY,
