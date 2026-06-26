@@ -165,6 +165,88 @@ def gather_all_news(queries):
 # ============================================================
 # 3. CLAUDE İLE İŞLE
 # ============================================================
+
+def parse_claude_blocks(text):
+    """Claude'dan gelen ##HABER## blok formatini parse eder, dict dondurecek."""
+    import datetime as dt
+    haberler = []
+    blocks = text.split("##HABER_BASLANGIC##")
+    for block in blocks[1:]:
+        if "##HABER_BITIS##" not in block:
+            continue
+        block = block.split("##HABER_BITIS##")[0].strip()
+        h = {}
+        for line in block.splitlines():
+            line = line.strip()
+            if line.startswith("BASLIK:"):
+                h["title"] = line[7:].strip()
+            elif line.startswith("OZET:"):
+                h["excerpt"] = line[5:].strip()
+            elif line.startswith("DETAY:"):
+                h["detail_raw"] = line[6:].strip()
+            elif line.startswith("KAYNAK:"):
+                h["source"] = line[7:].strip()
+            elif line.startswith("URL:"):
+                h["url"] = line[4:].strip() or "#"
+            elif line.startswith("KATEGORI:"):
+                cat = line[9:].strip().lower()
+                valid = ["mevzuat","piyasa","teknoloji","uluslararasi","haber","akademik"]
+                h["category"] = cat if cat in valid else "haber"
+            elif line.startswith("TARIH:"):
+                h["date"] = line[6:].strip()
+            elif line.startswith("ONCELIK:"):
+                h["priority"] = line[8:].strip()
+        if h.get("title"):
+            # Detail'i HTML paragraflarına cevir
+            raw = h.get("detail_raw", h.get("excerpt",""))
+            paragraphs = [p.strip() for p in raw.split("\n") if p.strip()]
+            if not paragraphs:
+                paragraphs = [raw]
+            h["detail"] = "".join(f"<p>{p}</p>" for p in paragraphs[:4])
+            haberler.append(h)
+
+    if not haberler:
+        print("  ! Hic haber parse edilemedi, fallback kullaniliyor")
+        return {
+            "lead": {
+                "title": "Bulten bu hafta uretilemedi",
+                "excerpt": "Parse hatasi.",
+                "detail": "<p>Teknik hata olustu.</p>",
+                "source": "Sistem", "url": "#",
+                "category": "haber",
+                "date": str(dt.date.today())
+            },
+            "stories": [],
+            "rapor": {"bulunan_toplam": 0, "elenen": 0, "yayinlanan": len(haberler), "pencere": "7 gun"}
+        }
+
+    # Oncelik 1 olanı lead yap
+    lead = None
+    stories = []
+    for h in haberler:
+        if h.get("priority") == "1" and lead is None:
+            lead = h
+        else:
+            stories.append(h)
+    if lead is None:
+        lead = haberler[0]
+        stories = haberler[1:]
+
+    stories = stories[:13]  # max 13 + 1 lead = 14
+
+    print(f"  {1 + len(stories)} haber basariyla parse edildi.")
+    return {
+        "lead": lead,
+        "stories": stories,
+        "rapor": {
+            "bulunan_toplam": len(haberler),
+            "elenen": max(0, len(haberler) - 1 - len(stories)),
+            "yayinlanan": 1 + len(stories),
+            "pencere": "7 gun"
+        }
+    }
+
+
 def process_with_claude(raw_news, claude_prompt):
     """Ham haberleri Claude'a gönderir, işlenmiş JSON döner."""
     today = datetime.date.today()
@@ -179,19 +261,20 @@ Aşağıda farklı kaynaklardan toplanmış ham haberler var. Bunları işle:
 
 {raw_news}
 
-KRITIK JSON KURALLARI:
-1. Ciktini SADECE gecerli JSON olarak ver, baska hicbir sey yazma
-2. Tum string degerlerinde tek tirnak veya ozel karakter KULLANMA
-3. URL alanlarini bos birak veya tam URL yaz - asla virgul veya tirnak icermesin
-4. detail alani sadece duz metin paragraflar: <p>metin</p> - icinde tirnak olmamali
-5. Tum Turkce karakterler (a, i, o, u, s, g, c ve buyukleri) JSON'da gecerlidir
+CIKTI FORMATI - Her haber icin su blok yapısını kullan, JSON DEGIL:
+##HABER_BASLANGIC##
+BASLIK: [haber basligi]
+OZET: [2-3 cumlelik kisa ozet]
+DETAY: [3-4 paragraf detayli aciklama, duz metin]
+KAYNAK: [kaynak adi ve tarih]
+URL: [tam url veya bos]
+KATEGORI: [mevzuat veya piyasa veya teknoloji veya uluslararasi veya haber veya akademik]
+TARIH: [YYYY-MM-DD formatinda]
+ONCELIK: [1=manset, 2=normal]
+##HABER_BITIS##
 
-JSON FORMAT (bu formata tam uy):
-{{"lead": {{"title":"baslik", "excerpt":"kisa ozet", "detail":"<p>detay</p>", "source":"kaynak adi", "url":"https://example.com", "category":"mevzuat", "date":"2026-06-23"}},
-  "stories": [{{"title":"baslik2", "excerpt":"ozet2", "detail":"<p>detay2</p>", "source":"kaynak2", "url":"https://example2.com", "category":"piyasa", "date":"2026-06-22"}}],
-  "rapor": {{"bulunan_toplam": 20, "elenen": 8, "yayinlanan": 12, "pencere": "7 gun"}}}}
-
-category SADECE su degerlerden biri olmali: mevzuat, piyasa, teknoloji, uluslararasi, haber, akademik"""
+Turkiye ile ilgili olan en onemli haberi ONCELIK:1 yap, diger haberleri ONCELIK:2 yap.
+En fazla 14 haber ver."""
 
     headers = {
         "x-api-key": ANTHROPIC_API_KEY,
@@ -209,67 +292,7 @@ category SADECE su degerlerden biri olmali: mevzuat, piyasa, teknoloji, uluslara
         data = r.json()
         text = "".join(block.get("text", "") for block in data["content"] if block.get("type") == "text")
         print(f"  Claude yanit uzunlugu: {len(text)} karakter")
-
-        # JSON ayikla
-        clean = text.strip()
-        if "```json" in clean:
-            clean = clean.split("```json", 1)[1].split("```")[0].strip()
-        elif "```" in clean:
-            clean = clean.split("```", 1)[1].split("```")[0].strip()
-
-        start = clean.find("{")
-        end = clean.rfind("}") + 1
-        if start >= 0 and end > start:
-            clean = clean[start:end]
-
-        try:
-            return json.loads(clean)
-        except json.JSONDecodeError as je:
-            print(f"  ! JSON parse hatasi: {je}")
-            print(f"  ! Sorunlu bolge: ...{clean[max(0,je.pos-100):je.pos+100]}...")
-            # Claude'u tekrar cagir - sadece JSON duzelt
-            print("  Yeniden deneniyor: Claude'dan JSON duzeltmesi isteniyor...")
-            fix_prompt = f"""Asagidaki metin gecersiz JSON iceriyor. Lutfen sadece duzgun JSON dondu, baska hicbir sey yazma.
-Tum string degerlerindeki ozel karakterleri, ic icge tirnaklari ve URL icerisindeki sorunlu karakterleri duzelt.
-
-BOZUK JSON:
-{clean[:8000]}
-
-Yukaridaki JSON'u duzelt ve SADECE gecerli JSON dondur."""
-            fix_payload = {{
-                "model": "claude-sonnet-4-6",
-                "max_tokens": 6000,
-                "messages": [{{"role": "user", "content": fix_prompt}}],
-            }}
-            try:
-                r2 = requests.post(ANTHROPIC_URL, headers=headers, json=fix_payload, timeout=180)
-                r2.raise_for_status()
-                data2 = r2.json()
-                text2 = "".join(b.get("text","") for b in data2["content"] if b.get("type")=="text")
-                clean2 = text2.strip()
-                if "```" in clean2:
-                    clean2 = clean2.split("```json",1)[-1].split("```")[0].strip() if "```json" in clean2 else clean2.split("```",1)[1].split("```")[0].strip()
-                s2 = clean2.find("{")
-                e2 = clean2.rfind("}") + 1
-                if s2 >= 0 and e2 > s2:
-                    clean2 = clean2[s2:e2]
-                result = json.loads(clean2)
-                print("  Yeniden deneme basarili!")
-                return result
-            except Exception as e2:
-                print(f"  ! Yeniden deneme de basarisiz: {e2}")
-                return {{
-                    "lead": {{
-                        "title": "Bulten bu hafta uretilemedi",
-                        "excerpt": "Otomatik uretimde hata olustu, lutfen loglari kontrol edin.",
-                        "detail": "<p>Bu hafta otomatik bulten uretiminde teknik sorun yasandi.</p>",
-                        "source": "Sistem", "url": "#",
-                        "category": "haber",
-                        "date": str(datetime.date.today())
-                    }},
-                    "stories": [],
-                    "rapor": {{"bulunan_toplam": 0, "elenen": 0, "yayinlanan": 0, "pencere": "hata"}}
-                }}
+        return parse_claude_blocks(text)
     except Exception as e:
         print(f"  ! Claude API hatasi: {e}")
         raise
