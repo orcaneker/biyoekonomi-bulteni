@@ -107,213 +107,97 @@ def load_config():
 # ============================================================
 # 2. PERPLEXITY İLE HABERLERİ ARA
 # ============================================================
+def fetch_url_content(url, max_chars=2500):
+    """URL iceriğini gercekten fetch eder. Acilamazsa None doner."""
+    try:
+        hdrs = {"User-Agent": "Mozilla/5.0 (compatible; NewsBot/1.0)"}
+        r = requests.get(url, headers=hdrs, timeout=15, allow_redirects=True)
+        if r.status_code != 200:
+            return None
+        import re as _re
+        text = r.text
+        text = _re.sub(r"<script[^>]*>.*?</script>", " ", text, flags=_re.DOTALL|_re.IGNORECASE)
+        text = _re.sub(r"<style[^>]*>.*?</style>", " ", text, flags=_re.DOTALL|_re.IGNORECASE)
+        text = _re.sub(r"<[^>]+>", " ", text)
+        text = _re.sub(r"[ \t]+", " ", text).strip()
+        text = "\n".join(ln for ln in text.splitlines() if ln.strip())
+        return text[:max_chars] if text else None
+    except Exception as e:
+        return None
+
+
 def search_perplexity(query_text):
-    """Tek bir sorguyu Perplexity'ye gönderir, özet liste döner (max 5 haber)."""
-    headers = {
-        "Authorization": f"Bearer {PERPLEXITY_API_KEY}",
-        "Content-Type": "application/json",
-    }
+    """Perplexity sonar-pro ile arama yapar. Hem ozet metin hem gercek citations doner."""
+    hdrs = {"Authorization": f"Bearer {PERPLEXITY_API_KEY}", "Content-Type": "application/json"}
     payload = {
         "model": "sonar-pro",
         "messages": [
             {
                 "role": "system",
                 "content": (
-                    "You are a strict news research assistant. Find recent news items "
-                    "ONLY from the last 14 days. Follow these rules WITHOUT EXCEPTION:\n\n"
-                    "1. ONLY include items with a SPECIFIC ARTICLE URL (a direct link to the "
-                    "news article or press release page).\n"
-                    "2. NEVER provide a homepage or domain-only URL (e.g. gov.cn, "
-                    "whitehouse.gov, europa.eu). If you cannot find the specific article "
-                    "URL, DO NOT include that item at all.\n"
-                    "3. NEVER use social media posts (Instagram, X/Twitter, Facebook, "
-                    "LinkedIn) as a source.\n"
-                    "4. VERIFY the publication date. If it is older than 14 days, SKIP it.\n"
-                    "5. Each item must be a SINGLE distinct development. Do NOT merge two "
-                    "separate events into one item.\n"
-                    "6. Only report what the source actually states. No interpretation.\n\n"
-                    "Output EACH valid item in EXACTLY this format:\n"
-                    "TITLE: [headline]\n"
-                    "SUMMARY: [3-4 factual sentences with specific data and figures]\n"
-                    "SOURCE: [publication or institution name]\n"
-                    "DATE: [publication date YYYY-MM-DD]\n"
-                    "URL: [specific article URL - never a homepage]\n"
-                    "---\n"
-                    "If you find fewer than 8 items meeting these rules, that is acceptable. "
-                    "Quality over quantity. Better to return 3 verified items than 8 weak ones."
+                    "You are a bioeconomy news assistant. "
+                    "Find developments from the LAST 14 DAYS ONLY. "
+                    "Be factual, include dates and figures. "
+                    "Do NOT invent URLs - your citations will be verified."
                 )
             },
             {"role": "user", "content": query_text},
         ],
-        "max_tokens": 2500,
+        "max_tokens": 2000,
     }
     try:
-        r = requests.post(PERPLEXITY_URL, headers=headers, json=payload, timeout=60)
+        r = requests.post(PERPLEXITY_URL, headers=hdrs, json=payload, timeout=60)
         r.raise_for_status()
         data = r.json()
-        return data["choices"][0]["message"]["content"]
+        text = data["choices"][0]["message"]["content"]
+        citations = data.get("citations", [])
+        if not citations:
+            citations = data["choices"][0].get("citations", [])
+        return text, citations
     except Exception as e:
-        print(f"  ! Perplexity hatası ({e})")
-        return ""
+        print(f"  ! Perplexity hatasi: {e}")
+        return "", []
 
 
 def gather_all_news(queries):
-    """Tüm sorguları çalıştırır, sonuçları birleştirir. Max 5 haber/sorgu."""
-    all_results = []
+    """Tum sorgulari calistirir. Perplexity citations URL lerini gercekten fetch eder."""
+    all_summaries = []
+    all_citations = []
+
     for q in queries:
-        print(f"  → Sorgu: {q['id']}")
-        result = search_perplexity(q["query"])
-        if result:
-            # Her sorgu sonucunu 2000 karakterle sınırla
-            trimmed = result[:3000]
-            all_results.append(f"[ALAN: {q['id']}]\n{trimmed}")
-    combined = "\n\n---\n\n".join(all_results)
-    # Toplam veriyi 15000 karakterle sınırla
-    if len(combined) > 30000:
-        combined = combined[:30000] + "\n[...veri kısaltıldı...]"
+        print(f"  -> Sorgu: {q['id']}")
+        ptext, citations = search_perplexity(q["query"])
+        if ptext:
+            all_summaries.append(f"[ALAN: {q['id']}]\n{ptext[:1500]}")
+        for c in citations:
+            if c not in all_citations:
+                all_citations.append(c)
+
+    print(f"  Perplexity {len(all_citations)} gercek kaynak URL donurdu.")
+
+    # Her gercek URL yi fetch et
+    SOSYAL = ["instagram.com", "twitter.com", "x.com", "facebook.com",
+              "linkedin.com", "youtube.com", "tiktok.com"]
+    fetched = []
+    for i, url in enumerate(all_citations[:20]):
+        if any(s in url.lower() for s in SOSYAL):
+            print(f"    - Atlandi (sosyal medya): {url[:50]}")
+            continue
+        print(f"    Fetch {i+1}: {url[:60]}...")
+        page = fetch_url_content(url, max_chars=2000)
+        if page and len(page) > 100:
+            fetched.append(f"[KAYNAK_URL: {url}]\n{page}")
+        else:
+            print(f"    ! Acilamadi veya bos, atlandı.")
+
+    print(f"  {len(fetched)} kaynak basariyla okundu.")
+
+    parts = all_summaries + fetched
+    combined = "\n\n---\n\n".join(parts)
+    if len(combined) > 35000:
+        combined = combined[:35000] + "\n[veri kisaltildi]"
     print(f"  Toplam ham veri: {len(combined)} karakter")
     return combined
-
-
-# ============================================================
-# 3. CLAUDE İLE İŞLE
-# ============================================================
-
-
-def is_valid_article_url(url):
-    """URL'nin spesifik bir makale linki olup olmadigini kontrol eder.
-    Ana site/domain linklerini ve sosyal medyayi reddeder."""
-    if not url or url == "#":
-        return False
-    url = url.strip().lower()
-    if not url.startswith("http"):
-        return False
-
-    # Sosyal medya reddet
-    social = ["instagram.com", "twitter.com", "x.com", "facebook.com",
-              "linkedin.com", "youtube.com", "tiktok.com", "t.me"]
-    if any(s in url for s in social):
-        return False
-
-    # URL'yi parcala: domain ve path
-    from urllib.parse import urlparse
-    try:
-        parsed = urlparse(url)
-        path = parsed.path.strip("/")
-    except Exception:
-        return False
-
-    # Path bos veya cok kisa ise (sadece ana sayfa) reddet
-    # Orn: gov.cn/ veya whitehouse.gov/ -> path bos -> reddet
-    if len(path) < 8:
-        return False
-
-    # Path'te en az bir "/" veya anlamli uzunluk olmali (makale slug'i)
-    # Orn: /news/article-title-2026 gibi
-    if "/" not in path and len(path) < 15:
-        return False
-
-    return True
-
-
-def parse_claude_blocks(text):
-    """Claude'dan gelen ##HABER## blok formatini parse eder, dict dondurecek."""
-    import datetime as dt
-    haberler = []
-    blocks = text.split("##HABER_BASLANGIC##")
-    for block in blocks[1:]:
-        if "##HABER_BITIS##" not in block:
-            continue
-        block = block.split("##HABER_BITIS##")[0].strip()
-        h = {}
-        lines = block.splitlines()
-        i = 0
-        while i < len(lines):
-            line = lines[i].strip()
-            if line.startswith("BASLIK:"):
-                h["title"] = line[7:].strip()
-            elif line.startswith("OZET:"):
-                h["excerpt"] = line[5:].strip()
-            elif line.startswith("DETAY:"):
-                # DETAY cok satirli olabilir - sonraki alan markerina kadar topla
-                detay_lines = [line[6:].strip()]
-                i += 1
-                while i < len(lines):
-                    nxt = lines[i].strip()
-                    if nxt.startswith(("KAYNAK:","URL:","KATEGORI:","TARIH:","ONCELIK:","OZET:","BASLIK:")):
-                        i -= 1
-                        break
-                    if nxt:
-                        detay_lines.append(nxt)
-                    i += 1
-                h["detail_raw"] = "\n".join(detay_lines).strip()
-            elif line.startswith("KAYNAK:"):
-                h["source"] = line[7:].strip()
-            elif line.startswith("URL:"):
-                h["url"] = line[4:].strip() or "#"
-            elif line.startswith("KATEGORI:"):
-                cat = line[9:].strip().lower()
-                valid = ["mevzuat","piyasa","teknoloji","uluslararasi","haber","akademik"]
-                h["category"] = cat if cat in valid else "haber"
-            elif line.startswith("TARIH:"):
-                h["date"] = line[6:].strip()
-            elif line.startswith("ONCELIK:"):
-                h["priority"] = line[8:].strip()
-            i += 1
-        if h.get("title"):
-            # KAYNAK DOGRULAMA: ana site linki veya gecersiz URL'leri ele
-            url = h.get("url", "").strip()
-            if not is_valid_article_url(url):
-                print(f"  - Elendi (gecersiz kaynak): {h.get('title','')[:50]}")
-                continue
-            # Detail'i HTML paragraflarına cevir
-            raw = h.get("detail_raw", h.get("excerpt",""))
-            paragraphs = [p.strip() for p in raw.split("\n") if p.strip()]
-            if not paragraphs:
-                paragraphs = [raw] if raw else [h.get("excerpt","")]
-            h["detail"] = "".join(f"<p>{p}</p>" for p in paragraphs[:6])
-            haberler.append(h)
-
-    if not haberler:
-        print("  ! Hic haber parse edilemedi, fallback kullaniliyor")
-        return {
-            "lead": {
-                "title": "Bulten bu hafta uretilemedi",
-                "excerpt": "Parse hatasi.",
-                "detail": "<p>Teknik hata olustu.</p>",
-                "source": "Sistem", "url": "#",
-                "category": "haber",
-                "date": str(dt.date.today())
-            },
-            "stories": [],
-            "rapor": {"bulunan_toplam": 0, "elenen": 0, "yayinlanan": len(haberler), "pencere": "7 gun"}
-        }
-
-    # Oncelik 1 olanı lead yap
-    lead = None
-    stories = []
-    for h in haberler:
-        if h.get("priority") == "1" and lead is None:
-            lead = h
-        else:
-            stories.append(h)
-    if lead is None:
-        lead = haberler[0]
-        stories = haberler[1:]
-
-    stories = stories[:13]  # max 13 + 1 lead = 14
-
-    print(f"  {1 + len(stories)} haber basariyla parse edildi.")
-    return {
-        "lead": lead,
-        "stories": stories,
-        "rapor": {
-            "bulunan_toplam": len(haberler),
-            "elenen": max(0, len(haberler) - 1 - len(stories)),
-            "yayinlanan": 1 + len(stories),
-            "pencere": "7 gun"
-        }
-    }
 
 
 def process_with_claude(raw_news, claude_prompt):
@@ -326,7 +210,15 @@ def process_with_claude(raw_news, claude_prompt):
 BUGÜNÜN TARİHİ: {today.strftime('%d %B %Y')}
 ÖNCELİKLİ PENCERE: {week_ago.strftime('%d %B %Y')} - {today.strftime('%d %B %Y')}
 
-Aşağıda farklı kaynaklardan toplanmış ham haberler var. Bunları işle:
+Asagida iki tur veri var:
+1. [ALAN: ...] bloklari: Perplexity ozet metinleri
+2. [KAYNAK_URL: https://...] bloklari: Gercekten fetch edilmis web sayfasi icerikleri
+
+ONEMLI: KAYNAK_URL bloklarindaki URL ler GERCEK ve DOGRULANMIS kaynaklardir.
+Bu URL leri haber icin URL alani olarak kullan.
+Haberleri bu gercek iceriklere dayandır, UYDURMA.
+
+Ham veri:
 
 {raw_news}
 
