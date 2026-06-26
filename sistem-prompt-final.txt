@@ -1,0 +1,209 @@
+# ============================================================
+# BİYOEKONOMİ BÜLTENİ — SİSTEM PROMPT DOSYASI (FİNAL)
+# ============================================================
+# Bu dosya otomatik sistemin beynidir.
+# Türkçe açıklamalar # ile başlar, gerçek talimatlar tırnak/blok içindedir.
+# Sürüm: 1.0 — Test aşaması
+
+
+# ============================================================
+# BÖLÜM 1 — PERPLEXITY ARAMA SORGULARI
+# ============================================================
+# Sistem her hafta bu sorguların HEPSİNİ ayrı ayrı Perplexity'ye gönderir.
+# Artık genel "bioeconomy" yerine SPESİFİK ALT-ALAN keywordleri kullanıyoruz.
+# Bu sayede meyve atığından gıda, SAF üretimi, biomanufacturing gibi
+# somut gelişmeler de yakalanır.
+
+PERPLEXITY_SORGULARI:
+
+  - id: biyoyakit_enerji
+    aciklama: "Biyoyakıt, SAF, biyometan, biyogaz, yeşil hidrojen"
+    sorgu: >
+      Latest news from the past 7-14 days on sustainable aviation fuel (SAF),
+      biomethane, biogas, biofuel, bio-LNG, and green hydrogen from biomass.
+      Include production plants, offtake agreements, blending mandates,
+      and major investments. June 2026.
+
+  - id: biyobazli_malzeme
+    aciklama: "Biyoplastik, biyopolimer, biyobazlı kimyasallar, lignin"
+    sorgu: >
+      Latest news from the past 7-14 days on bioplastics, bio-based chemicals,
+      biopolymers, lignin valorization, and cellulose-based materials.
+      Include new facilities, commercial launches, and regulation. June 2026.
+
+  - id: biyouretim
+    aciklama: "Biomanufacturing, endüstriyel biyoteknoloji, fermantasyon"
+    sorgu: >
+      Latest news from the past 7-14 days on biomanufacturing, industrial
+      biotechnology, precision fermentation, and synthetic biology at
+      commercial scale. Include scale-up milestones and funding. June 2026.
+
+  - id: atik_degerlendirme
+    aciklama: "Atıktan değer, döngüsel biyoekonomi, biyorafineri"
+    sorgu: >
+      Latest news from the past 7-14 days on waste-to-value bioeconomy,
+      agri-food waste valorization, circular bioeconomy, and biorefinery
+      projects. Include fruit/food waste to high-value products. June 2026.
+
+  - id: gida_tarim
+    aciklama: "Alternatif protein, hassas fermantasyon, alg/mantar protein"
+    sorgu: >
+      Latest news from the past 7-14 days on alternative proteins, precision
+      fermentation, mycoprotein, algae protein, and food waste biorefinery.
+      Include commercial deals and regulatory approvals. June 2026.
+
+  - id: politika_mevzuat
+    aciklama: "AB ve global biyoekonomi politika ve mevzuatı"
+    sorgu: >
+      Latest news from the past 7-14 days on bioeconomy strategy, bio-based
+      economy regulation, ESPR biobased requirements, RED III biomass, and
+      EU Biotech Act. Include European Commission and EUR-Lex. June 2026.
+
+  - id: uluslararasi_kuruluslar
+    aciklama: "IEA, IRENA, FAO, OECD, Dünya Bankası, IATA raporları"
+    sorgu: >
+      Latest bioeconomy and bioenergy reports from the past 7-14 days by
+      IEA, IRENA, FAO, OECD, World Bank, and IATA. Include new data,
+      forecasts, and policy recommendations. June 2026.
+
+  - id: turkiye
+    aciklama: "Türkiye odaklı gelişmeler (Türkçe arama)"
+    sorgu: >
+      Türkiye'de son 7-14 gündeki biyoyakıt, SAF, biyometan, biyogaz,
+      biyoplastik, biyobazlı kimya, atıktan değer, alternatif protein ve
+      döngüsel ekonomi gelişmeleri; yatırımlar, mevzuat, teşvik ve
+      protokoller. Haziran 2026.
+
+  - id: asya_global
+    aciklama: "Çin, Japonya, Güney Kore, ABD gelişmeleri"
+    sorgu: >
+      Latest bioeconomy, biomanufacturing, and biobased technology news
+      from China, Japan, South Korea, and the United States in the past
+      7-14 days. Include government policy and corporate investments. June 2026.
+
+
+# ============================================================
+# BÖLÜM 2 — CLAUDE İŞLEME TALİMATI (SİSTEM PROMPTU)
+# ============================================================
+
+CLAUDE_SISTEM_PROMPTU: >
+  Sen Türkiye Sanayi ve Teknoloji Bakanlığı için biyoekonomi alanında
+  haftalık haber bülteni hazırlayan kıdemli bir uzmansın.
+
+  Biyoekonomi kapsamı GENİŞTİR: biyolojik kaynakları (tarım, orman, deniz,
+  atık, mikroorganizma) ekonomik değere dönüştüren tüm faaliyetler.
+  Biyoyakıtlar, biyoplastikler, biyobazlı kimyasallar, biyomanüfaktür,
+  alternatif proteinler, atık değerlendirme, döngüsel biyoekonomi dahildir.
+
+  Sana farklı sorgulardan toplanmış ham haber listesi verilecek. Görevin:
+
+  ── ADIM 1: TARİH FİLTRESİ ──
+  Sadece son 7 gün içindeki haberleri al. Eğer son 7 günde 10'dan az önemli
+  gelişme varsa, pencereyi son 14 güne genişlet. 14 GÜNDEN ESKİ HABERLERİ
+  KESİNLİKLE DAHİL ETME. Her haberin yayın tarihini doğrula.
+
+  ── ADIM 2: ÖNEM PUANLAMASI (kullanıcıya gösterilmez) ──
+  Her haberi 1-10 arası puanla. Öncelik sırası:
+    [10] Türkiye'yi DOĞRUDAN etkileyen gelişmeler (en üst öncelik)
+    [9]  AB ve uluslararası mevzuat/politika değişiklikleri
+    [8]  Büyük yatırım ve finansman (>50 milyon EUR/USD)
+    [7]  Uluslararası kuruluş raporları (IEA, OECD, FAO, IATA, WB)
+    [6]  Teknoloji kırılımları, ticari ölçeğe geçiş, ilk tesisler
+    [5]  Önemli piyasa verisi ve pazar analizleri
+    [4]  Şirket ortaklıkları, birleşmeler, sektör haberleri
+    [1-3] Rutin haberler, küçük yerel gelişmeler, tekrar içerik
+
+  ── ADIM 3: SEÇİM ──
+  En yüksek puanlı 10-15 haberi seç. Aynı konuyu işleyen mükerrer haberleri
+  TEK habere birleştir. Bir kategoride önemli haber yoksa o kategori boş kalsın.
+
+  ── ADIM 4: KATEGORİLENDİRME ──
+  Her haberi şu kod adlarından BİRİNE ata:
+    mevzuat | piyasa | teknoloji | uluslararasi | haber | akademik
+
+  ── ADIM 5: TÜRKÇELEŞTİRME ──
+  Tüm başlık, özet ve detayları Türkçe yaz (kaynak hangi dilde olursa olsun).
+  Kurumsal, resmi ama akıcı dil. ANALİZ VEYA YORUM YAPMA — sadece gelişmeyi
+  aktar. "Türkiye için önemi şudur" gibi çıkarımlar EKLEME.
+
+  ── ADIM 6: ÇIKTI ──
+  En yüksek puanlı haberi "lead" (manşet) olarak işaretle.
+  Her haber için: title, excerpt (2-3 cümle), detail (3-4 paragraf),
+  source, url, category, date.
+
+  Çıktıyı SADECE geçerli JSON ver, başka metin ekleme:
+  {"lead": {...}, "stories": [...], "rapor": {...}}
+
+  "rapor" alanında şu istatistikleri ver (sadece bildirim için):
+  {"bulunan_toplam": N, "elenen": N, "yayinlanan": N, "pencere": "7 gün" veya "14 gün"}
+
+
+# ============================================================
+# BÖLÜM 3 — ZORUNLU KAYNAK LİSTESİ
+# ============================================================
+# Perplexity'ye "öncelikle buralara bak" sinyali. Yeni kaynak buldukça ekle.
+
+ZORUNLU_KAYNAKLAR:
+  ab_kurumlari:
+    - "environment.ec.europa.eu"
+    - "single-market-economy.ec.europa.eu"
+    - "eur-lex.europa.eu"
+    - "cordis.europa.eu"
+  uluslararasi:
+    - "iea.org"
+    - "irena.org"
+    - "fao.org"
+    - "oecd.org"
+    - "worldbank.org"
+    - "iata.org"
+  sektor_yayinlari:
+    - "biofuelsdigest.com"
+    - "bioenergy-news.com"
+    - "worldbiogasassociation.org"
+    - "europabio.org"
+    - "bioplasticsnews.com"
+    - "biomarketinsights.com"
+  piyasa_arastirma:
+    - "grandviewresearch.com"
+    - "fortunebusinessinsights.com"
+  turkiye:
+    - "sanayi.gov.tr"
+    - "enerji.gov.tr"
+    - "tarimorman.gov.tr"
+    - "tubitak.gov.tr"
+
+
+# ============================================================
+# BÖLÜM 4 — BİLDİRİM (SADECE SANA ÖZEL)
+# ============================================================
+# Bülten herkese açıktır. Bu istatistik raporu SADECE sana e-posta gelir.
+
+BILDIRIM:
+  aktif: true
+  yontem: "email"
+  alici: "orcaneker@gmail.com"    # ← kendi adresini yaz
+  konu: "Biyoekonomi Bülteni — Haftalık Çalışma Raporu"
+  icerik_sablonu: >
+    Biyoekonomi Bülteni — {tarih} Çalışma Raporu
+    ─────────────────────────────────
+    Taranan sorgu sayısı: {sorgu_sayisi}
+    Bulunan toplam haber: {bulunan_toplam}
+    Mükerrer/elenen: {elenen}
+    Bültene giren: {yayinlanan}
+    Tarama penceresi: {pencere}
+    ─────────────────────────────────
+    En yüksek puanlı 3 haber:
+    {top3_liste}
+
+
+# ============================================================
+# BÖLÜM 5 — GENEL AYARLAR
+# ============================================================
+AYARLAR:
+  haber_sayisi_min: 10
+  haber_sayisi_max: 15
+  pencere_oncelikli_gun: 7
+  pencere_genisletilmis_gun: 14
+  cikti_dili: "tr"
+  yayim_gunu: "pazartesi"
+  yayim_saati: "08:00"          # Türkiye saati
