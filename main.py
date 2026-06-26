@@ -114,25 +114,25 @@ def search_perplexity(query_text):
         "Content-Type": "application/json",
     }
     payload = {
-        "model": "sonar",
+        "model": "sonar-pro",
         "messages": [
             {
                 "role": "system",
                 "content": (
-                    "You are a research assistant. Find the 5 most important recent news items "
+                    "You are a research assistant. Find the 8 most important recent news items "
                     "from the last 7-14 days only. For each item output EXACTLY this format:\n"
                     "TITLE: [headline]\n"
-                    "SUMMARY: [2 sentence summary]\n"
+                    "SUMMARY: [3-4 sentence detailed summary with key facts and figures]\n"
                     "SOURCE: [source name]\n"
                     "DATE: [publication date]\n"
                     "URL: [url]\n"
                     "---\n"
-                    "Be concise. No extra text."
+                    "Include specific data, numbers, and context. No extra commentary."
                 )
             },
             {"role": "user", "content": query_text},
         ],
-        "max_tokens": 1500,
+        "max_tokens": 2500,
     }
     try:
         r = requests.post(PERPLEXITY_URL, headers=headers, json=payload, timeout=60)
@@ -152,12 +152,12 @@ def gather_all_news(queries):
         result = search_perplexity(q["query"])
         if result:
             # Her sorgu sonucunu 2000 karakterle sınırla
-            trimmed = result[:2000]
+            trimmed = result[:3000]
             all_results.append(f"[ALAN: {q['id']}]\n{trimmed}")
     combined = "\n\n---\n\n".join(all_results)
     # Toplam veriyi 15000 karakterle sınırla
-    if len(combined) > 15000:
-        combined = combined[:15000] + "\n[...veri kısaltıldı...]"
+    if len(combined) > 30000:
+        combined = combined[:30000] + "\n[...veri kısaltıldı...]"
     print(f"  Toplam ham veri: {len(combined)} karakter")
     return combined
 
@@ -176,14 +176,27 @@ def parse_claude_blocks(text):
             continue
         block = block.split("##HABER_BITIS##")[0].strip()
         h = {}
-        for line in block.splitlines():
-            line = line.strip()
+        lines = block.splitlines()
+        i = 0
+        while i < len(lines):
+            line = lines[i].strip()
             if line.startswith("BASLIK:"):
                 h["title"] = line[7:].strip()
             elif line.startswith("OZET:"):
                 h["excerpt"] = line[5:].strip()
             elif line.startswith("DETAY:"):
-                h["detail_raw"] = line[6:].strip()
+                # DETAY cok satirli olabilir - sonraki alan markerina kadar topla
+                detay_lines = [line[6:].strip()]
+                i += 1
+                while i < len(lines):
+                    nxt = lines[i].strip()
+                    if nxt.startswith(("KAYNAK:","URL:","KATEGORI:","TARIH:","ONCELIK:","OZET:","BASLIK:")):
+                        i -= 1
+                        break
+                    if nxt:
+                        detay_lines.append(nxt)
+                    i += 1
+                h["detail_raw"] = "\n".join(detay_lines).strip()
             elif line.startswith("KAYNAK:"):
                 h["source"] = line[7:].strip()
             elif line.startswith("URL:"):
@@ -196,13 +209,14 @@ def parse_claude_blocks(text):
                 h["date"] = line[6:].strip()
             elif line.startswith("ONCELIK:"):
                 h["priority"] = line[8:].strip()
+            i += 1
         if h.get("title"):
             # Detail'i HTML paragraflarına cevir
             raw = h.get("detail_raw", h.get("excerpt",""))
             paragraphs = [p.strip() for p in raw.split("\n") if p.strip()]
             if not paragraphs:
-                paragraphs = [raw]
-            h["detail"] = "".join(f"<p>{p}</p>" for p in paragraphs[:4])
+                paragraphs = [raw] if raw else [h.get("excerpt","")]
+            h["detail"] = "".join(f"<p>{p}</p>" for p in paragraphs[:6])
             haberler.append(h)
 
     if not haberler:
@@ -263,9 +277,9 @@ Aşağıda farklı kaynaklardan toplanmış ham haberler var. Bunları işle:
 
 CIKTI FORMATI - Her haber icin su blok yapısını kullan, JSON DEGIL:
 ##HABER_BASLANGIC##
-BASLIK: [haber basligi]
-OZET: [2-3 cumlelik kisa ozet]
-DETAY: [3-4 paragraf detayli aciklama, duz metin]
+BASLIK: [aciklayici haber basligi, 10-15 kelime]
+OZET: [2-3 cumlelik kisa ozet, kartta gorunecek]
+DETAY: [En az 4 paragraf, her paragraf 3-5 cumle. Gelismenin tum detaylarini, rakamlari, tarihleri, ilgili kurumlari ve baglami acikla. Her paragrafi yeni satirda yaz.]
 KAYNAK: [kaynak adi ve tarih]
 URL: [tam url veya bos]
 KATEGORI: [mevzuat veya piyasa veya teknoloji veya uluslararasi veya haber veya akademik]
@@ -273,8 +287,12 @@ TARIH: [YYYY-MM-DD formatinda]
 ONCELIK: [1=manset, 2=normal]
 ##HABER_BITIS##
 
-Turkiye ile ilgili olan en onemli haberi ONCELIK:1 yap, diger haberleri ONCELIK:2 yap.
-En fazla 14 haber ver."""
+ONEMLI KURALLAR:
+- Turkiye ile ilgili en onemli haberi ONCELIK:1 yap, digerlerini ONCELIK:2 yap.
+- En fazla 14 haber ver, en az 10 haber vermeye calis.
+- DETAY bolumu DOLU olmali: en az 4 paragraf, her biri bilgilendirici. Kisa gecme.
+- Her DETAY paragrafini ayri satirda yaz (paragraflar arasi bos satir birak).
+- Sadece gelismeleri aktar, kendi yorumunu/analizini EKLEME."""
 
     headers = {
         "x-api-key": ANTHROPIC_API_KEY,
@@ -283,7 +301,7 @@ En fazla 14 haber ver."""
     }
     payload = {
         "model": "claude-sonnet-4-6",
-        "max_tokens": 6000,
+        "max_tokens": 8000,
         "messages": [{"role": "user", "content": full_prompt}],
     }
     try:
