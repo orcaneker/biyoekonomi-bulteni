@@ -108,43 +108,58 @@ def load_config():
 # 2. PERPLEXITY İLE HABERLERİ ARA
 # ============================================================
 def search_perplexity(query_text):
-    """Tek bir sorguyu Perplexity'ye gönderir, ham metin sonuç döner."""
+    """Tek bir sorguyu Perplexity'ye gönderir, özet liste döner (max 5 haber)."""
     headers = {
         "Authorization": f"Bearer {PERPLEXITY_API_KEY}",
         "Content-Type": "application/json",
     }
     payload = {
-        "model": "sonar-pro",
+        "model": "sonar",
         "messages": [
             {
                 "role": "system",
-                "content": "You are a research assistant. Find recent, specific, factual news. "
-                           "For each item provide: headline, 2-3 sentence summary, source name, "
-                           "publication date, and URL. Focus on the last 7-14 days only."
+                "content": (
+                    "You are a research assistant. Find the 5 most important recent news items "
+                    "from the last 7-14 days only. For each item output EXACTLY this format:\n"
+                    "TITLE: [headline]\n"
+                    "SUMMARY: [2 sentence summary]\n"
+                    "SOURCE: [source name]\n"
+                    "DATE: [publication date]\n"
+                    "URL: [url]\n"
+                    "---\n"
+                    "Be concise. No extra text."
+                )
             },
             {"role": "user", "content": query_text},
         ],
-        "max_tokens": 2000,
+        "max_tokens": 1500,
     }
     try:
-        r = requests.post(PERPLEXITY_URL, headers=headers, json=payload, timeout=90)
+        r = requests.post(PERPLEXITY_URL, headers=headers, json=payload, timeout=60)
         r.raise_for_status()
         data = r.json()
         return data["choices"][0]["message"]["content"]
     except Exception as e:
-        print(f"  ! Perplexity hatası: {e}")
+        print(f"  ! Perplexity hatası ({e})")
         return ""
 
 
 def gather_all_news(queries):
-    """Tüm sorguları çalıştırır, sonuçları birleştirir."""
+    """Tüm sorguları çalıştırır, sonuçları birleştirir. Max 5 haber/sorgu."""
     all_results = []
     for q in queries:
         print(f"  → Sorgu: {q['id']}")
         result = search_perplexity(q["query"])
         if result:
-            all_results.append(f"[Kategori: {q['id']}]\n{result}")
-    return "\n\n---\n\n".join(all_results)
+            # Her sorgu sonucunu 2000 karakterle sınırla
+            trimmed = result[:2000]
+            all_results.append(f"[ALAN: {q['id']}]\n{trimmed}")
+    combined = "\n\n---\n\n".join(all_results)
+    # Toplam veriyi 15000 karakterle sınırla
+    if len(combined) > 15000:
+        combined = combined[:15000] + "\n[...veri kısaltıldı...]"
+    print(f"  Toplam ham veri: {len(combined)} karakter")
+    return combined
 
 
 # ============================================================
@@ -179,11 +194,11 @@ detail alanı HTML paragraflar içermeli: <p>...</p><p>...</p>"""
     }
     payload = {
         "model": "claude-sonnet-4-6",
-        "max_tokens": 8000,
+        "max_tokens": 6000,
         "messages": [{"role": "user", "content": full_prompt}],
     }
     try:
-        r = requests.post(ANTHROPIC_URL, headers=headers, json=payload, timeout=120)
+        r = requests.post(ANTHROPIC_URL, headers=headers, json=payload, timeout=300)
         r.raise_for_status()
         data = r.json()
         text = "".join(block.get("text", "") for block in data["content"] if block.get("type") == "text")
