@@ -179,13 +179,19 @@ Aşağıda farklı kaynaklardan toplanmış ham haberler var. Bunları işle:
 
 {raw_news}
 
-Hatırlatma: Çıktıyı SADECE geçerli JSON olarak ver. Format:
-{{"lead": {{"title":"", "excerpt":"", "detail":"", "source":"", "url":"", "category":"", "date":""}},
-  "stories": [{{"title":"", "excerpt":"", "detail":"", "source":"", "url":"", "category":"", "date":""}}],
-  "rapor": {{"bulunan_toplam": 0, "elenen": 0, "yayinlanan": 0, "pencere": "7 gün"}}}}
+KRITIK JSON KURALLARI:
+1. Ciktini SADECE gecerli JSON olarak ver, baska hicbir sey yazma
+2. Tum string degerlerinde tek tirnak veya ozel karakter KULLANMA
+3. URL alanlarini bos birak veya tam URL yaz - asla virgul veya tirnak icermesin
+4. detail alani sadece duz metin paragraflar: <p>metin</p> - icinde tirnak olmamali
+5. Tum Turkce karakterler (a, i, o, u, s, g, c ve buyukleri) JSON'da gecerlidir
 
-category değerleri sadece şunlar olabilir: mevzuat, piyasa, teknoloji, uluslararasi, haber, akademik
-detail alanı HTML paragraflar içermeli: <p>...</p><p>...</p>"""
+JSON FORMAT (bu formata tam uy):
+{{"lead": {{"title":"baslik", "excerpt":"kisa ozet", "detail":"<p>detay</p>", "source":"kaynak adi", "url":"https://example.com", "category":"mevzuat", "date":"2026-06-23"}},
+  "stories": [{{"title":"baslik2", "excerpt":"ozet2", "detail":"<p>detay2</p>", "source":"kaynak2", "url":"https://example2.com", "category":"piyasa", "date":"2026-06-22"}}],
+  "rapor": {{"bulunan_toplam": 20, "elenen": 8, "yayinlanan": 12, "pencere": "7 gun"}}}}
+
+category SADECE su degerlerden biri olmali: mevzuat, piyasa, teknoloji, uluslararasi, haber, akademik"""
 
     headers = {
         "x-api-key": ANTHROPIC_API_KEY,
@@ -221,18 +227,49 @@ detail alanı HTML paragraflar içermeli: <p>...</p><p>...</p>"""
         except json.JSONDecodeError as je:
             print(f"  ! JSON parse hatasi: {je}")
             print(f"  ! Sorunlu bolge: ...{clean[max(0,je.pos-100):je.pos+100]}...")
-            return {
-                "lead": {
-                    "title": "Bulten bu hafta uretilemedi",
-                    "excerpt": "JSON parse hatasi olustu.",
-                    "detail": "<p>Otomatik bulten uretiminde hata olustu.</p>",
-                    "source": "Sistem", "url": "#",
-                    "category": "haber",
-                    "date": str(__import__("datetime").date.today())
-                },
-                "stories": [],
-                "rapor": {"bulunan_toplam": 0, "elenen": 0, "yayinlanan": 0, "pencere": "hata"}
-            }
+            # Claude'u tekrar cagir - sadece JSON duzelt
+            print("  Yeniden deneniyor: Claude'dan JSON duzeltmesi isteniyor...")
+            fix_prompt = f"""Asagidaki metin gecersiz JSON iceriyor. Lutfen sadece duzgun JSON dondu, baska hicbir sey yazma.
+Tum string degerlerindeki ozel karakterleri, ic icge tirnaklari ve URL icerisindeki sorunlu karakterleri duzelt.
+
+BOZUK JSON:
+{clean[:8000]}
+
+Yukaridaki JSON'u duzelt ve SADECE gecerli JSON dondur."""
+            fix_payload = {{
+                "model": "claude-sonnet-4-6",
+                "max_tokens": 6000,
+                "messages": [{{"role": "user", "content": fix_prompt}}],
+            }}
+            try:
+                r2 = requests.post(ANTHROPIC_URL, headers=headers, json=fix_payload, timeout=180)
+                r2.raise_for_status()
+                data2 = r2.json()
+                text2 = "".join(b.get("text","") for b in data2["content"] if b.get("type")=="text")
+                clean2 = text2.strip()
+                if "```" in clean2:
+                    clean2 = clean2.split("```json",1)[-1].split("```")[0].strip() if "```json" in clean2 else clean2.split("```",1)[1].split("```")[0].strip()
+                s2 = clean2.find("{")
+                e2 = clean2.rfind("}") + 1
+                if s2 >= 0 and e2 > s2:
+                    clean2 = clean2[s2:e2]
+                result = json.loads(clean2)
+                print("  Yeniden deneme basarili!")
+                return result
+            except Exception as e2:
+                print(f"  ! Yeniden deneme de basarisiz: {e2}")
+                return {{
+                    "lead": {{
+                        "title": "Bulten bu hafta uretilemedi",
+                        "excerpt": "Otomatik uretimde hata olustu, lutfen loglari kontrol edin.",
+                        "detail": "<p>Bu hafta otomatik bulten uretiminde teknik sorun yasandi.</p>",
+                        "source": "Sistem", "url": "#",
+                        "category": "haber",
+                        "date": str(datetime.date.today())
+                    }},
+                    "stories": [],
+                    "rapor": {{"bulunan_toplam": 0, "elenen": 0, "yayinlanan": 0, "pencere": "hata"}}
+                }}
     except Exception as e:
         print(f"  ! Claude API hatasi: {e}")
         raise
