@@ -200,6 +200,126 @@ def gather_all_news(queries):
     return combined
 
 
+
+
+def is_valid_article_url(url):
+    """URL nin spesifik makale linki olup olmadigini kontrol eder."""
+    if not url or url == "#":
+        return False
+    url = url.strip().lower()
+    if not url.startswith("http"):
+        return False
+    social = ["instagram.com", "twitter.com", "x.com", "facebook.com",
+              "linkedin.com", "youtube.com", "tiktok.com", "t.me"]
+    if any(s in url for s in social):
+        return False
+    from urllib.parse import urlparse
+    try:
+        parsed = urlparse(url)
+        path = parsed.path.strip("/")
+    except Exception:
+        return False
+    if len(path) < 8:
+        return False
+    return True
+
+
+def parse_claude_blocks(text):
+    """Claude dan gelen ##HABER## blok formatini parse eder."""
+    import datetime as _dt
+    haberler = []
+    blocks = text.split("##HABER_BASLANGIC##")
+    for block in blocks[1:]:
+        if "##HABER_BITIS##" not in block:
+            continue
+        block = block.split("##HABER_BITIS##")[0].strip()
+        h = {}
+        lines = block.splitlines()
+        i = 0
+        while i < len(lines):
+            line = lines[i].strip()
+            if line.startswith("BASLIK:"):
+                h["title"] = line[7:].strip()
+            elif line.startswith("OZET:"):
+                h["excerpt"] = line[5:].strip()
+            elif line.startswith("DETAY:"):
+                detay_lines = [line[6:].strip()]
+                i += 1
+                while i < len(lines):
+                    nxt = lines[i].strip()
+                    if nxt.startswith(("KAYNAK:", "URL:", "KATEGORI:", "TARIH:", "ONCELIK:", "OZET:", "BASLIK:")):
+                        i -= 1
+                        break
+                    if nxt:
+                        detay_lines.append(nxt)
+                    i += 1
+                h["detail_raw"] = "\n".join(detay_lines).strip()
+            elif line.startswith("KAYNAK:"):
+                h["source"] = line[7:].strip()
+            elif line.startswith("URL:"):
+                h["url"] = line[4:].strip() or "#"
+            elif line.startswith("KATEGORI:"):
+                cat = line[9:].strip().lower()
+                valid = ["mevzuat", "piyasa", "teknoloji", "uluslararasi", "haber", "akademik"]
+                h["category"] = cat if cat in valid else "haber"
+            elif line.startswith("TARIH:"):
+                h["date"] = line[6:].strip()
+            elif line.startswith("ONCELIK:"):
+                h["priority"] = line[8:].strip()
+            i += 1
+
+        if h.get("title"):
+            url = h.get("url", "").strip()
+            if not is_valid_article_url(url):
+                print(f"  - Elendi (gecersiz URL): {h.get('title','')[:50]}")
+                continue
+            raw = h.get("detail_raw", h.get("excerpt", ""))
+            paragraphs = [p.strip() for p in raw.split("\n") if p.strip()]
+            if not paragraphs:
+                paragraphs = [raw] if raw else [h.get("excerpt", "")]
+            h["detail"] = "".join(f"<p>{p}</p>" for p in paragraphs[:6])
+            haberler.append(h)
+
+    if not haberler:
+        print("  ! Hic haber parse edilemedi, fallback kullaniliyor")
+        return {
+            "lead": {
+                "title": "Bulten bu hafta uretilemedi",
+                "excerpt": "Parse hatasi - loglari kontrol edin.",
+                "detail": "<p>Teknik hata olustu.</p>",
+                "source": "Sistem", "url": "#",
+                "category": "haber",
+                "date": str(_dt.date.today())
+            },
+            "stories": [],
+            "rapor": {"bulunan_toplam": 0, "elenen": 0, "yayinlanan": 0, "pencere": "hata"}
+        }
+
+    # ONCELIK 1 olan lead olsun
+    lead = None
+    stories = []
+    for h in haberler:
+        if h.get("priority") == "1" and lead is None:
+            lead = h
+        else:
+            stories.append(h)
+    if lead is None:
+        lead = haberler[0]
+        stories = haberler[1:]
+    stories = stories[:13]
+
+    print(f"  {1 + len(stories)} haber basariyla parse edildi.")
+    return {
+        "lead": lead,
+        "stories": stories,
+        "rapor": {
+            "bulunan_toplam": len(haberler),
+            "elenen": max(0, len(haberler) - 1 - len(stories)),
+            "yayinlanan": 1 + len(stories),
+            "pencere": "7-14 gun"
+        }
+    }
+
 def process_with_claude(raw_news, claude_prompt):
     """Ham haberleri Claude'a gönderir, işlenmiş JSON döner."""
     today = datetime.date.today()
