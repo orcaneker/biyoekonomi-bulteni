@@ -1,0 +1,33 @@
+name: Haftalik Biyoekonomi Bulteni
+
+# Her Pazartesi sabahı 08:00 (Türkiye saati = UTC+3, yani UTC 05:00)
+on:
+  schedule:
+    - cron: '0 5 * * 1'
+  # Manuel tetikleme de mümkün (test için)
+  workflow_dispatch:
+
+jobs:
+  bulten-uret:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repoyu indir
+        uses: actions/checkout@v4
+
+      - name: Python kur
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Kütüphaneleri yükle
+        run: pip install -r requirements.txt
+
+      - name: Bülteni üret ve yayınla
+        env:
+          PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          NETLIFY_TOKEN: ${{ secrets.NETLIFY_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        run: python main.py
