@@ -126,18 +126,46 @@ def fetch_url_content(url, max_chars=2500):
         return None
 
 
+
+
+def page_is_recent(page_text, url):
+    """Sayfanin guncel (2026) olup olmadigini kaba sekilde kontrol eder.
+    Eski yil (2017-2024) iceren ve 2026 icermeyen sayfalari eler."""
+    import re as _re
+    # URL de eski yil varsa direkt ele
+    eski_yillar = ["2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024"]
+    # URL icinde /2017/ /2018/ gibi tarih varsa ele
+    for yil in eski_yillar:
+        if f"/{yil}/" in url:
+            return False
+    # Sayfa metninde 2026 var mi?
+    has_2026 = "2026" in page_text
+    has_2025_recent = "2025" in page_text
+    # 2026 veya 2025 varsa kabul (yakin tarih)
+    if has_2026 or has_2025_recent:
+        return True
+    # Hic 2025/2026 yok, ama eski yil var mi?
+    for yil in eski_yillar:
+        if yil in page_text:
+            return False  # Eski yil var, guncel yok -> ele
+    # Hicbir yil yok -> belirsiz, kabul et (Claude tarih kontrolu yapacak)
+    return True
+
+
 def search_perplexity(query_text):
     """Perplexity sonar-pro ile arama yapar. Hem ozet metin hem gercek citations doner."""
     hdrs = {"Authorization": f"Bearer {PERPLEXITY_API_KEY}", "Content-Type": "application/json"}
     payload = {
         "model": "sonar-pro",
+        "search_recency_filter": "week",
         "messages": [
             {
                 "role": "system",
                 "content": (
                     "You are a bioeconomy news assistant. "
-                    "Find developments from the LAST 14 DAYS ONLY. "
-                    "Be factual, include dates and figures. "
+                    "Find ONLY developments published in the LAST 7-14 DAYS. "
+                    "Ignore old articles, archive pages, and evergreen content. "
+                    "Be factual, include publication dates and figures. "
                     "Do NOT invent URLs - your citations will be verified."
                 )
             },
@@ -209,6 +237,10 @@ def gather_all_news(queries):
         print(f"    Fetch: {url[:65]}...")
         page = fetch_url_content(url, max_chars=2200)
         if page and len(page) > 150:
+            # ESKI TARIH FILTRESI: sayfada 2026 yoksa ama eski yillar varsa ele
+            if not page_is_recent(page, url):
+                print(f"    - Atlandi (eski tarihli icerik): {url[:50]}")
+                continue
             kaynak_no += 1
             url_map[kaynak_no] = url
             fetched_blocks.append(
@@ -430,11 +462,22 @@ BIRLESTIRME YASAGI:
 - Biyoekonomi ile DOGRUDAN ilgili olmayan haberleri DAHIL ETME.
 - Suphede kaldiginda haberi dahil etme (az ama dogru daha iyi).
 
+TARIH KURALI (COK ONEMLI):
+- Her sayfanin ICERIGINDE gercek yayin tarihini ARA ve bul.
+- Sayfada acik bir yayin tarihi varsa onu TARIH alanina yaz (YYYY-MM-DD).
+- Sayfada tarih BULAMIYORSAN, TARIH alanina "belirtilmemis" yaz. ASLA bugunun
+  tarihini veya tahmini tarih UYDURMA.
+- Eger sayfadaki tarih 2025 veya daha eski ise (orn: 2017, 2023), o haberi
+  KESINLIKLE DAHIL ETME. Sadece son 14 gun icindeki guncel haberleri al.
+- Bir sayfanin eski oldugundan suphelenirsen, dahil etme.
+
 ICERIK:
 - Turkiye ile ilgili en onemli haberi ONCELIK:1 yap.
 - Her gercek kaynak sayfasindan en fazla 1 haber cikar.
 - DETAY bolumu kaynaktaki bilgilerle DOLU olmali: 3-4 paragraf, sadece olgular.
-- Her DETAY paragrafini ayri satirda yaz."""
+- Her DETAY paragrafini ayri satirda yaz.
+- Sadece GERCEKTEN biyoekonomi ile ilgili, GUNCEL ve KAYNAGI DOGRULANMIS
+  haberleri ver. Az ama kesin dogru haber, cok ama suvpheli haberden iyidir."""
 
     headers = {
         "x-api-key": ANTHROPIC_API_KEY,
@@ -444,6 +487,7 @@ ICERIK:
     payload = {
         "model": "claude-sonnet-4-6",
         "max_tokens": 8000,
+        "temperature": 0,
         "messages": [{"role": "user", "content": full_prompt}],
     }
     try:
