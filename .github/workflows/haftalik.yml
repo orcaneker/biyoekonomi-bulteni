@@ -3,7 +3,7 @@ name: Haftalik Biyoekonomi Bulteni
 # Her Pazartesi sabahı 08:00 (Türkiye saati = UTC+3, yani UTC 05:00)
 on:
   schedule:
-    - cron: '0 5 * * 1'
+    - cron: '45 6 * * *'
   # Manuel tetikleme de mümkün (test için)
   workflow_dispatch:
 
