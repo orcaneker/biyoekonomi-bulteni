@@ -1,7 +1,6 @@
 name: Haftalik Biyoekonomi Bulteni
 
 on:
-  schedule:
   workflow_dispatch:
 
 jobs:
