@@ -29,6 +29,19 @@ from email.mime.multipart import MIMEMultipart
 
 import requests
 
+# .env dosyasından API anahtarlarını yükle (PythonAnywhere için)
+def load_env_file():
+    env_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env")
+    if os.path.exists(env_path):
+        with open(env_path, "r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if line and not line.startswith("#") and "=" in line:
+                    key, _, value = line.partition("=")
+                    os.environ.setdefault(key.strip(), value.strip())
+
+load_env_file()
+
 # ============================================================
 # AYARLAR — Ortam değişkenlerinden okunur (GitHub Secrets)
 # ============================================================
@@ -444,17 +457,34 @@ KAYNAK KURALI (EN ONEMLI):
 - Her haber icin KAYNAK_NO alanina, haberin cikarildigi sayfanin numarasini yaz.
 - BOLUM 1 (genel ozetler) SADECE baglam icindir; oradan haber cikarma, URL alma.
 - Bir sayfadan haber cikariyorsan, o sayfanin KAYNAK_NO numarasini DOGRU yaz.
+KAYNAK KURALI (EN ONEMLI):
+- Haberleri SADECE "BOLUM 2 - NUMARALI KAYNAK SAYFALARI" icindeki sayfalardan cikar.
+- Her haber icin KAYNAK_NO alanina, haberin cikarildigi sayfanin numarasini yaz.
+- BOLUM 1 (genel ozetler) SADECE baglam icindir; oradan haber cikarma, URL alma.
+- Bir sayfadan haber cikariyorsan, o sayfanin KAYNAK_NO numarasini DOGRU yaz.
 - Ayni KAYNAK_NO yu birden fazla habere verme (her sayfa bir habere karsilik gelir).
-- Eger bir sayfa gercek bir haber/gelisme icermiyorsa (sadece etkinlik duyurusu,
-  liste sayfasi, genel tanitim ise) o sayfadan haber CIKARMA.
+- Liste sayfasi veya genel tanitim sayfasindan (orn: sirket "hakkinda" sayfasi)
+  haber CIKARMA - sayfada somut, tarihli bir gelisme/bilgi olmasi sart.
 
-YORUM VE ZAMAN YASAGI:
+ETKINLIK VE TAKVIM HABERLERI (ONEMLI - DIKKATLI OKU):
+- Fuar, konferans, kongre gibi etkinlik haberleri GECERLI haber konusudur,
+  DAHIL EDILEBILIR. Etkinligi haber yapmaktan KACINMA.
+- TEK KURAL: Sayfada ne yaziyorsa O ZAMAN KIPINI KULLAN. Baska hicbir sey
+  degistirme.
+  * Sayfa "etkinlik 24-26 Haziran'da duzenlenecek" diyorsa: SEN DE gelecek
+    zaman kullan ("duzenlenecek", "ele alinacak", "bir araya getirecek").
+  * Sayfa "etkinlik duzenlendi, sunlar konusuldu" diyorsa: SEN DE gecmis
+    zaman kullan ("duzenlendi", "ele alindi").
+  * Sayfada sadece etkinlik programi/gundemi varsa (henuz sonuc yok):
+    "sunlar ele alinacak/tartisilacak" gibi yaz, "sunlar tartisildi/
+    sonucuna varildi" gibi YAZMA.
+- YASAK: Sayfada olmayan bir sonuc, karar veya cikti UYDURMA. Sayfa sadece
+  "program" veya "gundem" veriyorsa, sen de sadece program/gundemi aktar.
+
+YORUM YASAGI:
 - KESINLIKLE kendi yorumunu, cikariminizi veya sonucunu EKLEME.
 - Su cumleler YASAK: "...yansitiyor", "...gosteriyor", "...one cikiyor",
   "...isaret ediyor", "...vurguluyor", "Bu gelisme...".
-- ZAMAN UYDURMA: Sayfada "etkinlik olacak/duzenlenecek" yaziyorsa, bunu
-  "etkinlik degerlendirdi/yapildi" diye GECMIS ZAMANA cevirme. Sayfada ne
-  yaziyorsa o zamani koru.
 - Sadece kaynakta ACIKCA yazilan bilgileri aktar.
 
 BIRLESTIRME YASAGI:
@@ -463,12 +493,14 @@ BIRLESTIRME YASAGI:
 - Suphede kaldiginda haberi dahil etme (az ama dogru daha iyi).
 
 TARIH KURALI (COK ONEMLI):
-- Her sayfanin ICERIGINDE gercek yayin tarihini ARA ve bul.
-- Sayfada acik bir yayin tarihi varsa onu TARIH alanina yaz (YYYY-MM-DD).
+- Her sayfanin ICERIGINDE gercek yayin/duyuru tarihini ARA ve bul.
+- Sayfada acik bir tarih varsa onu TARIH alanina yaz (YYYY-MM-DD).
 - Sayfada tarih BULAMIYORSAN, TARIH alanina "belirtilmemis" yaz. ASLA bugunun
   tarihini veya tahmini tarih UYDURMA.
-- Eger sayfadaki tarih 2025 veya daha eski ise (orn: 2017, 2023), o haberi
-  KESINLIKLE DAHIL ETME. Sadece son 14 gun icindeki guncel haberleri al.
+- Eger sayfa 2025 veya daha eski bir YAYIN tarihi tasiyorsa (orn: 2017,
+  2023), o haberi KESINLIKLE DAHIL ETME. (Not: gelecege donuk bir etkinligin
+  2026 icinde gerceklesecek olmasi bu kuralla CELISMEZ - burada bahsedilen
+  sayfanin YAYINLANMA tarihidir, etkinligin gerceklesme tarihi degil.)
 - Bir sayfanin eski oldugundan suphelenirsen, dahil etme.
 
 ICERIK:
@@ -485,7 +517,7 @@ ICERIK:
         "content-type": "application/json",
     }
     payload = {
-        "model": "claude-sonnet-4-6",
+        "model": "claude-sonnet-5",
         "max_tokens": 8000,
         "temperature": 0,
         "messages": [{"role": "user", "content": full_prompt}],
