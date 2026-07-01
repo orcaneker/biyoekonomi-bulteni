@@ -169,7 +169,7 @@ def search_perplexity(query_text):
     """Perplexity sonar-pro ile arama yapar. Hem ozet metin hem gercek citations doner."""
     hdrs = {"Authorization": f"Bearer {PERPLEXITY_API_KEY}", "Content-Type": "application/json"}
     payload = {
-        "model": "sonar-pro",
+        "model": "sonar",
         "search_recency_filter": "week",
         "messages": [
             {
