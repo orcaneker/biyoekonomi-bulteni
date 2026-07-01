@@ -1,85 +1,115 @@
 # ============================================================
-# BİYOEKONOMİ BÜLTENİ — SİSTEM PROMPT DOSYASI (FİNAL)
+# BİYOEKONOMİ BÜLTENİ — SİSTEM PROMPT DOSYASI (FİNAL v2)
 # ============================================================
 # Bu dosya otomatik sistemin beynidir.
 # Türkçe açıklamalar # ile başlar, gerçek talimatlar tırnak/blok içindedir.
-# Sürüm: 1.0 — Test aşaması
+# Sürüm: 2.0 — ChatGPT önerileri sonrası güncelleme
+# Değişiklikler: statik tarihler kaldırıldı, kaynak listesi genişledi,
+# yeni alt-alan keywordleri eklendi, birincil kaynak önceliği netleşti.
 
 
 # ============================================================
 # BÖLÜM 1 — PERPLEXITY ARAMA SORGULARI
 # ============================================================
 # Sistem her hafta bu sorguların HEPSİNİ ayrı ayrı Perplexity'ye gönderir.
-# Artık genel "bioeconomy" yerine SPESİFİK ALT-ALAN keywordleri kullanıyoruz.
-# Bu sayede meyve atığından gıda, SAF üretimi, biomanufacturing gibi
-# somut gelişmeler de yakalanır.
+# ÖNEMLİ: Sorgularda "June 2026" gibi SABİT tarih YAZILMAZ — main.py bu
+# sorguları çalıştırırken dinamik olarak "past 7-14 days" ifadesini kullanır,
+# tarih her hafta otomatik güncel kalır.
 
 PERPLEXITY_SORGULARI:
 
   - id: biyoyakit_enerji
     aciklama: "Biyoyakıt, SAF, biyometan, biyogaz, yeşil hidrojen"
     sorgu: >
-      Latest news from the past 7-14 days on sustainable aviation fuel (SAF),
-      biomethane, biogas, biofuel, bio-LNG, and green hydrogen from biomass.
-      Include production plants, offtake agreements, blending mandates,
-      and major investments. June 2026.
+      Latest news published within the last 14 days on sustainable aviation
+      fuel (SAF), biomethane, biogas, biofuel, bio-LNG, and green hydrogen
+      from biomass. Prioritize primary sources (company announcements,
+      government agencies, official press releases). Include production
+      plants, offtake agreements, blending mandates, and major investments.
+      Exclude SEO listicles, sponsored content, and undated pages.
 
   - id: biyobazli_malzeme
     aciklama: "Biyoplastik, biyopolimer, biyobazlı kimyasallar, lignin"
     sorgu: >
-      Latest news from the past 7-14 days on bioplastics, bio-based chemicals,
-      biopolymers, lignin valorization, and cellulose-based materials.
-      Include new facilities, commercial launches, and regulation. June 2026.
+      Latest news published within the last 14 days on bioplastics,
+      bio-based chemicals, biopolymers, lignin valorization, cellulose-based
+      materials, bio-based textiles, and bio-based construction materials.
+      Prioritize primary sources. Include new facilities, commercial
+      launches, and regulation. Exclude SEO listicles and sponsored content.
 
-  - id: biyouretim
+  - id: biyomanufaktur
     aciklama: "Biomanufacturing, endüstriyel biyoteknoloji, fermantasyon"
     sorgu: >
-      Latest news from the past 7-14 days on biomanufacturing, industrial
-      biotechnology, precision fermentation, and synthetic biology at
-      commercial scale. Include scale-up milestones and funding. June 2026.
+      Latest news published within the last 14 days on biomanufacturing,
+      industrial biotechnology, precision fermentation, industrial enzymes,
+      and synthetic biology at commercial scale. Prioritize primary sources.
+      Include scale-up milestones and funding. Exclude undated or
+      duplicate content.
 
   - id: atik_degerlendirme
     aciklama: "Atıktan değer, döngüsel biyoekonomi, biyorafineri"
     sorgu: >
-      Latest news from the past 7-14 days on waste-to-value bioeconomy,
-      agri-food waste valorization, circular bioeconomy, and biorefinery
-      projects. Include fruit/food waste to high-value products. June 2026.
+      Latest news published within the last 14 days on waste-to-value
+      bioeconomy, agri-food waste valorization, circular bioeconomy, and
+      biorefinery projects. Prioritize primary sources. Include fruit/food
+      waste to high-value products. Exclude SEO content and sponsored posts.
 
   - id: gida_tarim
-    aciklama: "Alternatif protein, hassas fermantasyon, alg/mantar protein"
+    aciklama: "Alternatif protein, hassas fermantasyon, biostimulant"
     sorgu: >
-      Latest news from the past 7-14 days on alternative proteins, precision
-      fermentation, mycoprotein, algae protein, and food waste biorefinery.
-      Include commercial deals and regulatory approvals. June 2026.
+      Latest news published within the last 14 days on alternative
+      proteins, precision fermentation, mycoprotein, algae protein,
+      biostimulants, biopesticides, and food waste biorefinery. Prioritize
+      primary sources. Include commercial deals and regulatory approvals.
 
   - id: politika_mevzuat
     aciklama: "AB ve global biyoekonomi politika ve mevzuatı"
     sorgu: >
-      Latest news from the past 7-14 days on bioeconomy strategy, bio-based
-      economy regulation, ESPR biobased requirements, RED III biomass, and
-      EU Biotech Act. Include European Commission and EUR-Lex. June 2026.
+      Latest news published within the last 14 days on bioeconomy strategy,
+      bio-based economy regulation, ESPR biobased requirements, RED III
+      biomass, and EU Biotech Act. Prioritize European Commission, EUR-Lex,
+      and official government sources over news aggregators.
 
   - id: uluslararasi_kuruluslar
     aciklama: "IEA, IRENA, FAO, OECD, Dünya Bankası, IATA raporları"
     sorgu: >
-      Latest bioeconomy and bioenergy reports from the past 7-14 days by
-      IEA, IRENA, FAO, OECD, World Bank, and IATA. Include new data,
-      forecasts, and policy recommendations. June 2026.
+      Latest bioeconomy and bioenergy reports published within the last 14
+      days by IEA, IRENA, FAO, OECD, World Bank, and IATA. Prioritize
+      official reports and press releases directly from these
+      organizations. Include new data, forecasts, and policy
+      recommendations.
 
   - id: turkiye
     aciklama: "Türkiye odaklı gelişmeler (Türkçe arama)"
     sorgu: >
-      Türkiye'de son 7-14 gündeki biyoyakıt, SAF, biyometan, biyogaz,
-      biyoplastik, biyobazlı kimya, atıktan değer, alternatif protein ve
-      döngüsel ekonomi gelişmeleri; yatırımlar, mevzuat, teşvik ve
-      protokoller. Haziran 2026.
+      Türkiye'de son 14 gün içinde yayınlanmış biyoyakıt, SAF, biyometan,
+      biyogaz, biyoplastik, biyobazlı kimya, atıktan değer, alternatif
+      protein ve döngüsel ekonomi gelişmeleri; yatırımlar, mevzuat, teşvik
+      ve protokoller. Öncelikle resmi kurum ve şirket duyurularını tara.
 
   - id: asya_global
     aciklama: "Çin, Japonya, Güney Kore, ABD gelişmeleri"
     sorgu: >
       Latest bioeconomy, biomanufacturing, and biobased technology news
-      from China, Japan, South Korea, and the United States in the past
-      7-14 days. Include government policy and corporate investments. June 2026.
+      published within the last 14 days from China, Japan, South Korea,
+      and the United States. Prioritize primary sources. Include
+      government policy and corporate investments.
+
+  - id: karbon_yakalama
+    aciklama: "Karbon yakalama, CO2 bazlı ürünler, biyokömür (yeni)"
+    sorgu: >
+      Latest news published within the last 14 days on carbon capture and
+      utilization (CCU), CO2-based fuels and chemicals, and biochar.
+      Prioritize primary sources such as company announcements and
+      research institutions. Include commercial deployments and funding.
+
+  - id: deniz_biyoekonomisi
+    aciklama: "Deniz biyoekonomisi, alg, marine bioeconomy (yeni)"
+    sorgu: >
+      Latest news published within the last 14 days on marine bioeconomy,
+      seaweed and algae cultivation for industrial use, and ocean-based
+      biomass. Prioritize primary sources. Include commercial projects
+      and regulatory developments.
 
 
 # ============================================================
@@ -93,7 +123,10 @@ CLAUDE_SISTEM_PROMPTU: >
   Biyoekonomi kapsamı GENİŞTİR: biyolojik kaynakları (tarım, orman, deniz,
   atık, mikroorganizma) ekonomik değere dönüştüren tüm faaliyetler.
   Biyoyakıtlar, biyoplastikler, biyobazlı kimyasallar, biyomanüfaktür,
-  alternatif proteinler, atık değerlendirme, döngüsel biyoekonomi dahildir.
+  alternatif proteinler, atık değerlendirme, döngüsel biyoekonomi, karbon
+  yakalama ve kullanımı (CCU), biyokömür, deniz biyoekonomisi, endüstriyel
+  enzimler, biostimulant/biopestisitler, biyobazlı tekstil ve yapı
+  malzemeleri dahildir.
 
   Sana farklı sorgulardan toplanmış ham haber listesi verilecek. Görevin:
 
@@ -102,7 +135,14 @@ CLAUDE_SISTEM_PROMPTU: >
   gelişme varsa, pencereyi son 14 güne genişlet. 14 GÜNDEN ESKİ HABERLERİ
   KESİNLİKLE DAHİL ETME. Her haberin yayın tarihini doğrula.
 
-  ── ADIM 2: ÖNEM PUANLAMASI (kullanıcıya gösterilmez) ──
+  ── ADIM 2: KAYNAK GÜVENİLİRLİĞİ ──
+  Birincil kaynakları (resmi kurum duyuruları, şirket basın bültenleri,
+  Avrupa Komisyonu, OECD, IEA, FAO gibi kuruluşların kendi siteleri) ikincil
+  kaynaklara (haber toplayıcılar, SEO odaklı listeler) göre önceliklendir.
+  Aynı olay birden fazla kaynakta geçiyorsa, en güvenilir/birincil kaynağı
+  seç, diğerlerini tekrar olarak ele.
+
+  ── ADIM 3: ÖNEM PUANLAMASI (kullanıcıya gösterilmez) ──
   Her haberi 1-10 arası puanla. Öncelik sırası:
     [10] Türkiye'yi DOĞRUDAN etkileyen gelişmeler (en üst öncelik)
     [9]  AB ve uluslararası mevzuat/politika değişiklikleri
@@ -113,20 +153,20 @@ CLAUDE_SISTEM_PROMPTU: >
     [4]  Şirket ortaklıkları, birleşmeler, sektör haberleri
     [1-3] Rutin haberler, küçük yerel gelişmeler, tekrar içerik
 
-  ── ADIM 3: SEÇİM ──
+  ── ADIM 4: SEÇİM ──
   En yüksek puanlı 10-15 haberi seç. Aynı konuyu işleyen mükerrer haberleri
   TEK habere birleştir. Bir kategoride önemli haber yoksa o kategori boş kalsın.
 
-  ── ADIM 4: KATEGORİLENDİRME ──
+  ── ADIM 5: KATEGORİLENDİRME ──
   Her haberi şu kod adlarından BİRİNE ata:
     mevzuat | piyasa | teknoloji | uluslararasi | haber | akademik
 
-  ── ADIM 5: TÜRKÇELEŞTİRME ──
+  ── ADIM 6: TÜRKÇELEŞTİRME ──
   Tüm başlık, özet ve detayları Türkçe yaz (kaynak hangi dilde olursa olsun).
   Kurumsal, resmi ama akıcı dil. ANALİZ VEYA YORUM YAPMA — sadece gelişmeyi
   aktar. "Türkiye için önemi şudur" gibi çıkarımlar EKLEME.
 
-  ── ADIM 6: ÇIKTI ──
+  ── ADIM 7: ÇIKTI ──
   En yüksek puanlı haberi "lead" (manşet) olarak işaretle.
   Her haber için: title, excerpt (2-3 cümle), detail (3-4 paragraf),
   source, url, category, date.
@@ -142,6 +182,8 @@ CLAUDE_SISTEM_PROMPTU: >
 # BÖLÜM 3 — ZORUNLU KAYNAK LİSTESİ
 # ============================================================
 # Perplexity'ye "öncelikle buralara bak" sinyali. Yeni kaynak buldukça ekle.
+# ChatGPT önerisiyle genişletildi: Euractiv, Reuters, CBE JU, Renewable
+# Carbon News, Nature, Science eklendi.
 
 ZORUNLU_KAYNAKLAR:
   ab_kurumlari:
@@ -149,6 +191,7 @@ ZORUNLU_KAYNAKLAR:
     - "single-market-economy.ec.europa.eu"
     - "eur-lex.europa.eu"
     - "cordis.europa.eu"
+    - "cbe.europa.eu"              # Circular Bio-based Europe Joint Undertaking
   uluslararasi:
     - "iea.org"
     - "irena.org"
@@ -156,6 +199,12 @@ ZORUNLU_KAYNAKLAR:
     - "oecd.org"
     - "worldbank.org"
     - "iata.org"
+  haber_ajanslari:
+    - "reuters.com"
+    - "euractiv.com"
+  akademik:
+    - "nature.com"
+    - "science.org"
   sektor_yayinlari:
     - "biofuelsdigest.com"
     - "bioenergy-news.com"
@@ -163,6 +212,7 @@ ZORUNLU_KAYNAKLAR:
     - "europabio.org"
     - "bioplasticsnews.com"
     - "biomarketinsights.com"
+    - "renewable-carbon.eu"        # Renewable Carbon News
   piyasa_arastirma:
     - "grandviewresearch.com"
     - "fortunebusinessinsights.com"
@@ -181,7 +231,7 @@ ZORUNLU_KAYNAKLAR:
 BILDIRIM:
   aktif: true
   yontem: "email"
-  alici: "orcaneker@gmail.com"    # ← kendi adresini yaz
+  alici: "SENIN_EPOSTAN@gmail.com"    # ← kendi adresini yaz
   konu: "Biyoekonomi Bülteni — Haftalık Çalışma Raporu"
   icerik_sablonu: >
     Biyoekonomi Bülteni — {tarih} Çalışma Raporu
