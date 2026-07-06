@@ -21,6 +21,7 @@ Gerekli ortam değişkenleri (GitHub Secrets):
 import os
 import re
 import json
+import time
 import base64
 import smtplib
 import datetime
@@ -115,6 +116,20 @@ def load_config():
         "claude_prompt": claude_prompt,
         "email_to": email_to,
     }
+
+
+def metni_temizle(text):
+    """API'ye gonderilecek metinden JSON'u bozan karakterleri temizler.
+    Web'den cekilen sayfalar bozuk kodlanmis olabilir; icerdikleri gecersiz
+    Unicode kalintilari (lone surrogate) ve kontrol karakterleri Anthropic
+    API'nin istegi 400 Bad Request ile reddetmesine yol acar."""
+    if not text:
+        return text
+    # Gecersiz Unicode kalintilarini (lone surrogate vb.) at
+    text = text.encode("utf-8", errors="ignore").decode("utf-8", errors="ignore")
+    # Kontrol karakterlerini temizle (\n ve \t korunur)
+    text = re.sub(r"[\x00-\x08\x0b\x0c\x0e-\x1f\x7f-\x9f]", " ", text)
+    return text
 
 
 # ============================================================
@@ -427,12 +442,13 @@ BUGÜNÜN TARİHİ: {today.strftime('%d %B %Y')}
 ÖNCELİKLİ PENCERE: {week_ago.strftime('%d %B %Y')} - {today.strftime('%d %B %Y')}
 
 Asagida iki tur veri var:
-1. [ALAN: ...] bloklari: Perplexity ozet metinleri
-2. [KAYNAK_URL: https://...] bloklari: Gercekten fetch edilmis web sayfasi icerikleri
+1. BOLUM 1 - [GENEL OZET - ...] bloklari: Perplexity ozet metinleri (sadece baglam)
+2. BOLUM 2 - "===== KAYNAK_NO: N =====" bloklari: Gercekten fetch edilmis web sayfasi icerikleri
 
-ONEMLI: KAYNAK_URL bloklarindaki URL ler GERCEK ve DOGRULANMIS kaynaklardir.
-Bu URL leri haber icin URL alani olarak kullan.
-Haberleri bu gercek iceriklere dayandır, UYDURMA.
+ONEMLI: KAYNAK_NO bloklarindaki icerikler GERCEK ve DOGRULANMIS kaynaklardir.
+Haberleri SADECE bu bloklara dayandir; her haber icin dogru KAYNAK_NO'yu ver.
+URL yazma - gercek URL, verdigin KAYNAK_NO uzerinden sistem tarafindan eklenir.
+Haberleri bu gercek iceriklere dayandir, UYDURMA.
 
 Ham veri:
 
@@ -511,27 +527,62 @@ ICERIK:
 - Sadece GERCEKTEN biyoekonomi ile ilgili, GUNCEL ve KAYNAGI DOGRULANMIS
   haberleri ver. Az ama kesin dogru haber, cok ama suvpheli haberden iyidir."""
 
+    # Web'den cekilen icerikte JSON'u bozan karakterler olabilir - temizle
+    full_prompt = metni_temizle(full_prompt)
+
     headers = {
         "x-api-key": ANTHROPIC_API_KEY,
         "anthropic-version": "2023-06-01",
         "content-type": "application/json",
     }
+    # ONEMLI NOTLAR:
+    # - Model: claude-sonnet-4-6. Ozetleme/secme gorevi icin yeterli;
+    #   temperature parametresini destekler ve tokenizer'i Sonnet 5'e gore
+    #   ayni metin icin ~%30 daha az token kullanir.
+    # - temperature=0: her calistirmada tutarli, deterministik cikti icin.
+    # - DIKKAT: Ileride model claude-sonnet-5 (veya Opus 4.7 ve sonrasi)
+    #   yapilirsa "temperature" satiri SILINMELIDIR - o modeller ornekleme
+    #   parametrelerini kabul etmez, gonderilirse 400 Bad Request doner.
+    #   (6 Temmuz 2026'daki cron hatasinin nedeni tam olarak buydu.)
+    # - max_tokens: 10-15 haberlik Turkce cikti ~6-9 bin token tutabilir;
+    #   kesilmemesi icin 16000 pay birakildi (sadece uretilen token
+    #   faturalanir, kullanilmayan kisim icin ucret yoktur).
     payload = {
-        "model": "claude-sonnet-5",
-        "max_tokens": 8000,
+        "model": "claude-sonnet-4-6",
+        "max_tokens": 16000,
         "temperature": 0,
         "messages": [{"role": "user", "content": full_prompt}],
     }
-    try:
-        r = requests.post(ANTHROPIC_URL, headers=headers, json=payload, timeout=300)
-        r.raise_for_status()
-        data = r.json()
-        text = "".join(block.get("text", "") for block in data["content"] if block.get("type") == "text")
-        print(f"  Claude yanit uzunlugu: {len(text)} karakter")
-        return parse_claude_blocks(text, url_map)
-    except Exception as e:
-        print(f"  ! Claude API hatasi: {e}")
-        raise
+
+    son_hata = None
+    for deneme in range(1, 4):  # en fazla 3 deneme
+        try:
+            r = requests.post(ANTHROPIC_URL, headers=headers, json=payload, timeout=300)
+            if r.status_code != 200:
+                # API'nin gercek hata mesajini logla - teshis icin kritik
+                print(f"  ! Claude API {r.status_code} dondu. Yanit govdesi:")
+                print(f"    {r.text[:1500]}")
+                r.raise_for_status()
+            data = r.json()
+            if data.get("stop_reason") == "max_tokens":
+                print("  ! UYARI: Yanit max_tokens sinirina takildi, son haber(ler) kesilmis olabilir.")
+            text = "".join(block.get("text", "") for block in data["content"] if block.get("type") == "text")
+            print(f"  Claude yanit uzunlugu: {len(text)} karakter")
+            return parse_claude_blocks(text, url_map)
+        except Exception as e:
+            son_hata = e
+            status = getattr(getattr(e, "response", None), "status_code", None)
+            # 4xx (429 haric) kalici istek hatasidir - tekrar denemek anlamsiz
+            if status is not None and 400 <= status < 500 and status != 429:
+                print(f"  ! Kalici istek hatasi ({status}), tekrar denenmiyor. "
+                      f"Yukaridaki yanit govdesindeki mesaji kontrol edin.")
+                raise
+            print(f"  ! Claude API hatasi (deneme {deneme}/3): {e}")
+            if deneme < 3:
+                bekle = 30 * deneme
+                print(f"    {bekle} sn bekleyip tekrar denenecek...")
+                time.sleep(bekle)
+    raise son_hata
 
 
 # ============================================================
