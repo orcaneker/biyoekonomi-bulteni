@@ -94,6 +94,10 @@ GORSEL_RED_IZLERI = (
     # paylaşım/sosyal medya ikonları da haber görseli değildir
     "share", "/social", "-social", "social.", "sprite",
     "/icons/", "-icon.", "_icon.",
+    # kurumsal/jenerik marka kartları (haber fotoğrafı DEĞİL): resmî sitelerin
+    # fotoğrafsız basın bültenlerinde koyduğu markalı OG görselleri. Örn. gov.uk
+    # "govuk-opengraph-image-….png" ve "s300_GOV.UK__12_.png" gibi numaralı kartlar.
+    "opengraph-image", "gov.uk__", "govuk-opengraph", "default-og", "generic-og",
 )
 
 
