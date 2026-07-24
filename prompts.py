@@ -41,10 +41,17 @@ GÖREVİN — sırayla:
      piyasası, iklim zirveleri (COP), genel sera gazı / emisyon azaltım
      politikası veya iklim finansmanı. Bunlar iklim/enerji politikasıdır,
      biyoekonomi DEĞİLDİR → REDDET.
-     ⚠ İSTİSNA (dahil et): Haber DOĞRUDAN biyobazlı/biyolojik üretimle
-     ilgiliyse — biyokömür, biyolojik/mikrobiyal CO2 dönüşümü (gaz
-     fermantasyonu, CO2'den ürün), biyoyakıt/SAF harmanlama zorunluluğu veya
-     biyobazlı ürünlere özel teşvik/mevzuat — kapsam İÇİDİR, tut.
+     ⚠ İSTİSNA (KAPSAM İÇİ — mutlaka TUT, reddetme): Haber biyobazlı/biyolojik
+     üretimle ilgiliyse elemekten kaçın. Özellikle:
+       · SÜRDÜRÜLEBİLİR HAVACILIK YAKITI (SAF) — üretim, yatırım, tesis,
+         offtake anlaşması, harmanlama zorunluluğu (mandate) veya SAF'a özel
+         politika/teşvik. SAF BU BÜLTENİN ÖNCELİKLİ KONUSUDUR; iklim/emisyon
+         azaltımı çerçevesiyle anılsa bile ASLA eleme, ASLA reddetme.
+       · Diğer biyoyakıtlar (biyodizel, HVO, biyoetanol, biyometan/biyogaz)
+       · Biyokömür, biyolojik/mikrobiyal CO2 dönüşümü (gaz fermantasyonu, CO2'den ürün)
+       · Biyobazlı ürünlere özel teşvik/mevzuat
+     Yalnızca SAF/biyoyakıt/biyobazlı üretimle ilgisi OLMAYAN, saf karbon
+     piyasası veya iklim diplomasisi haberini reddet.
    - PREVIOUSLY_PUBLISHED listesindeki bir olayın YENİ unsur içermeyen devamı
 
 3) SINIFLANDIRMA — her olayı şu kategorilerden BİRİNE ata:
