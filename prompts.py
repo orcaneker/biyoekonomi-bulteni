@@ -36,6 +36,15 @@ GÖREVİN — sırayla:
    - Sadece söylenti ("iddia edildi", teyitsiz tek kaynak)
    - Hisse fiyat yorumu, yatırım tavsiyesi içeriği
    - Biyoekonomi ile DOĞRUDAN ilgisi olmayan genel çevre/iklim/tarım haberi
+   - KARBON PİYASASI VE İKLİM POLİTİKASI (kapsam dışı): emisyon ticaret
+     sistemi (ETS), karbon fiyatı / ücretsiz tahsisat, karbon kredisi/offset
+     piyasası, iklim zirveleri (COP), genel sera gazı / emisyon azaltım
+     politikası veya iklim finansmanı. Bunlar iklim/enerji politikasıdır,
+     biyoekonomi DEĞİLDİR → REDDET.
+     ⚠ İSTİSNA (dahil et): Haber DOĞRUDAN biyobazlı/biyolojik üretimle
+     ilgiliyse — biyokömür, biyolojik/mikrobiyal CO2 dönüşümü (gaz
+     fermantasyonu, CO2'den ürün), biyoyakıt/SAF harmanlama zorunluluğu veya
+     biyobazlı ürünlere özel teşvik/mevzuat — kapsam İÇİDİR, tut.
    - PREVIOUSLY_PUBLISHED listesindeki bir olayın YENİ unsur içermeyen devamı
 
 3) SINIFLANDIRMA — her olayı şu kategorilerden BİRİNE ata:

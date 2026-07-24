@@ -79,7 +79,7 @@ KATEGORILER = {
     "gida-protein":   {"ad": "Gıda & Alternatif Protein",       "kota": 1},
     "atik-donusum":   {"ad": "Atık Değerlendirme & Döngüsel",   "kota": 1},
     "tarim":          {"ad": "Tarım & Biostimulant",            "kota": 0},
-    "karbon":         {"ad": "Karbon Yakalama & Biyokömür",     "kota": 1},
+    "karbon":         {"ad": "Biyokömür & Biyolojik Karbon",     "kota": 1},
     "deniz":          {"ad": "Deniz Biyoekonomisi & Alg",       "kota": 0},
     "uluslararasi":   {"ad": "Uluslararası Kuruluşlar",         "kota": 1},
     "turkiye":        {"ad": "Türkiye",                         "kota": 1},
@@ -323,13 +323,17 @@ SORGULAR = [
         "sonuc": 15,
     },
     {
+        # ⚠ ODAK: yalnızca BİYOLOJİK/biyobazlı karbon. Jenerik "carbon capture"
+        # (CCS) ve karbon PİYASASI (ETS/kredi) BİLEREK dışarıda — Exa semantik
+        # aramada bu ifadeler ETS/COP gürültüsü çekiyordu. Triyaj promptu da
+        # karbon piyasası/iklim politikasını ayrıca eler.
         "id": "karbon",
         "kategori": "karbon",
-        "sorgu": "carbon capture utilization CO2 based products and biochar",
+        "sorgu": "biochar and biological CO2 conversion to products",
         "ek_sorgular": [
-            "carbon capture utilization CCU CO2 to fuel chemical commercial",
-            "biochar production carbon removal facility investment",
-            "CO2-based materials gas fermentation deployment",
+            "gas fermentation microbial CO2 to fuel or chemical commercial plant",
+            "biochar production facility investment biomass carbon",
+            "CO2-based materials biomanufacturing bioconversion deployment",
         ],
         "domain_seti": ["tier1", "tier2"],
         "sonuc": 15,
