@@ -1,0 +1,755 @@
+{
+  "issue": {
+    "number": 1,
+    "hafta": "2026-W30",
+    "publication_date": "2026-07-24",
+    "coverage_start": "2026-07-17",
+    "coverage_end": "2026-07-24",
+    "window_days": 7,
+    "audio": {
+      "url": "assets/audio/2026-W30.mp3",
+      "duration_sec": 56,
+      "voice": "lxZLq5dcyw12UangGJgN",
+      "chars": 755,
+      "generated_at": "2026-07-24"
+    }
+  },
+  "brief": [
+    {
+      "text": "Avrupa Komisyonu, çelik ve çimento gibi enerji yoğun sektörlere verilen ücretsiz karbon izinlerini 2038'e uzatan ETS revizyon teklifini yayımladı.",
+      "slug": "ab-emisyon-ticaret-sistemi-nde-ucretsiz-izinler-2038-e-uzatildi"
+    },
+    {
+      "text": "Türk Hava Yolları, Airbus'ın ana yatırımcısı olduğu SAFFA Fonu'na katılım sözleşmesi imzalayarak SAF ekosistemi yatırımına ortak oldu.",
+      "slug": "turk-hava-yollari-saffa-fonu-na-katilim-sozlesmesi-imzaladi"
+    },
+    {
+      "text": "Catalyxx, Portekiz Sines'te biyoetanolden bütanol, hekzanol ve oktanol üretecek 120 milyon Euro'luk ilk ticari ölçekli tesisini duyurdu.",
+      "slug": "catalyxx-portekiz-sines-te-120-milyon-euro-luk-yenilenebilir-kimyasall"
+    },
+    {
+      "text": "Hindistan, yüzde 20 etanol harmanlama zorunluluğunu planlanandan beş yıl önce Nisan 2026'dan itibaren hayata geçirdi.",
+      "slug": "hindistan-yuzde-20-etanol-harmanlama-zorunlulugunu-bes-yil-erkenden-ha"
+    },
+    {
+      "text": "Uludağ İçecek, Malatya'da 2,5 milyar TL tutarında yeni üretim tesisi için EBRD finansmanı temin etti.",
+      "slug": "uludag-icecek-malatya-da-2-5-milyar-tl-lik-yeni-uretim-tesisi-icin-ebr"
+    }
+  ],
+  "metrics": {
+    "aciklanan_yatirim_usd_milyon": 31,
+    "proje_sayisi": 10,
+    "politika_gelismesi": 4,
+    "kapsanan_ulke": 9
+  },
+  "lead": {
+    "id": "thy-saffa-fund-investment",
+    "slug": "turk-hava-yollari-saffa-fonu-na-katilim-sozlesmesi-imzaladi",
+    "image": {
+      "url": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/07/21/thumbs_b_c_5c761d4321502ede68ca52e207e0585b.jpg",
+      "type": "og",
+      "credit": "aa.com.tr"
+    },
+    "score": 10,
+    "secim": "one_cikan",
+    "title": "Türk Hava Yolları SAFFA Fonu'na katılım sözleşmesi imzaladı",
+    "detail": "Türk Hava Yolları, 21 Temmuz 2026 tarihinde İstanbul'da SAFFA Fund I LP'ye katılım sözleşmesini imzaladı. Sözleşme, THY adına Yatırım ve Strateji'den sorumlu Genel Müdür Yardımcısı Levent Konukcu, fon yöneticisi BSAM adına ise İcra Kurulu Başkan Yardımcısı Michael Dickey Morgan tarafından imzalandı. Fonun yatırım alanı; teknolojik olgunluğa ulaşmış SAF projelerini kapsamakta olup farklı üretim teknolojileri ve coğrafi bölgelerde çeşitlendirilmiş bir portföy yapısına sahiptir. THY'nin fona yönelik finansal taahhüt tutarı kamuoyuyla paylaşılmamıştır.\n\nAralık 2023'te kurulan SAFFA Fonu, havacılık sektörünün karbon azaltma hedeflerini desteklemek ve SAF üretim kapasitesini artırmak amacıyla oluşturulmuştur. Airbus ana yatırımcı konumunda yer almaktadır; bunun yanı sıra fona önde gelen küresel havacılık ve finans kuruluşları da iştirak etmektedir. THY'nin katılımıyla birlikte fonun uluslararası yatırımcı tabanı genişlemiş olmaktadır.\n\nTHY'nin fona katılımı, yalnızca SAF temin güvenliğine katkı sağlamayı değil, aynı zamanda sektörün dönüşümünü yönlendiren hammadde geliştirme ve teknoloji projelerinde konumlanmayı da hedeflemektedir. BSAM yönetimi, THY'nin taahhüdünü, dünyanın önde gelen hava yolu şirketlerinin uzun vadeli SAF dönüşümüne verdiği güvenin somut bir göstergesi olarak değerlendirmiştir.\n\nTHY'nin SAFFA Fonu'na katılımı, Airbus ile sürdürülebilirlik ve SAF tedarik güvenliği alanlarındaki mevcut işbirliğini derinleştirme işlevini de üstlenmektedir. THY, 2030 ve sonrasına yönelik sürdürülebilir büyüme hedefleri çerçevesinde SAF ekosistemi yatırımlarını sürdürmekte olup bu adım, şirketin uluslararası iklim taahhütleriyle örtüşen stratejik yönelimini yansıtmaktadır. Katılım kapsamında THY'ye tahsis edilecek SAF hacmi veya öngörülen tedarik takvimi henüz kamuoyuyla paylaşılmamıştır.\n\nSAF, yaşam döngüsü sera gazı emisyonlarını geleneksel jet yakıtına kıyasla belirli üretim yollarında yüzde seksen oranında azaltabilmektedir. Küresel havacılık sektörünün 2050 net sıfır hedefleri doğrultusunda SAF arzının ölçeklendirilmesi hem düzenleyici baskı hem de ticari talep açısından kritik bir öncelik hâline gelmiştir. SAFFA Fonu, bu arz açığını kapatmaya yönelik kurulan özel sermaye mekanizmalarından biri olarak faaliyet göstermektedir.",
+    "source": {
+      "url": "https://aa.com.tr/tr/ekonomi/thy-surdurulebilir-havacilik-yakiti-gelisimini-desteklemek-icin-saffa-fonuna-katildi/4004333",
+      "name": "Anadolu Ajansı",
+      "tier": 1,
+      "type": "news_agency",
+      "primary": true
+    },
+    "excerpt": "Türk Hava Yolları (THY), Burnham Sterling Asset Management'in (BSAM) yönettiği SAFFA Fund I LP'ye katılım sözleşmesini 21 Temmuz 2026'da İstanbul'da imzaladı. Aralık 2023'te kurulan fon, Airbus'ın ana yatırımcı konumunda bulunduğu bir SAF yatırım aracıdır. THY, bu katılımla SAF üretim kapasitesi, hammadde geliştirme ve teknoloji projelerine yönelik yatırımlarda aktif rol üstleniyor.",
+    "capacity": null,
+    "category": "biyoyakit",
+    "maturity": "funded",
+    "companies": [
+      "Turkish Airlines",
+      "SAFFA Fund",
+      "Burnham Sterling Asset Management",
+      "Airbus"
+    ],
+    "countries": [
+      "Turkey"
+    ],
+    "event_date": "2026-07-21",
+    "investment": {
+      "currency": null,
+      "amount_original": null,
+      "amount_usd_million": null,
+      "public_support_usd_million": null
+    },
+    "value_chain": [
+      "kullanim"
+    ],
+    "neden_onemli": null,
+    "technologies": [
+      "SAF"
+    ],
+    "subcategories": [
+      "SAF"
+    ],
+    "published_date": "2026-07-21",
+    "supporting_sources": [
+      {
+        "url": "https://bloomberght.com/turk-hava-yollari-saffa-fonu-na-katildi-3783310",
+        "name": "Bloomberg HT"
+      },
+      {
+        "url": "https://yesilekonomi.com/thy-surdurulebilir-havacilik-yakiti-icin-yeni-bir-yatirim-yapti",
+        "name": "Yeşil Ekonomi"
+      }
+    ]
+  },
+  "stories": [
+    {
+      "id": "india-ethanol-blend-20-percent-mandatory",
+      "slug": "hindistan-yuzde-20-etanol-harmanlama-zorunlulugunu-bes-yil-erkenden-ha",
+      "image": {
+        "url": "https://image.cnbcfm.com/api/v1/image/108337725-1784615819644-gettyimages-2284873938-20260710_dli-rkr-mn_ethanol_petrol_-02.jpeg?v=1784615831&amp;w=1920&amp;h=1080",
+        "type": "og-sayfa",
+        "credit": "cnbc.com"
+      },
+      "score": 9,
+      "secim": "one_cikan",
+      "title": "Hindistan yüzde 20 etanol harmanlama zorunluluğunu beş yıl erkenden hayata geçirdi",
+      "detail": "Hindistan, benzine yüzde 20 etanol harmanlama zorunluluğunu (E20) Nisan 2026 itibarıyla zorunlu hâle getirdi. Dünyanın üçüncü büyük ham petrol tüketicisi olan Hindistan, bu kararı hem yükselen küresel enerji fiyatları hem de Rus petrol arzına yönelik jeopolitik riskler bağlamında açıkladı. Kpler verilerine göre Haziran 2026'da Rusya, Hindistan'ın ham petrol ithalatının yüzde elliden fazlasını karşılamaktaydı; Temmuz ayının ilk 15 gününde bu oran, günlük 2,6 milyon varil ile sürmektedir. ABD'nin Rusya petrolü alıcılarına Eylül 2025'e kadar Ukrayna barışı sağlanmazsa yüzde yüz tarife uygulayacağına dair tehdidi, Hindistan'ın enerji çeşitlendirme baskısını artırmaktadır.\n\nEtanol harmanlama programı, Hindistan'ın ham petrol ikamesinde en etkin strateji olarak öne çıkmaktadır. Hükümet değerlendirmelerine göre E20 zorunluluğu, 2030'a kadar yıllık 4 milyar dolar petrol ithalat tasarrufu sağlayabilecektir. Etanol hammaddesi olarak ağırlıklı biçimde mısır kullanılmaktadır. Bununla birlikte hükümet ayrıca hayvan atığından üretilen sıkıştırılmış biyogazı (compressed biogas), sıkıştırılmış doğalgaz ve sıvılaştırılmış doğalgazın ikamesi olarak test etmekte ve dizel yakıta yüzde 15 izobütanol karıştırılmasını da değerlendirmektedir.\n\nUygulama sürecinde önemli bir teknik sorunla karşılaşılmaktadır: 2023 öncesinde üretilen petrol araçlarının büyük bölümü yüksek etanol harmanlı yakıtla uyumlu değildir. Tüketiciler motor hasarı ve yakıt verimliliğinde düşüş yaşandığını bildirmiştir. Hindistan Gençlik Kongresi, Temmuz 2026'da E20 politikasını protesto etmiş; eleştirmenler uygulamanın araç sahiplerine zarar verdiğini ve yalnızca etanol üreticilerini kayırdığını öne sürmüştür. Bu tepkiler, zorunluluğun hızlı devreye alınmasından kaynaklanan araç uyum açığına dikkat çekmektedir.\n\nHindistan ayrıca Temmuz 2026'da ülkenin ilk hidrojen hücreli trenini başarıyla test etmiştir. Otomotiv sektörü, sıkıştırılmış doğalgaz, hibrit, esnek yakıtlı platformlar ve ticari araçlarda hidrojen olmak üzere birden fazla alternatif yakıt teknolojisine aynı anda yatırım yapmaktadır. İran ile ABD arasındaki gerginliğin tırmanmasıyla birlikte petrol fiyatları Temmuz 2026'da yüzde yirmi beşin üzerinde artmış; enerji istihbarat firması Kpler, Kızıldeniz ve Hürmüz Boğazı'nın eş zamanlı kapanması durumunda ham petrolün varil fiyatının 100 doları aşabileceği uyarısında bulunmuştur.",
+      "source": {
+        "url": "https://cnbc.com/2026/07/22/india-oil-prices-tariff-ethanol-backlash-iran-war-russia-.html",
+        "name": "CNBC",
+        "tier": 1,
+        "type": "news_agency",
+        "primary": true
+      },
+      "excerpt": "Hindistan, benzine yüzde 20 etanol harmanlama zorunluluğunu (E20) Nisan 2026'dan itibaren uygulamaya koydu; bu adım ülkenin orijinal takviminin beş yıl önündedir. Söz konusu politika, İran savaşından kaynaklanan enerji arz kesintileri ve Rus petrolü alıcılarına yönelik ABD tarife tehditleriyle eş zamanlı hayata geçirildi. Hükümet, etanol harmanlama stratejisinin 2030'a kadar yıllık 4 milyar dolar petrol ithalatı tasarrufu sağlayacağını öngörmektedir.",
+      "capacity": null,
+      "category": "biyoyakit",
+      "maturity": "operational",
+      "companies": [],
+      "countries": [
+        "India"
+      ],
+      "event_date": "2026-04-01",
+      "investment": null,
+      "value_chain": [
+        "kullanim"
+      ],
+      "neden_onemli": null,
+      "technologies": [
+        "biyoetanol harmanlama",
+        "sıkıştırılmış biyogaz"
+      ],
+      "subcategories": [
+        "biyoetanol",
+        "biyogaz"
+      ],
+      "published_date": "2026-07-22",
+      "supporting_sources": []
+    },
+    {
+      "id": "avrupa-ets-revizyon-2026",
+      "slug": "ab-emisyon-ticaret-sistemi-nde-ucretsiz-izinler-2038-e-uzatildi",
+      "image": {
+        "url": "https://image.dunya.com/rcman/Cw1280h720q95gc/storage/files/images/2026/07/17/ab-karbon-piyasasinda-sanayiye-yeni-l3mu_cover.png",
+        "type": "og-sayfa",
+        "credit": "dunya.com"
+      },
+      "score": 9,
+      "secim": "one_cikan",
+      "title": "AB Emisyon Ticaret Sistemi'nde ücretsiz izinler 2038'e uzatıldı",
+      "detail": "Avrupa Komisyonu, Emisyon Ticaret Sistemi'nde (ETS) enerji yoğun sanayilere tanınan ücretsiz karbon tahsisatının aşamalı kaldırılma sürecini öteleyerek 2038'e uzatan bir revizyon paketi yayımladı. Mevcut takvim kapsamında daha erken sıkılaşması beklenen tahsisat sistemi, bu düzenlemeyle birlikte sektörlere daha geniş bir geçiş penceresi tanımış olmaktadır. Paket; çelik, çimento, alüminyum ve benzeri enerji yoğun sektörlerin 2030'a kadar yaklaşık 6 milyar Euro ek destekten yararlanmasını öngörmektedir.\n\nKomisyon ayrıca ücretsiz tahsisatın dağıtım koşullarını da esnetmeyi planlamaktadır. Teklifin arka planında, ABD sanayi teşviklerinin artması ve Çin kaynaklı küresel fiyat rekabeti nedeniyle Avrupa sanayisinin yüksek enerji maliyetleri altında sıkıştığı bir dönemde karbon politikasında daha pragmatik bir çizginin benimsenmesi yatmaktadır. Emisyon azaltım takviminin daha yavaş bir patikaya taşınması da paketin ayrılmaz bir bileşeni olarak öne çıkmaktadır.\n\nSınırda Karbon Düzenleme Mekanizması'nın (SKDM) devreye girdiği koşullar altında Avrupa sanayisine sağlanan bu esneklik, Türkiye gibi AB pazarına ihracat yapan üçüncü ülkeler açısından rekabet dengesini yeniden biçimlendirebilir. Çelik, çimento, alüminyum ve gübre sektörlerinde faaliyet gösteren Türk ihracatçılar, Avrupalı rakiplerin daha uzun süre maliyet avantajından yararlanacağı bir ortamda SKDM uyumunu ve fiyatlama stratejilerini eş zamanlı yönetmek durumunda kalacaktır.\n\nPaketin yürürlüğe girmesi Avrupa Parlamentosu ve üye devletlerle ortak yasama sürecinin tamamlanmasına bağlıdır; müzakereler sırasında teklifin kapsamının ve belirli sektörlere ilişkin düzenlemelerin değişebileceği değerlendirilmektedir. Piyasa tarafında ise ücretsiz tahsisatın genişletilmesinin ETS karbon fiyatı üzerindeki baskısı, yatırım takvimleri ve ihracat rekabeti üzerindeki etkisi yakından izlenecektir.",
+      "source": {
+        "url": "https://dunya.com/ekonomi/ab-karbon-piyasasinda-sanayiye-yeni-kalkan-haberi-832620",
+        "name": "Dünya Gazetesi",
+        "tier": 2,
+        "type": "trade_press",
+        "primary": true
+      },
+      "excerpt": "Avrupa Komisyonu, çelik ve çimento gibi enerji yoğun sektörlere verilen ücretsiz karbon tahsisatını 2038'e kadar uzatan kapsamlı bir ETS revizyon paketi açıkladı. Teklif, sanayi sektörlerine 2030'a kadar yaklaşık 6 milyar Euro ek finansal destek sağlamayı hedefliyor. Paketin yürürlüğe girmesi için Avrupa Parlamentosu ve üye devletlerle yasama sürecinin tamamlanması gerekmektedir.",
+      "capacity": null,
+      "category": "politika",
+      "maturity": "announced",
+      "companies": [],
+      "countries": [
+        "EU",
+        "Turkey"
+      ],
+      "event_date": "2026-07-17",
+      "investment": {
+        "currency": "EUR",
+        "amount_original": 6.0,
+        "amount_usd_million": null,
+        "public_support_usd_million": null
+      },
+      "value_chain": [
+        "kullanim"
+      ],
+      "neden_onemli": null,
+      "technologies": [
+        "Emisyon Ticaret Sistemi"
+      ],
+      "subcategories": [
+        "karbon piyasası",
+        "ETS",
+        "SKDM"
+      ],
+      "published_date": "2026-07-17",
+      "supporting_sources": [
+        {
+          "url": "https://yesilekonomi.com/avrupa-komisyonu-ets-icin-kapsamli-revizyon-teklifi-yapti",
+          "name": "Yeşil Ekonomi"
+        }
+      ]
+    },
+    {
+      "id": "eu-bioeconomy-act-2026",
+      "slug": "avrupa-komisyonu-biyomanufakturu-hizlandiracak-yeni-biyoekonomi-yasasi",
+      "image": {
+        "url": null,
+        "type": null,
+        "credit": null
+      },
+      "score": 8,
+      "secim": "one_cikan",
+      "title": "Avrupa Komisyonu biyomanüfaktürü hızlandıracak yeni Biyoekonomi Yasası'nı hazırlıyor",
+      "detail": "Avrupa Komisyonu, 2025'te yayımlanan AB Biyoekonomi Stratejisi'nin uygulama boşluklarını kapatmak amacıyla bir Biyoekonomi Yasası hazırladığını duyurdu. Taslak düzenleme; biyomanüfaktür ölçeklendirmesini destekleyecek düzenleyici kum havuzları, yenilikçi ürünler için hızlandırılmış yetkilendirme mekanizmaları ve sürdürülebilir biyokütle arzını güvence altına alacak pazar çekiş tedbirlerini içermektedir. Yasanın, Avrupa'nın fosil kaynak bağımlılığını azaltma ve stratejik özerkliği güçlendirme hedefleriyle bütünleşik bir çerçeve oluşturması öngörülmektedir.\n\nBiyobazlı tekstil sektörü bu tartışmada somut bir referans sunmaktadır. Avrupa'nın endüstriyel ölçekte kalan tek selüloz elyafı üreticisi konumundaki Lenzing Group, İngiltere'nin plastik bazlı ıslak mendillere getirdiği yasağın biyobazlı alternatiflere geçişi ne ölçüde hızlandırdığını somutlaştırılmış bir örnek olarak öne çıkarmaktadır. Yürürlüğe girişinden önce piyasa zaten uyum sağlamış olup 2027 ortasındaki uygulama başlangıcından çok önce satılan ıslak mendillerin neredeyse tamamı yüzde yüz selülozik hâle gelmiştir. Komisyon, bu deneyimi AB düzeyinde biyobazlı ürün geçişleri için uygulanabilir bir model olarak değerlendirmektedir.\n\nBiyoekonomi Yasası kapsamında ele alınması beklenen bir diğer boyut, Avrupa'nın biyobazlı endüstriyel girdilerdeki dışa bağımlılığıdır. Konvansiyonel ıslak mendillerde kullanılan poliestrerin büyük bölümü başta Asya olmak üzere Avrupa dışında üretilmektedir. Mevcut AB politikası çerçevesinde söz konusu fosil bazlı sentetik girdilerin yerini bio-bazlı ve geri dönüştürülebilir malzemelerin alması, hem çevresel hem de endüstriyel tedarik güvenliği gerekçesiyle politika önceliğine taşınmış durumdadır.\n\nYasa taslağının hazırlık süreci ve kamuoyu istişaresinin takvimi henüz resmî olarak duyurulmamıştır. Bununla birlikte Komisyon, ön görüşmelerde biyomanüfaktür ölçeklendirmesi, sürdürülebilir biyokütle temini ve AB'nin döngüsel biyoekonomi hedefleriyle uyumun yasanın üç temel ekseni olacağını belirtmiştir.",
+      "source": {
+        "url": "https://euractiv.com/news/can-a-new-eu-bioeconomy-act-stimulate-innovative-products",
+        "name": "Euractiv",
+        "tier": 1,
+        "type": "trade_press",
+        "primary": true
+      },
+      "excerpt": "Avrupa Komisyonu, geçen yıl yayımlanan biyoekonomi stratejisini hayata geçirmek amacıyla yeni bir Biyoekonomi Yasası hazırlamaktadır. Taslak, düzenleyici kum havuzları, hızlandırılmış yetkilendirme süreçleri ve pazar çekiş mekanizmalarını kapsıyor. Yasa; stratejik özerklik, hammadde erişimi ve Avrupa biyoekonomi sektörünün ithalat bağımlılığını azaltma hedefleriyle uyumlu biçimde tasarlanmaktadır.",
+      "capacity": null,
+      "category": "politika",
+      "maturity": "announced",
+      "companies": [
+        "Lenzing Group"
+      ],
+      "countries": [
+        "EU"
+      ],
+      "event_date": "2026-07-20",
+      "investment": null,
+      "value_chain": [
+        "urun-uretim"
+      ],
+      "neden_onemli": null,
+      "technologies": [
+        "biyomanüfaktür",
+        "selüloz elyafı"
+      ],
+      "subcategories": [
+        "biyoekonomi mevzuatı",
+        "biyomanüfaktür",
+        "selüloz"
+      ],
+      "published_date": "2026-07-20",
+      "supporting_sources": []
+    },
+    {
+      "id": "uk-saf-financing-mandate",
+      "slug": "ingiltere-saf-finansman-kapsamini-genisletti-turk-havacilik-sanayii-il",
+      "image": {
+        "url": "https://www.gov.uk/assets/frontend/govuk-opengraph-image-4196a4d6333cf92aaf720047f56cfd91b3532d7635fc21ebcf0d5897df6b5f77.png",
+        "type": "og-sayfa",
+        "credit": "gov.uk"
+      },
+      "score": 8,
+      "secim": "one_cikan",
+      "title": "İngiltere SAF finansman kapsamını genişletti, Türk Havacılık Sanayii ile MoU imzaladı",
+      "detail": "UK Export Finance (UKEF), 23 Temmuz 2026'da Farnborough Uluslararası Hava Gösterisi kapsamında İngiltere merkezli sürdürülebilir havacılık yakıtı (SAF) projelerini finansman desteği kapsamına alan yeni bir politika adımını duyurdu. Ajans, uygunluk kriterlerini genişleterek daha geniş bir yelpazedeki İngiltere SAF projelerinin UKEF finansman mekanizmalarına başvurabilmesinin önünü açtı. Belirli bir yıllık finansman büyüklüğü hedefi ya da fonlama kapsamı rakamı açıklanmadı.\n\nHükümet değerlendirmelerine göre İngiltere'de düşük karbonlu yakıt üretiminin ölçeklendirilmesi 2050 yılına kadar 15.000 istihdam yaratma ve ekonomiye 5 milyar sterlin katkı sağlama potansiyeli taşımaktadır. SAF'ın belirli üretim yollarında yaşam döngüsü sera gazı emisyonlarını geleneksel jet yakıtına kıyasla yüzde seksen oranında azaltabildiği vurgulandı. UKEF, bu gelişmeyle İngiltere'nin küresel SAF üretiminde lider konuma gelmesini destekleme hedefi doğrultusunda sahaya çıkmaktadır.\n\nAynı etkinlikte UKEF, Türkiye'nin önde gelen savunma sanayi kuruluşu Türk Havacılık ve Uzay Sanayii (TUSAŞ/TAI) ile bir mutabakat muhtırası (MoU) imzaladı. Mutabakat çerçevesinde UKEF, üçüncü ülkelere yönelik savunma ihracat projelerinde Türk Havacılık Sanayii ile gelişmiş işbirliği için bir çerçeve oluşturmaktadır. Bu anlaşmayla İngiltere'nin havacılık sektöründeki uluslararası endüstriyel ortaklıkları savunma ve temiz havacılık alanında eş zamanlı geliştirilmekte olduğu görülmektedir.\n\nFarnborough'daki diğer bir anlaşma, UKEF ile İngiliz elektrikli hava taksi üreticisi Vertical Aerospace arasında imzalandı; bu ortaklık İngiltere havacılık yeniliklerinin küresel pazarlara ulaşmasını hedeflemektedir. Hükümet, söz konusu adımların bütününü, İngiltere'nin havacılık sektörünü hem üretim kapasitesi hem de ileri teknoloji altyapısı açısından güçlendirme stratejisinin parçası olarak tanımlamaktadır.",
+      "source": {
+        "url": "https://gov.uk/government/news/uk-export-finance-backs-sustainable-fuel-to-drive-growth-and-cut-emissions",
+        "name": "GOV.UK",
+        "tier": 1,
+        "type": "official",
+        "primary": true
+      },
+      "excerpt": "İngiltere İhracat Finansmanı Ajansı (UKEF), Farnborough Uluslararası Hava Gösterisi'nde SAF projelerine yönelik finansman uygunluk kriterlerini genişleteceğini duyurdu. Açıklamaya göre İngiltere merkezli SAF üretimi ilk kez UKEF finansman desteği kapsamına alınabilecek. Hükümet, bu adımın UK SAF sektörüne 2050'ye kadar 15.000 istihdam yaratma ve ekonomiye 5 milyar sterlin katkı sağlama potansiyeli taşıdığını vurguladı.",
+      "capacity": null,
+      "category": "politika",
+      "maturity": "announced",
+      "companies": [
+        "UK Export Finance",
+        "Turkish Aerospace",
+        "Vertical Aerospace"
+      ],
+      "countries": [
+        "United Kingdom",
+        "Turkey"
+      ],
+      "event_date": "2026-07-23",
+      "investment": {
+        "currency": "GBP",
+        "amount_original": 5.0,
+        "amount_usd_million": null,
+        "public_support_usd_million": null
+      },
+      "value_chain": [
+        "donusum-fermantasyon"
+      ],
+      "neden_onemli": null,
+      "technologies": [
+        "SAF"
+      ],
+      "subcategories": [
+        "SAF",
+        "ihracat finansmanı"
+      ],
+      "published_date": "2026-07-23",
+      "supporting_sources": [
+        {
+          "url": "https://biomassmagazine.com/articles/uk-broadens-eligibility-for-saf-financing-issues-updated-provisional-saf-mandate-data",
+          "name": "Biomass Magazine"
+        }
+      ]
+    },
+    {
+      "id": "catalyxx-sines-portugal",
+      "slug": "catalyxx-portekiz-sines-te-120-milyon-euro-luk-yenilenebilir-kimyasall",
+      "image": {
+        "url": "https://chemanager-online.com/media/story/59830/meta-01-adobestock-1883289231.jpg",
+        "type": "og-sayfa",
+        "credit": "chemanager-online.com"
+      },
+      "score": 8,
+      "secim": "one_cikan",
+      "title": "Catalyxx, Portekiz Sines'te 120 milyon Euro'luk yenilenebilir kimyasallar tesisi kuruyor",
+      "detail": "Catalyxx, ticari ölçekte ilk yenilenebilir kimyasallar tesisi olan Catalyxx Ibérica'nın Portekiz'in Sines kentinde kurulacağını duyurdu. 120 milyon Euro yatırım değeri taşıyan proje, Portekiz Hükümeti tarafından Ulusal Çıkar Projesi (PIN) statüsüne alınmıştır. Sines, derin su limanı, güçlü lojistik altyapısı ve yenilenebilir enerji erişimiyle Avrupa'nın stratejik endüstriyel merkezlerinden biri olarak değerlendirilmektedir. Tesisin inşaat takvimi ve hedef üretim tarihi kamuoyuyla paylaşılmamıştır.\n\nTesis, biyoetanolü hammadde olarak kullanarak bütanol, hekzanol ve oktanol üretecektir. Bu ürünler, petrokimya kaynaklı konvansiyonel alternatiflerin düşük karbonlu ikamesi olarak kimya endüstrisine sunulacaktır. Alkoller, solventler, plastifiyanlar ve yakıt katkı maddeleri başta olmak üzere geniş bir uygulama yelpazesinde kullanılan bu kimyasalların biyobazlı versiyonlarına yönelik pazar talebi artmaktadır. Üretim kapasitesi rakamı açıklanmamıştır.\n\nCatalyxx'in bu projesi, şirketin pilot ve demonstrasyon aşamalarından ticari ölçeğe geçişini temsil eden ilk adım niteliğini taşımaktadır. Portekiz'in Sines endüstri bölgesi, son yıllarda yenilenebilir enerji, yeşil hidrojen ve biyobazlı kimyasallar alanındaki yatırımlar için tercih edilen bir lokasyon hâline gelmiştir; söz konusu proje bu eğilimi pekiştirmektedir.\n\nProjenin kamu finansmanı bileşeni, Avrupa fon mekanizmalarından yararlanıp yararlanmadığı ve istihdam öngörüsüne ilişkin ayrıntılar açıklanmamıştır. Proje kapsamında üretilecek biyobazlı kimyasalların hedef müşteri segmenti ve Avrupa pazar erişim stratejisi de henüz kamuoyuyla paylaşılmamıştır.",
+      "source": {
+        "url": "https://chemanager-online.com/en/news/catalyxx-announces-its-first-commercial-scale-renewable-chemicals-plant",
+        "name": "CHEManager",
+        "tier": 2,
+        "type": "trade_press",
+        "primary": true
+      },
+      "excerpt": "Catalyxx, biyoetanolden bütanol, hekzanol ve oktanol üretecek 120 milyon Euro değerinde ilk ticari ölçekli tesisi için Portekiz'in Sines kentini seçti. Proje, Portekiz Hükümeti tarafından Ulusal Çıkar Projesi (PIN) statüsüne alındı. Tesis, derin su limanı ve yenilenebilir enerji erişimiyle Avrupa'nın önemli bir endüstriyel merkezinde konumlanacak.",
+      "capacity": null,
+      "category": "biyomalzeme",
+      "maturity": "announced",
+      "companies": [
+        "Catalyxx"
+      ],
+      "countries": [
+        "Portugal"
+      ],
+      "event_date": "2026-07-23",
+      "investment": {
+        "currency": "EUR",
+        "amount_original": 120.0,
+        "amount_usd_million": null,
+        "public_support_usd_million": null
+      },
+      "value_chain": [
+        "donusum-fermantasyon",
+        "urun-uretim"
+      ],
+      "neden_onemli": null,
+      "technologies": [
+        "biyoetanol dönüşümü",
+        "biyobazlı alkol üretimi"
+      ],
+      "subcategories": [
+        "biyobazlı kimyasallar",
+        "biyoetanol"
+      ],
+      "published_date": "2026-07-23",
+      "supporting_sources": []
+    },
+    {
+      "id": "rize-series-b-31m-lowcarbon-rice",
+      "slug": "rize-31-milyon-dolar-seri-b-finansmaniyla-pirinc-metanini-yari-oranind",
+      "image": {
+        "url": "https://assets.vegconom.de/media/wp-content/uploads/sites/3/2026/07/17172919/RIZE.webp",
+        "type": "og",
+        "credit": "vegconomist.com"
+      },
+      "score": 8,
+      "secim": "one_cikan",
+      "title": "Rize 31 milyon dolar Seri B finansmanıyla pirinç metanını yarı oranında azaltmayı hedefliyor",
+      "detail": "Rize, 31 milyon dolarlık Seri B turunu 20 milyon dolar özkaynaktan ve 11 milyon dolar borç finansmanından oluşacak biçimde kapattı. Özkaynak bölümüne BNP Paribas Asset Management Alts liderlik etti; The Rockefeller Foundation, Temasek ve Breakthrough Energy Ventures de tura katılan yatırımcılar arasında yer aldı. Borç finansmanı UOB, BIDV ve Temasek Foundation tarafından sağlandı. Bu turla birlikte şirketin toplam finansmanı 47 milyon dolara ulaştı.\n\nRize, iki yıl önce kapanan Seri A turuna kıyasla operasyonlarını on kattan fazla büyüttü. Şirket hâlihazırda Vietnam ve Endonezya'da 17.000 küçük çiftçiyle, 50.000 hektarın üzerinde alanda faaliyet yürütmektedir ve teknoloji, agronomi ve saha operasyonlarında 250 çalışanı bulunmaktadır. Şirket, Avrupa, Kanada, Avustralya ve Singapur'daki alıcılara 1.500 metrik ton düşük emisyonlu pirinç sevkiyatı gerçekleştirmiştir. 2030 hedefi ise 150.000 küçük çiftçi ve 300.000 hektarlık bir ağa ulaşmaktır.\n\nRize'nin temel teknik yaklaşımı, Uluslararası Pirinç Araştırma Enstitüsü (IRRI) ve CGIAR tarafından da desteklenen Dönüşümlü Islatma ve Kurutma (AWD) sulama tekniğine dayanmaktadır. Tarlayı kalıcı olarak su altında tutmak yerine dönemsel olarak drene eden bu yöntem, metan salınımını yüzde 50'ye kadar azaltmakta, su kullanımını yüzde 20-30 oranında düşürmekte ve çiftçi gelirini verimden ödün vermeksizin yüzde 30'a kadar artırmaktadır. Pirinç tarımı küresel metan emisyonlarının yaklaşık yüzde 12'sinden sorumludur; bu oran havacılık sektörünün toplam karbon ayak iziyle kıyaslanabilir düzeydedir.\n\nYeni sermaye; ihracat ağının genişletilmesi, çiftçiler ve saha ekipleri için yapay zeka araçlarının geliştirilmesi, karbon sertifikasyonu ve yeni pazarlara girişin finansmanında kullanılacaktır. Şirket ayrıca ürettiği pirinçleri yüksek değerli ihracat pazarlarının Maksimum Kalıntı Limiti (MRL) standartlarıyla uyumlu hâle getirmek için toplu girdi alımı ve tedarik koordinasyonu yürütmektedir. Hindistan, potansiyel yeni pazar olarak değerlendirilmektedir.",
+      "source": {
+        "url": "https://vegconomist.com/investments-finance/rize-secures-31m-series-b-expand-low-emission-rice-network-vietnam-indonesia",
+        "name": "Vegconomist",
+        "tier": 2,
+        "type": "trade_press",
+        "primary": true
+      },
+      "excerpt": "Singapur merkezli tarım teknolojisi şirketi Rize, düşük emisyonlu pirinç ağını Güneydoğu Asya'da genişletmek amacıyla 31 milyon dolar Seri B finansmanı kapattı. Bu yatırım Rize'nin toplam finansmanını 47 milyon dolara taşırken şirket, 2030'a kadar 150.000 küçük çiftçi ve 300.000 hektar alanı kapsayan bir ağ kurmayı hedefliyor. Rize'nin uyguladığı Dönüşümlü Islatma ve Kurutma (AWD) sulama tekniği metan salınımını yüzde 50'ye kadar azaltıyor.",
+      "capacity": "300.000 hektar / 2030",
+      "category": "tarim",
+      "maturity": "funded",
+      "companies": [
+        "Rize",
+        "BNP Paribas Asset Management",
+        "The Rockefeller Foundation",
+        "Temasek",
+        "Breakthrough Energy Ventures"
+      ],
+      "countries": [
+        "Singapore",
+        "Vietnam",
+        "Indonesia"
+      ],
+      "event_date": "2026-07-20",
+      "investment": {
+        "currency": "USD",
+        "amount_original": 31.0,
+        "amount_usd_million": 31.0,
+        "public_support_usd_million": null
+      },
+      "value_chain": [
+        "on-isleme",
+        "kullanim"
+      ],
+      "neden_onemli": null,
+      "technologies": [
+        "Dönüşümlü Islatma ve Kurutma (AWD)",
+        "karbon sertifikasyonu"
+      ],
+      "subcategories": [
+        "tarımsal biyolojik ürünler",
+        "karbon azaltım",
+        "döngüsel biyoekonomi"
+      ],
+      "published_date": "2026-07-20",
+      "supporting_sources": []
+    },
+    {
+      "id": "axens-era-saf-france-2030",
+      "slug": "axens-jetanol-teknolojisiyle-fransa-nin-ilk-endustriyel-olcekli-saf-pr",
+      "image": {
+        "url": "https://bbi-strapi.s3.us-east-2.amazonaws.com/archived/biomassmagazine/posts/web/2022/11/AxensLogo_16673437686859.jpg",
+        "type": "og-fetch",
+        "credit": "Ethanol Producer Magazine"
+      },
+      "score": 8,
+      "secim": "one_cikan",
+      "title": "Axens, Jetanol teknolojisiyle Fransa'nın ilk endüstriyel ölçekli SAF projesini başlattı",
+      "detail": "Axens, gelişmiş biyoetanolü hammadde olarak kullanan ve şirketin tescilli Jetanol sürecine dayanan ERA projesini resmen başlattı. Proje, Fransa'nın ilk endüstriyel ölçekli SAF üretim ünitesi olma özelliğini taşımakta olup ticari operasyon hedef tarihi 2030 olarak açıklanmıştır. Tesisin kurulacağı kesin lokasyon, üretim kapasitesi ve toplam yatırım tutarı henüz kamuoyuyla paylaşılmamıştır.\n\nJetanol teknolojisi, etanolü doğrudan havacılık yakıtı bileşenlerine dönüştürmektedir. Bu yol, ham biyokütle veya şeker/nişasta bazlı bitki hammaddelerinden türetilen gelişmiş biyoetanolü besleyici olarak kullanmaktadır; dolayısıyla mevcut biyoetanol üretim altyapısıyla entegrasyon potansiyeli taşımaktadır. Gelişmiş biyoetanol, birinci nesil tahıl/şeker kamışı etanolünden farklı olarak atık ve tarımsal artık biyokütleden üretilmekte, bu sayede arazi kullanımı ile gıda-yakıt rekabetine ilişkin kaygıları önemli ölçüde azaltmaktadır.\n\nAB'nin ReFuelEU Havacılık düzenlemesi, üye devlerde sunulan havacılık yakıtının SAF payını kademeli olarak artırmasını zorunlu kılmaktadır; Fransa bu zorunluluğu karşılamak amacıyla yerli SAF üretim kapasitesini genişletme çabaları içindedir. ERA projesi, Fransa'nın bu stratejik önceliğiyle doğrudan örtüşen ilk endüstriyel ölçekli adım olmaktadır. Axens, IFP Énergies nouvelles bünyesindeki bir teknoloji şirketi olup Fransız devletinin bu alandaki katılımını yansıtmaktadır.\n\nProjenin finansman yapısı, ortaklık düzenlemeleri ve hammadde tedariğine ilişkin ayrıntılar açıklanmamıştır. 2030 hedef tarihi, inşaat ve devreye alma süreçlerini içermekle birlikte bu aşamaların ayrıntılı takvimi de kamuoyuyla paylaşılmamıştır.",
+      "source": {
+        "url": "https://ethanolproducer.com/articles/axens-launches-frances-first-industrial-scale-saf-unit-based-on-advanced-bioethanol-using-jetanol-technology",
+        "name": "Ethanol Producer Magazine",
+        "tier": 2,
+        "type": "trade_press",
+        "primary": true
+      },
+      "excerpt": "Axens, gelişmiş biyoetanolden SAF üretecek Jetanol teknolojisini kullanan ERA projesini başlattı; bu proje Fransa'nın ilk endüstriyel ölçekli SAF ünitesi olma özelliğini taşıyor. Projenin ticari operasyon hedefi 2030 olarak belirlenmiştir. Üretim kapasitesi ve yatırım tutarı kamuoyuyla paylaşılmamıştır.",
+      "capacity": null,
+      "category": "biyoyakit",
+      "maturity": "construction",
+      "companies": [
+        "Axens"
+      ],
+      "countries": [
+        "France"
+      ],
+      "event_date": "2026-07-17",
+      "investment": null,
+      "value_chain": [
+        "donusum-fermantasyon",
+        "urun-uretim"
+      ],
+      "neden_onemli": null,
+      "technologies": [
+        "Jetanol",
+        "gelişmiş biyoetanol-SAF dönüşümü"
+      ],
+      "subcategories": [
+        "SAF",
+        "biyoetanol"
+      ],
+      "published_date": "2026-07-17",
+      "supporting_sources": []
+    },
+    {
+      "id": "un-fao-food-security-540bn-subsidies",
+      "slug": "bm-fao-raporu-540-milyar-dolarlik-tarim-subvansiyonlarinin-yuzde-70-i-",
+      "image": {
+        "url": "https://assets.vegconom.de/media/wp-content/uploads/sites/3/2026/07/22163013/FAO-State-of-food-Insecurity.jpg",
+        "type": "og",
+        "credit": "vegconomist.com"
+      },
+      "score": 8,
+      "secim": "one_cikan",
+      "title": "BM-FAO raporu: 540 milyar dolarlık tarım sübvansiyonlarının yüzde 70'i dar emtia grubuna kilitli",
+      "detail": "2026 Dünya Gıda Güvenliği ve Beslenme Durumu Raporu, FAO, IFAD, UNICEF, WFP ve WHO tarafından ortaklaşa yayımlandı. Rapor, küresel üretici desteğinin yıllık yaklaşık 540 milyar dolar düzeyinde seyrettiğini ve bu desteğin yüzde 70'inin tahıl, şeker, süt ürünleri, sığır eti ve hayvan yemi üretilen bitkisel yağlar gibi dar bir emtia grubuna yoğunlaştığını belgeledi. Bu yapısal yoğunlaşma, sübvanse edilen ürünleri sübvansiyonsuz alternatiflere kıyasla yapay biçimde ucuzlatmakta ve desteklenen ürünlerin etrafında şekillenen işleme, lojistik ve pazar altyapısını güçlendirmektedir.\n\nRapor, baklagiller, fındık ve tohumların sağlıklı diyetin kritik bileşenleri olmakla birlikte kronik araştırma yetersizliği ve işleme darboğazları nedeniyle rekabet edemediğini vurgulamaktadır. Baklagil bitkilerinde verim artışının sınırlı kalmasının tarımsal politikanın tarihsel tercihlerinden kaynaklandığı; dolayısıyla agronomi açısından çözümsüz olmadığı ileri sürülmektedir. Öte yandan yatırımın yönlendirildiği alanlarda sonuçlar elde edildiği görülmektedir: Sahra Altı Afrika ve Güney Asya'da tahıl baklagillerine yapılan hedefli yatırımlar, milyonlarca küçük çiftçi tarafından benimsenmiş yeni çeşitler üretmiştir.\n\nRapor, toplam harcamayı artırmaksızın mevcut üretici desteğinin gıda grupları arasında yeniden dağıtılmasının OECD ülkelerinde meyve-sebze tüketimini yaklaşık yüzde 10 oranında artırabileceğini hesaplamaktadır. Nişastalı tarım ürünlerine verilen desteğin azaltılması önerilirken, bu adımın geçiş döneminde düşük gelirli tüketicilere yük bindireceği riski de açıkça kayıt altına alınmaktadır. Avrupa için rapor, et ve süt sektöründe yoğunlaşmanın daha da hızlandırılmasına gerek olmadığını özellikle vurgulamaktadır; zira söz konusu ürünlerin fiyatları onlarca yıllık yoğunlaşmış politika desteği sonucunda zaten yapısal olarak düşük düzeydedir.\n\nRapor ayrıca gıda sistemi düzeyinde gizli maliyetlere de dikkat çekmektedir: Diyetle bağlantılı hastalıkların toplumsal maliyetinin 8,1 trilyon dolar olduğu tahmin edilmektedir. Bu veri, mevcut tarımsal sübvansiyon yapısının doğrudan gıda fiyatlarının ötesinde fatura kestiğini ve sistematik bir yeniden değerlendirme yapılması gerektiğini ortaya koymaktadır.",
+      "source": {
+        "url": "https://vegconomist.com/studies-numbers/un-food-security-report-finds-540bn-farm-subsidies-locked-into-commodities-crowd-out-plant-foods",
+        "name": "Vegconomist",
+        "tier": 2,
+        "type": "trade_press",
+        "primary": true
+      },
+      "excerpt": "FAO, IFAD, UNICEF, WFP ve WHO'nun ortaklaşa yayımladığı 2026 Gıda Güvenliği ve Beslenme Raporu, üreticilere verilen yıllık yaklaşık 540 milyar dolarlık küresel tarımsal desteğin yüzde 70'inin tahıl, şeker, süt, sığır eti ve hayvan yemi bitkisel yağlarına bağlı olduğunu saptadı. Rapor, bu yoğunlaşmanın 2,7 milyar insanın sağlıklı beslenmeye erişimini yapısal olarak engellediğini tespit etti. Mevcut harcama artırılmadan yeniden dağıtım yapılması, OECD ülkelerinde meyve-sebze tüketimini yüzde 10 artırabilir.",
+      "capacity": null,
+      "category": "politika",
+      "maturity": null,
+      "companies": [],
+      "countries": [],
+      "event_date": "2026-07-22",
+      "investment": null,
+      "value_chain": [
+        "biyokutle"
+      ],
+      "neden_onemli": null,
+      "technologies": [],
+      "subcategories": [
+        "gıda politikası",
+        "tarım sübvansiyonları",
+        "alternatif protein"
+      ],
+      "published_date": "2026-07-22",
+      "supporting_sources": []
+    },
+    {
+      "id": "uludag_icecek_malatya_yatirim",
+      "slug": "uludag-icecek-malatya-da-2-5-milyar-tl-lik-yeni-uretim-tesisi-icin-ebr",
+      "image": {
+        "url": "https://img.ekonomim.com/rcman/Cw1280h720q95gc/storage/files/images/2026/07/24/uludag-icecekten-malatyaya-25-milyar-tllik-dev-yatirim-7ygx_cover.png",
+        "type": "og-sayfa",
+        "credit": "ekonomim.com"
+      },
+      "score": 8,
+      "secim": "one_cikan",
+      "title": "Uludağ İçecek Malatya'da 2,5 milyar TL'lik yeni üretim tesisi için EBRD finansmanı aldı",
+      "detail": "Uludağ İçecek, Malatya'da kurulacak yeni üretim tesisi için 2,5 milyar TL yatırım tutarıyla Avrupa İmar ve Kalkınma Bankası (EBRD) finansmanını temin ettiğini duyurdu. Yatırım, şirketin Doğu Anadolu'daki üretim kapasitesini büyütme stratejisinin bir parçasını oluşturmaktadır. Tesisin üretim kapasitesi, ürün yelpazesi ve inşaat takvimi kamuoyuyla paylaşılmamıştır.\n\nUludağ İçecek, Türkiye'nin köklü içecek üreticileri arasında yer almakta olup meyve suyu, maden suyu ve diğer içecek kategorilerinde faaliyet göstermektedir. Malatya, Türkiye'nin en önemli kayısı üretim merkezlerinden biri olup tarımsal hammadde erişimi açısından stratejik bir konuma sahiptir. EBRD finansmanının bu yatırım kararında belirleyici bir rol oynadığı değerlendirilmektedir.\n\nEBRD'nin Türkiye'deki yatırımları, özel sektör üretim kapasitesi ve sürdürülebilir altyapı projelerine yönelik finansman desteğini kapsamaktadır. EBRD finansmanı genellikle çevre standartları, enerji verimliliği ve kurumsal yönetim koşullarına bağlıdır; ancak bu yatırım için öngörülen özgül koşullar açıklanmamıştır.\n\nYatırımın EBRD finansmanının hangi bölümünü kapsadığı, şirket özkaynak katkısı ve devlet teşvik bileşenine ilişkin bilgiler kamuoyuyla paylaşılmamıştır. Tesisin devreye alma tarihi de henüz açıklanmamıştır.",
+      "source": {
+        "url": "https://ekonomim.com/sirketler/uludag-icecekten-malatyaya-25-milyar-tllik-dev-yatirim-haberi-907927",
+        "name": "Ekonomim",
+        "tier": 2,
+        "type": "trade_press",
+        "primary": true
+      },
+      "excerpt": "Uludağ İçecek, Malatya'da 2,5 milyar TL tutarında yeni bir üretim tesisi kurmak amacıyla Avrupa İmar ve Kalkınma Bankası'ndan (EBRD) finansman temin etti. Türkiye'nin önde gelen içecek şirketlerinden biri olan Uludağ İçecek, bu yatırımla Doğu Anadolu'daki üretim kapasitesini genişletmeyi hedefliyor. Yatırımın detaylı bileşenleri ve istihdam öngörüsüne ilişkin bilgiler kamuoyuyla paylaşılmadı.",
+      "capacity": null,
+      "category": "tarim",
+      "maturity": "funded",
+      "companies": [
+        "Uludağ İçecek",
+        "EBRD"
+      ],
+      "countries": [
+        "Turkey"
+      ],
+      "event_date": "2026-07-24",
+      "investment": {
+        "currency": "TRY",
+        "amount_original": 2500.0,
+        "amount_usd_million": null,
+        "public_support_usd_million": null
+      },
+      "value_chain": [
+        "urun-uretim"
+      ],
+      "neden_onemli": null,
+      "technologies": [],
+      "subcategories": [
+        "Türkiye",
+        "gıda üretimi"
+      ],
+      "published_date": "2026-07-24",
+      "supporting_sources": []
+    }
+  ],
+  "radar": [
+    {
+      "kume": "SAF yatırımları ve projeleri",
+      "maddeler": [
+        {
+          "url": "https://bioenergy-news.com/news/hamr-energy-secures-aud-32m-funding-for-biomass-to-saf-project",
+          "date": "2026-07-23",
+          "title": "HAMR Energy Avustralya biyokütleden SAF projesi için 32 milyon Avustralya doları finansman aldı",
+          "source": "Bioenergy Insight",
+          "category": "biyoyakit"
+        },
+        {
+          "url": "https://biomassmagazine.com/articles/axens-launches-frances-first-industrial-scale-saf-unit-based-on-advanced-bioethanol-using-jetanol-technology",
+          "date": "2026-07-17",
+          "title": "Axens, Jetanol teknolojisiyle Fransa'nın ilk endüstriyel ölçekli SAF ünitesini başlattı",
+          "source": "Biomass Magazine",
+          "category": "biyoyakit"
+        },
+        {
+          "url": "https://biomassmagazine.com/articles/topsoe-and-sasol-bring-advanced-saf-technology-to-allied-biofuels-landmark-project-in-uzbekistan",
+          "date": "2026-07-21",
+          "title": "Topsoe ve Sasol, Allied Biofuels'in Özbekistan SAF projesine ileri teknoloji lisansladı",
+          "source": "Biomass Magazine",
+          "category": "biyoyakit"
+        }
+      ]
+    },
+    {
+      "kume": "Biyometan ve biyogaz tesisleri",
+      "maddeler": [
+        {
+          "url": "https://biomassmagazine.com/articles/envitec-biogas-realizes-first-combined-biogas-and-biomethane-plant-in-estonia",
+          "date": "2026-07-20",
+          "title": "EnviTec Biogas, Estonya'da ilk birleşik biyogaz-biyometan tesisini devreye aldı",
+          "source": "Biomass Magazine",
+          "category": "biyoyakit"
+        },
+        {
+          "url": "https://bioenergy-news.com/news/vida-bioenergy-connects-wormslade-biomethane-plant-to-cadent-network",
+          "date": "2026-07-22",
+          "title": "VIDA Bioenergy, Wormslade biyometan tesisini Cadent gaz şebekesine bağladı",
+          "source": "Bioenergy Insight",
+          "category": "biyoyakit"
+        },
+        {
+          "url": "https://bioenergy-news.com/news/shells-aarhus-biogas-plant-completes-18-month-upgrade",
+          "date": "2026-07-17",
+          "title": "Shell, Danimarka Aarhus biyogaz tesisindeki 18 aylık kapasiteyi genişletme çalışmasını tamamladı",
+          "source": "Bioenergy Insight",
+          "category": "biyoyakit"
+        },
+        {
+          "url": "https://bioenergy-news.com/news/flogas-and-college-group-agree-26-gwh-biomethane-offtake-deal",
+          "date": "2026-07-24",
+          "title": "Flogas ve College Group yıllık 26 GWh biyometan alım anlaşması imzaladı",
+          "source": "Bioenergy Insight",
+          "category": "biyoyakit"
+        }
+      ]
+    },
+    {
+      "kume": "Biyobazlı malzeme ve kimyasallar",
+      "maddeler": [
+        {
+          "url": "https://bioenergy-news.com/news/rio-tinto-signs-bio-pellet-supply-deal-with-superchar",
+          "date": "2026-07-24",
+          "title": "Rio Tinto, rafineride kömürün yüzde 30'unu bana otu biyopeletleriyle değiştirmek için SuperChar ile anlaşma imzaladı",
+          "source": "Bioenergy Insight",
+          "category": "biyoyakit"
+        },
+        {
+          "url": "https://vegconomist.com/materials/vegea-expands-industrial-output-wine-waste-leather-alternative-grapeskin",
+          "date": "2026-07-21",
+          "title": "Vegea, şarap atığından üretilen GrapeSkin deri alternatifi için endüstriyel kapasitesini genişletti",
+          "source": "Vegconomist",
+          "category": "biyomalzeme"
+        },
+        {
+          "url": "https://basf.com/global/en/media/news-releases/2026/07/p-26-137",
+          "date": "2026-07-22",
+          "title": "Pirelli, Pyrum, Synthos ve BASF araçtan araca lastik döngüsü ortaklığı kurdu",
+          "source": "BASF",
+          "category": "atik-donusum"
+        }
+      ]
+    },
+    {
+      "kume": "Hassas fermantasyon ve biyomanüfaktür",
+      "maddeler": [
+        {
+          "url": "https://greenqueen.com.hk/all-g-lactoferrin-launch-bovine-human-milk-precision-fermentation-protein",
+          "date": "2026-07-23",
+          "title": "All G, hassas fermantasyonla üretilen sığır laktoferrinini (LFX) ABD pazarında ticari ölçekte piyasaya sürdü",
+          "source": "Green Queen",
+          "category": "biyomanufaktur"
+        },
+        {
+          "url": "https://vegconomist.com/fermentation/microharvest-enlists-dress-sommer-build-europes-first-industrial-microbial-protein-plant",
+          "date": "2026-07-22",
+          "title": "MicroHarvest, Leuna'da Avrupa'nın ilk endüstriyel mikrobiyal protein tesisi tasarım sürecini başlattı",
+          "source": "Vegconomist",
+          "category": "biyomanufaktur"
+        }
+      ]
+    },
+    {
+      "kume": "Alternatif protein ve gıda teknolojisi",
+      "maddeler": [
+        {
+          "url": "https://greenqueen.com.hk/canada-phytokana-funding-fava-bean-plant-based-protein-facility",
+          "date": "2026-07-24",
+          "title": "Phytokana, Alberta'da bakla proteinli kuru fraksiyon tesisi için 25 milyon Kanada doları özkaynak finansmanı aldı",
+          "source": "Green Queen",
+          "category": "gida-protein"
+        },
+        {
+          "url": "https://greenqueen.com.hk/singapore-environment-agency-food-waste-upcycling-mottainai-food-tech-astar",
+          "date": "2026-07-20",
+          "title": "Singapur, bira mayası proteini ve Ferm2Farm dahil üç gıda atığı dönüşüm projesine 4,1 milyon dolar hibe verdi",
+          "source": "Green Queen",
+          "category": "atik-donusum"
+        },
+        {
+          "url": "https://foodnavigator.com/Article/2026/07/22/japan-korea-pour-billions-into-bid-for-food-tech-dominance",
+          "date": "2026-07-22",
+          "title": "Güney Kore ve Japonya gıda teknolojisi sektörü için milyar dolarlık devlet destek programları başlattı",
+          "source": "Food Navigator",
+          "category": "gida-protein"
+        },
+        {
+          "url": "https://greenqueen.com.hk/inulin-propionate-ester-supplement-fibre-glp-1-booster-eu-novel-food-approval",
+          "date": "2026-07-21",
+          "title": "AB, GLP-1 tepkisi uyaran inülin-propiyonat ester lif bileşenini gıda için onayladı",
+          "source": "Green Queen",
+          "category": "gida-protein"
+        }
+      ]
+    },
+    {
+      "kume": "Karbon yakalama ve biyokömür",
+      "maddeler": [
+        {
+          "url": "https://cordis.europa.eu/article/id/466692-turning-co2-into-sustainable-products/de",
+          "date": "2026-07-21",
+          "title": "PYROCO2 projesi endüstriyel CO2 ve yenilenebilir hidrojenden yıllık 300 ton aseton üretecek",
+          "source": "CORDIS",
+          "category": "karbon"
+        },
+        {
+          "url": "https://bioenergy-news.com/news/evero-submits-application-for-uk-first-beccs-facility-under-ggr-business-model",
+          "date": "2026-07-23",
+          "title": "Evero, İngiltere'nin ilk BECCS tesisi için Ince gazlaştırma tesisinde yıllık 217.000 ton CO2 uzaklaştırma başvurusu yaptı",
+          "source": "Bioenergy Insight",
+          "category": "karbon"
+        }
+      ]
+    },
+    {
+      "kume": "Politika ve mevzuat",
+      "maddeler": [
+        {
+          "url": "https://bioenergy-news.com/news/german-bioenergy-sector-says-eeg-2027-draft-falls-short-of-coalition-promises",
+          "date": "2026-07-21",
+          "title": "Almanya'nın biyoenerji sektörü, EEG 2027 taslağının süresi dolan sübvansiyonlar için yetersiz kaldığını açıkladı",
+          "source": "Bioenergy Insight",
+          "category": "politika"
+        },
+        {
+          "url": "https://bioenergy-news.com/news/iea-maps-900-billion-cubic-metres-of-global-biogas-potential-with-new-tool",
+          "date": "2026-07-17",
+          "title": "IEA, küresel biyogaz potansiyelinin yüzde 70'inin gelişen ekonomilerde olduğunu gösteren BioGRAM aracını yayımladı",
+          "source": "Bioenergy Insight",
+          "category": "rapor"
+        }
+      ]
+    },
+    {
+      "kume": "Türkiye",
+      "maddeler": [
+        {
+          "url": "https://dunya.com/gundem/bakan-kurumdan-cop31-mesaji-istanbulda-kritik-iklim-zirvesi-haberi-832602",
+          "date": "2026-07-17",
+          "title": "Bakan Kurum: Türkiye COP31'e ev sahipliği yapacak, sıfır atık ve döngüsel ekonomi deneyimini paylaşacak",
+          "source": "Dünya Gazetesi",
+          "category": "politika"
+        },
+        {
+          "url": "https://dunya.com/sektorler/dikili-jeotermal-isitmali-sera-otbde-ilk-ruhsatlar-teslim-edildi-haberi-833282",
+          "date": "2026-07-23",
+          "title": "Dikili Jeotermal Isıtmalı Sera OTB'de ilk ruhsatlar teslim edildi, ticari üretim hazırlıkları başladı",
+          "source": "Dünya Gazetesi",
+          "category": "tarim"
+        }
+      ]
+    }
+  ]
+}
