@@ -142,7 +142,7 @@ img{max-width:100%}
 
 /* ── AÇIK EDİTORYAL GÖVDE ── */
 .content{position:relative;z-index:5;margin-top:-18px;
-  padding-top:clamp(3.6rem,6vw,5rem);padding-bottom:clamp(3rem,5vw,4.5rem);
+  padding-top:clamp(2.6rem,4.6vw,3.8rem);padding-bottom:clamp(3rem,5vw,4.5rem);
   color:var(--ink);
   background:linear-gradient(rgba(23,34,27,.025) 1px,transparent 1px),var(--paper);
   background-size:100% 48px;
@@ -152,7 +152,10 @@ img{max-width:100%}
   font-family:var(--f-mono);font-size:.8rem;letter-spacing:.14em;
   text-transform:uppercase;color:var(--ink-soft)}
 
-.sec{padding:clamp(2.4rem,5vw,3.6rem) 0;scroll-margin-top:74px}
+.sec{padding:clamp(2rem,3.8vw,2.9rem) 0;scroll-margin-top:74px}
+/* .content zaten üstte boşluk veriyor — ilk bölüm onu ikiye katlamasın.
+   Alt boşluk da kısılıyor: sesli özet çubuğu ile Manşet arası açılıyordu. */
+#brief{padding-top:0;padding-bottom:clamp(1.2rem,2.2vw,1.9rem)}
 .sec-head{display:flex;align-items:baseline;gap:.9rem;margin-bottom:1.7rem}
 .kicker{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.18em;
   text-transform:uppercase;color:var(--leaf-deep);white-space:nowrap}
