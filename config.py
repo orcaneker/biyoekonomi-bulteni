@@ -48,7 +48,7 @@ AYARLAR = {
     "exa_tip": "auto",
 
     # Site
-    "site_url": "https://orcaneker.github.io/biyoekonomi-bulteni",
+    "site_url": "https://biyoekonomi-bulteni.site",
     "cikti_dizini": "docs",          # GitHub Pages sadece / veya /docs kabul eder
 
     # TASLAK MODU: sayı numarası sabitlenir (test çalıştırmalarında artmasın).
