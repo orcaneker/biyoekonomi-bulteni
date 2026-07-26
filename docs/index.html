@@ -163,8 +163,8 @@ img{max-width:100%}
 .sec-head .no{font-family:var(--f-mono);font-size:.7rem;letter-spacing:.1em;
   color:var(--ink-soft);white-space:nowrap}
 
-/* okuma kolonu — uzun metin dikey kalır */
-.col{max-width:74ch}
+/* 60 Saniyede bloğu Manşet ile aynı hizada bitsin — kolon sınırı yok */
+.col{max-width:none}
 
 /* ── 60 SANİYEDE ── */
 .brief ol{list-style:none;counter-reset:b}
@@ -180,7 +180,8 @@ img{max-width:100%}
 .blink:hover,.blink:focus-visible{color:var(--leaf-deep);
   box-shadow:inset 0 -2px 0 var(--leaf-deep)}
 
-.audio-bar{margin-top:1.6rem;display:none;align-items:center;gap:1rem;
+/* sesli özet 60 Saniyede listesinin altında ortalanır */
+.audio-bar{margin:1.9rem auto 0;display:none;align-items:center;gap:1rem;
   padding:.85rem 1.05rem;background:var(--paper-card);
   border:1px solid var(--line-light);border-left:3px solid var(--leaf-deep);
   border-radius:0 12px 12px 0;max-width:560px}
