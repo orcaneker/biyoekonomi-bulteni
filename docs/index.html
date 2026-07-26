@@ -70,7 +70,7 @@ img{max-width:100%}
 /* ── HERO ──
    Yükseklik cetvel (~30px) + masthead (~48px) üstte durduğu için ölçülü:
    katlanma çizgisinde açık gövdenin ilk kicker'ı görünür kalmalı. */
-.hero{position:relative;min-height:clamp(420px,60vh,620px);
+.hero{position:relative;min-height:clamp(360px,46vh,500px);
   display:flex;flex-direction:column;overflow:hidden;isolation:isolate}
 .hero-still,.hero-media{position:absolute;inset:0;width:100%;height:100%;display:block}
 .hero-still{z-index:0}
@@ -89,7 +89,7 @@ img{max-width:100%}
     linear-gradient(180deg,rgba(15,23,18,.30) 0%,transparent 26%,rgba(15,23,18,.32) 76%,var(--soil) 100%);
 }
 .hero-inner{position:relative;z-index:4;width:100%;max-width:var(--max);
-  margin:auto auto 0;padding:clamp(3.4rem,7vh,4.8rem) var(--gutter) clamp(2.8rem,5vh,3.8rem)}
+  margin:auto auto 0;padding:clamp(2.4rem,4.5vh,3.4rem) var(--gutter) clamp(2.6rem,4.5vh,3.4rem)}
 .eyebrow{display:flex;gap:.55rem 1.35rem;flex-wrap:wrap;color:var(--muted);
   font-family:var(--f-mono);font-size:.74rem;letter-spacing:.14em;
   text-transform:uppercase;opacity:0}
@@ -111,7 +111,7 @@ img{max-width:100%}
 @keyframes rise{to{opacity:1;transform:none}}
 @keyframes fade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
 @media(max-width:760px){
-  .hero{min-height:clamp(380px,54vh,500px)}
+  .hero{min-height:clamp(340px,48vh,460px)}
   .rail .yayin{display:none}            /* tarih zaten hero künyesinde */
 }
 
@@ -388,8 +388,8 @@ footer{background:var(--soil);border-top:1px solid var(--line);color:var(--muted
       <span class="ln one" data-text="Biyoekonomi">Biyoekonomi</span>
       <span class="ln two" data-text="Bülteni">Bülteni</span>
     </h1>
-    <p class="sub">Biyobazlı üretim, biyoteknoloji ve döngüsel kaynak politikalarında
-      haftanın gelişmeleri — taranmış, sınıflandırılmış, kaynağıyla birlikte.</p>
+    <p class="sub">Biyobazlı üretim, biyoteknoloji ve biyoenerji gibi konularda
+      haftanın güncel gelişmeleri</p>
   </div>
 </header>
 
