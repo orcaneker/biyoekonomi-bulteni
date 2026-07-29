@@ -286,6 +286,29 @@ def _indeks_satiri(b):
     }
 
 
+def _indeks_kur(arsiv_dizini, yeni_bulten=None):
+    """Verilen arşiv klasöründeki tüm sayı dosyalarından indeks listesi kurar.
+
+    yeni_bulten verilirse (henüz diske yazılmamış sayı) listeye eklenir;
+    aynı haftanın önceki kaydının üzerine yazar.
+    """
+    kayitlar = {}
+    if os.path.isdir(arsiv_dizini):
+        for ad in sorted(os.listdir(arsiv_dizini)):
+            if not ad.endswith(".json"):
+                continue
+            try:
+                with open(os.path.join(arsiv_dizini, ad), encoding="utf-8") as f:
+                    b = json.load(f)
+                kayitlar[b["issue"]["hafta"]] = _indeks_satiri(b)
+            except Exception as e:
+                log(f"  ⚠ arşiv dosyası okunamadı, atlandı ({ad}): {e}")
+    if yeni_bulten:
+        kayitlar[yeni_bulten["issue"]["hafta"]] = _indeks_satiri(yeni_bulten)
+    return sorted(kayitlar.values(),
+                  key=lambda s: (s["number"] or 0, s["hafta"]), reverse=True)
+
+
 def arsiv_indeksi(bulten):
     """Arşiv indeksini YEREL arşiv dosyalarından yeniden kurar.
 
@@ -298,25 +321,7 @@ def arsiv_indeksi(bulten):
     bu, ağa bağımlı olmayan otoriter kaynaktır. İndeks bozulsa/silinse bile
     arşiv dosyalarından kendini onarır.
     """
-    kayitlar = {}
-    dizin = f"{OUT}/data/arsiv"
-    if os.path.isdir(dizin):
-        for ad in sorted(os.listdir(dizin)):
-            if not ad.endswith(".json"):
-                continue
-            try:
-                with open(os.path.join(dizin, ad), encoding="utf-8") as f:
-                    b = json.load(f)
-                kayitlar[b["issue"]["hafta"]] = _indeks_satiri(b)
-            except Exception as e:
-                log(f"  ⚠ arşiv dosyası okunamadı, atlandı ({ad}): {e}")
-
-    # Yeni sayı henüz diske yazılmadı (insa_et sonra yazar) — indekse burada
-    # eklenir; aynı haftanın önceki kaydı varsa üzerine yazar.
-    kayitlar[bulten["issue"]["hafta"]] = _indeks_satiri(bulten)
-
-    liste = sorted(kayitlar.values(),
-                   key=lambda s: (s["number"] or 0, s["hafta"]), reverse=True)
+    liste = _indeks_kur(f"{OUT}/data/arsiv", bulten)
     log(f"Arşiv indeksi: {len(liste)} sayı "
         f"({', '.join(str(s['number']) for s in liste[:8])}"
         f"{'…' if len(liste) > 8 else ''})")
@@ -453,6 +458,87 @@ def yayinla(issue_row, dry_run=False):
                                  bulten["issue"]["hafta"], SITE_URL,
                                  issue_row.get("approved_by") or "?")
     return url
+
+
+# ============================================================
+# DÜZELTME YAYINI — yayınlanmış sayıdaki metin hatasını siteye gönder
+# ------------------------------------------------------------
+# Tam yayından (yayinla) farkları:
+#   · Ses YENİDEN ÜRETİLMEZ — ElevenLabs kotası harcanmaz. (Sesli özet
+#     düzeltilen metni okumaya devam eder; kabul edilen ödünç budur.)
+#   · state/sayaç DEĞİŞMEZ — bu yeni bir sayı değil, mevcut sayının düzeltmesi.
+#   · Depo TAZE klonlanır ve yalnızca ilgili dosyalar değiştirilir. Yerel
+#     docs/ kopyasına güvenilmez: web servisinin çalışma dizini son cron
+#     yayınına göre bayat olabilir ve tüm docs/ üzerine yazmak yayınlanmış
+#     sayıları silebilirdi.
+# ============================================================
+def duzeltme_yayinla(bulten):
+    """Düzeltilmiş bülteni siteye gönderir. Dönen: site URL'i.
+
+    Değiştirilen dosyalar: data/arsiv/<hafta>.json, (sayı en günceli ise)
+    data/latest.json ve feed.xml, ve her durumda data/index.json.
+    """
+    if not (GITHUB_REPO and GITHUB_TOKEN):
+        raise RuntimeError("GITHUB_REPO / GITHUB_TOKEN tanımlı değil")
+
+    import shutil
+    import tempfile
+    import subprocess
+
+    hafta = bulten["issue"]["hafta"]
+    tmp = tempfile.mkdtemp()
+    uzak = f"https://x-access-token:{GITHUB_TOKEN}@github.com/{GITHUB_REPO}.git"
+
+    def git(*a, kontrol=True):
+        r = subprocess.run(["git", "-C", tmp, *a], capture_output=True, text=True)
+        if kontrol and r.returncode != 0:
+            raise RuntimeError(f"git {a[0]}: {r.stderr[:200]}")
+        return r
+
+    try:
+        r = subprocess.run(["git", "clone", "--depth", "1", "-b", GITHUB_BRANCH, uzak, tmp],
+                           capture_output=True, text=True)
+        if r.returncode != 0:
+            raise RuntimeError(f"clone: {r.stderr[:200]}")
+
+        kok = os.path.join(tmp, OUT)
+        arsiv_dizini = os.path.join(kok, "data", "arsiv")
+        os.makedirs(arsiv_dizini, exist_ok=True)
+
+        # 1) sayının arşiv dosyası
+        yaz_json(os.path.join(arsiv_dizini, f"{hafta}.json"), bulten)
+
+        # 2) en güncel sayı ise ana sayfa verisi + RSS
+        latest_yolu = os.path.join(kok, "data", "latest.json")
+        guncel_mi = False
+        if os.path.exists(latest_yolu):
+            try:
+                with open(latest_yolu, encoding="utf-8") as f:
+                    guncel_mi = (json.load(f).get("issue", {}).get("hafta") == hafta)
+            except Exception:
+                guncel_mi = False
+        if guncel_mi:
+            yaz_json(latest_yolu, bulten)
+            with open(os.path.join(kok, "feed.xml"), "w", encoding="utf-8") as f:
+                f.write(rss_uret(bulten))
+
+        # 3) indeksi arşiv dosyalarından yeniden kur (başlık değişmiş olabilir)
+        yaz_json(os.path.join(kok, "data", "index.json"), _indeks_kur(arsiv_dizini))
+
+        git("config", "user.email", "bulten-bot@users.noreply.github.com")
+        git("config", "user.name", "Bulten Bot")
+        git("add", "-A")
+        c = git("commit", "-m", f"Sayı {bulten['issue']['number']} — metin düzeltmesi",
+                kontrol=False)
+        if c.returncode != 0 and "nothing to commit" in (c.stdout + c.stderr):
+            log("Düzeltme: değişiklik yok — push atlandı")
+            return SITE_URL
+        git("push", "origin", GITHUB_BRANCH)
+        log(f"Düzeltme yayınlandı ({hafta}"
+            f"{', ana sayfa dahil' if guncel_mi else ', yalnızca arşiv'})")
+        return SITE_URL
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
 
 
 # ============================================================

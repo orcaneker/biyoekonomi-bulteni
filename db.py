@@ -122,6 +122,21 @@ def taslak_guncelle(issue_id, draft):
                      (json.dumps(draft, ensure_ascii=False), issue_id))
 
 
+def govde_guncelle(issue_id, alan, veri):
+    """draft_json veya final_json gövdesini günceller (metin düzeltmesi).
+
+    taslak_guncelle'den farkı: durum kısıtı YOKTUR — yayınlanmış sayıda da
+    yazım/çeviri hatası düzeltilebilmeli. Hangi gövdenin güncelleneceğini
+    çağıran belirler; alan adı beyaz listeyle sınırlıdır (SQL'e doğrudan
+    girdiği için serbest bırakılamaz).
+    """
+    if alan not in ("draft_json", "final_json"):
+        raise ValueError(f"Geçersiz gövde alanı: {alan}")
+    with baglan() as conn:
+        conn.execute(f"UPDATE issues SET {alan}=%s WHERE id=%s",
+                     (json.dumps(veri, ensure_ascii=False), issue_id))
+
+
 def onayla(issue_id, hakem_ad):
     """TEK onay yeterli → status=approved. Zaten onaylıysa dokunmaz."""
     with baglan() as conn:
