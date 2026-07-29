@@ -23,7 +23,7 @@ from datetime import datetime, timezone
 
 import requests
 
-from config import FIYAT
+from config import FIYAT, AYARLAR as _A
 
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
@@ -208,6 +208,16 @@ def _openai(model, ad, sistem, kullanici, max_tokens, stream):
             {"role": "user", "content": kullanici},
         ],
     }
+
+    # ── AKIL YÜRÜTME SEVİYESİ (gpt-5.x reasoning modelleri) ──
+    # AÇIKÇA gönderilir: gönderilmediğinde model kendi varsayılanını kullanır
+    # ve ürettiği "düşünme" token'ları ÇIKTI fiyatından faturalanır — maliyet
+    # sessizce katlanabilir. Ayrıca gpt-5.6'da reasoning_effort belirtilmemiş
+    # isteklerin bazı durumlarda 400 döndürdüğü bildirildi.
+    # Reasoning desteklemeyen eski modellere (gpt-4o vb.) gönderilmez.
+    if _A.get("reasoning_effort") and ad.startswith(("gpt-5", "o1", "o3", "o4")):
+        body["reasoning_effort"] = _A["reasoning_effort"]
+
     if stream:
         body["stream"] = True
         body["stream_options"] = {"include_usage": True}

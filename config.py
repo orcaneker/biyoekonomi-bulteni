@@ -32,6 +32,14 @@ AYARLAR = {
     "model_triyaj": "anthropic:claude-haiku-4-5-20251001",
     "model_yazim": "anthropic:claude-sonnet-4-6",
     # NOT: temperature parametresi BİLEREK gönderilmiyor (model uyumsuzluk deneyimi).
+
+    # OpenAI reasoning modelleri (gpt-5.6 ailesi) için akıl yürütme seviyesi:
+    # none | low | medium | high | xhigh | max
+    # ⚠ Düşünme token'ları ÇIKTI fiyatından faturalanır — seviye yükseldikçe
+    # maliyet hızla artar. Bu bültende iş "verilen kaynak metinden olguları
+    # çıkarıp Türkçe yazmak"; derin akıl yürütme gerektirmiyor, bu yüzden
+    # varsayılan düşük tutuldu. Anthropic modellerinde bu ayar yok sayılır.
+    "reasoning_effort": "low",
     "triyaj_batch": 40,              # tek seferde triyaja giden aday sayısı
     "max_tokens_triyaj": 8000,
     "max_tokens_yazim": 48000,       # 14 haberin TAMAMI yazıldığı için GENİŞ olmalı.
@@ -69,6 +77,10 @@ FIYAT = {
     "anthropic:claude-haiku-4-5-20251001": {"in": 1.00, "out":  5.00, "cache_w": 1.25, "cache_r": 0.10},
     "openai:gpt-5-mini":                   {"in": 0.25, "out":  2.00, "cache_w": 0.25, "cache_r": 0.025},
     "openai:gpt-5.1":                      {"in": 1.25, "out": 10.00, "cache_w": 1.25, "cache_r": 0.125},
+    # GPT-5.6 ailesi (Temmuz 2026) — Luna maliyet odaklı kademe.
+    # ⚠ Reasoning modelidir: "düşünme" token'ları ÇIKTI fiyatından faturalanır.
+    # Bu yüzden aşağıdaki "reasoning_effort" ayarı maliyeti doğrudan etkiler.
+    "openai:gpt-5.6-luna":                 {"in": 1.00, "out":  6.00, "cache_w": 1.25, "cache_r": 0.10},
 }
 
 # ============================================================

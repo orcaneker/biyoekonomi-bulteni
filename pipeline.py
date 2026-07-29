@@ -37,7 +37,7 @@ from config import (
     AYARLAR, KATEGORILER, SORGULAR, OLGUNLUK,
     KAYNAK_TIER1, KAYNAK_TIER2, KAYNAK_AKADEMIK, KAYNAK_TURKIYE, KAYNAK_DISLA,
     KAYNAK_ODEME_DUVARI, ODEME_DUVARI_IZLERI, ODEME_DUVARI_MIN_KARAKTER,
-    TEYIT, DURAK_KELIMELER,
+    TEYIT, DURAK_KELIMELER, FIYAT,
 )
 import prompts
 import llm
@@ -45,6 +45,9 @@ import llm
 EXA_API_KEY = os.environ.get("EXA_API_KEY", "")
 REVIEW_BASE_URL = os.environ.get("REVIEW_BASE_URL", "").rstrip("/")
 RAPOR_ALICI = os.environ.get("RAPOR_ALICI", "")
+# Tanımlıysa yazım adımı bu modelde de çalıştırılıp sonuç e-postayla
+# karşılaştırılır. Yayınlanan bülten etkilenmez. Örn: openai:gpt-5.6-luna
+KARSILASTIR_MODEL = os.environ.get("KARSILASTIR_MODEL", "").strip()
 
 EXA_URL = "https://api.exa.ai/search"
 SITE_URL = AYARLAR["site_url"].rstrip("/")
@@ -609,16 +612,21 @@ def olaylari_zenginlestir(olaylar, adaylar):
 # ============================================================
 # 5) AŞAMA 2 — YAZIM
 # ============================================================
-def yaz(derin, radar_havuz, sayi_no, bas, bit, pencere):
+def yaz(derin, radar_havuz, sayi_no, bas, bit, pencere, model=None):
     """json_repair'e rağmen geçersiz çıktı gelirse yazımı BİR kez daha dene —
-    haftalık cron tek bozuk üretim yüzünden boş geçmesin."""
+    haftalık cron tek bozuk üretim yüzünden boş geçmesin.
+
+    model: None ise AYARLAR["model_yazim"]. Model karşılaştırma modunda
+    (KARSILASTIR_MODEL) aynı veriyle ikinci bir model çalıştırmak için kullanılır.
+    """
+    model = model or AYARLAR["model_yazim"]
     son_hata = None
     for deneme in range(2):
         if deneme:
             log("  ⚠ Yazım çıktısı kurtarılamadı — yazım yeniden deneniyor (2/2)")
         try:
             cikti = llm.llm_cagri(
-                AYARLAR["model_yazim"], prompts.YAZIM_PROMPT,
+                model, prompts.YAZIM_PROMPT,
                 prompts.yazim_kullanici_mesaji(derin, radar_havuz, sayi_no, bas, bit, pencere),
                 AYARLAR["max_tokens_yazim"],
                 stream=True,     # uzun çıktı — zaman aşımını önler
@@ -627,6 +635,87 @@ def yaz(derin, radar_havuz, sayi_no, bas, bit, pencere):
         except (ValueError, json.JSONDecodeError) as e:
             son_hata = e
     raise son_hata
+
+
+# ============================================================
+# 5.9) MODEL KARŞILAŞTIRMA (opsiyonel)
+# ------------------------------------------------------------
+# KARSILASTIR_MODEL ortam değişkeni tanımlıysa yazım adımı AYNI olaylarla
+# ikinci bir modelde daha çalıştırılır ve iki çıktı e-postayla yan yana
+# gönderilir. Yayınlanan bülten DEĞİŞMEZ — asıl model neyse o yayınlanır;
+# ikinci çıktı yalnızca kaliteyi kıyaslamak içindir.
+#
+# Kullanımı (Render → Environment):
+#   KARSILASTIR_MODEL = openai:gpt-5.6-luna
+# Karşılaştırma bitince değişkeni SİLİN, yoksa her hafta ekstra ücret çıkar.
+# ============================================================
+def _ilk_paragraf(metin, n=400):
+    p = (metin or "").split("\n\n")[0].strip()
+    return p[:n] + ("…" if len(p) > n else "")
+
+
+def model_karsilastir(model, derin, radar_havuz, sayi_no, bas, bit, pencere, asil):
+    """İkinci modelle yazımı tekrarlar, karşılaştırma metni döndürür.
+    Hata olursa akışı BOZMAZ — None döner."""
+    log(f"Model karşılaştırma — ikinci yazım: {model}")
+    onceki = dict(llm.KULLANIM)          # asıl yazımın kullanımını ayırmak için
+    try:
+        b2 = yaz(derin, radar_havuz, sayi_no, bas, bit, pencere, model=model)
+    except Exception as e:
+        log(f"  ! Karşılaştırma yazımı başarısız: {e}")
+        return None
+
+    # sadece bu modelin maliyeti
+    k = llm.KULLANIM.get(model, {})
+    f = FIYAT.get(model)
+    m2 = ((k.get("in", 0) * f["in"] + k.get("out", 0) * f["out"]) / 1e6) if f else 0.0
+    ka = onceki.get(AYARLAR["model_yazim"], {})
+    fa = FIYAT.get(AYARLAR["model_yazim"])
+    m1 = ((ka.get("in", 0) * fa["in"] + ka.get("out", 0) * fa["out"]) / 1e6) if fa else 0.0
+
+    # haberleri BİRİNCİL KAYNAK URL'iyle eşle (id'ler modele göre değişebilir)
+    def indeksle(b):
+        d = {}
+        for s in (b.get("stories") or []):
+            u = url_normalize((s.get("source") or {}).get("url") or "")
+            if u:
+                d[u] = s
+        return d
+    a_idx, b_idx = indeksle(asil), indeksle(b2)
+    ortak = [u for u in a_idx if u in b_idx][:4]
+
+    satirlar = [
+        "MODEL KARŞILAŞTIRMASI — aynı haberler, iki farklı yazım modeli",
+        "=" * 66,
+        f"A) {AYARLAR['model_yazim']}   (yayınlanan bu)",
+        f"B) {model}   (yalnızca karşılaştırma)",
+        "",
+        f"Maliyet (yalnızca yazım adımı):  A ≈ ${m1:.3f}   ·   B ≈ ${m2:.3f}",
+        f"Token:  A girdi {ka.get('in',0):,} / çıktı {ka.get('out',0):,}"
+        f"   ·   B girdi {k.get('in',0):,} / çıktı {k.get('out',0):,}",
+        f"Üretilen haber:  A {len(asil.get('stories') or [])}  ·  B {len(b2.get('stories') or [])}",
+        f"Karşılaştırılabilen (aynı kaynaklı) haber: {len(ortak)}",
+        "=" * 66, "",
+    ]
+    for i, u in enumerate(ortak, 1):
+        a, b = a_idx[u], b_idx[u]
+        satirlar += [
+            f"── HABER {i} ─────────────────────────────────────────────",
+            f"kaynak: {u}", "",
+            f"[A] BAŞLIK : {a.get('title','')}",
+            f"[B] BAŞLIK : {b.get('title','')}", "",
+            f"[A] ÖZET   : {a.get('excerpt','')}",
+            f"[B] ÖZET   : {b.get('excerpt','')}", "",
+            f"[A] METİN  : {_ilk_paragraf(a.get('detail'))}",
+            f"[B] METİN  : {_ilk_paragraf(b.get('detail'))}", "", "",
+        ]
+    if not ortak:
+        satirlar.append("(İki model ortak haber üretmedi — kıyas yapılamadı.)")
+    satirlar += ["=" * 66,
+                 "Değerlendirirken bakılacaklar: Türkçe akıcılık, rakamların",
+                 "eksiksiz aktarımı, yorum/analiz kaçağı olup olmadığı,",
+                 "terimlerin ilk geçişte parantezle verilmesi."]
+    return "\n".join(satirlar)
 
 
 # ============================================================
@@ -1029,6 +1118,7 @@ def main():
     rapor = {"queries_run": 0, "results_found": 0, "dedup_removed": 0,
              "events_created": 0, "llm_rejected": 0, "written": 0,
              "radar_items": 0, "failed_queries": []}
+    karsilastirma = None          # KARSILASTIR_MODEL tanımlıysa doldurulur
 
     if args.mock:
         log("MOCK modu — Exa/LLM atlanıyor")
@@ -1081,6 +1171,12 @@ def main():
         log("Aşama 2 — yazım…")
         b = yaz(derin, radar_havuz, sayi_no, kapsam_bas, kapsam_bit, pencere)
 
+        # --- opsiyonel: ikinci modelle aynı veriden yazım (yalnızca kıyas) ---
+        if KARSILASTIR_MODEL:
+            karsilastirma = model_karsilastir(
+                KARSILASTIR_MODEL, derin, radar_havuz, sayi_no,
+                kapsam_bas, kapsam_bit, pencere, b)
+
     hatalar = dogrula_taslak(b, kapsam_bas, kapsam_bit)
     if hatalar:
         log(f"⚠ {len(hatalar)} şema uyarısı")
@@ -1120,6 +1216,10 @@ def main():
         with open("taslak_preview.json", "w", encoding="utf-8") as f:
             json.dump(taslak, f, ensure_ascii=False, indent=2)
         log("DRY RUN — DB/e-posta atlandı → taslak_preview.json yazıldı")
+        if karsilastirma:
+            with open("model_karsilastirma.txt", "w", encoding="utf-8") as f:
+                f.write(karsilastirma)
+            log("Model karşılaştırması → model_karsilastirma.txt")
     else:
         import db
         import emails
@@ -1163,6 +1263,14 @@ def main():
             )
             emails.rapor_gonder(RAPOR_ALICI,
                                 f"Biyoekonomi Bülteni — Sayı {sayi_no} taslak hazır", govde)
+
+            # model karşılaştırması ayrı e-posta — rapor okunaklı kalsın
+            if karsilastirma:
+                emails.rapor_gonder(
+                    RAPOR_ALICI,
+                    f"[Karşılaştırma] Sayı {sayi_no} — {AYARLAR['model_yazim']} vs "
+                    f"{KARSILASTIR_MODEL}", karsilastirma)
+                log("Model karşılaştırma e-postası gönderildi")
 
     log("TOKEN VE MALİYET")
     for satir in mm.split("\n"):
