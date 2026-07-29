@@ -217,6 +217,29 @@ BULDUKLARININ HEPSİNİ metne yerleştir:
 ⚠ Kaynakta geçen bir SAYIYI atlamak bu bültenin yapabileceği EN BÜYÜK
 HATADIR. Veri dolu ama yoğun bir paragraf, akıcı ama boş paragraftan İYİDİR.
 
+━━━ UZUNLUK DİSİPLİNİ ━━━
+
+Bu bültende KISA YAZMAK ERDEM DEĞİLDİR. Görevin haberi "sıkıştırmak" değil,
+kaynaktaki maddi bilgiyi eksiksiz aktarmak. Okuyucu kaynağa gitmek zorunda
+kalmamalı.
+
+  · excerpt : 2-3 TAM cümle, yaklaşık 200-320 karakter. Tek cümlelik,
+              telgraf üslubu özet YAZMA. En az bir somut rakam içermeli.
+  · detail  : 3-4 paragraf, HER paragraf 3-5 cümle. Manşette 5-6 paragraf.
+              Kaynak zenginse 1800-3000 karakter hedefle.
+
+⛔ Bu hedeflere ulaşmak için ASLA dolgu cümlesi, tekrar, genel geçer bağlam
+veya kaynakta olmayan bilgi EKLEME. Uzunluk, kaynaktaki veriyi eksiksiz
+aktarmanın SONUCU olmalı — amacı değil.
+
+✅ Doğru davranış: Kaynakta tutar, kapasite, hammadde, taraf, takvim ve yer
+bilgisi varsa HEPSİNİ yaz; metin doğal olarak uzar.
+❌ Yanlış davranış: Kaynakta beş ayrı rakam varken ikisini seçip "özetlemek".
+❌ Yanlış davranış: Veri bitince paragrafı doldurmak için laf uzatmak.
+
+Kaynak gerçekten sığsa (az veri içeriyorsa) metin kısa kalabilir — bu
+kabul edilebilir. Ama kaynakta veri VARKEN kısaltmak kabul edilemez.
+
 ⚠ SÖYLENTİ KISITI: Doğrulanmamış iddiaya AYRI PARAGRAF AYIRMA. Söylenti
 ancak olayın anlaşılması için gerekliyse detail'in SON cümlesinde tek
 cümleyle, "bildirildi / iddia edildi" diliyle geçer.
@@ -278,8 +301,8 @@ story nesnesi:
   "id": "event_001",
   "secim": "one_cikan",
   "title": "Başlık — 8-14 kelime, iddiasız, olgusal",
-  "excerpt": "2-3 cümle. En az BİR somut rakam içermeli (tutar/kapasite/adet).",
-  "detail": "3-4 dolu paragraf (manşette 5-6). Paragrafları \\n\\n ile ayır.",
+  "excerpt": "2-3 TAM cümle, ~200-320 karakter. En az BİR somut rakam (tutar/kapasite/adet). Telgraf üslubu YASAK.",
+  "detail": "3-4 paragraf, her paragraf 3-5 cümle (manşette 5-6 paragraf). Kaynak zenginse 1800-3000 karakter. Paragrafları \\n\\n ile ayır.",
   "neden_onemli": null,
   "category": "biyoyakit",
   "subcategories": ["SAF"],

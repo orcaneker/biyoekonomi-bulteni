@@ -625,6 +625,10 @@ def yaz(derin, radar_havuz, sayi_no, bas, bit, pencere, model=None):
     (KARSILASTIR_MODEL) aynı veriyle ikinci bir model çalıştırmak için kullanılır.
     """
     model = model or AYARLAR["model_yazim"]
+    # Reasoning modellerinde düşünme token'ları da çıktı bütçesinden düşer →
+    # görünür metnin kesilmemesi için daha geniş limit kullanılır.
+    limit = (AYARLAR.get("max_tokens_yazim_reasoning", AYARLAR["max_tokens_yazim"])
+             if model.startswith("openai:gpt-5") else AYARLAR["max_tokens_yazim"])
     son_hata = None
     for deneme in range(2):
         if deneme:
@@ -633,7 +637,7 @@ def yaz(derin, radar_havuz, sayi_no, bas, bit, pencere, model=None):
             cikti = llm.llm_cagri(
                 model, prompts.YAZIM_PROMPT,
                 prompts.yazim_kullanici_mesaji(derin, radar_havuz, sayi_no, bas, bit, pencere),
-                AYARLAR["max_tokens_yazim"],
+                limit,
                 stream=True,     # uzun çıktı — zaman aşımını önler
             )
             return json_ayikla(cikti)

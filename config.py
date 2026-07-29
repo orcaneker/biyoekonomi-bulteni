@@ -30,20 +30,31 @@ AYARLAR = {
 
     # LLM — sağlayıcı öneki zorunlu: "anthropic:..." veya "openai:..."
     "model_triyaj": "anthropic:claude-haiku-4-5-20251001",
-    "model_yazim": "anthropic:claude-sonnet-4-6",
+    # Yazım GPT-5.6 Luna'da (29 Tem 2026'da Sonnet 4.6'dan geçildi):
+    # aynı işi ~2.6x ucuza yapıyor. Luna daha derli toplu yazma eğiliminde
+    # olduğu için prompt'a "UZUNLUK DİSİPLİNİ" bölümü eklendi — kaynaktaki
+    # veriyi eleyerek kısaltmasın diye.
+    # Geri dönmek için: "anthropic:claude-sonnet-4-6"
+    "model_yazim": "openai:gpt-5.6-luna",
     # NOT: temperature parametresi BİLEREK gönderilmiyor (model uyumsuzluk deneyimi).
 
     # OpenAI reasoning modelleri (gpt-5.6 ailesi) için akıl yürütme seviyesi:
     # none | low | medium | high | xhigh | max
     # ⚠ Düşünme token'ları ÇIKTI fiyatından faturalanır — seviye yükseldikçe
-    # maliyet hızla artar. Bu bültende iş "verilen kaynak metinden olguları
-    # çıkarıp Türkçe yazmak"; derin akıl yürütme gerektirmiyor, bu yüzden
-    # varsayılan düşük tutuldu. Anthropic modellerinde bu ayar yok sayılır.
-    "reasoning_effort": "low",
+    # maliyet artar. "low" denendi: çıktı Sonnet'in ~%65'i kadar kaldı, yani
+    # kaynaktaki veriyi eleyerek kısaltıyordu. "medium" bu yüzden seçildi.
+    # REASONING_EFFORT ortam değişkeni bu ayarı ezer (deneme yaparken pratik).
+    # Anthropic modellerinde yok sayılır.
+    "reasoning_effort": "medium",
     "triyaj_batch": 40,              # tek seferde triyaja giden aday sayısı
     "max_tokens_triyaj": 8000,
     "max_tokens_yazim": 48000,       # 14 haberin TAMAMI yazıldığı için GENİŞ olmalı.
                                      # ⚠ Düşük tutulursa çıktı JSON tamamlanmadan kesilir.
+    # OpenAI reasoning modellerinde (gpt-5.x) "düşünme" token'ları da BU
+    # bütçeden düşer — görünür metne kalan pay azalır ve JSON ortadan kesilir.
+    # Luna 128K çıktı desteklediği için rahat pay bırakıldı; kullanılmayan
+    # bütçe için ücret ödenmez.
+    "max_tokens_yazim_reasoning": 96000,
     "derin_olay_sayisi": 14,         # tam metinle yazıma giden olay — HEPSİ haber olur
     "toplam_olay_sayisi": 40,        # geri kalanı radar adayı (başlık+link)
 
