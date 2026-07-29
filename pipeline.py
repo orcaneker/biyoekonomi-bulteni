@@ -219,6 +219,38 @@ def state_yukle():
     return {"issue_no": 0, "events": [], "urls": []}
 
 
+def son_sayi_no(state):
+    """Yayınlanmış son sayı numarası — sayacın tek doğruluk kaynağı.
+
+    ⚠ NEDEN SADECE STATE'E GÜVENİLMEZ: state canlı siteden HTTP ile çekilir;
+    istek başarısız olursa issue_no=0 döner ve sayı numarası 1'e geri düşer
+    (arşivde mükerrer numara oluşur). docs/data/arsiv/*.json git'te tutulduğu
+    için Render her çalışmada klonladığında yayınlanmış tüm sayılar yerelde
+    hazırdır ve ağa bağımlı değildir.
+
+    İkisinin BÜYÜĞÜ alınır: yerel arşiv otoriterdir, state ise arşiv dosyası
+    henüz commit edilmemiş bir ara durumu yakalayabilir.
+    """
+    en_buyuk = 0
+    dizin = os.path.join(AYARLAR["cikti_dizini"], "data", "arsiv")
+    if os.path.isdir(dizin):
+        for ad in os.listdir(dizin):
+            if not ad.endswith(".json"):
+                continue
+            try:
+                with open(os.path.join(dizin, ad), encoding="utf-8") as f:
+                    n = (json.load(f).get("issue") or {}).get("number")
+                if isinstance(n, int):
+                    en_buyuk = max(en_buyuk, n)
+            except Exception as e:
+                log(f"  ⚠ arşiv dosyası okunamadı ({ad}): {e}")
+    state_no = state.get("issue_no", 0) or 0
+    if en_buyuk != state_no:
+        log(f"  Sayaç: yerel arşiv {en_buyuk} · canlı state {state_no} "
+            f"→ {max(en_buyuk, state_no)} kabul edildi")
+    return max(en_buyuk, state_no)
+
+
 # ============================================================
 # 2) EXA TARAMA
 # ============================================================
@@ -977,7 +1009,7 @@ def main():
     log(f"BİYOEKONOMİ BÜLTENİ — TASLAK — {bugun.strftime('%Y-%m-%d')}")
 
     state = state_yukle()
-    sayi_no = AYARLAR.get("sayi_no_sabit") or (state.get("issue_no", 0) + 1)
+    sayi_no = AYARLAR.get("sayi_no_sabit") or (son_sayi_no(state) + 1)
     hafta = iso_hafta(bugun)
     pencere = AYARLAR["pencere_gun"]
     kapsam_bas = (bugun - timedelta(days=pencere)).strftime("%Y-%m-%d")
