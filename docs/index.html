@@ -864,7 +864,7 @@ function revealKur(){
 }
 
 /* ═════════ BAŞLAT ═════════ */
-/* ?hafta=2026-W30 → arşivden o sayıyı yükle; yoksa güncel sayı */
+/* ?hafta=2026-H31 → arşivden o sayıyı yükle; yoksa güncel sayı */
 const hafta=new URLSearchParams(location.search).get("hafta");
 const veriYolu=hafta?`data/arsiv/${encodeURIComponent(hafta)}.json`:"data/latest.json";
 fetch(veriYolu).then(r=>{
