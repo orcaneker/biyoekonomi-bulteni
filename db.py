@@ -37,7 +37,7 @@ def baglan():
 SEMA = """
 CREATE TABLE IF NOT EXISTS issues (
     id            SERIAL PRIMARY KEY,
-    hafta         TEXT UNIQUE NOT NULL,          -- '2026-W30'
+    hafta         TEXT UNIQUE NOT NULL,          -- '2026-H31' (H = Hafta)
     sayi_no       INTEGER NOT NULL,
     status        TEXT NOT NULL DEFAULT 'review',-- review | approved | published
     draft_json    JSONB NOT NULL,                -- pipeline çıktısı (secim alanlı)
@@ -202,7 +202,7 @@ if __name__ == "__main__":
     elif args[0] == "--durum":
         # Bakım: bir sayının durumunu elle değiştir.
         # Örn. yayın push'u başarısız olduysa geri onaylıya al:
-        #   python db.py --durum 2026-W30 approved
+        #   python db.py --durum 2026-H31 approved
         if len(args) < 3 or args[2] not in ("review", "approved"):
             sys.exit("Kullanım: python db.py --durum <hafta> <review|approved>")
         with baglan() as conn:

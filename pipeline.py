@@ -173,8 +173,19 @@ def kaynak_tier(domain: str) -> int:
 
 
 def iso_hafta(d: datetime):
+    """Sayının hafta kimliği — ör. '2026-H31' (2026'nın 31. haftası).
+
+    H = Hafta. ISO 8601'in 'W' (week) harfi yerine Türkçe karşılığı
+    kullanılıyor; hafta numarası yine ISO 8601 takvimine göre hesaplanır.
+
+    ⚠ Bu değer yalnızca ekranda görünen bir etiket DEĞİLDİR; aynı zamanda
+    arşiv dosyası adı (data/arsiv/<hafta>.json), sesli özet dosyası adı,
+    kalıcı bağlantı (?hafta=…) ve veritabanındaki UNIQUE anahtardır.
+    Formatı değiştirmek yayınlanmış sayıların bağlantılarını kırar —
+    değiştirilecekse arşiv boşken yapılmalıdır.
+    """
     y, w, _ = d.isocalendar()
-    return f"{y}-W{w:02d}"
+    return f"{y}-H{w:02d}"
 
 
 def json_ayikla(metin):
