@@ -117,3 +117,64 @@ def rapor_gonder(alici, konu, duz_metin):
             f"<body><pre style='font-family:monospace;font-size:12px;"
             f"white-space:pre-wrap'>{duz_metin}</pre></body></html>")
     return _gonder(alici, konu, html, metin=duz_metin)
+
+
+# ============================================================
+# CLI — E-POSTA AYARI TESTİ
+# ============================================================
+# Exa/LLM çalıştırmadan (yani maliyetsiz) gönderim ayarını doğrular.
+# Alan adı doğrulanmadan MAIL_FROM 'onboarding@resend.dev' kalırsa Resend
+# yalnızca hesap sahibine gönderir; diğer hakemler sessizce düşer. Bu test
+# tam olarak o durumu Pazar'ı beklemeden ortaya çıkarır.
+#
+#   python emails.py --test                 # DB'deki TÜM hakemlere
+#   python emails.py --test mail@ornek.com  # tek adrese
+# ============================================================
+def test_gonder(alici):
+    """Tek adrese deneme e-postası. Dönen: True/False."""
+    html = _sablon(
+        "SİSTEM TESTİ",
+        "E-posta ayarı çalışıyor",
+        "<p>Bu bir <b>deneme</b> e-postasıdır — bülten taslağı değildir.</p>"
+        "<p>Bu mesajı aldıysanız, haftalık bülten davetleri de size "
+        "ulaşacak demektir. Bir şey yapmanıza gerek yok.</p>"
+        f"<p style='font-size:12px;color:#6B7280'>Gönderen: {MAIL_FROM}</p>",
+    )
+    return _gonder(alici, "[TEST] Biyoekonomi Bülteni — e-posta ayarı denemesi", html)
+
+
+if __name__ == "__main__":
+    import sys
+
+    args = sys.argv[1:]
+    if not args or args[0] != "--test":
+        print(__doc__)
+        sys.exit("Kullanım: python emails.py --test [mail@ornek.com]")
+
+    print(f"MAIL_FROM   : {MAIL_FROM}")
+    print(f"RESEND_API_KEY: {'tanımlı' if RESEND_API_KEY else 'YOK — gönderim yapılamaz'}")
+    if "onboarding@resend.dev" in MAIL_FROM:
+        print("⚠ UYARI: MAIL_FROM hâlâ Resend'in paylaşımlı test adresi.\n"
+              "  Bu adresle SADECE hesap sahibinin kendi e-postasına gönderim yapılır;\n"
+              "  diğer hakemler davet ALAMAZ. Render'da MAIL_FROM'u kendi doğrulanmış\n"
+              "  alan adınızla değiştirin.")
+    print("-" * 52)
+
+    if len(args) > 1:
+        alicilar = args[1:]
+    else:
+        import db
+        alicilar = [h["email"] for h in db.hakemler()]
+        if not alicilar:
+            sys.exit("Kayıtlı hakem yok (python db.py --seed ... ile ekleyin)")
+
+    basarili = 0
+    for a in alicilar:
+        ok = test_gonder(a)
+        print(f"  {'✓ gönderildi' if ok else '✗ BAŞARISIZ  '} → {a}")
+        basarili += bool(ok)
+
+    print("-" * 52)
+    print(f"{basarili}/{len(alicilar)} gönderim kabul edildi.")
+    print("Not: 'gönderildi' = Resend isteği kabul etti. Kutuya DÜŞTÜĞÜNÜ\n"
+          "     resend.com → Emails ekranından (delivered/bounced) doğrulayın.")
