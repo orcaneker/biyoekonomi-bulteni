@@ -48,6 +48,11 @@ RAPOR_ALICI = os.environ.get("RAPOR_ALICI", "")
 # Tanımlıysa yazım adımı bu modelde de çalıştırılıp sonuç e-postayla
 # karşılaştırılır. Yayınlanan bülten etkilenmez. Örn: openai:gpt-5.6-luna
 KARSILASTIR_MODEL = os.environ.get("KARSILASTIR_MODEL", "").strip()
+# Tanımlıysa taslak KAYDEDİLMEZ ve davet GÖNDERİLMEZ; yalnızca karşılaştırma
+# e-postası atılır. Model denemesini tekrarlarken incelemedeki taslağı ezmemek
+# ve diğer yöneticilere mükerrer davet göndermemek için.
+KIYAS_MODU = os.environ.get("SADECE_KARSILASTIR", "").strip().lower() \
+    not in ("", "0", "false", "hayir")
 
 EXA_URL = "https://api.exa.ai/search"
 SITE_URL = AYARLAR["site_url"].rstrip("/")
@@ -684,11 +689,29 @@ def model_karsilastir(model, derin, radar_havuz, sayi_no, bas, bit, pencere, asi
     a_idx, b_idx = indeksle(asil), indeksle(b2)
     ortak = [u for u in a_idx if u in b_idx][:4]
 
+    # nesnel uzunluk ölçüsü — "kısa/uzun" izlenimini rakamla doğrula
+    def ort(b, alan):
+        d = [len(s.get(alan) or "") for s in (b.get("stories") or [])]
+        return sum(d) / len(d) if d else 0
+
+    def rakam_sayisi(b):
+        """excerpt'lerdeki sayı adedi — veri yoğunluğunun kaba göstergesi."""
+        n = [len(re.findall(r"\d", s.get("excerpt") or ""))
+             for s in (b.get("stories") or [])]
+        return sum(n) / len(n) if n else 0
+
     satirlar = [
         "MODEL KARŞILAŞTIRMASI — aynı haberler, iki farklı yazım modeli",
         "=" * 66,
         f"A) {AYARLAR['model_yazim']}   (yayınlanan bu)",
-        f"B) {model}   (yalnızca karşılaştırma)",
+        f"B) {model}   (yalnızca karşılaştırma)"
+        + (f"   · reasoning_effort={os.environ.get('REASONING_EFFORT') or AYARLAR.get('reasoning_effort')}"
+           if model.startswith("openai:") else ""),
+        "",
+        "UZUNLUK / YOĞUNLUK (haber başına ortalama)",
+        f"  özet   : A {ort(asil,'excerpt'):>5.0f} krkt   ·   B {ort(b2,'excerpt'):>5.0f} krkt",
+        f"  metin  : A {ort(asil,'detail'):>5.0f} krkt   ·   B {ort(b2,'detail'):>5.0f} krkt",
+        f"  özetteki rakam adedi: A {rakam_sayisi(asil):.1f}   ·   B {rakam_sayisi(b2):.1f}",
         "",
         f"Maliyet (yalnızca yazım adımı):  A ≈ ${m1:.3f}   ·   B ≈ ${m2:.3f}",
         f"Token:  A girdi {ka.get('in',0):,} / çıktı {ka.get('out',0):,}"
@@ -1211,6 +1234,26 @@ def main():
     lead = next((s for s in stories if s.get("id") == taslak["lead_id"]),
                 stories[0] if stories else {})
     secili_sayi = sum(1 for s in stories if s.get("secim") == "one_cikan")
+
+    # ── SADECE KIYAS MODU ──────────────────────────────────────────
+    # SADECE_KARSILASTIR tanımlıysa: taslak Neon'a YAZILMAZ, hakemlere davet
+    # GİTMEZ, yalnızca karşılaştırma e-postası (tek alıcı: RAPOR_ALICI) gider.
+    # Böylece model denemesi tekrarlanırken incelemedeki taslak ezilmez ve
+    # diğer yöneticilere mükerrer davet düşmez.
+    if KIYAS_MODU:
+        log("SADECE KIYAS MODU — taslak kaydedilmedi, davet gönderilmedi")
+        if karsilastirma and RAPOR_ALICI:
+            import emails
+            emails.rapor_gonder(
+                RAPOR_ALICI,
+                f"[Kıyas] Sayı {sayi_no} — {AYARLAR['model_yazim']} vs {KARSILASTIR_MODEL}",
+                karsilastirma + f"\n\nTOKEN VE MALİYET (tüm adımlar)\n{mm}")
+            log("Karşılaştırma e-postası gönderildi")
+        elif not karsilastirma:
+            log("! Karşılaştırma üretilemedi — KARSILASTIR_MODEL tanımlı mı?")
+        log(f"Tamamlandı — {time.time() - t0:.0f} sn · tahmini maliyet ${mt:.3f}")
+        log("═" * 46)
+        return
 
     if args.dry_run:
         with open("taslak_preview.json", "w", encoding="utf-8") as f:
