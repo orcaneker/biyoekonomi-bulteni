@@ -51,9 +51,13 @@ AYARLAR = {
     "site_url": "https://biyoekonomi-bulteni.site",
     "cikti_dizini": "docs",          # GitHub Pages sadece / veya /docs kabul eder
 
-    # TASLAK MODU: sayı numarası sabitlenir (test çalıştırmalarında artmasın).
-    # Yayına geçerken None yap → otomatik artmaya başlar.
-    "sayi_no_sabit": 1,
+    # Sayı numarası: None → otomatik artar (yayınlanan son sayı + 1).
+    # Sayaç canlı sitedeki data/state/seen_events.json → issue_no alanında
+    # yaşar; publish.py her yayında oraya yazar.
+    # Test amacıyla numarayı dondurmak istersen sabit bir sayı ver (ör. 1),
+    # ama YAYINA GEÇERKEN None'a geri al — aksi halde her sayı aynı numarayı
+    # alır ve arşivde mükerrer görünür.
+    "sayi_no_sabit": None,
 }
 
 # ============================================================

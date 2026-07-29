@@ -270,27 +270,57 @@ def state_guncelle(state, taslak, bulten):
     return state
 
 
-def arsiv_indeksi(bulten):
-    """Mevcut index.json'u canlı siteden çek, yeni sayıyı ekle."""
-    try:
-        r = requests.get(f"{SITE_URL}/data/index.json", timeout=20)
-        sayilar = r.json() if r.status_code == 200 else []
-    except Exception:
-        sayilar = []
-    i = bulten["issue"]
-    sayilar = [s for s in sayilar if s["hafta"] != i["hafta"]]
-    sayilar.append({
+def _indeks_satiri(b):
+    """Tam bülten JSON'undan arşiv indeksi satırı üretir."""
+    i = b["issue"]
+    return {
         "number": i["number"],
         "hafta": i["hafta"],
-        "publication_date": i["publication_date"],
-        "coverage_start": i["coverage_start"],
-        "coverage_end": i["coverage_end"],
-        "lead_title": bulten["lead"]["title"] if bulten.get("lead") else "?",
-        "story_count": len(bulten.get("stories", [])),
-        "radar_count": sum(len(k.get("maddeler", [])) for k in bulten.get("radar", [])),
+        "publication_date": i.get("publication_date"),
+        "coverage_start": i.get("coverage_start"),
+        "coverage_end": i.get("coverage_end"),
+        "lead_title": b["lead"]["title"] if b.get("lead") else "?",
+        "story_count": len(b.get("stories", [])),
+        "radar_count": sum(len(k.get("maddeler", [])) for k in b.get("radar", [])),
         "file": f"data/arsiv/{i['hafta']}.json",
-    })
-    return sorted(sayilar, key=lambda s: s["number"], reverse=True)
+    }
+
+
+def arsiv_indeksi(bulten):
+    """Arşiv indeksini YEREL arşiv dosyalarından yeniden kurar.
+
+    ⚠ NEDEN YERELDEN: Önceki sürüm index.json'u canlı siteden HTTP ile
+    çekiyordu; tek bir ağ hatasında liste boş ([]) kabul edilip TÜM ARŞİV
+    GEÇMİŞİ siliniyordu (dosyalar diskte kalsa bile arşiv sayfası boşalırdı).
+
+    docs/data/arsiv/*.json git'te tutulduğu için Render cron'u her çalışmada
+    depoyu klonladığında yayınlanmış tüm sayılar zaten yerelde hazır olur —
+    bu, ağa bağımlı olmayan otoriter kaynaktır. İndeks bozulsa/silinse bile
+    arşiv dosyalarından kendini onarır.
+    """
+    kayitlar = {}
+    dizin = f"{OUT}/data/arsiv"
+    if os.path.isdir(dizin):
+        for ad in sorted(os.listdir(dizin)):
+            if not ad.endswith(".json"):
+                continue
+            try:
+                with open(os.path.join(dizin, ad), encoding="utf-8") as f:
+                    b = json.load(f)
+                kayitlar[b["issue"]["hafta"]] = _indeks_satiri(b)
+            except Exception as e:
+                log(f"  ⚠ arşiv dosyası okunamadı, atlandı ({ad}): {e}")
+
+    # Yeni sayı henüz diske yazılmadı (insa_et sonra yazar) — indekse burada
+    # eklenir; aynı haftanın önceki kaydı varsa üzerine yazar.
+    kayitlar[bulten["issue"]["hafta"]] = _indeks_satiri(bulten)
+
+    liste = sorted(kayitlar.values(),
+                   key=lambda s: (s["number"] or 0, s["hafta"]), reverse=True)
+    log(f"Arşiv indeksi: {len(liste)} sayı "
+        f"({', '.join(str(s['number']) for s in liste[:8])}"
+        f"{'…' if len(liste) > 8 else ''})")
+    return liste
 
 
 def insa_et(bulten, state, sayilar):
