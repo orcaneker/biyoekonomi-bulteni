@@ -106,6 +106,18 @@ FIYAT = {
 }
 
 # ============================================================
+# EXA ARAMA FİYATI (USD) — maliyet TAHMİNİ için
+# ⚠ exa.ai/pricing'den doğrula; değişebilir.
+# Model: istek başına taban ücret İLK 10 SONUCU kapsar (sayfa içeriği dahil,
+# Mart 2026 güncellemesi); 10'un üzerindeki her sonuç ayrıca ücretlenir.
+# Bizim sorgular 15-25 sonuç istediği için EK SONUÇ kalemi baskındır.
+# ============================================================
+EXA_FIYAT = {
+    "arama": 7.00 / 1000,      # $7 / 1.000 istek (ilk 10 sonuç dahil)
+    "ek_sonuc": 1.00 / 1000,   # 10'un üzerindeki her sonuç için $1 / 1.000
+}
+
+# ============================================================
 # KATEGORİ TAKSONOMİSİ (12)
 # Kod → (Görünen ad, Öne Çıkanlar kota hedefi)
 # ============================================================

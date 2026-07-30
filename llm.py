@@ -73,7 +73,9 @@ def maliyet_raporu():
             f"cache yaz {k['cache_w']:,} · cache oku {k['cache_r']:,}\n"
             f"    ≈ ${m:.3f}"
         )
-    satirlar.append(f"  ── TOPLAM ≈ ${toplam:.3f}")
+    # "model toplamı" — Exa arama maliyeti buna DAHİL DEĞİL; genel toplamı
+    # pipeline.py hesaplayıp raporun altına ayrı satır olarak yazar.
+    satirlar.append(f"  ── model toplamı ≈ ${toplam:.3f}")
     return "\n".join(satirlar), toplam
 
 

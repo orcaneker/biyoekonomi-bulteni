@@ -37,7 +37,7 @@ from config import (
     AYARLAR, KATEGORILER, SORGULAR, OLGUNLUK,
     KAYNAK_TIER1, KAYNAK_TIER2, KAYNAK_AKADEMIK, KAYNAK_TURKIYE, KAYNAK_DISLA,
     KAYNAK_ODEME_DUVARI, ODEME_DUVARI_IZLERI, ODEME_DUVARI_MIN_KARAKTER,
-    TEYIT, DURAK_KELIMELER, FIYAT,
+    TEYIT, DURAK_KELIMELER, FIYAT, EXA_FIYAT,
 )
 import prompts
 import llm
@@ -59,6 +59,24 @@ SITE_URL = AYARLAR["site_url"].rstrip("/")
 
 LOG = []
 YASAKLI_DOMAINLER = set()   # Exa'nın lisans nedeniyle reddettiği alan adları
+
+# Exa kullanım sayacı — maliyet raporu için GERÇEK çağrılardan sayılır.
+# "ek_sonuc": her istekte 10'u aşan sonuç adedi (Exa taban ücreti ilk 10'u kapsar).
+EXA_KULLANIM = {"cagri": 0, "sonuc": 0, "ek_sonuc": 0}
+
+
+def exa_maliyet():
+    """(rapor metni, tutar) — Exa arama maliyeti tahmini."""
+    k = EXA_KULLANIM
+    taban = k["cagri"] * EXA_FIYAT["arama"]
+    ek = k["ek_sonuc"] * EXA_FIYAT["ek_sonuc"]
+    metin = (
+        f"  exa.ai arama ({k['cagri']} istek · {k['sonuc']:,} sonuç)\n"
+        f"    taban {k['cagri']}×${EXA_FIYAT['arama']:.4f} = ${taban:.3f} · "
+        f"ek sonuç {k['ek_sonuc']:,}×${EXA_FIYAT['ek_sonuc']:.4f} = ${ek:.3f}\n"
+        f"    ≈ ${taban + ek:.3f}"
+    )
+    return metin, taban + ek
 
 
 def log(msg):
@@ -310,7 +328,12 @@ def exa_ara(sorgu, dom_dahil, bas_tarih, bit_tarih, sonuc, konum=None, ek_disla=
                 json=payload, timeout=60,
             )
             if r.status_code == 200:
-                return r.json().get("results", [])
+                sonuclar = r.json().get("results", [])
+                # Maliyet sayacı — yalnızca ÜCRETLENEN (200 dönen) istekler
+                EXA_KULLANIM["cagri"] += 1
+                EXA_KULLANIM["sonuc"] += len(sonuclar)
+                EXA_KULLANIM["ek_sonuc"] += max(0, len(sonuclar) - 10)
+                return sonuclar
 
             # 403 "domains are not available" → Exa bazı alan adlarını lisans
             # nedeniyle kabul etmiyor. Ayıkla ve tekrar dene (kendini onarma).
@@ -1235,8 +1258,11 @@ def main():
         "hatalar": hatalar,
     }
 
-    mm, mt = llm.maliyet_raporu()
-    rapor["maliyet_usd"] = round(mt, 3)
+    mm, mt = llm.maliyet_raporu()          # model (Haiku + yazım)
+    em, et = exa_maliyet()                 # arama
+    rapor["maliyet_model_usd"] = round(mt, 3)
+    rapor["maliyet_exa_usd"] = round(et, 3)
+    rapor["maliyet_usd"] = round(mt + et, 3)   # genel toplam
 
     lead = next((s for s in stories if s.get("id") == taslak["lead_id"]),
                 stories[0] if stories else {})
@@ -1279,16 +1305,19 @@ def main():
         log(f"Taslak Neon'a kaydedildi (issue_id={issue_id})")
 
         # --- Hakemlere davet ---
+        hakemler = db.hakemler()          # bir kez çek, hem davette hem raporda kullan
         gonderilen = 0
-        for h in db.hakemler():
+        for h in hakemler:
             link = f"{REVIEW_BASE_URL}/r/{h['token']}" if REVIEW_BASE_URL else "(REVIEW_BASE_URL yok)"
             if emails.davet_gonder(h, link, sayi_no, hafta,
                                    lead.get("title", "?"), secili_sayi):
                 gonderilen += 1
         log(f"Davet e-postası: {gonderilen} hakeme gönderildi")
 
-        # --- Çalışma raporu ---
-        if RAPOR_ALICI:
+        # --- Çalışma raporu (hakemler + RAPOR_ALICI) ---
+        # Koşul artık RAPOR_ALICI'ya bağlı DEĞİL: rapor hakemlere de gittiği
+        # için o değişken boş olsa bile gönderim yapılmalı.
+        if hakemler or RAPOR_ALICI:
             govde = (
                 f"Biyoekonomi Bülteni — Sayı {sayi_no} Taslak Raporu\n"
                 f"{'=' * 52}\n"
@@ -1307,12 +1336,19 @@ def main():
                 + "".join(f"  - {q}\n" for q in rapor["failed_queries"]) +
                 f"\nŞema uyarıları     : {len(hatalar)}\n"
                 + "".join(f"  ! {h}\n" for h in hatalar[:15]) +
-                f"\nTOKEN VE MALİYET\n{mm}\n\n"
+                f"\nMALİYET (bu sayının üretimi)\n{em}\n{mm}\n"
+                f"  ══ GENEL TOPLAM ≈ ${mt + et:.3f}  (arama + model)\n\n"
                 f"Durum: İNCELEME BEKLİYOR — davet {gonderilen} hakeme gitti.\n"
                 f"{'=' * 52}\nLOG:\n" + "\n".join(LOG[-40:])
             )
-            emails.rapor_gonder(RAPOR_ALICI,
+            # Rapor artık TÜM hakemlere gidiyor (maliyet görünürlüğü için),
+            # RAPOR_ALICI dahil — mükerrer adres olmasın diye tekilleştiriliyor.
+            rapor_alicilari = list(dict.fromkeys(
+                [h["email"] for h in hakemler] +
+                ([RAPOR_ALICI] if RAPOR_ALICI else [])))
+            emails.rapor_gonder(rapor_alicilari,
                                 f"Biyoekonomi Bülteni — Sayı {sayi_no} taslak hazır", govde)
+            log(f"Çalışma raporu: {len(rapor_alicilari)} kişiye gönderildi")
 
             # model karşılaştırması ayrı e-posta — rapor okunaklı kalsın
             if karsilastirma:
@@ -1322,10 +1358,11 @@ def main():
                     f"{KARSILASTIR_MODEL}", karsilastirma)
                 log("Model karşılaştırma e-postası gönderildi")
 
-    log("TOKEN VE MALİYET")
-    for satir in mm.split("\n"):
+    log("MALİYET")
+    for satir in (em + "\n" + mm).split("\n"):
         log(satir)
-    log(f"Tamamlandı — {time.time() - t0:.0f} sn · tahmini maliyet ${mt:.3f}")
+    log(f"  ══ GENEL TOPLAM ≈ ${mt + et:.3f}  (arama ${et:.3f} + model ${mt:.3f})")
+    log(f"Tamamlandı — {time.time() - t0:.0f} sn · tahmini maliyet ${mt + et:.3f}")
     log("═" * 46)
 
 
