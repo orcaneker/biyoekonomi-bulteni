@@ -60,23 +60,58 @@ SITE_URL = AYARLAR["site_url"].rstrip("/")
 LOG = []
 YASAKLI_DOMAINLER = set()   # Exa'nın lisans nedeniyle reddettiği alan adları
 
-# Exa kullanım sayacı — maliyet raporu için GERÇEK çağrılardan sayılır.
-# "ek_sonuc": her istekte 10'u aşan sonuç adedi (Exa taban ücreti ilk 10'u kapsar).
-EXA_KULLANIM = {"cagri": 0, "sonuc": 0, "ek_sonuc": 0}
+# ── EXA KULLANIM SAYACI ──────────────────────────────────────────
+# "deneme"  : API'ye giden HER istek (başarısızlar ve yeniden denemeler dahil).
+#             ⚠ Fatura bunu takip ediyor: 403 sonrası yasaklı alan adı ayıklanıp
+#             atılan tekrar istek de ücretlendiriliyor. Yalnızca 200'leri saymak
+#             faturayı olduğundan DÜŞÜK gösteriyordu (48 sayılırken fatura ~72).
+# "cagri"   : 200 dönen istekler (kaç tanesi işe yaradı).
+# "ek_sonuc": her istekte 10'u aşan sonuç adedi (taban ücret ilk 10'u kapsar).
+# "bildirilen": Exa yanıtta maliyet bildiriyorsa (costDollars) toplanır —
+#             o zaman tahmin yerine GERÇEK tutar raporlanır.
+EXA_KULLANIM = {"deneme": 0, "cagri": 0, "sonuc": 0, "ek_sonuc": 0,
+                "bildirilen": 0.0, "bildirim_var": False}
+
+
+def _exa_bildirilen_maliyet(veri):
+    """Exa yanıtındaki maliyet alanını bul (varsa). Şema değişirse sessizce None."""
+    for anahtar in ("costDollars", "cost_dollars", "cost"):
+        d = veri.get(anahtar)
+        if isinstance(d, (int, float)):
+            return float(d)
+        if isinstance(d, dict):
+            for alt in ("total", "totalDollars", "amount"):
+                if isinstance(d.get(alt), (int, float)):
+                    return float(d[alt])
+    return None
 
 
 def exa_maliyet():
-    """(rapor metni, tutar) — Exa arama maliyeti tahmini."""
+    """(rapor metni, tutar) — Exa arama maliyeti.
+
+    Exa yanıtta maliyet bildiriyorsa GERÇEK tutar kullanılır; bildirmiyorsa
+    yayınlanmış fiyat listesinden tahmin edilir (o zaman 'tahmin' diye yazar).
+    """
     k = EXA_KULLANIM
-    taban = k["cagri"] * EXA_FIYAT["arama"]
+    taban = k["deneme"] * EXA_FIYAT["arama"]      # fatura denemeleri sayıyor
     ek = k["ek_sonuc"] * EXA_FIYAT["ek_sonuc"]
-    metin = (
-        f"  exa.ai arama ({k['cagri']} istek · {k['sonuc']:,} sonuç)\n"
-        f"    taban {k['cagri']}×${EXA_FIYAT['arama']:.4f} = ${taban:.3f} · "
-        f"ek sonuç {k['ek_sonuc']:,}×${EXA_FIYAT['ek_sonuc']:.4f} = ${ek:.3f}\n"
-        f"    ≈ ${taban + ek:.3f}"
-    )
-    return metin, taban + ek
+    tahmin = taban + ek
+    basarisiz = k["deneme"] - k["cagri"]
+
+    satirlar = [
+        f"  exa.ai arama ({k['deneme']} istek"
+        + (f", {basarisiz} yeniden deneme/hatalı" if basarisiz else "")
+        + f" · {k['sonuc']:,} sonuç)",
+        f"    taban {k['deneme']}×${EXA_FIYAT['arama']:.4f} = ${taban:.3f} · "
+        f"ek sonuç {k['ek_sonuc']:,}×${EXA_FIYAT['ek_sonuc']:.4f} = ${ek:.3f}",
+    ]
+    if k["bildirim_var"]:
+        satirlar.append(f"    = ${k['bildirilen']:.3f}  (Exa'nın bildirdiği GERÇEK tutar; "
+                        f"liste fiyatı tahmini ${tahmin:.3f})")
+        return "\n".join(satirlar), k["bildirilen"]
+    satirlar.append(f"    ≈ ${tahmin:.3f}  (tahmin — Exa yanıtta tutar bildirmiyor; "
+                    f"kesin rakam exa.ai panelinde)")
+    return "\n".join(satirlar), tahmin
 
 
 def log(msg):
@@ -322,17 +357,24 @@ def exa_ara(sorgu, dom_dahil, bas_tarih, bit_tarih, sonuc, konum=None, ek_disla=
 
     for deneme in range(3):
         try:
+            EXA_KULLANIM["deneme"] += 1     # fatura her isteği sayıyor
             r = requests.post(
                 EXA_URL,
                 headers={"x-api-key": EXA_API_KEY, "Content-Type": "application/json"},
                 json=payload, timeout=60,
             )
             if r.status_code == 200:
-                sonuclar = r.json().get("results", [])
-                # Maliyet sayacı — yalnızca ÜCRETLENEN (200 dönen) istekler
+                veri = r.json()
+                sonuclar = veri.get("results", [])
                 EXA_KULLANIM["cagri"] += 1
                 EXA_KULLANIM["sonuc"] += len(sonuclar)
                 EXA_KULLANIM["ek_sonuc"] += max(0, len(sonuclar) - 10)
+                bildirilen = _exa_bildirilen_maliyet(veri)
+                if bildirilen is not None:
+                    EXA_KULLANIM["bildirilen"] += bildirilen
+                    if not EXA_KULLANIM["bildirim_var"]:
+                        EXA_KULLANIM["bildirim_var"] = True
+                        log(f"  Exa gerçek maliyet bildiriyor — tahmin yerine o kullanılacak")
                 return sonuclar
 
             # 403 "domains are not available" → Exa bazı alan adlarını lisans
