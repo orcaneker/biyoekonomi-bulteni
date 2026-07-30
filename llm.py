@@ -77,6 +77,21 @@ def maliyet_raporu():
     return "\n".join(satirlar), toplam
 
 
+def _effort_destekler(ad):
+    """Anthropic modeli output_config.effort kabul ediyor mu?
+
+    Kabul EDENLER : Sonnet 4.6 / Sonnet 5, Opus 4.5 ve sonrası, Fable 5
+    Kabul ETMEYEN : Haiku 4.5, Sonnet 4.5  → gönderilirse istek hata döner.
+    Triyaj Haiku'da çalıştığı için bu ayrım kritik.
+    """
+    if ad.startswith("claude-haiku"):
+        return False
+    if ad.startswith("claude-sonnet-4-5"):
+        return False
+    return ad.startswith(("claude-sonnet-4-6", "claude-sonnet-5",
+                          "claude-opus-", "claude-fable-", "claude-mythos-"))
+
+
 def _parcala(model):
     """'anthropic:claude-...' → ('anthropic', 'claude-...')"""
     if ":" not in model:
@@ -121,6 +136,20 @@ def _anthropic(model, ad, sistem, kullanici, max_tokens, stream, cache):
         "system": sistem_blok,
         "messages": [{"role": "user", "content": kullanici}],
     }
+
+    # ── EFFORT (output_config.effort) ──
+    # Anthropic'te akıl yürütme derinliği bu parametreyle ayarlanır
+    # (OpenAI'deki reasoning_effort'un karşılığı; aynı config anahtarını kullanıyoruz).
+    # ⚠ HER MODEL DESTEKLEMEZ: Haiku 4.5 ve Sonnet 4.5'e gönderilirse HATA verir —
+    # triyaj Haiku'da çalıştığı için bu kapı şart. Sonnet 4.6+/5, Opus 4.5+ ve
+    # Fable 5 destekler.
+    # ⚠ temperature / top_p / top_k ve thinking.budget_tokens BİLEREK gönderilmiyor:
+    # Sonnet 5 ve Opus 4.7+ bunları 400 ile reddediyor.
+    seviye = os.environ.get("REASONING_EFFORT", "").strip() or _A.get("reasoning_effort")
+    if seviye and _effort_destekler(ad):
+        body["output_config"] = {"effort": seviye}
+        _log(f"{ad}: effort={seviye}")
+
     if stream:
         body["stream"] = True
 

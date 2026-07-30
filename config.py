@@ -30,12 +30,17 @@ AYARLAR = {
 
     # LLM — sağlayıcı öneki zorunlu: "anthropic:..." veya "openai:..."
     "model_triyaj": "anthropic:claude-haiku-4-5-20251001",
-    # Yazım GPT-5.6 Luna'da (29 Tem 2026'da Sonnet 4.6'dan geçildi):
-    # aynı işi ~2.6x ucuza yapıyor. Luna daha derli toplu yazma eğiliminde
-    # olduğu için prompt'a "UZUNLUK DİSİPLİNİ" bölümü eklendi — kaynaktaki
-    # veriyi eleyerek kısaltmasın diye.
+    # Yazım Sonnet 5'te (30 Tem 2026). Kısa geçmiş: Sonnet 4.6 → Luna → Sonnet 5.
+    # Luna denendi ve BIRAKILDI: Türkçe akıcılığı iyiydi ama halüsinasyon oranı
+    # yüksek, kaynaktaki birçok detayı atlıyordu.
+    # Sonnet 5 notları:
+    #   · Adaptif düşünme VARSAYILAN OLARAK AÇIK (4.6'da kapalıydı) — düşünme
+    #     token'ları max_tokens bütçesinden düşer, limit bu yüzden yükseltildi.
+    #   · Yeni tokenizer aynı metni ~%30 daha fazla token sayar.
+    #   · temperature/top_p/top_k ve budget_tokens 400 döndürür — llm.py bunları
+    #     zaten göndermiyor, ek iş gerekmedi.
     # Geri dönmek için: "anthropic:claude-sonnet-4-6"
-    "model_yazim": "openai:gpt-5.6-luna",
+    "model_yazim": "anthropic:claude-sonnet-5",
     # NOT: temperature parametresi BİLEREK gönderilmiyor (model uyumsuzluk deneyimi).
 
     # OpenAI reasoning modelleri (gpt-5.6 ailesi) için akıl yürütme seviyesi:
@@ -50,10 +55,12 @@ AYARLAR = {
     "max_tokens_triyaj": 8000,
     "max_tokens_yazim": 48000,       # 14 haberin TAMAMI yazıldığı için GENİŞ olmalı.
                                      # ⚠ Düşük tutulursa çıktı JSON tamamlanmadan kesilir.
-    # OpenAI reasoning modellerinde (gpt-5.x) "düşünme" token'ları da BU
-    # bütçeden düşer — görünür metne kalan pay azalır ve JSON ortadan kesilir.
-    # Luna 128K çıktı desteklediği için rahat pay bırakıldı; kullanılmayan
-    # bütçe için ücret ödenmez.
+    # Akıl yürüten modellerde (gpt-5.x, Sonnet 5, Opus 4.7+, Fable 5) "düşünme"
+    # token'ları da BU bütçeden düşer — görünür metne kalan pay azalır ve JSON
+    # ortadan kesilir. Sonnet 5'te ayrıca yeni tokenizer aynı metni ~%30 daha
+    # fazla token sayıyor; ölçülen 22,7K çıktı ~29,5K'ya çıkıyor, üstüne düşünme
+    # binince 48K sınırı dolabilirdi. Bu modeller 128K çıktı desteklediği için
+    # rahat pay bırakıldı — kullanılmayan bütçe ücretlendirilmez.
     "max_tokens_yazim_reasoning": 96000,
     "derin_olay_sayisi": 14,         # tam metinle yazıma giden olay — HEPSİ haber olur
     "toplam_olay_sayisi": 40,        # geri kalanı radar adayı (başlık+link)
@@ -92,6 +99,10 @@ FIYAT = {
     # ⚠ Reasoning modelidir: "düşünme" token'ları ÇIKTI fiyatından faturalanır.
     # Bu yüzden aşağıdaki "reasoning_effort" ayarı maliyeti doğrudan etkiler.
     "openai:gpt-5.6-luna":                 {"in": 1.00, "out":  6.00, "cache_w": 1.25, "cache_r": 0.10},
+    # ⚠ Sonnet 5 liste fiyatı 4.6 ile AYNI ($3/$15) ama 31 Ağustos 2026'ya kadar
+    # tanıtım fiyatı $2/$10. Aşağıda LİSTE fiyatı yazılı — maliyet raporu böylece
+    # olduğundan düşük görünmez. Tanıtım bitince satır zaten doğru kalır.
+    "anthropic:claude-sonnet-5":           {"in": 3.00, "out": 15.00, "cache_w": 3.75, "cache_r": 0.30},
 }
 
 # ============================================================

@@ -625,10 +625,13 @@ def yaz(derin, radar_havuz, sayi_no, bas, bit, pencere, model=None):
     (KARSILASTIR_MODEL) aynı veriyle ikinci bir model çalıştırmak için kullanılır.
     """
     model = model or AYARLAR["model_yazim"]
-    # Reasoning modellerinde düşünme token'ları da çıktı bütçesinden düşer →
+    # Akıl yürüten modellerde düşünme token'ları da çıktı bütçesinden düşer →
     # görünür metnin kesilmemesi için daha geniş limit kullanılır.
+    # (gpt-5.x · Sonnet 5 · Opus 4.7+ · Fable 5 — hepsinde düşünme varsayılan açık)
+    AKIL_YURUTEN = ("openai:gpt-5", "anthropic:claude-sonnet-5",
+                    "anthropic:claude-opus-", "anthropic:claude-fable-")
     limit = (AYARLAR.get("max_tokens_yazim_reasoning", AYARLAR["max_tokens_yazim"])
-             if model.startswith("openai:gpt-5") else AYARLAR["max_tokens_yazim"])
+             if model.startswith(AKIL_YURUTEN) else AYARLAR["max_tokens_yazim"])
     son_hata = None
     for deneme in range(2):
         if deneme:

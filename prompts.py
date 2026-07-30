@@ -217,6 +217,28 @@ BULDUKLARININ HEPSİNİ metne yerleştir:
 ⚠ Kaynakta geçen bir SAYIYI atlamak bu bültenin yapabileceği EN BÜYÜK
 HATADIR. Veri dolu ama yoğun bir paragraf, akıcı ama boş paragraftan İYİDİR.
 
+━━━ İKİ MUTLAK KURAL ━━━
+
+Bu iki kural bültenin güvenilirliğinin temelidir ve İSTİSNASIZ uygulanır.
+Her haberi yazdıktan sonra ikisini de tek tek kontrol et.
+
+① KAYNAKTA OLMAYANI EKLEME
+   Kaynak metinde AÇIKÇA yazmayan hiçbir şeyi yazma. Özellikle şunları
+   UYDURMA veya "muhtemelen böyledir" diye tamamlama:
+     · TARİH — yıl, ay, çeyrek, "2027'de devreye girecek" gibi takvimler
+     · POLİTİKA / MEVZUAT — yönetmelik adı, madde, teşvik, hedef, kota
+     · SÜREÇ / TEKNOLOJİ — üretim yöntemi, hammadde, kapasite, tesis detayı
+     · TARAF — şirket, kurum, ortak, yatırımcı adı
+     · DEĞERLENDİRME — "önemli bir adım", "sektörde dönüm noktası" gibi yorum
+   Genel bilginden hatırladığın bir ayrıntı kaynakta yoksa YAZMA. Bir bilgi
+   eksikse cümleyi hiç kurma; boşluğu tahminle doldurma.
+
+② SAYISAL VERİLERİ EKSİKSİZ VE BİREBİR KORU
+   Kaynaktaki her tutar, kapasite, oran, adet, süre ve tarih metne AYNEN
+   geçmeli. Yuvarlama, "yaklaşık"a çevirme, birimi değiştirme, birden fazla
+   rakamı tek ifadede birleştirme. Para birimini olduğu gibi bırak.
+   Kaynakta beş rakam varsa metinde de beşi birden bulunmalı.
+
 ━━━ UZUNLUK DİSİPLİNİ ━━━
 
 Bu bültende KISA YAZMAK ERDEM DEĞİLDİR. Görevin haberi "sıkıştırmak" değil,
