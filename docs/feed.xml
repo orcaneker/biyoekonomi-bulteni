@@ -1,88 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"><channel>
   <title>Biyoekonomi Bülteni</title>
-  <link>https://orcaneker.github.io/biyoekonomi-bulteni</link>
+  <link>https://biyoekonomi-bulteni.site</link>
   <description>Haftalık biyoekonomi sektörü ve politika izleme bülteni</description>
   <language>tr</language>
-  <lastBuildDate>Fri, 24 Jul 2026 08:37:30 +0000</lastBuildDate>
+  <lastBuildDate>Sun, 02 Aug 2026 14:40:43 +0000</lastBuildDate>
   <item>
-    <title>Türk Hava Yolları SAFFA Fonu'na katılım sözleşmesi imzaladı</title>
-    <link>https://orcaneker.github.io/biyoekonomi-bulteni/#/haber/turk-hava-yollari-saffa-fonu-na-katilim-sozlesmesi-imzaladi</link>
-    <guid isPermaLink="false">turk-hava-yollari-saffa-fonu-na-katilim-sozlesmesi-imzaladi</guid>
-    <pubDate>2026-07-21</pubDate>
+    <title>SOCAR Türkiye ve Pegasus, SAF için iş birliği anlaşması imzaladı</title>
+    <link>https://biyoekonomi-bulteni.site/#/haber/socar-turkiye-ve-pegasus-saf-icin-is-birligi-anlasmasi-imzaladi</link>
+    <guid isPermaLink="false">socar-turkiye-ve-pegasus-saf-icin-is-birligi-anlasmasi-imzaladi</guid>
+    <pubDate>2026-07-27</pubDate>
+    <category>Türkiye</category>
+    <description>SOCAR Türkiye ile Pegasus Havayolları, sürdürülebilir havacılık yakıtı (SAF) alanında iş birliği anlaşması imzaladı. Taraflar, Türkiye'deki SAF ihtiyaçlarının belirlenmesi ve fizibilite çalışmalarının yürütülmesi için birlikte çalışacak.</description>
+  </item>
+  <item>
+    <title>HAMR Energy, orman biyokütlesinden yakıt için ARENA'dan 32 milyon dolar aldı</title>
+    <link>https://biyoekonomi-bulteni.site/#/haber/hamr-energy-orman-biyokutlesinden-yakit-icin-arena-dan-32-milyon-dolar</link>
+    <guid isPermaLink="false">hamr-energy-orman-biyokutlesinden-yakit-icin-arena-dan-32-milyon-dolar</guid>
+    <pubDate>2026-07-27</pubDate>
     <category>Biyoyakıt &amp; Biyoenerji</category>
-    <description>Türk Hava Yolları (THY), Burnham Sterling Asset Management'in (BSAM) yönettiği SAFFA Fund I LP'ye katılım sözleşmesini 21 Temmuz 2026'da İstanbul'da imzaladı. Aralık 2023'te kurulan fon, Airbus'ın ana yatırımcı konumunda bulunduğu bir SAF yatırım aracıdır. THY, bu katılımla SAF üretim kapasitesi, hammadde geliştirme ve teknoloji projelerine yönelik yatırımlarda aktif rol üstleniyor.</description>
+    <description>HAMR Energy, Avustralya'da orman kaynaklı biyokütleyi yakıta dönüştüren projeleri ve SAF üretimini ilerletmek için ARENA'dan 32 milyon dolara kadar fon sağladı. Fon, Continual Ventures ve New Rise Australia ile bağlantılı geliştirme çalışmalarını destekleyecek.</description>
   </item>
   <item>
-    <title>Hindistan yüzde 20 etanol harmanlama zorunluluğunu beş yıl erkenden hayata geçirdi</title>
-    <link>https://orcaneker.github.io/biyoekonomi-bulteni/#/haber/hindistan-yuzde-20-etanol-harmanlama-zorunlulugunu-bes-yil-erkenden-ha</link>
-    <guid isPermaLink="false">hindistan-yuzde-20-etanol-harmanlama-zorunlulugunu-bes-yil-erkenden-ha</guid>
-    <pubDate>2026-07-22</pubDate>
+    <title>SUEZ, Ellington'da 35 milyon sterlinlik atık tesisinin inşaatına başladı</title>
+    <link>https://biyoekonomi-bulteni.site/#/haber/suez-ellington-da-35-milyon-sterlinlik-atik-tesisinin-insaatina-baslad</link>
+    <guid isPermaLink="false">suez-ellington-da-35-milyon-sterlinlik-atik-tesisinin-insaatina-baslad</guid>
+    <pubDate>2026-07-29</pubDate>
+    <category>Atık Değerlendirme &amp; Döngüsel</category>
+    <description>SUEZ, Northumberland'daki Ellington sahasında yılda 50 bin ton gıda atığı işleyecek 35 milyon sterlinlik anaerobik çürütme (AD) tesisinin inşaatına başladı. Tesis, yaklaşık 5.500 evi besleyecek yenilenebilir gaz ve besin açısından zengin gübre üretecek.</description>
+  </item>
+  <item>
+    <title>Erex ve Samsung C&amp;T Japonya, veri merkezleri için 110MW biyokütle santrali planlıyor</title>
+    <link>https://biyoekonomi-bulteni.site/#/haber/erex-ve-samsung-c-t-japonya-veri-merkezleri-icin-110mw-biyokutle-santr</link>
+    <guid isPermaLink="false">erex-ve-samsung-c-t-japonya-veri-merkezleri-icin-110mw-biyokutle-santr</guid>
+    <pubDate>2026-07-31</pubDate>
     <category>Biyoyakıt &amp; Biyoenerji</category>
-    <description>Hindistan, benzine yüzde 20 etanol harmanlama zorunluluğunu (E20) Nisan 2026'dan itibaren uygulamaya koydu; bu adım ülkenin orijinal takviminin beş yıl önündedir. Söz konusu politika, İran savaşından kaynaklanan enerji arz kesintileri ve Rus petrolü alıcılarına yönelik ABD tarife tehditleriyle eş zamanlı hayata geçirildi. Hükümet, etanol harmanlama stratejisinin 2030'a kadar yıllık 4 milyar dolar petrol ithalatı tasarrufu sağlayacağını öngörmektedir.</description>
+    <description>Erex ve Samsung C&amp;T Japan, Niigata bölgesinde yapay zeka veri merkezlerinin artan elektrik talebini karşılamak üzere 110MW kapasiteli bir biyokütle santrali için temel anlaşma imzaladı. Tesisin 2029 mali yılında devreye girmesi planlanıyor.</description>
   </item>
   <item>
-    <title>AB Emisyon Ticaret Sistemi'nde ücretsiz izinler 2038'e uzatıldı</title>
-    <link>https://orcaneker.github.io/biyoekonomi-bulteni/#/haber/ab-emisyon-ticaret-sistemi-nde-ucretsiz-izinler-2038-e-uzatildi</link>
-    <guid isPermaLink="false">ab-emisyon-ticaret-sistemi-nde-ucretsiz-izinler-2038-e-uzatildi</guid>
-    <pubDate>2026-07-17</pubDate>
-    <category>Politika &amp; Mevzuat</category>
-    <description>Avrupa Komisyonu, çelik ve çimento gibi enerji yoğun sektörlere verilen ücretsiz karbon tahsisatını 2038'e kadar uzatan kapsamlı bir ETS revizyon paketi açıkladı. Teklif, sanayi sektörlerine 2030'a kadar yaklaşık 6 milyar Euro ek finansal destek sağlamayı hedefliyor. Paketin yürürlüğe girmesi için Avrupa Parlamentosu ve üye devletlerle yasama sürecinin tamamlanması gerekmektedir.</description>
+    <title>Norveç'te biyogazdan kalıcı CO2 tutumu ilk kez sertifikalandı</title>
+    <link>https://biyoekonomi-bulteni.site/#/haber/norvec-te-biyogazdan-kalici-co2-tutumu-ilk-kez-sertifikalandi</link>
+    <guid isPermaLink="false">norvec-te-biyogazdan-kalici-co2-tutumu-ilk-kez-sertifikalandi</guid>
+    <pubDate>2026-07-28</pubDate>
+    <category>Biyokömür &amp; Biyolojik Karbon</category>
+    <description>Puro.earth, Norveç'teki VEAS atık su arıtma tesisinde biyogaz üretiminden kaynaklanan CO2'nin yakalanıp deniz altında kalıcı olarak depolanmasını dünyada ilk kez sertifikalandırdı. Şubat-Mayıs 2026 döneminde 700'den fazla karbon giderim sertifikası (CORC) verildi.</description>
   </item>
   <item>
-    <title>Avrupa Komisyonu biyomanüfaktürü hızlandıracak yeni Biyoekonomi Yasası'nı hazırlıyor</title>
-    <link>https://orcaneker.github.io/biyoekonomi-bulteni/#/haber/avrupa-komisyonu-biyomanufakturu-hizlandiracak-yeni-biyoekonomi-yasasi</link>
-    <guid isPermaLink="false">avrupa-komisyonu-biyomanufakturu-hizlandiracak-yeni-biyoekonomi-yasasi</guid>
-    <pubDate>2026-07-20</pubDate>
-    <category>Politika &amp; Mevzuat</category>
-    <description>Avrupa Komisyonu, geçen yıl yayımlanan biyoekonomi stratejisini hayata geçirmek amacıyla yeni bir Biyoekonomi Yasası hazırlamaktadır. Taslak, düzenleyici kum havuzları, hızlandırılmış yetkilendirme süreçleri ve pazar çekiş mekanizmalarını kapsıyor. Yasa; stratejik özerklik, hammadde erişimi ve Avrupa biyoekonomi sektörünün ithalat bağımlılığını azaltma hedefleriyle uyumlu biçimde tasarlanmaktadır.</description>
-  </item>
-  <item>
-    <title>İngiltere SAF finansman kapsamını genişletti, Türk Havacılık Sanayii ile MoU imzaladı</title>
-    <link>https://orcaneker.github.io/biyoekonomi-bulteni/#/haber/ingiltere-saf-finansman-kapsamini-genisletti-turk-havacilik-sanayii-il</link>
-    <guid isPermaLink="false">ingiltere-saf-finansman-kapsamini-genisletti-turk-havacilik-sanayii-il</guid>
-    <pubDate>2026-07-23</pubDate>
-    <category>Politika &amp; Mevzuat</category>
-    <description>İngiltere İhracat Finansmanı Ajansı (UKEF), Farnborough Uluslararası Hava Gösterisi'nde SAF projelerine yönelik finansman uygunluk kriterlerini genişleteceğini duyurdu. Açıklamaya göre İngiltere merkezli SAF üretimi ilk kez UKEF finansman desteği kapsamına alınabilecek. Hükümet, bu adımın UK SAF sektörüne 2050'ye kadar 15.000 istihdam yaratma ve ekonomiye 5 milyar sterlin katkı sağlama potansiyeli taşıdığını vurguladı.</description>
-  </item>
-  <item>
-    <title>Catalyxx, Portekiz Sines'te 120 milyon Euro'luk yenilenebilir kimyasallar tesisi kuruyor</title>
-    <link>https://orcaneker.github.io/biyoekonomi-bulteni/#/haber/catalyxx-portekiz-sines-te-120-milyon-euro-luk-yenilenebilir-kimyasall</link>
-    <guid isPermaLink="false">catalyxx-portekiz-sines-te-120-milyon-euro-luk-yenilenebilir-kimyasall</guid>
-    <pubDate>2026-07-23</pubDate>
-    <category>Biyobazlı Malzeme &amp; Kimya</category>
-    <description>Catalyxx, biyoetanolden bütanol, hekzanol ve oktanol üretecek 120 milyon Euro değerinde ilk ticari ölçekli tesisi için Portekiz'in Sines kentini seçti. Proje, Portekiz Hükümeti tarafından Ulusal Çıkar Projesi (PIN) statüsüne alındı. Tesis, derin su limanı ve yenilenebilir enerji erişimiyle Avrupa'nın önemli bir endüstriyel merkezinde konumlanacak.</description>
-  </item>
-  <item>
-    <title>Rize 31 milyon dolar Seri B finansmanıyla pirinç metanını yarı oranında azaltmayı hedefliyor</title>
-    <link>https://orcaneker.github.io/biyoekonomi-bulteni/#/haber/rize-31-milyon-dolar-seri-b-finansmaniyla-pirinc-metanini-yari-oranind</link>
-    <guid isPermaLink="false">rize-31-milyon-dolar-seri-b-finansmaniyla-pirinc-metanini-yari-oranind</guid>
-    <pubDate>2026-07-20</pubDate>
-    <category>Tarım &amp; Biostimulant</category>
-    <description>Singapur merkezli tarım teknolojisi şirketi Rize, düşük emisyonlu pirinç ağını Güneydoğu Asya'da genişletmek amacıyla 31 milyon dolar Seri B finansmanı kapattı. Bu yatırım Rize'nin toplam finansmanını 47 milyon dolara taşırken şirket, 2030'a kadar 150.000 küçük çiftçi ve 300.000 hektar alanı kapsayan bir ağ kurmayı hedefliyor. Rize'nin uyguladığı Dönüşümlü Islatma ve Kurutma (AWD) sulama tekniği metan salınımını yüzde 50'ye kadar azaltıyor.</description>
-  </item>
-  <item>
-    <title>Axens, Jetanol teknolojisiyle Fransa'nın ilk endüstriyel ölçekli SAF projesini başlattı</title>
-    <link>https://orcaneker.github.io/biyoekonomi-bulteni/#/haber/axens-jetanol-teknolojisiyle-fransa-nin-ilk-endustriyel-olcekli-saf-pr</link>
-    <guid isPermaLink="false">axens-jetanol-teknolojisiyle-fransa-nin-ilk-endustriyel-olcekli-saf-pr</guid>
-    <pubDate>2026-07-17</pubDate>
+    <title>Hexagon Agility, IVECO BUS ile küresel CNG/biyometan anlaşması imzaladı</title>
+    <link>https://biyoekonomi-bulteni.site/#/haber/hexagon-agility-iveco-bus-ile-kuresel-cng-biyometan-anlasmasi-imzaladi</link>
+    <guid isPermaLink="false">hexagon-agility-iveco-bus-ile-kuresel-cng-biyometan-anlasmasi-imzaladi</guid>
+    <pubDate>2026-07-29</pubDate>
     <category>Biyoyakıt &amp; Biyoenerji</category>
-    <description>Axens, gelişmiş biyoetanolden SAF üretecek Jetanol teknolojisini kullanan ERA projesini başlattı; bu proje Fransa'nın ilk endüstriyel ölçekli SAF ünitesi olma özelliğini taşıyor. Projenin ticari operasyon hedefi 2030 olarak belirlenmiştir. Üretim kapasitesi ve yatırım tutarı kamuoyuyla paylaşılmamıştır.</description>
+    <description>Hexagon Agility ve IVECO BUS, iki şirket arasında zaten 10.000'den fazla CNG otobüsü teslimatına dayanan iş birliğini üç yıllık münhasır küresel anlaşmayla genişletti. Avrupa'da CNG/biyometan otobüsleri 2025'te şehir otobüsü kayıtlarının yüzde 7'sini oluşturdu.</description>
   </item>
   <item>
-    <title>BM-FAO raporu: 540 milyar dolarlık tarım sübvansiyonlarının yüzde 70'i dar emtia grubuna kilitli</title>
-    <link>https://orcaneker.github.io/biyoekonomi-bulteni/#/haber/bm-fao-raporu-540-milyar-dolarlik-tarim-subvansiyonlarinin-yuzde-70-i-</link>
-    <guid isPermaLink="false">bm-fao-raporu-540-milyar-dolarlik-tarim-subvansiyonlarinin-yuzde-70-i-</guid>
-    <pubDate>2026-07-22</pubDate>
+    <title>Louis Dreyfus, Saskatchewan'da ilk özel bezelye protein izolatı tesisini açtı</title>
+    <link>https://biyoekonomi-bulteni.site/#/haber/louis-dreyfus-saskatchewan-da-ilk-ozel-bezelye-protein-izolati-tesisin</link>
+    <guid isPermaLink="false">louis-dreyfus-saskatchewan-da-ilk-ozel-bezelye-protein-izolati-tesisin</guid>
+    <pubDate>2026-07-31</pubDate>
+    <category>Gıda &amp; Alternatif Protein</category>
+    <description>Louis Dreyfus Company, Yorkton, Saskatchewan'da yılda 75 bin ton sarı bezelyeyi protein izolatı, lif ve nişastaya işleyecek ilk özel tesisini açtı. Kombine operasyon 140 yeni iş yaratarak Yorkton kompleksini yıl sonuna kadar 260 çalışana çıkaracak.</description>
+  </item>
+  <item>
+    <title>Kuehnle AgroSystems, karanlık fermantasyon astaksantini için Series B fon topladı</title>
+    <link>https://biyoekonomi-bulteni.site/#/haber/kuehnle-agrosystems-karanlik-fermantasyon-astaksantini-icin-series-b-f</link>
+    <guid isPermaLink="false">kuehnle-agrosystems-karanlik-fermantasyon-astaksantini-icin-series-b-f</guid>
+    <pubDate>2026-07-27</pubDate>
+    <category>Biyomanüfaktür &amp; Fermantasyon</category>
+    <description>Hawaii merkezli Kuehnle AgroSystems, karanlık fermantasyon yoluyla üretilen alg astaksantini ölçeklendirmek için IVC liderliğinde çok milyon dolarlık bir Series B turu tamamladı. Şirketin 2024'teki 3 milyon dolarlık Series A2 turunun ardından gelen tur, akuakültür ve insan beslenmesi pazarlarını hedefliyor.</description>
+  </item>
+  <item>
+    <title>Fransa, Ferments du Futur fermantasyon programına 19,1 milyon avro ekledi</title>
+    <link>https://biyoekonomi-bulteni.site/#/haber/fransa-ferments-du-futur-fermantasyon-programina-19-1-milyon-avro-ekle</link>
+    <guid isPermaLink="false">fransa-ferments-du-futur-fermantasyon-programina-19-1-milyon-avro-ekle</guid>
+    <pubDate>2026-07-29</pubDate>
     <category>Politika &amp; Mevzuat</category>
-    <description>FAO, IFAD, UNICEF, WFP ve WHO'nun ortaklaşa yayımladığı 2026 Gıda Güvenliği ve Beslenme Raporu, üreticilere verilen yıllık yaklaşık 540 milyar dolarlık küresel tarımsal desteğin yüzde 70'inin tahıl, şeker, süt, sığır eti ve hayvan yemi bitkisel yağlarına bağlı olduğunu saptadı. Rapor, bu yoğunlaşmanın 2,7 milyar insanın sağlıklı beslenmeye erişimini yapısal olarak engellediğini tespit etti. Mevcut harcama artırılmadan yeniden dağıtım yapılması, OECD ülkelerinde meyve-sebze tüketimini yüzde 10 artırabilir.</description>
+    <description>Fransa'nın Ulusal Araştırma Ajansı (ANR), France 2030 programı kapsamında Ferments du Futur girişimine 2026-28 dönemi için 19,1 milyon avro (21,8 milyon dolar) yeni fon aktardı. Proje, 2022'den bu yana 10 yıllık dönemde toplam 100 milyon avroluk bütçenin bir parçası.</description>
   </item>
   <item>
-    <title>Uludağ İçecek Malatya'da 2,5 milyar TL'lik yeni üretim tesisi için EBRD finansmanı aldı</title>
-    <link>https://orcaneker.github.io/biyoekonomi-bulteni/#/haber/uludag-icecek-malatya-da-2-5-milyar-tl-lik-yeni-uretim-tesisi-icin-ebr</link>
-    <guid isPermaLink="false">uludag-icecek-malatya-da-2-5-milyar-tl-lik-yeni-uretim-tesisi-icin-ebr</guid>
-    <pubDate>2026-07-24</pubDate>
-    <category>Tarım &amp; Biostimulant</category>
-    <description>Uludağ İçecek, Malatya'da 2,5 milyar TL tutarında yeni bir üretim tesisi kurmak amacıyla Avrupa İmar ve Kalkınma Bankası'ndan (EBRD) finansman temin etti. Türkiye'nin önde gelen içecek şirketlerinden biri olan Uludağ İçecek, bu yatırımla Doğu Anadolu'daki üretim kapasitesini genişletmeyi hedefliyor. Yatırımın detaylı bileşenleri ve istihdam öngörüsüne ilişkin bilgiler kamuoyuyla paylaşılmadı.</description>
+    <title>Estonya, alternatif protein ve malzemeler için sentetik biyoloji pilot tesisi kuruyor</title>
+    <link>https://biyoekonomi-bulteni.site/#/haber/estonya-alternatif-protein-ve-malzemeler-icin-sentetik-biyoloji-pilot-</link>
+    <guid isPermaLink="false">estonya-alternatif-protein-ve-malzemeler-icin-sentetik-biyoloji-pilot-</guid>
+    <pubDate>2026-07-27</pubDate>
+    <category>Biyomanüfaktür &amp; Fermantasyon</category>
+    <description>Estonya'nın devlet sahipli metroloji kurumu Metrosert, yaklaşık 2 milyon avroluk (2,3 milyon dolar) bir sözleşmeyle Savekate ile alternatif protein ve materyal üreticileri için pilot tesis inşa ediyor. Tesisin yıl sonuna kadar tamamlanması bekleniyor.</description>
   </item>
 </channel></rss>

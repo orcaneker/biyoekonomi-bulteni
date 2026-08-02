@@ -1,1 +1,13 @@
-[]
+[
+  {
+    "number": 1,
+    "hafta": "2026-H31",
+    "publication_date": "2026-08-02",
+    "coverage_start": "2026-07-26",
+    "coverage_end": "2026-08-02",
+    "lead_title": "SOCAR Türkiye ve Pegasus, SAF için iş birliği anlaşması imzaladı",
+    "story_count": 9,
+    "radar_count": 26,
+    "file": "data/arsiv/2026-H31.json"
+  }
+]

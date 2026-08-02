@@ -1,5 +1,86 @@
 {
-  "issue_no": 0,
-  "events": [],
-  "urls": []
+  "issue_no": 1,
+  "events": [
+    {
+      "baslik_ozet": "SOCAR Türkiye ve Pegasus, SAF için iş birliği anlaşması imzaladı",
+      "hafta": "2026-H31"
+    },
+    {
+      "baslik_ozet": "HAMR Energy, orman biyokütlesinden yakıt için ARENA'dan 32 milyon dolar aldı",
+      "hafta": "2026-H31"
+    },
+    {
+      "baslik_ozet": "SUEZ, Ellington'da 35 milyon sterlinlik atık tesisinin inşaatına başladı",
+      "hafta": "2026-H31"
+    },
+    {
+      "baslik_ozet": "Erex ve Samsung C&T Japonya, veri merkezleri için 110MW biyokütle santrali planlıyor",
+      "hafta": "2026-H31"
+    },
+    {
+      "baslik_ozet": "Norveç'te biyogazdan kalıcı CO2 tutumu ilk kez sertifikalandı",
+      "hafta": "2026-H31"
+    },
+    {
+      "baslik_ozet": "Hexagon Agility, IVECO BUS ile küresel CNG/biyometan anlaşması imzaladı",
+      "hafta": "2026-H31"
+    },
+    {
+      "baslik_ozet": "Louis Dreyfus, Saskatchewan'da ilk özel bezelye protein izolatı tesisini açtı",
+      "hafta": "2026-H31"
+    },
+    {
+      "baslik_ozet": "Kuehnle AgroSystems, karanlık fermantasyon astaksantini için Series B fon topladı",
+      "hafta": "2026-H31"
+    },
+    {
+      "baslik_ozet": "Fransa, Ferments du Futur fermantasyon programına 19,1 milyon avro ekledi",
+      "hafta": "2026-H31"
+    },
+    {
+      "baslik_ozet": "Estonya, alternatif protein ve malzemeler için sentetik biyoloji pilot tesisi kuruyor",
+      "hafta": "2026-H31"
+    }
+  ],
+  "urls": [
+    "https://biomassmagazine.com/articles/neste-reports-record-high-sales-margin-ebitda-for-renewable-products-segment",
+    "https://biomassmagazine.com/articles/hamr-energy-secures-up-to-32-million-in-arena-funding-to-advance-forestry-to-fuels-projects",
+    "https://bioenergy-news.com/news/construction-begins-on-35m-anaerobic-digestion-facility-at-suezs-ellington-site",
+    "https://bioenergy-news.com/news/erex-and-samsung-ct-japan-plan-biomass-plant-to-power-ai-data-centres",
+    "https://bioenergy-news.com/news/puro-earth-certifies-first-permanent-carbon-removal-from-biogas-production",
+    "https://bioenergy-news.com/news/gasunie-links-zeeland-and-noord-brabant-gas-networks-to-boost-biomethane-capacity",
+    "https://bioenergy-news.com/news/hexagon-agility-and-iveco-bus-sign-exclusive-global-agreement-for-cng-fuel-systems",
+    "https://vegconomist.com/manufacturing-technology/louis-dreyfus-turns-yellow-peas-opens-first-dedicated-protein-isolate-plant-saskatchewan",
+    "https://biomassmagazine.com/articles/sumitomo-corporation-do-brasil-and-cemvita-partner-to-integrate-production-of-bio-methane-and-bio-oil-a-precursor-of-saf-in-brazil",
+    "https://greenqueen.com.hk/kuehnle-agrosystems-funding-dark-fermentation-algae-astaxanthin-supplement",
+    "https://greenqueen.com.hk/ferments-du-futur-food-fermentation-project-funding-france",
+    "https://vegconomist.com/approvals/rhiza-mycoprotein-cleared-sale-canada-bmc-ingredients-adds-third-regulatory-market",
+    "https://greenqueen.com.hk/bmc-ingredients-the-better-meat-co-rhiza-mycoprotein-health-canada-approval",
+    "https://bioenergy-news.com/news/adba-welcomes-neso-biomethane-report-and-calls-for-government-action",
+    "https://greenqueen.com.hk/estonia-metrosert-applied-research-center-synthetic-biology-novel-food-facility",
+    "https://bioenergy-news.com/news/bankinter-investment-and-plenium-partners-buy-italian-biomethane-business",
+    "https://biomassmagazine.com/articles/nw-natural-announces-another-year-over-year-increase-in-rng",
+    "https://biomassmagazine.com/articles/strategic-biofuels-secures-class-vi-permit",
+    "https://biomassmagazine.com/articles/puroearth-certifies-worlds-first-permanent-carbon-removal-from-biogas-production-developed-by-inherit-carbon-solutions",
+    "https://bioenergy-news.com/news/lagos-pilot-turns-public-toilet-waste-into-biogas-as-part-of-sanitation-drive",
+    "https://basf.com/global/en/media/news-releases/2026/07/p-26-131",
+    "https://cordis.europa.eu/project/id/101291392/it",
+    "https://foodingredientsfirst.com/news/crespell-deiters-dry-extrusion-plant-protein.html",
+    "https://vegconomist.com/retail-e-commerce/mybacon-enters-wegmans-mycelium-brand-reports-category-leading-growth",
+    "https://foodingredientsfirst.com/news/dry4good-expands-natural-ingredient-production-tenfold-as-clean-label-demand-grows.html",
+    "https://care360.basf.com/global/en/industries/personal-care/news-media/news-releases/news-detail/2026/07/28/Responsibly-Active-program",
+    "https://vegconomist.com/fermentation/c16-biosciences-debuts-fermented-cocoa-butter-equivalent-first-food-ingredient",
+    "https://foodingredientsfirst.com/news/c16-fermented-cocoa-butter-equivalent.html",
+    "https://dsm-firmenich.com/en/businesses/taste-texture-health/news-events/articles/dairy/bovaer-delivers-consistent-methane-reductions.html",
+    "https://agfundernews.com/micropep-kickstarts-global-regulatory-registration-of-its-peptide-based-biofungicide",
+    "https://cordis.europa.eu/article/id/466719-achieving-greener-farming-by-turning-to-nature",
+    "https://greenqueen.com.hk/sco2-supercritical-carbon-dioxide-co2-food-waste-nextract-funding",
+    "https://gidahatti.com/haber/28440531/hassas-fermantasyonla-uretilen-laktoferrin-yaygin-kullanima-hazirlaniyor",
+    "https://biofuelsdigest.com/the-digests-2026-multi-slide-guide-to-biogenic-co2-supply-agreements",
+    "https://bioenergy-news.com/news/canton-south-dakota-receives-first-bdo-zone-a-rating-for-corn-stover-supply",
+    "https://bioenergy-news.com/news/spent-coffee-grounds-show-potential-as-biomass-feedstock",
+    "https://bioenergy-news.com/news/penn-state-researchers-assess-sustainability-of-biomass-to-fuel-startup-in-pennsylvania",
+    "https://aa.com.tr/tr/ekonomi/tpao-bpnin-kerkuk-merkezli-sirketinin-yuzde-15-hissesini-aldi/4011896",
+    "https://enerjigunlugu.net/yeni-dogus-sanliurfadaki-tesisinde-aty-uretimini-arttiracak-69193h.htm"
+  ]
 }
