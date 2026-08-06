@@ -8,10 +8,10 @@
     "window_days": 7,
     "audio": {
       "url": "assets/audio/2026-H31.mp3",
-      "duration_sec": 63,
+      "duration_sec": 69,
       "voice": "lxZLq5dcyw12UangGJgN",
-      "chars": 827,
-      "generated_at": "2026-08-02"
+      "chars": 898,
+      "generated_at": "2026-08-06"
     }
   },
   "brief": [
@@ -24,8 +24,8 @@
       "slug": "suez-ellington-da-35-milyon-sterlinlik-atik-tesisinin-insaatina-baslad"
     },
     {
-      "text": "BMC Ingredients, Rhiza miçoproteini için Health Canada'dan 'itiraz yok' mektubu alarak üçüncü düzenleyici pazarına ulaştı, 2027 lansmanı hedefleniyor.",
-      "slug": null
+      "text": "Louis Dreyfus, Kanada'nın Saskatchewan eyaletinde yılda 75 bin ton sarı bezelyeyi protein izolatı, lif ve nişastaya işleyecek ilk özel tesisini açtı.",
+      "slug": "louis-dreyfus-saskatchewan-da-ilk-ozel-bezelye-protein-izolati-tesisin"
     },
     {
       "text": "HAMR Energy, Avustralya'da orman biyokütlesinden yakıt ve SAF projeleri için ARENA'dan 32 milyon dolara kadar fon güvence altına aldı.",
