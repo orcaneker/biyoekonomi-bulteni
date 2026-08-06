@@ -2,10 +2,6 @@
   "issue_no": 1,
   "events": [
     {
-      "baslik_ozet": "SOCAR Türkiye ve Pegasus, SAF için iş birliği anlaşması imzaladı",
-      "hafta": "2026-H31"
-    },
-    {
       "baslik_ozet": "HAMR Energy, orman biyokütlesinden yakıt için ARENA'dan 32 milyon dolar aldı",
       "hafta": "2026-H31"
     },
@@ -39,6 +35,10 @@
     },
     {
       "baslik_ozet": "Estonya, alternatif protein ve malzemeler için sentetik biyoloji pilot tesisi kuruyor",
+      "hafta": "2026-H31"
+    },
+    {
+      "baslik_ozet": "Neste, yenilenebilir ürünlerde rekor satış marjı ve FAVÖK açıkladı",
       "hafta": "2026-H31"
     }
   ],

@@ -32,59 +32,68 @@
       "slug": "hamr-energy-orman-biyokutlesinden-yakit-icin-arena-dan-32-milyon-dolar"
     },
     {
-      "text": "SOCAR Türkiye ve Pegasus Havayolları, Türkiye'de SAF ihtiyaçlarını belirlemek ve fizibilite çalışmaları yürütmek üzere iş birliği anlaşması imzaladı.",
-      "slug": "socar-turkiye-ve-pegasus-saf-icin-is-birligi-anlasmasi-imzaladi"
+      "text": "Neste'nin Yenilenebilir Ürünler segmenti 2026 ikinci çeyrekte 859 milyon avro karşılaştırılabilir FAVÖK ve ton başına 1.223 dolarla rekor satış marjı bildirdi; SAF satışı 145 bin ton oldu.",
+      "slug": "neste-yenilenebilir-urunlerde-rekor-satis-marji-ve-favok-acikladi"
     }
   ],
   "metrics": {
     "aciklanan_yatirim_usd_milyon": 56,
     "proje_sayisi": 10,
     "politika_gelismesi": 1,
-    "kapsanan_ulke": 10
+    "kapsanan_ulke": 11
   },
   "lead": {
-    "id": "socar-pegasus-saf-turkey",
-    "slug": "socar-turkiye-ve-pegasus-saf-icin-is-birligi-anlasmasi-imzaladi",
+    "id": "suez-anaerobic-digestion-ellington",
+    "slug": "suez-ellington-da-35-milyon-sterlinlik-atik-tesisinin-insaatina-baslad",
     "image": {
-      "url": "https://bbi-strapi.s3.us-east-2.amazonaws.com/Neste_Q22026_39f3cdc862.jpg",
+      "url": "https://www.bioenergy-news.com/wp-content/uploads/2026/07/ellington-ad-visualisation.webp",
       "type": "og-sayfa",
-      "credit": "biomassmagazine.com"
+      "credit": "bioenergy-news.com"
     },
-    "score": 10,
+    "score": 8,
     "secim": "one_cikan",
-    "title": "SOCAR Türkiye ve Pegasus, SAF için iş birliği anlaşması imzaladı",
-    "detail": "SOCAR Türkiye ve Pegasus Havayolları, sürdürülebilir havacılık yakıtı (SAF) alanında stratejik bir iş birliği adımı olarak bir anlaşma imzaladıklarını duyurdu. Anlaşma kapsamında iki kuruluş, Türkiye'de SAF'a yönelik ihtiyaçların belirlenmesi amacıyla birlikte çalışacak.\n\nTaraflar ayrıca fizibilite çalışmaları yürütmeyi ve bu alanda başka adımlar atmayı hedeflediklerini belirtti. Anlaşmanın kapsamı şu aşamada araştırma ve değerlendirme faaliyetleriyle sınırlı olarak tanımlandı; somut bir yatırım tutarı, kapasite hedefi veya takvim açıklanmadı.\n\nDuyuru, SOCAR Türkiye'nin açıklamasıyla kamuoyuna aktarıldı ve gelişme, ülkedeki hava taşımacılığı sektörünün SAF'a yönelik ilk kurumsal adımlarından biri olarak kayıtlara geçti. Anlaşmanın ilerleyen aşamalarına dair ek bilgi paylaşılmadı.",
+    "title": "SUEZ, Ellington'da 35 milyon sterlinlik atık tesisinin inşaatına başladı",
+    "detail": "SUEZ, Northumberland'daki Ellington sahasında 35 milyon sterlin (£) değerinde bir anaerobik çürütme (AD) tesisinin inşaatına başladığını duyurdu. Tesis, Northumberland ve Kuzeydoğu İngiltere genelinde gıda atığı toplama hizmetlerinin yaygınlaştırılmasını destekleyecek altyapının bir parçası olarak inşa ediliyor. Faaliyete geçtiğinde tesis yılda 50 bin tona kadar gıda atığı işleyecek; bu süreçte besin açısından zengin bir gübre ürünü ile yaklaşık 5.500 evi güçlendirmeye yetecek yenilenebilir gaz üretilecek.\n\nProjenin ana yüklenicisi O'Brien Moran and Co., sahada zemin çalışmalarına başladı; inşaatın yaklaşık 18 ay süreceği, ardından test ve devreye alma sürecinin 2027 sonbaharında tesisin tam operasyonel hale gelmesiyle tamamlanacağı belirtildi. EPCM uzmanı Stantec ile yakın iş birliği yürütüldüğü aktarıldı.\n\nSUEZ, projede döngüselliğin merkezi bir planlama unsuru olduğunu vurguladı: mevcut sahadaki eski tesisin sökümünden elde edilen 10.500 tondan fazla beton, yeni tesisin temel katmanlarında yeniden kullanılıyor; ana binada gereken yapısal çeliğin yaklaşık yüzde 60'ı geri kazanılmış malzemeden karşılanacak. Proje ayrıca zemin stabilizasyonunda yaklaşık 115 ton Arigna biyokömürü kullanacak; bu miktar çimento ve zemin mühendisliği çalışmalarından kaynaklanan gömülü karbonu dengelemeye yardımcı olacak.\n\nYeni tesis, sahadaki mevcut düzenli depolama gazı üretim sisteminden güç alacak ve kendi biyogaz üretimiyle yerel enerji güvenliğine katkıda bulunacak. Proje, Kral III. Charles'tan ilham alan gönüllü ulusal girişim Circularity in Practice'e dahil; SUEZ bu girişimin üyesi. Girişimin başkanı Michelle Pinggera, SUEZ'in beton ve yapısal çelik geri kazanımı ile biyokömür kullanımının, inşaat projelerinin atığı nasıl azaltıp gömülü karbonu düşürebileceğini gösterdiğini belirtti.",
     "source": {
-      "url": "https://biomassmagazine.com/articles/neste-reports-record-high-sales-margin-ebitda-for-renewable-products-segment",
-      "name": "SOCAR Türkiye / Biomass Magazine",
+      "url": "https://bioenergy-news.com/news/construction-begins-on-35m-anaerobic-digestion-facility-at-suezs-ellington-site",
+      "name": "Bioenergy Insight Magazine",
       "tier": 2,
-      "type": "company",
+      "type": "trade_press",
       "primary": true
     },
-    "excerpt": "SOCAR Türkiye ile Pegasus Havayolları, sürdürülebilir havacılık yakıtı (SAF) alanında iş birliği anlaşması imzaladı. Taraflar, Türkiye'deki SAF ihtiyaçlarının belirlenmesi ve fizibilite çalışmalarının yürütülmesi için birlikte çalışacak.",
-    "capacity": null,
-    "category": "turkiye",
-    "maturity": "announced",
+    "excerpt": "SUEZ, Northumberland'daki Ellington sahasında yılda 50 bin ton gıda atığı işleyecek 35 milyon sterlinlik anaerobik çürütme (AD) tesisinin inşaatına başladı. Tesis, yaklaşık 5.500 evi besleyecek yenilenebilir gaz ve besin açısından zengin gübre üretecek.",
+    "capacity": "50 bin ton/yıl gıda atığı; ~5.500 ev için yenilenebilir gaz",
+    "category": "atik-donusum",
+    "maturity": "construction",
     "companies": [
-      "SOCAR Türkiye",
-      "Pegasus Airlines"
+      "SUEZ",
+      "O'Brien Moran and Co.",
+      "Stantec"
     ],
     "countries": [
-      "Turkey"
+      "United Kingdom"
     ],
-    "event_date": "2026-07-27",
-    "investment": null,
+    "event_date": "2026-07-29",
+    "investment": {
+      "currency": "GBP",
+      "amount_original": 35,
+      "amount_usd_million": null,
+      "public_support_usd_million": null
+    },
     "value_chain": [
-      "donusum-fermantasyon"
+      "biyokutle",
+      "atik-geri-donusum"
     ],
     "neden_onemli": null,
     "technologies": [
-      "SAF"
+      "anaerobik çürütme",
+      "biyokömür"
     ],
     "subcategories": [
-      "SAF"
+      "anaerobik çürütme",
+      "biyokömür"
     ],
-    "published_date": "2026-07-27",
+    "published_date": "2026-07-29",
     "supporting_sources": []
   },
   "stories": [
@@ -140,60 +149,6 @@
         "orman biyokütlesi"
       ],
       "published_date": "2026-07-27",
-      "supporting_sources": []
-    },
-    {
-      "id": "suez-anaerobic-digestion-ellington",
-      "slug": "suez-ellington-da-35-milyon-sterlinlik-atik-tesisinin-insaatina-baslad",
-      "image": {
-        "url": "https://www.bioenergy-news.com/wp-content/uploads/2026/07/ellington-ad-visualisation.webp",
-        "type": "og-sayfa",
-        "credit": "bioenergy-news.com"
-      },
-      "score": 8,
-      "secim": "one_cikan",
-      "title": "SUEZ, Ellington'da 35 milyon sterlinlik atık tesisinin inşaatına başladı",
-      "detail": "SUEZ, Northumberland'daki Ellington sahasında 35 milyon sterlin (£) değerinde bir anaerobik çürütme (AD) tesisinin inşaatına başladığını duyurdu. Tesis, Northumberland ve Kuzeydoğu İngiltere genelinde gıda atığı toplama hizmetlerinin yaygınlaştırılmasını destekleyecek altyapının bir parçası olarak inşa ediliyor. Faaliyete geçtiğinde tesis yılda 50 bin tona kadar gıda atığı işleyecek; bu süreçte besin açısından zengin bir gübre ürünü ile yaklaşık 5.500 evi güçlendirmeye yetecek yenilenebilir gaz üretilecek.\n\nProjenin ana yüklenicisi O'Brien Moran and Co., sahada zemin çalışmalarına başladı; inşaatın yaklaşık 18 ay süreceği, ardından test ve devreye alma sürecinin 2027 sonbaharında tesisin tam operasyonel hale gelmesiyle tamamlanacağı belirtildi. EPCM uzmanı Stantec ile yakın iş birliği yürütüldüğü aktarıldı.\n\nSUEZ, projede döngüselliğin merkezi bir planlama unsuru olduğunu vurguladı: mevcut sahadaki eski tesisin sökümünden elde edilen 10.500 tondan fazla beton, yeni tesisin temel katmanlarında yeniden kullanılıyor; ana binada gereken yapısal çeliğin yaklaşık yüzde 60'ı geri kazanılmış malzemeden karşılanacak. Proje ayrıca zemin stabilizasyonunda yaklaşık 115 ton Arigna biyokömürü kullanacak; bu miktar çimento ve zemin mühendisliği çalışmalarından kaynaklanan gömülü karbonu dengelemeye yardımcı olacak.\n\nYeni tesis, sahadaki mevcut düzenli depolama gazı üretim sisteminden güç alacak ve kendi biyogaz üretimiyle yerel enerji güvenliğine katkıda bulunacak. Proje, Kral III. Charles'tan ilham alan gönüllü ulusal girişim Circularity in Practice'e dahil; SUEZ bu girişimin üyesi. Girişimin başkanı Michelle Pinggera, SUEZ'in beton ve yapısal çelik geri kazanımı ile biyokömür kullanımının, inşaat projelerinin atığı nasıl azaltıp gömülü karbonu düşürebileceğini gösterdiğini belirtti.",
-      "source": {
-        "url": "https://bioenergy-news.com/news/construction-begins-on-35m-anaerobic-digestion-facility-at-suezs-ellington-site",
-        "name": "Bioenergy Insight Magazine",
-        "tier": 2,
-        "type": "trade_press",
-        "primary": true
-      },
-      "excerpt": "SUEZ, Northumberland'daki Ellington sahasında yılda 50 bin ton gıda atığı işleyecek 35 milyon sterlinlik anaerobik çürütme (AD) tesisinin inşaatına başladı. Tesis, yaklaşık 5.500 evi besleyecek yenilenebilir gaz ve besin açısından zengin gübre üretecek.",
-      "capacity": "50 bin ton/yıl gıda atığı; ~5.500 ev için yenilenebilir gaz",
-      "category": "atik-donusum",
-      "maturity": "construction",
-      "companies": [
-        "SUEZ",
-        "O'Brien Moran and Co.",
-        "Stantec"
-      ],
-      "countries": [
-        "United Kingdom"
-      ],
-      "event_date": "2026-07-29",
-      "investment": {
-        "currency": "GBP",
-        "amount_original": 35,
-        "amount_usd_million": null,
-        "public_support_usd_million": null
-      },
-      "value_chain": [
-        "biyokutle",
-        "atik-geri-donusum"
-      ],
-      "neden_onemli": null,
-      "technologies": [
-        "anaerobik çürütme",
-        "biyokömür"
-      ],
-      "subcategories": [
-        "anaerobik çürütme",
-        "biyokömür"
-      ],
-      "published_date": "2026-07-29",
       "supporting_sources": []
     },
     {
@@ -389,9 +344,9 @@
       "id": "kuehnle-astaxanthin-scaling",
       "slug": "kuehnle-agrosystems-karanlik-fermantasyon-astaksantini-icin-series-b-f",
       "image": {
-        "url": null,
-        "type": null,
-        "credit": null
+        "url": "https://www.greenqueen.com.hk/wp-content/uploads/2026/07/kuehnle-agrosystems-funding-dark-fermentation-algae-astaxanthin-supplement-social-1024x536.png",
+        "credit": "greenqueen.com.hk",
+        "type": "og-sayfa"
       },
       "score": 7,
       "secim": "one_cikan",
@@ -439,9 +394,9 @@
       "id": "ferments-du-futur-france",
       "slug": "fransa-ferments-du-futur-fermantasyon-programina-19-1-milyon-avro-ekle",
       "image": {
-        "url": null,
-        "type": null,
-        "credit": null
+        "url": "https://www.greenqueen.com.hk/wp-content/uploads/2026/07/ferments-du-futur-food-fermentation-project-funding-france-social.png",
+        "credit": "greenqueen.com.hk",
+        "type": "og-sayfa"
       },
       "score": 7,
       "secim": "one_cikan",
@@ -487,9 +442,9 @@
       "id": "estonia-synbio-plant-novel-foods",
       "slug": "estonya-alternatif-protein-ve-malzemeler-icin-sentetik-biyoloji-pilot-",
       "image": {
-        "url": "https://www.greenqueen.com.hk/wp-content/uploads/2025/08/Green-Queen-Wire-Banner-Ad.png",
-        "type": "og",
-        "credit": "greenqueen.com.hk"
+        "url": "https://www.greenqueen.com.hk/wp-content/uploads/2026/07/estonia-metrosert-applied-research-center-synthetic-biology-novel-foods-facility-social-1024x536.png",
+        "credit": "greenqueen.com.hk",
+        "type": "og-sayfa"
       },
       "score": 6,
       "secim": "one_cikan",
@@ -535,6 +490,55 @@
       ],
       "published_date": "2026-07-27",
       "supporting_sources": []
+    },
+    {
+      "id": "neste-q2-2026-yenilenebilir-urunler",
+      "secim": "one_cikan",
+      "title": "Neste, yenilenebilir ürünlerde rekor satış marjı ve FAVÖK açıkladı",
+      "excerpt": "Neste'nin Yenilenebilir Ürünler segmenti 2026 ikinci çeyrekte 859 milyon avro karşılaştırılabilir FAVÖK bildirdi; bir yıl önce bu rakam 174 milyon avroydu. Satış marjı ton başına 1.223 dolarla şirket tarihinin en yüksek seviyesine çıktı ve satış hacmi 1 milyon tonu aştı.",
+      "detail": "Neste, 2026'nın ikinci çeyreğinde Yenilenebilir Ürünler segmentinde rekor sonuç açıkladı. Segmentin karşılaştırılabilir FAVÖK'ü 859 milyon avroya ulaştı; geçen yılın aynı çeyreğinde bu rakam 174 milyon avro düzeyindeydi. Satış marjı ton başına 1.223 dolarla şirket tarihinin en yüksek seviyesine çıktı, bir yıl önce 361 dolardı. Satış hacmi ise 1 milyon tonun üzerine geçti.\n\nŞirket, FAVÖK ve marjdaki artışı hem ABD hem de Avrupa pazarlarında güçlenen primlere bağladı. Orta Doğu'daki çatışmanın fosil orta distilat fiyatlarını yukarı çekmesi de segmenti destekledi. Neste CEO'su Heikki Malinen, dönem boyunca küresel petrol ve ürün piyasalarına bu çatışmanın hâkim olduğunu, yenilenebilir ürünlerde üretim kısıtları yaşanmasına rağmen güçlü marjların yakalandığını belirtti. Malinen'e göre dönem içinde alınan olumlu düzenleyici kararlar, yenilenebilir yakıt talebini önümüzdeki yıllarda da desteklemeyi sürdürecek.\n\nÜretim tarafında Singapur'da geciken bir ekipman değişimi hacimleri etkiledi. Neste'nin kendi yenilenebilir üretim tesisleri çeyrek boyunca ortalama yüzde 75 kapasite kullanım oranıyla çalıştı; 2025'in aynı çeyreğinde bu oran yüzde 81'di. Şirket çeyrekte toplam 1,126 milyon ton yenilenebilir yakıt üretti. Bu üretimin 977 bin tonu yenilenebilir dizel, 126 bin tonu sürdürülebilir havacılık yakıtı (SAF) ve 23 bin tonu diğer ürünlerden oluştu. 2025'in aynı döneminde üretim 1,16 milyon ton olmuş, içinde 844 bin ton yenilenebilir dizel ve 290 bin ton SAF yer almıştı.\n\nSatışlar çeyrekte 1,026 milyon ton olarak gerçekleşti; geçen yılın aynı döneminde 1,096 milyon tondu. Bu hacmin 854 bin tonunu yenilenebilir dizel, 145 bin tonunu SAF ve 27 bin tonunu diğer ürünler oluşturdu; SAF satışı bir yıl önceki 233 bin ton seviyesinden geriledi. Hacmin yaklaşık yüzde 73'ü Avrupa, yüzde 27'si Kuzey Amerika pazarına satıldı ve bu dağılım bir önceki yılla aynı kaldı. Atık ve artık kaynaklı girdilerin payı yüzde 96'dan yüzde 91'e indi. Şirket ayrıca çeyrekte ABD'nin 45Z temiz yakıt üretim kredisinden 27 milyon avro kaydettiğini açıkladı; biyokütle bazlı dizel için D4 yenilenebilir tanımlama numarası (RIN) fiyatı 1,09 dolardan 2,12 dolara, Kaliforniya Düşük Karbonlu Yakıt Standardı kredi fiyatı ise ton CO2 başına 52 dolardan 69 dolara yükseldi.",
+      "neden_onemli": null,
+      "category": "rapor",
+      "subcategories": [
+        "SAF",
+        "yenilenebilir dizel"
+      ],
+      "value_chain": [
+        "donusum-fermantasyon"
+      ],
+      "maturity": null,
+      "companies": [
+        "Neste"
+      ],
+      "countries": [
+        "Finland",
+        "Singapore",
+        "United States"
+      ],
+      "technologies": [
+        "HVO",
+        "SAF"
+      ],
+      "capacity": "1,126 milyon ton/çeyrek üretim",
+      "investment": null,
+      "published_date": "2026-07-28",
+      "event_date": "2026-07-28",
+      "source": {
+        "name": "biomassmagazine.com",
+        "domain": "biomassmagazine.com",
+        "url": "https://biomassmagazine.com/articles/neste-reports-record-high-sales-margin-ebitda-for-renewable-products-segment",
+        "type": "trade_press",
+        "tier": 2,
+        "primary": true
+      },
+      "supporting_sources": [],
+      "image": {
+        "url": "https://bbi-strapi.s3.us-east-2.amazonaws.com/Neste_Q22026_39f3cdc862.jpg",
+        "credit": "biomassmagazine.com",
+        "type": "og-sayfa"
+      },
+      "score": 6,
+      "slug": "neste-yenilenebilir-urunlerde-rekor-satis-marji-ve-favok-acikladi"
     }
   ],
   "radar": [
