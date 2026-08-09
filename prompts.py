@@ -145,13 +145,19 @@ def triyaj_kullanici_mesaji(adaylar, pencere_baslangic, pencere_bitis):
 # Bu adım TÜM olayları tek seferde, tam metinsiz (yalnızca özet + şirket +
 # ülke) görür; girdi küçük olduğu için güçlü model kullanmak ucuzdur.
 # ============================================================
-BIRLESTIRME_PROMPT = """Sen bir olay birleştirme denetçisisin. Görevin TEK: verilen olay çiftlerinin AYNI gerçek dünya olayını anlatıp anlatmadığına karar vermek.
+BIRLESTIRME_PROMPT = """Sen bir olay birleştirme denetçisisin. Görevin TEK: verilen olay listesinde AYNI gerçek dünya olayını anlatan kayıtları bulup gruplamak.
+
+Sana olayların TAMAMI birden veriliyor. Listeyi baştan sona tara ve aynı
+gelişmeyi anlatan kayıtları tek grupta topla.
 
 AYNI OLAY sayılır:
 - Aynı anlaşma/yatırım/karar, farklı yayınlarca aktarılmış
-- Biri resmî duyuru, diğeri o duyurunun haberi
+- Biri resmî duyuru, diğeri o duyurunun haberi, bir diğeri sektör birliğinin
+  o duyuruya tepkisi
 - Aynı olayın farklı ayrıntıları öne çıkarılmış (tutar vs. kapasite vs. taraflar)
-- Başlıklar farklı ama taraflar, tutar ve tarih örtüşüyor
+- Özetler farklı kelimelerle yazılmış ama taraflar, tutar veya program adı örtüşüyor
+- ⚠ Aynı tutar FARKLI para biriminde verilmiş olabilir (23.731 crore rupi =
+  2,5 milyar dolar = 2,7 milyar dolar gibi). Çevrim farkı ayrı olay YAPMAZ.
 
 FARKLI OLAY sayılır:
 - Aynı şirketlerin AYRI anlaşmaları/yatırımları
@@ -159,29 +165,40 @@ FARKLI OLAY sayılır:
 - Aynı program kapsamında ama ayrı ayrı kararlar/ihaleler
 - Aynı sektör/tema ama farklı taraflar
 
-⚠ KARARSIZSAN "farklı" DE. Yanlış birleştirme iki ayrı haberi yok eder;
+⚠ KARARSIZSAN GRUPLAMA. Yanlış birleştirme iki ayrı haberi yok eder;
 yanlış ayırma yalnızca bir tekrara yol açar. Ayırmak daha az zararlıdır.
+⚠ Bir grupta en fazla 4 olay olur. Daha fazlasını aynı gruba koyuyorsan
+büyük ihtimalle TEMA bazlı gruplama yapıyorsundur — o yanlıştır.
 
-ÇIKTI — SADECE geçerli JSON, başka metin YOK:
-{"kararlar": [{"cift": 1, "ayni": true, "gerekce": "en fazla 10 kelime"}]}
+ÇIKTI — SADECE geçerli JSON, başka metin YOK. Yalnızca MÜKERRER grupları
+yaz; tek başına duran olayları listeleme. Mükerrer yoksa boş liste döndür.
+{"gruplar": [{"anahtarlar": ["event-key-a", "event-key-b"],
+              "gerekce": "en fazla 10 kelime"}]}
 """
 
 
-def birlestirme_kullanici_mesaji(ciftler):
-    """ciftler: [(sira_no, olay_a, olay_b), ...] — tam metin GÖNDERİLMEZ."""
+def birlestirme_kullanici_mesaji(olaylar):
+    """Tüm olaylar TEK istemde — tam metin GÖNDERİLMEZ, sadece künye.
+
+    ⚠ Eskiden burada önceden elenmiş olay ÇİFTLERİ vardı: istemi küçük
+    tutmak için şirket örtüşmesi / başlık benzerliği eşiğini geçen çiftler
+    seçiliyordu. Gerçek vaka (biyoekonomi, Sayı 2): Hindistan GOBARdhan
+    kararını anlatan iki kayıt: ortak şirket YOK (ikisinin de listesi boş),
+    başlık benzerliği 0,33 (eşik 0,45) → çift hiç sorulmadı ve mükerrer
+    haber bültene girdi. Künye küçük olduğu için (olay başına ~200 karakter,
+    60 olayda ~4K token) hepsini göndermek ucuz; eşik diye bir şey kalmasın.
+    """
     def blok(o):
-        return (f"    özet    : {o.get('baslik_ozet') or '-'}\n"
-                f"    şirket  : {', '.join(o.get('sirketler') or []) or '-'}\n"
-                f"    ülke    : {', '.join(o.get('ulkeler') or []) or '-'}\n"
-                f"    kategori: {o.get('kategori') or '-'} | "
+        return (f"[{o.get('event_key')}]\n"
+                f"  özet    : {o.get('baslik_ozet') or '-'}\n"
+                f"  şirket  : {', '.join(o.get('sirketler') or []) or '-'} | "
+                f"ülke: {', '.join(o.get('ulkeler') or []) or '-'}\n"
+                f"  kategori: {o.get('kategori') or '-'} | "
                 f"olgunluk: {o.get('olgunluk') or '-'} | "
                 f"yatırım: {o.get('yatirim_usd_milyon') or '-'}")
 
-    parcalar = []
-    for no, a, b in ciftler:
-        parcalar.append(f"### ÇİFT {no}\n  A)\n{blok(a)}\n  B)\n{blok(b)}")
-    return (f"Aşağıda {len(ciftler)} olay çifti var. Her biri için aynı olay mı "
-            f"karar ver.\n\n" + "\n\n".join(parcalar))
+    return (f"Aşağıda {len(olaylar)} olay var. Aynı gelişmeyi anlatanları "
+            f"grupla.\n\n" + "\n\n".join(blok(o) for o in olaylar))
 
 
 # ============================================================
@@ -318,14 +335,86 @@ kabul edilebilir. Ama kaynakta veri VARKEN kısaltmak kabul edilemez.
 ancak olayın anlaşılması için gerekliyse detail'in SON cümlesinde tek
 cümleyle, "bildirildi / iddia edildi" diliyle geçer.
 
-⛔ KAYNAĞIN DURUMUNU ASLA ANLATMA. Şu tür cümleler KESİNLİKLE YASAK:
-  · "ödeme duvarı arkasındaki kaynakta yer almakla birlikte..."
+⛔ KAYNAĞIN DURUMUNU ASLA ANLATMA — EN SIK YAPILAN HATA BUDUR.
+Okuyucu senin elinde ne olduğunu bilmez ve bilmek zorunda değildir. Bülten
+"ne biliniyor"u aktarır, "ne bilinmiyor"u değil.
+
+Şu cümleler KESİNLİKLE YASAK (hepsi gerçek çıktılardan alınmıştır):
+  · "Kaynak metinde düzenlemenin kapsamına ilişkin ayrıntı bulunmuyor"
+  · "mevcut bilgi yalnızca ... olduğu yönünde"
+  · "ancak bu tesisle ilgili spesifik kapasite rakamı paylaşılmadı"
   · "elde bulunan özet bölümünde detaylandırılmadı"
-  · "kaynak metninde bu bilgiye ulaşılamadı"
-Bir veri elinde YOKSA o cümleyi HİÇ KURMA — daha kısa yaz, boşluğu anlatma.
+  · "ödeme duvarı arkasındaki kaynakta yer almakla birlikte..."
+  · "fiyatlandırma/takvim açıklanmadı" (tek başına bir cümle olarak)
+
+DOĞRU DAVRANIŞ: Bir veri elinde YOKSA o cümleyi HİÇ KURMA. Paragraf kısa
+kalsın, hatta haber kısa kalsın — eksikliği ANLATMA. Tek istisna: takvim
+bilgisi yoksa "takvim paylaşılmadı" demek serbesttir, çünkü olgunluk
+değerlendirmesi için gereklidir.
+
+⛔ AYNI SAYFADAKİ BAŞKA HABERİ KARIŞTIRMA. Kaynak metin bazen tek sayfada
+birden çok habere yer verir. Sen YALNIZCA olay bloğunda tarif edilen
+gelişmeyi yazarsın. "Haberin yayınlandığı aynı içerikte şu da bildirildi"
+gibi cümleler YASAKTIR — o gelişme senin haberin değildir.
 
 ⚠ ALINTI: CEO/yetkili sözlerini olduğu gibi aktarma; içerdiği maddi bilgiyi
 kendi cümlenle yaz. Gerekirse en fazla tek bir kısa alıntı.
+
+━━━ TÜRKÇELEŞTİRME — HER CÜMLEDE UYGULANIR ━━━
+
+Kaynak metin İngilizcedir. Senin işin onu ÇEVİRMEK, İngilizce parçaları
+Türkçe cümlelerin içine taşımak değil. Aşağıdakiler istisnasız uygulanır;
+her haberi bitirdikten sonra bu listeyi tek tek kontrol et.
+
+① SAYI BİÇİMİ — Türkçe yazım: ondalık ayırıcı VİRGÜL, binlik ayırıcı NOKTA.
+     $1.52        → 1,52 dolar          (1.52 dolar DEĞİL)
+     8.4 million  → 8,4 milyon
+     700,000      → 700 bin             (700,000 DEĞİL)
+     23,731 crore → 23.731 crore
+     US$298.6m    → 298,6 milyon dolar
+   "million / billion / thousand" İngilizce KALMAZ: milyon / milyar / bin.
+
+② PARA BİRİMİ — sembol ve kısaltma değil, adıyla yaz:
+     $35 million        → 35 milyon dolar
+     CA$84m             → 84 milyon Kanada doları
+     EUR 57m            → 57 milyon euro
+     DKK 182 million    → 182 milyon Danimarka kronu
+     ZAR 3.0 billion    → 3 milyar Güney Afrika randı
+     ₹23,731 crore      → 23.731 crore rupi
+   Kaynak iki para birimi veriyorsa ikisini de koru: "84 milyon Kanada doları
+   (57 milyon euro)".
+
+③ TARİH — ay adları Türkçe:
+     March 2025    → Mart 2025
+     September     → Eylül
+     8-9 October   → 8-9 Ekim
+   Mali yıl açılır: FY2026-27 → "2026-27 mali yılı".
+
+④ KURUM ADLARI — Türkçesi + ilk geçişte parantezde orijinali:
+     Singapore Food Agency → Singapur Gıda Ajansı (SFA)
+     World Biogas Association → Dünya Biyogaz Birliği (WBA)
+   Sonraki geçişlerde yalnızca kısaltma.
+
+⑤ ⚠ YER ADLARI ASLA ÇEVRİLMEZ. Şehir, kasaba, eyalet, bölge, tesis adları
+   olduğu gibi kalır — anlam taşıyor görünseler bile:
+     High Level  → High Level     ("Yüksek Seviye" YAZMA — Alberta'da kasaba)
+     Peace River → Peace River     Hay Meadow → Hay Meadow
+   Yalnızca Türkçede YERLEŞİK karşılığı olanlar çevrilir: New Delhi → Yeni
+   Delhi, Munich → Münih. Emin değilsen ORİJİNALİNİ BIRAK.
+   Aynı kural şirket, marka ve ürün adları için de geçerlidir:
+   Cultivated Thin-Cut Steak, OvoPro, loopamid olduğu gibi kalır.
+
+⑥ BİRİM VE TERİM — Türkçe karşılığı kullan:
+     tonnes → ton          per cent → %          a pound → libre başına
+     feedstock → hammadde  ("besleme stoğu" YAZMA)
+     offtake → alım garantisi              take-or-pay → al-ya-da-öde
+     digestate → çürütük   whey → peynir altı suyu
+
+⑦ ⛔ MARKDOWN KULLANMA. detail alanı düz metindir; site onu yalnızca boş
+   satırdan bölüp paragraf yapar. Yıldız (*), tire listesi, başlık (#),
+   kalın (**) yazarsan okuyucu bu işaretleri EKRANDA GÖRÜR.
+   Sıralı bilgiyi cümleyle ver: "Oran 2026-27 mali yılında %3, 2027-28'de
+   %4, 2028-29'dan itibaren %5 olacak."
 
 ━━━ YAZIM KURALLARI ━━━
 
@@ -334,6 +423,10 @@ kendi cümlenle yaz. Gerekirse en fazla tek bir kısa alıntı.
   "hidrojenle işlenmiş bitkisel yağ (HVO)", "karbon yakalama ve kullanımı (CCU)",
   "polihidroksialkanoat (PHA)". Sonraki geçişlerde tekrarlama. Yerleşik
   kısaltmaları (SAF, CCU, FID, MW, CO2) çevirme.
+
+• PARAGRAF DİSİPLİNİ: Her paragraf TEK konuyu işler ve 3-5 cümledir. Kalan
+  bilgileri son paragrafa yığma — hammadde, finansman, pazar verisi ve
+  takvim ayrı ayrı paragraflara girer.
 
 • ANALİZ YAPMA. Sadece gelişmeyi aktar. "Türkiye için önemi şudur",
   "bu bir dönüm noktasıdır" gibi çıkarım YAZMA. "neden_onemli" alanını
