@@ -296,6 +296,15 @@ KAYNAK_ODEME_DUVARI = [
     "ft.com", "wsj.com", "asia.nikkei.com", "economist.com",
     "argusmedia.com", "montelnews.com", "spglobal.com",
     "icis.com", "woodmac.com", "just-food.com",
+    # ⚠ foodnavigator.com Exa'ya TAM METİN veriyor (tarayıcı botlarına açık)
+    # ama okuyucu bağlantıya tıkladığında "üyelere özel" duvarına çarpıyor.
+    # Gerçek vaka (Sayı 2): Aleph Farms haberinin birincil kaynağı oydu;
+    # açık üç destek kaynağı (greenqueen, agfundernews) dururken okuyucu
+    # kaynağı açamıyordu. Listeye alınınca olaylari_zenginlestir erişilebilir
+    # bir yayını birincil yapıyor.
+    # ⚠ BEDELİ: tek kaynağı foodnavigator olan olay artık tam haber
+    # yazılmaz, radara düşer.
+    "foodnavigator.com",
 ]
 
 ODEME_DUVARI_IZLERI = [
