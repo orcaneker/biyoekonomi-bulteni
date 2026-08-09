@@ -1,0 +1,989 @@
+{
+  "issue": {
+    "number": 2,
+    "hafta": "2026-H32",
+    "draft_date": "2026-08-09",
+    "coverage_start": "2026-08-02",
+    "coverage_end": "2026-08-09",
+    "window_days": 7
+  },
+  "brief": [
+    {
+      "text": "Hindistan kabinesi, 23.731 crore rupi (2,5 milyar dolar) tutarında GOBARdhan Ulusal Döngüsel Biyoenerji Programı'nı onayladı.",
+      "ref": "india-cbg-expansion-2026"
+    },
+    {
+      "text": "Climate Fund Managers, Güney Afrika'da yeşil hidrojen için SA-H2 Fonu'nun ilk kapanışını 3 milyar Güney Afrika randı (yaklaşık 182 milyon dolar) ile tamamladı.",
+      "ref": "south-africa-h2-fund-close"
+    },
+    {
+      "text": "Aleph Farms, Singapur'da kültürlenmiş sığır eti bifteği için dünyada ikinci düzenleyici onayı aldı, 2027'nin ilk yarısında lansman planlanıyor.",
+      "ref": "aleph-farms-singapore-approval"
+    },
+    {
+      "text": "Nordic Investment Bank, Danimarka'daki Sindal Biogas tesisinin biyometan üretimini 22'den 44 milyon metreküpe çıkarmak için 182 milyon Danimarka kronu finansman sağladı.",
+      "ref": "sindal-biogas-expansion"
+    },
+    {
+      "text": "bp, yeni CEO Meg O'Neill döneminde 'zayıf getiri' gerekçesiyle ABD'nin en büyük çöp sahası metanı üreticisi Archaea Energy'yi satışa çıkardı.",
+      "ref": "bp-divests-archaea-biogas"
+    }
+  ],
+  "lead_id": "aleph-farms-singapore-approval",
+  "stories": [
+    {
+      "id": "ngt-eu-regulatory-relax",
+      "secim": "one_cikan",
+      "title": "AB, gen düzenlemeli bitkilere yönelik kuralları gözden geçiriyor",
+      "excerpt": "Avrupa Birliği, yeni genomik tekniklerle geliştirilen bitkilere ilişkin düzenlemeleri 2028'den itibaren değiştirmeye hazırlanıyor. Belçika, İspanya, İtalya ve İsveç bu tartışmanın merkezinde yer alıyor.",
+      "detail": "Avrupa Birliği'nde yeni genomik teknikler (NGT) ile geliştirilen bitkilere uygulanan kuralların 2028'den itibaren değişmesi bekleniyor. Değişikliğin merkezinde Belçika, İspanya, İtalya ve İsveç gibi ülkelerdeki araştırma ve tarla denemeleri bulunuyor.\n\nBelçika'nın Wetteren kasabasında, Gent Üniversitesi'nden bitki biyoteknoloğu Hilde Nelissen'in yönettiği kilitli, çevresi çevrili bir mısır deneme tarlası bu tartışmanın somut örneklerinden biri olarak öne çıkıyor. Nelissen, alanın yasal olarak kamusal bir yer sayıldığını ancak erişimin kasıtlı olarak sınırlandırıldığını belirtiyor.\n\nKaynak metinde düzenleme değişikliğinin kapsamına, kesin madde veya kriterlere ilişkin ayrıntı bulunmuyor; mevcut bilgi yalnızca değişikliğin 2028'den itibaren devreye gireceği ve söz konusu ülkelerdeki tarla denemelerinin bu sürecin parçası olduğu yönünde.",
+      "neden_onemli": null,
+      "category": "tarim",
+      "subcategories": [
+        "gen düzenlemesi",
+        "NGT"
+      ],
+      "value_chain": [
+        "biyokutle"
+      ],
+      "maturity": "announced",
+      "companies": [],
+      "countries": [
+        "EU",
+        "Belgium",
+        "Spain",
+        "Italy",
+        "Sweden"
+      ],
+      "technologies": [
+        "yeni genomik teknikler (NGT)"
+      ],
+      "capacity": null,
+      "investment": null,
+      "published_date": "2026-08-03",
+      "source": {
+        "name": "euractiv.com",
+        "url": "https://euractiv.com/news/behind-the-fence-europes-race-for-gene-edited-crops",
+        "domain": "euractiv.com",
+        "type": "news_agency",
+        "tier": 2,
+        "primary": true
+      },
+      "supporting_sources": [
+        {
+          "name": "euractiv.com",
+          "url": "https://euractiv.com/fr/news/derriere-la-cloture-la-course-europeenne-aux-cultures-genetiquement-modifiees",
+          "domain": "euractiv.com"
+        }
+      ],
+      "image": {
+        "url": "https://euractiv.com/content/uploads/sites/3/2026/07/GettyImages-2239006394-1.jpg",
+        "credit": "euractiv.com",
+        "type": "og"
+      },
+      "score": 8,
+      "event_key": "ngt-eu-regulatory-relax",
+      "slug": "ab-gen-duzenlemeli-bitkilere-yonelik-kurallari-gozden-geciriyor"
+    },
+    {
+      "id": "montana-renewables-saf-msp",
+      "secim": "one_cikan",
+      "title": "Montana Renewables, Minnesota SAF Hub üzerinden MSP havalimanına yıllık 30 milyon galon SAF tedarik edecek",
+      "excerpt": "Montana Renewables LLC (MRL), Minneapolis-St. Paul Uluslararası Havalimanı'na (MSP) yeni sürdürülebilir havacılık yakıtı (SAF) tedarikini kutlamak için Minnesota SAF Hub'a katıldı. Şirket, mevcut Shell alım anlaşması kapsamında yıllık 30 milyon galona kadar arındırılmış SAF tedarik edecek.",
+      "detail": "Montana Renewables LLC (MRL), Minneapolis-St. Paul Uluslararası Havalimanı'na (MSP) yönelik yeni SAF tedarikini kutlamak amacıyla Minnesota SAF Hub'a katıldı. Şirket, mevcut Shell alım garantisi (offtake) anlaşması kapsamında havalimanına yıllık 30 milyon galona kadar arındırılmış sürdürülebilir havacılık yakıtı (SAF) tedarik edecek.\n\nHaberin yayınlandığı aynı içerikte, Phillips 66'ya ait yenilenebilir dizel tesisinin 2026 yılının ikinci çeyreğinde nominal kapasitesinin üzerinde çalıştığı da bildirildi; ancak bu tesisle ilgili spesifik kapasite veya üretim rakamı paylaşılmadı.",
+      "neden_onemli": null,
+      "category": "biyoyakit",
+      "subcategories": [
+        "SAF"
+      ],
+      "value_chain": [
+        "donusum-fermantasyon",
+        "kullanim"
+      ],
+      "maturity": "operational",
+      "companies": [
+        "Montana Renewables LLC",
+        "Shell"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "technologies": [
+        "HVO"
+      ],
+      "capacity": "yıllık 30 milyon galona kadar SAF",
+      "investment": null,
+      "published_date": "2026-08-06",
+      "source": {
+        "name": "biomassmagazine.com",
+        "url": "https://biomassmagazine.com/articles/phillips-66-renewable-diesel-facility-operates-at-above-nameplate-capacity-in-q2",
+        "domain": "biomassmagazine.com",
+        "type": "trade_press",
+        "tier": 2,
+        "primary": true
+      },
+      "supporting_sources": [
+        {
+          "name": "biomassmagazine.com",
+          "url": "https://biomassmagazine.com/articles/par-pacific-ramps-up-renewable-fuel-production-in-q2",
+          "domain": "biomassmagazine.com"
+        }
+      ],
+      "image": {
+        "url": "https://bbi-strapi.s3.us-east-2.amazonaws.com/Phillips66_Q22026_e64daf950e.jpg",
+        "credit": "biomassmagazine.com",
+        "type": "og-sayfa"
+      },
+      "score": 8,
+      "event_key": "montana-renewables-saf-msp",
+      "slug": "montana-renewables-minnesota-saf-hub-uzerinden-msp-havalimanina-yillik"
+    },
+    {
+      "id": "aleph-farms-singapore-approval",
+      "secim": "one_cikan",
+      "title": "Aleph Farms, Singapur'da kültürlenmiş sığır eti bifteği için dünyada ikinci onayı aldı",
+      "excerpt": "İsrailli Aleph Farms, kültürlenmiş sığır eti bifteği için Singapur Gıda Ajansı'ndan (SFA) tarihi bir düzenleyici onay aldı; bu, dünya çapında sığır eti kategorisinde verilen ikinci onay. Şirket, 2027'nin ilk yarısında Singapur'da seçili restoran ortaklarıyla lansman planlıyor.",
+      "detail": "Aleph Farms, kültürlenmiş sığır eti bifteği için Singapur Gıda Ajansı'ndan (SFA) düzenleyici onay aldı. Bu onay, kültürlenmiş sığır eti kategorisinde dünya çapında verilen ikinci onay olma özelliği taşıyor; söz konusu ilk onay da yine Aleph Farms'a aitti. Singapur ve diğer ülkelerdeki önceki kültürlenmiş et onayları ise tavuk, deniz ürünleri veya bıldırcın gibi kategorilerle sınırlıydı.\n\nŞirket CEO'su Didier Toubia, ürünün 2027'nin ilk yarısında seçili restoran ortaklarıyla piyasaya sürülmesini planladıklarını belirtti. Lansman, Cell Agritech'in Singapur'daki üretim tesisinin ticari ölçekli parti üretimine geçmesiyle gerçekleşecek. Toubia, ilk üretimin Singapur'da yapılacağını, talep arttığında ise Malezya'nın Penang şehrindeki Cell Agritech'e ait daha büyük tesisin genişleyen hacimleri destekleyeceğini söyledi.\n\nAleph Farms'ın Singapur'daki sözleşmeli geliştirme ve üretim ortağı Cell Agritech'tir. Toubia ayrıca teknoloji devrinin Singapur'daki Cell Agritech ve İsviçre'deki The Cultured Hub'da sürmekte olduğunu açıkladı.\n\nKaynak metinlerde tesis kapasitesi, yatırım tutarı veya ürün fiyatına dair somut bir rakam paylaşılmadı.",
+      "neden_onemli": null,
+      "category": "gida-protein",
+      "subcategories": [
+        "kültürlenmiş et"
+      ],
+      "value_chain": [
+        "urun-uretim"
+      ],
+      "maturity": "commissioning",
+      "companies": [
+        "Aleph Farms",
+        "Cell Agritech",
+        "The Cultured Hub"
+      ],
+      "countries": [
+        "Singapore",
+        "Israel",
+        "Malaysia"
+      ],
+      "technologies": [
+        "hücre kültürü"
+      ],
+      "capacity": null,
+      "investment": null,
+      "published_date": "2026-08-04",
+      "source": {
+        "name": "foodingredientsfirst.com",
+        "url": "https://foodingredientsfirst.com/news/aleph-farms-singapore-cultivated-beef-approval.html",
+        "domain": "foodingredientsfirst.com",
+        "type": "trade_press",
+        "tier": 2,
+        "primary": true
+      },
+      "supporting_sources": [
+        {
+          "name": "foodnavigator.com",
+          "url": "https://foodnavigator.com/Article/2026/08/04/cultivated-beef-steak-to-hit-singapore-food-scene-with-historic-approval",
+          "domain": "foodnavigator.com"
+        },
+        {
+          "name": "agfundernews.com",
+          "url": "https://agfundernews.com/aleph-farms-plans-2027-cultivated-beef-launch-in-singapore-after-securing-green-light-from-regulators",
+          "domain": "agfundernews.com"
+        },
+        {
+          "name": "greenqueen.com.hk",
+          "url": "https://greenqueen.com.hk/aleph-farms-lab-grown-meat-cultivated-beef-singapore-approval-launch",
+          "domain": "greenqueen.com.hk"
+        },
+        {
+          "name": "foodnavigator.com",
+          "url": "https://foodnavigator.com/Article/2026/08/07/trend-tracker-clean-label-glp-1-and-cultivated-meat",
+          "domain": "foodnavigator.com"
+        }
+      ],
+      "image": {
+        "url": "https://assets-cns.cnsmedia.com/insightslive/fif/images/homepage-og-1200.jpg",
+        "credit": "foodingredientsfirst.com",
+        "type": "og-sayfa"
+      },
+      "score": 8,
+      "event_key": "aleph-farms-singapore-approval",
+      "slug": "aleph-farms-singapur-da-kulturlenmis-sigir-eti-biftegi-icin-dunyada-ik"
+    },
+    {
+      "id": "india-gobardhan-cbg-2-7b",
+      "secim": "yedek",
+      "title": "Dünya Biyogaz Birliği, Hindistan'ın 2,7 milyar dolarlık GOBARdhan Programı'nı destekledi",
+      "excerpt": "Dünya Biyogaz Birliği (WBA), Hindistan hükümetinin yaklaşık 2,7 milyar dolar (23.731 crore rupi) yatırım tutarlı GOBARdhan Ulusal Döngüsel Biyoenerji Programı'nı sıkıştırılmış biyogaz (CBG) sektörü için önemli bir adım olarak değerlendirdi. Program, alım garantisi, sabit fiyatlandırma, sermaye desteği, boru hattı bağlantısı ve kredi desteğini tek bir çerçevede birleştiriyor.",
+      "detail": "Dünya Biyogaz Birliği (WBA), Hindistan hükümetinin GOBARdhan Ulusal Döngüsel Biyoenerji Programı'nı onaylamasını, yaklaşık 2,7 milyar dolar (23.731 crore rupi) yatırım tutarıyla ulusal ölçekte bir sıkıştırılmış biyogaz (CBG) sektörü kurulması yönünde önemli bir adım olarak nitelendirdi. Birlik, programın alım garantisi, sabit fiyatlandırma, sermaye desteği, boru hattı bağlantısı, kredi desteği ve ekosistem geliştirmeyi tek bir ulusal çerçevede birleştirerek sektördeki yatırım ve ölçeklenme engellerini doğrudan ele aldığını belirtti.\n\nWBA CEO'su Charlotte Morton OBE, GOBARdhan'ın Hindistan'ın CBG sektörünü ölçeklendirmek için gereken politika kesinliği, yatırım güveni ve pazar çerçevesini oluşturmada önemli bir adım olduğunu söyledi. Birlik, #MakingBiogasHappen (MBH) programı aracılığıyla Küresel Biyogaz Düzenleyici Çerçevesi (GBRF), Uluslararası Anaerobik Çürütme Sertifikasyon Programı (ADCS International), teknik kapasite geliştirme, düzenleyici kıyaslama ve gösterim projeleri desteği sunmayı planlıyor.\n\nWBA, konunun 8-9 Ekim tarihlerinde Yeni Delhi'de düzenlenecek Dünya Biyogaz Birliği HİNDİSTAN Kongresi 2026'da hükümet ve sektör paydaşlarıyla ele alınacağını duyurdu.",
+      "neden_onemli": null,
+      "category": "biyoyakit",
+      "subcategories": [
+        "biyometan",
+        "CBG"
+      ],
+      "value_chain": [
+        "donusum-fermantasyon"
+      ],
+      "maturity": "announced",
+      "companies": [],
+      "countries": [
+        "India"
+      ],
+      "technologies": [
+        "anaerobik çürütme"
+      ],
+      "capacity": null,
+      "investment": {
+        "amount_original": 23731,
+        "currency": "crore rupi",
+        "amount_usd_million": 2700,
+        "public_support_usd_million": 2700
+      },
+      "published_date": "2026-08-07",
+      "source": {
+        "name": "worldbiogasassociation.org",
+        "url": "https://worldbiogasassociation.org/world-biogas-association-wba-welcomes-indias-us2-7-billion-gobardhan-scheme-as-a-landmark-move-to-scale-the-cbg-sector",
+        "domain": "worldbiogasassociation.org",
+        "type": "trade_press",
+        "tier": 1,
+        "primary": true
+      },
+      "supporting_sources": [],
+      "image": {
+        "url": "https://www.worldbiogasassociation.org/wp-content/uploads/2025/12/WBA-wheel-in-square-transparent.png",
+        "credit": "worldbiogasassociation.org",
+        "type": "og-sayfa"
+      },
+      "score": 7,
+      "event_key": "india-gobardhan-cbg-2-7b",
+      "slug": "dunya-biyogaz-birligi-hindistan-in-2-7-milyar-dolarlik-gobardhan-progr"
+    },
+    {
+      "id": "south-africa-h2-fund-close",
+      "secim": "one_cikan",
+      "title": "SA-H2 Fonu, Güney Afrika'da yeşil hidrojen için 3 milyar randlık ilk kapanışına ulaştı",
+      "excerpt": "Climate Fund Managers, Güney Afrika'daki yeşil hidrojen değer zinciri için SA-H2 Fonu'nun (Climate Investor Three) ilk kapanışını 3,0 milyar Güney Afrika randı (yaklaşık 182 milyon dolar) taahhütle tamamladı. Fon, Avrupa Komisyonu, Invest International, PIC, Sanlam Life ve IDC'den destek aldı.",
+      "detail": "İklim odaklı harmanlanmış finansman yöneticisi Climate Fund Managers, 6 Ağustos 2026'da SA-H2 Fonu'nun (Climate Investor Three - CI3 South Africa olarak da bilinir) ilk kapanışını 3,0 milyar Güney Afrika randı (yaklaşık 182 milyon dolar) taahhütle duyurdu. Fon, yeşil hidrojen üretimi, yeşil amonyak ve yeşil metanol gibi türev ürünler ile çelik, gübre, e-yakıt ve kimyasallar gibi zor dönüştürülebilir endüstrilerin karbonsuzlaştırılmasına yatırım yapacak.\n\nSA-H2, kamu ve özel sermayeyi tek bir platformda birleştiren harmanlanmış bir finansman yapısı kullanıyor. Yapı, projeleri nihai yatırım kararına (FID) hazırlayan erken aşama risk sermayesi ve teknik yardım sağlayan bir Geliştirme Dilimi ile finansal kapanıştan proje inşaatına ilerlemeyi sağlayan harmanlanmış Özsermaye Dilimlerinden oluşuyor.\n\nGeliştirme Dilimi'ne Invest International, Avrupa Komisyonu (Global Gateway stratejisi üzerinden) ve Güney Afrika Sanayi Kalkınma Kurumu (IDC) taahhütte bulundu. Özsermaye Dilimlerine ise Güney Afrika'nın devlete ait varlık yöneticisi Kamu Yatırım Kurumu (PIC) - Devlet Çalışanları Emeklilik Fonu (GEPF) adına -, Sanlam Life Insurance Limited, Invest International ve Avrupa Komisyonu katkıda bulundu. Fon ayrıca Güney Afrika Kalkınma Bankası (DBSA) tarafından destekleniyor.\n\nClimate Fund Managers CEO'su Andrew Johnstone, sanayi karbonsuzlaştırmasının elektrifikasyonun ötesinde çözümler gerektirdiğini ve yeşil hidrojenin bu süreçte kritik bir rol oynadığını söyledi. Invest International CIO'su Jeroen Plag ise ilk kapanışın Güney Afrika'daki yeşil hidrojen fırsatına yönelik güçlü bir yatırımcı güveni sinyali olduğunu belirtti.",
+      "neden_onemli": null,
+      "category": "biyoyakit",
+      "subcategories": [
+        "yeşil hidrojen"
+      ],
+      "value_chain": [
+        "donusum-fermantasyon"
+      ],
+      "maturity": "funded",
+      "companies": [
+        "Climate Fund Managers",
+        "Invest International",
+        "Sanlam Life Insurance Limited",
+        "Industrial Development Corporation of South Africa (IDC)",
+        "Development Bank of Southern Africa (DBSA)"
+      ],
+      "countries": [
+        "South Africa"
+      ],
+      "technologies": [
+        "yeşil hidrojen",
+        "yeşil amonyak",
+        "yeşil metanol"
+      ],
+      "capacity": null,
+      "investment": {
+        "amount_original": 3.0,
+        "currency": "ZAR billion",
+        "amount_usd_million": 182,
+        "public_support_usd_million": null
+      },
+      "published_date": "2026-08-06",
+      "source": {
+        "name": "international-partnerships.ec.europa.eu",
+        "url": "https://international-partnerships.ec.europa.eu/news-and-events/news/scaling-green-transition-southern-africa-under-global-gateway-climate-fund-managers-reaches-first-2026-08-06_en",
+        "domain": "international-partnerships.ec.europa.eu",
+        "type": "official",
+        "tier": 1,
+        "primary": true
+      },
+      "supporting_sources": [],
+      "image": {
+        "url": "https://international-partnerships.ec.europa.eu/modules/contrib/spamspan/image.gif",
+        "credit": "international-partnerships.ec.europa.eu",
+        "type": "og"
+      },
+      "score": 7,
+      "event_key": "south-africa-h2-fund-close",
+      "slug": "sa-h2-fonu-guney-afrika-da-yesil-hidrojen-icin-3-milyar-randlik-ilk-ka"
+    },
+    {
+      "id": "india-cbg-expansion-2026",
+      "secim": "one_cikan",
+      "title": "Hindistan, 23.731 crore rupilik ulusal biyoenerji programını onayladı",
+      "excerpt": "Hindistan kabinesi, sıkıştırılmış biyogaz (CBG) üretimini önümüzdeki on yılda ölçeklendirmek için 23.731 crore rupi (2,5 milyar dolar) tutarında GOBARdhan programını onayladı. Program, mevcut üretimi neredeyse on kata çıkarmayı ve 2028-29'a kadar 480 CBG tesisi işletmeyi hedefliyor.",
+      "detail": "Hindistan kabinesi, sıkıştırılmış biyogaz (CBG) üretimini önümüzdeki on yılda ölçeklendirmek amacıyla 23.731 crore rupi (2,5 milyar dolar) tutarında ulusal biyoenerji programı GOBARdhan'ı (Ulusal Döngüsel Biyoenerji Programı) onayladı. Program, 2026-27 mali yılından 2035-36 mali yılına kadar uygulanacak ve yerli CBG üretimini mevcut seviyelerin neredeyse on katına çıkarmayı hedefliyor. Program, halihazırda 200'den fazla CBG tesisinin faaliyette olduğu SATAT programı gibi önceki girişimleri de bir çatı altında topluyor.\n\nÇerçeve, Şehir Gaz Dağıtım kuruluşları üzerinden zorunlu CBG karışım yükümlülükleriyle güvenceli alım garantisi sağlıyor: taşımacılıkta (CNG) ve evsel kullanımda (PNG) oran 2026-27 mali yılında %3, 2027-28'de %4 ve 2028-29'dan itibaren %5 olacak. Yeşil alan CBG projeleri, kurulu kapasitenin günlük tonu başına 2 crore rupiye kadar sermaye desteği alacak; KOBİ bazlı projeler için ayrıca kredi garantileri sağlanacak.\n\nHammadde tarımsal atıklar, sığır gübresi, arıtma çamuru ve belediye katı atığından karşılanacak. Program boru hattı altyapı bağlantıları ve ilçe düzeyinde uygulamayı ve hammadde değer zincirlerini güçlendirmek için bir CBG Ekosistem Meydan Okuma Fonu oluşturuyor.\n\nHindistan şu anda doğal gaz talebinin kabaca yarısını LNG ithalatıyla karşılıyor ve enerji karışımında gaz kullanımını 2030 itibarıyla %6'dan %15'e çıkarmayı hedefliyor. Hükümet projeksiyonları, 2028-29 itibarıyla 195'i devlete ait petrol ve gaz şirketleri tarafından geliştirilmek üzere toplam 480 CBG tesisinin işletimde olacağını gösteriyor.",
+      "neden_onemli": null,
+      "category": "biyoyakit",
+      "subcategories": [
+        "biyometan",
+        "CBG"
+      ],
+      "value_chain": [
+        "biyokutle",
+        "donusum-fermantasyon"
+      ],
+      "maturity": "announced",
+      "companies": [],
+      "countries": [
+        "India"
+      ],
+      "technologies": [
+        "anaerobik çürütme"
+      ],
+      "capacity": "2028-29 itibarıyla 480 CBG tesisi",
+      "investment": {
+        "amount_original": 23731,
+        "currency": "crore rupi",
+        "amount_usd_million": 2500,
+        "public_support_usd_million": 2500
+      },
+      "published_date": "2026-08-07",
+      "source": {
+        "name": "bioenergy-news.com",
+        "url": "https://bioenergy-news.com/news/india-invests-in-usd2-5bn-compressed-biogas-expansion",
+        "domain": "bioenergy-news.com",
+        "type": "trade_press",
+        "tier": 2,
+        "primary": true
+      },
+      "supporting_sources": [],
+      "image": {
+        "url": "https://www.bioenergy-news.com/wp-content/uploads/2026/02/bigstock-Growth-And-Expansion-44625217.jpg",
+        "credit": "bioenergy-news.com",
+        "type": "og-sayfa"
+      },
+      "score": 7,
+      "event_key": "india-cbg-expansion-2026",
+      "slug": "hindistan-23-731-crore-rupilik-ulusal-biyoenerji-programini-onayladi"
+    },
+    {
+      "id": "bioforce-cee-expansion",
+      "secim": "yedek",
+      "title": "3SIIF, Estonyalı biyometan üreticisi Bioforce'un Orta ve Doğu Avrupa'ya genişlemesini destekledi",
+      "excerpt": "Three Seas Initiative Investment Fund (3SIIF), Estonya biyometan pazarında yaklaşık %40 paya sahip Bioforce'a Polonya ve Letonya'ya genişleme için yatırım yaptı. Şirket, dört tesisiyle yılda 250 GWh'yi aşan biyometan üretiyor ve 2032'ye kadar 1 TWh'ye çıkmayı hedefliyor.",
+      "detail": "Three Seas Initiative Investment Fund (3SIIF), Estonya'nın önde gelen biyometan üreticisi Bioforce'a, Polonya ve Letonya'ya genişlemeyi finanse etmek amacıyla yatırım yaptı. Bioforce, Estonya biyometan pazarında yaklaşık %40 paya sahip ve dört tesisinde toplam yılda 250 GWh'yi aşan biyometan üretiyor. Yatırım, kapasitede dört katına çıkışı ve 2032'ye kadar 1 TWh'ye ulaşmayı hedefleyen yeşil alan geliştirmeyi destekleyecek.\n\nŞirket, 2027'de Polonya biyometan pazarına girmeyi ve sonraki beş yıl içinde Polonya'da en az 10 tesis geliştirip devreye almayı planlıyor. Polonya operasyonlarını yönetmek üzere stratejik işe alımlar zaten yapıldı.\n\nBioforce, Boyd Watterson Global Asset Management'ın parçası olan Amber Infrastructure Group'a ait ve bu yatırım 3SIIF'in bölgedeki altıncı yatırımı niteliğinde. Fonun önceki yatırımları arasında Cargounit (Polonya'nın lokomotif kiralama işi), Greenergy Data Centers (Estonya), Enery (10+ GW'lık boru hattına sahip yenilenebilir enerji geliştiricisi) ve R.Power (Polonyalı yenilenebilir enerji geliştiricisi) bulunuyor.",
+      "neden_onemli": null,
+      "category": "biyoyakit",
+      "subcategories": [
+        "biyometan"
+      ],
+      "value_chain": [
+        "donusum-fermantasyon"
+      ],
+      "maturity": "funded",
+      "companies": [
+        "Bioforce",
+        "Amber Infrastructure Group",
+        "Three Seas Initiative Investment Fund"
+      ],
+      "countries": [
+        "Estonia",
+        "Poland",
+        "Latvia"
+      ],
+      "technologies": [
+        "anaerobik çürütme"
+      ],
+      "capacity": "2032'ye kadar 1 TWh hedefi (mevcut >250 GWh/yıl)",
+      "investment": null,
+      "published_date": "2026-08-06",
+      "source": {
+        "name": "bioenergy-news.com",
+        "url": "https://bioenergy-news.com/news/3siif-backs-estonian-biomethane-producer-bioforce-for-cee-expansion",
+        "domain": "bioenergy-news.com",
+        "type": "trade_press",
+        "tier": 2,
+        "primary": true
+      },
+      "supporting_sources": [],
+      "image": {
+        "url": "https://www.bioenergy-news.com/wp-content/uploads/2026/04/bigstock-Business-Deal-899100-1.jpg",
+        "credit": "bioenergy-news.com",
+        "type": "og-sayfa"
+      },
+      "score": 7,
+      "event_key": "bioforce-cee-expansion",
+      "slug": "3siif-estonyali-biyometan-ureticisi-bioforce-un-orta-ve-dogu-avrupa-ya"
+    },
+    {
+      "id": "sindal-biogas-expansion",
+      "secim": "one_cikan",
+      "title": "NIB, Danimarka'daki Sindal Biogas genişlemesine 182 milyon kron finansman sağladı",
+      "excerpt": "Nordic Investment Bank (NIB), kuzey Danimarka'daki endüstriyel ölçekli Sindal Biogas tesisi için 182 milyon Danimarka kronu (24 milyon euro) tutarında 13 yıllık finansman taahhüt etti. Yatırım, tesisin biyometan üretimini yılda 22 milyon metreküpten 44 milyon metreküpe çıkaracak.",
+      "detail": "Nordic Investment Bank (NIB), kuzey Danimarka'daki endüstriyel ölçekli anaerobik çürütme tesisi Sindal Biogas'ın genişlemesi için 182 milyon Danimarka kronu (24 milyon euro) tutarında 13 yıllık finansman taahhüt etti. Yatırım, tesisin biyometan üretimini yılda 22 milyon metreküpten 44 milyon metreküpe çıkararak ikiye katlayacak. Genişleme ayrıca biyojenik emisyonların kalıcı depolanması veya Power-to-X projelerine tedarik için CO2 yakalama teknolojisi kurulumu olasılığını da açıyor.\n\nYükseltilmiş tesis, yılda 800.000 tona kadar tarımsal ve endüstriyel atık işleyecek ve bu haliyle Danimarka'nın en büyük biyogaz tesislerinden biri konumuna gelecek. Proje, Copenhagen Infrastructure Partners'ın Advanced Bioenergy Fund I'ine, KK Invest'e ve DBC Invest'e ait.\n\nGenişleme, Danimarka'nın şebekede %100 yenilenebilir gaz hedefine ve ülkenin ithal gaz bağımlılığını azaltma çalışmalarına destek veriyor. Finansman, InvestEU Temiz Enerji Geçişi Çerçevesi kapsamında uygunluk kazandı.",
+      "neden_onemli": null,
+      "category": "biyoyakit",
+      "subcategories": [
+        "biyometan"
+      ],
+      "value_chain": [
+        "donusum-fermantasyon"
+      ],
+      "maturity": "funded",
+      "companies": [
+        "Sindal Biogas",
+        "Copenhagen Infrastructure Partners",
+        "Nordic Investment Bank"
+      ],
+      "countries": [
+        "Denmark"
+      ],
+      "technologies": [
+        "anaerobik çürütme",
+        "karbon yakalama"
+      ],
+      "capacity": "22'den 44 milyon m3/yıl biyometan",
+      "investment": {
+        "amount_original": 182,
+        "currency": "DKK million",
+        "amount_usd_million": null,
+        "public_support_usd_million": null
+      },
+      "published_date": "2026-08-06",
+      "source": {
+        "name": "bioenergy-news.com",
+        "url": "https://bioenergy-news.com/news/nib-finances-sindal-biogas-expansion-in-denmark",
+        "domain": "bioenergy-news.com",
+        "type": "trade_press",
+        "tier": 2,
+        "primary": true
+      },
+      "supporting_sources": [],
+      "image": {
+        "url": "https://www.bioenergy-news.com/wp-content/uploads/2026/08/sindal-biogas-picture-695x475-1.png",
+        "credit": "bioenergy-news.com",
+        "type": "og-sayfa"
+      },
+      "score": 7,
+      "event_key": "sindal-biogas-expansion",
+      "slug": "nib-danimarka-daki-sindal-biogas-genislemesine-182-milyon-kron-finansm"
+    },
+    {
+      "id": "power-wood-alberta-black-pellets",
+      "secim": "yedek",
+      "title": "Power Wood, Alberta'daki siyah pelet tesisleri için 84 milyon Kanada doları fon sağladı",
+      "excerpt": "Kanadalı biyoyakıt şirketi Power Wood Holdings, Londra merkezli Chair Capital'den Kuzey Alberta'da iki siyah pelet üretim tesisi geliştirmek için 84 milyon Kanada doları (57 milyon euro) yatırım aldı. Tesisler, yılda toplam 700.000 ton kapasiteyle Japon enerji şirketlerine 10 yıllık al-ya-da-öde alım anlaşmasıyla ihraç edilecek.",
+      "detail": "Kanadalı biyoyakıt şirketi Power Wood Holdings, Londra merkezli girişim sermayesi firması Chair Capital'den Kuzey Alberta'da iki gelişmiş siyah pelet üretim tesisi geliştirmek için yatırım aldı. 84 milyon Kanada doları (57 milyon euro) tutarındaki finansman, inşaat kilometre taşlarına bağlı taksitler halinde kullanılacak. İlk 42 milyon Kanada doları (28 milyon euro) tutarındaki dilim, La Crête yakınındaki Peace River tesisinin tamamlanmasını ve ihracat taşımacılığı için bir demiryolu bağlantısının inşasını destekleyecek. Kalan 42 milyon Kanada doları (28 milyon euro) ise High Level yakınındaki Hay Meadow tesisine tahsis edilecek ve ödemeler doğrulanabilir ilerlemeye bağlı olacak.\n\nİki tesis, toplam yılda 700.000 ton kapasiteye sahip olacak. Her ikisi de Kuzeybatı Alberta bölgesinden temin edilen orman yangını hasarlı kurumuş ağaçlar, hastalıklı ağaçlar ve orman tabanı döküntülerinden buharla işlenmiş siyah pelet üretecek. Power Wood, çok sayıda Japon enerji şirketiyle 10 yıllık al-ya-da-öde alım anlaşmalarına sahip.\n\nSiyah peletler, mevcut termik santrallerde altyapı değişikliği gerektirmeden kömürün doğrudan yerine kullanılabiliyor. Japonya, 2025'te biyoyakıt pelet ithalatını %35 artırarak 8,4 milyon tona çıkardı ve dünyanın en büyük ikinci ithalatçısı konumuna geldi. Küresel siyah pelet pazarı 2025'te 298,6 milyon dolar (273 milyon euro) değerindeydi ve 2040'a kadar 3,2 milyar dolara (2,9 milyar euro) ulaşması bekleniyor.\n\nYatırım, üçüncü taraf inşaat finansmanının teyidine ve kesin belgelerin tamamlanmasına bağlı.",
+      "neden_onemli": null,
+      "category": "biyoyakit",
+      "subcategories": [
+        "siyah pelet"
+      ],
+      "value_chain": [
+        "biyokutle",
+        "urun-uretim"
+      ],
+      "maturity": "funded",
+      "companies": [
+        "Power Wood Holdings",
+        "Chair Capital"
+      ],
+      "countries": [
+        "Canada",
+        "Japan"
+      ],
+      "technologies": [
+        "buharla işleme"
+      ],
+      "capacity": "700 bin ton/yıl siyah pelet",
+      "investment": {
+        "amount_original": 84,
+        "currency": "CAD million",
+        "amount_usd_million": null,
+        "public_support_usd_million": null
+      },
+      "published_date": "2026-08-06",
+      "source": {
+        "name": "bioenergy-news.com",
+        "url": "https://bioenergy-news.com/news/power-wood-secures-ca84m-for-alberta-black-pellet-plants",
+        "domain": "bioenergy-news.com",
+        "type": "trade_press",
+        "tier": 2,
+        "primary": true
+      },
+      "supporting_sources": [],
+      "image": {
+        "url": "https://www.bioenergy-news.com/wp-content/uploads/2026/08/Power-Wood-La-Crete-Peace-River-Plant-Earthworks-Aerial-scaled.jpg",
+        "credit": "bioenergy-news.com",
+        "type": "og-sayfa"
+      },
+      "score": 7,
+      "event_key": "power-wood-alberta-black-pellets",
+      "slug": "power-wood-alberta-daki-siyah-pelet-tesisleri-icin-84-milyon-kanada-do"
+    },
+    {
+      "id": "plantible-rubisco-protein-scaling",
+      "secim": "one_cikan",
+      "title": "Plantible, RuBisCO protein üretimini beş katına çıkarmak için 35 milyon dolar topladı",
+      "excerpt": "Su mercimeğinden (lemna/ördek yosunu) RuBisCO protein üreten Plantible Foods, Eldorado, Texas tesisindeki operasyonları genişletmek için 35 milyon dolar borç ve özsermaye finansmanı sağladı. Yatırım, yıllık üretim kapasitesini beş katına çıkararak 1.000 metrik tonun üzerine taşıyacak.",
+      "detail": "Su mercimeğinden (lemna, ördek yosunu) yüksek işlevli bir protein olan RuBisCO'yu çıkaran girişim Plantible Foods, Eldorado, Texas'taki tesisinde operasyonlarını genişletmek için 35 milyon dolar borç ve özsermaye finansmanı topladı. Paket, USDA'nın İşletme ve Sanayi Kredi Garanti Programı üzerinden X-Caliber Rural Capital'den 25 milyon dolarlık kredi ile RA Capital ve mevcut yatırımcılardan 10 milyon dolarlık özsermaye yatırımını içeriyor.\n\nFonlar, Plantible'ın 'Rubi protein' için yıllık üretim kapasitesini beş katına çıkararak 1.000 metrik tonun üzerine taşımasını, mevcut müşteri boru hattını karşılamasını ve yeni pazarlara girmesini sağlayacak. Şirket her hafta yeni seralar devreye alıyor ve inşaatı 2027'nin başında tamamlamayı hedefliyor.\n\nPlantible, protein filtrasyon sistemini yükseltti ve daha yüksek protein verimine sahip özel bir lemna türü geliştirdi; bu, verimi %40'ın üzerinde artırdı. Rubi protein, tüm temel amino asitleri içeriyor ve hayvansal proteine denk 1,0 protein sindirilebilirlik (PDCAAS) skoruna sahip; ayrıca ABD'de FDA'dan GRAS (genel olarak güvenli kabul edilen) statüsü için 'soru yok' mektubu aldı.",
+      "neden_onemli": null,
+      "category": "gida-protein",
+      "subcategories": [
+        "alternatif protein",
+        "RuBisCO"
+      ],
+      "value_chain": [
+        "urun-uretim"
+      ],
+      "maturity": "funded",
+      "companies": [
+        "Plantible Foods",
+        "RA Capital",
+        "X-Caliber Rural Capital"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "technologies": [
+        "lemna ekstraksiyonu"
+      ],
+      "capacity": "1.000+ ton/yıl RuBisCO proteini",
+      "investment": {
+        "amount_original": 35,
+        "currency": "USD million",
+        "amount_usd_million": 35,
+        "public_support_usd_million": 25
+      },
+      "published_date": "2026-08-06",
+      "source": {
+        "name": "agfundernews.com",
+        "url": "https://agfundernews.com/plantible-raises-35m-in-debt-equity-to-increase-rubisco-protein-production-fivefold",
+        "domain": "agfundernews.com",
+        "type": "trade_press",
+        "tier": 2,
+        "primary": true
+      },
+      "supporting_sources": [
+        {
+          "name": "vegconomist.com",
+          "url": "https://vegconomist.com/investments-finance/plantible-secures-35m-usda-backed-debt-equity-quintuple-rubi-protein-output-texas",
+          "domain": "vegconomist.com"
+        }
+      ],
+      "image": {
+        "url": "https://agfundernews.com/wp-content/uploads/2026/08/Tony-Martens-cofounder-CEO-Plantible-Image-credit-Plantible.jpg",
+        "credit": "agfundernews.com",
+        "type": "og-sayfa"
+      },
+      "score": 7,
+      "event_key": "plantible-rubisco-protein-scaling",
+      "slug": "plantible-rubisco-protein-uretimini-bes-katina-cikarmak-icin-35-milyon"
+    },
+    {
+      "id": "casella-waga-hyland-rng",
+      "secim": "one_cikan",
+      "title": "Casella ve Waga Energy, New York'ta büyük kapasiteli RNG tesisini işletmeye aldı",
+      "excerpt": "Casella Waste Systems ve Waga Energy, Angelica, New York'taki Hyland çöp sahasında yenilenebilir doğal gaz (RNG) tesisini işletmeye aldı. Tesis, 3.000 SCFM kurulu kapasiteyle yılda 610.000 MMBtu'ya (180 GWh) kadar gaz üretebiliyor ve 47.000 ton CO2 eşdeğeri emisyonu önlemesi bekleniyor.",
+      "detail": "Casella Waste Systems ve Waga Energy, Angelica, New York'taki Hyland çöp sahası RNG üretim tesisinde operasyonlara başladı; bu, ortaklık kapsamında planlanan üç projeden ikincisi. Tesis, çöp sahası gazını boru hattı kalitesinde yenilenebilir doğal gaza (RNG) yükseltmek için Waga Energy'nin WAGABOX teknolojisini kullanıyor. 3.000 SCFM kurulu kapasiteyle Hyland, yılda 610.000 MMBtu'ya (180 GWh) kadar yenilenebilir gaz üretebiliyor; bu, Waga Energy'nin ABD portföyündeki en büyük RNG üretim birimlerinden biri konumuna getiriyor.\n\nSahada üretilen gaz doğrudan Eastern Gas Transmission and Storage şebekesine enjekte ediliyor. Tesisin, EPA standartlarına göre yılda 47.000 ton CO2 eşdeğeri emisyonu önlemesi bekleniyor.\n\nOrtaklık anlaşması kapsamında Waga Energy tesisin tüm inşaatını finanse etti ve tesisi 20 yıl boyunca sahiplenip işletecek; Casella ile Waga, RNG satışlarından gelen gelirleri paylaşacak. Projenin, Yatırım Vergi Kredileri ve Üretim Vergi Kredileri dahil Enflasyon Azaltma Yasası (Inflation Reduction Act) teşviklerinden yararlanması bekleniyor.",
+      "neden_onemli": null,
+      "category": "atik-donusum",
+      "subcategories": [
+        "RNG",
+        "çöp sahası gazı"
+      ],
+      "value_chain": [
+        "atik-geri-donusum",
+        "donusum-fermantasyon"
+      ],
+      "maturity": "operational",
+      "companies": [
+        "Casella Waste Systems",
+        "Waga Energy"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "technologies": [
+        "WAGABOX"
+      ],
+      "capacity": "yılda 610.000 MMBtu (180 GWh) RNG",
+      "investment": null,
+      "published_date": "2026-08-07",
+      "source": {
+        "name": "bioenergy-news.com",
+        "url": "https://bioenergy-news.com/news/casella-and-waga-energy-start-large-capacity-rng-facility-at-new-york-landfill",
+        "domain": "bioenergy-news.com",
+        "type": "trade_press",
+        "tier": 2,
+        "primary": true
+      },
+      "supporting_sources": [
+        {
+          "name": "biomassmagazine.com",
+          "url": "https://biomassmagazine.com/articles/casella-waste-systems-and-waga-energy-announce-start-of-operations-of-rng-facility-at-hyland-landfill",
+          "domain": "biomassmagazine.com"
+        }
+      ],
+      "image": {
+        "url": "https://www.bioenergy-news.com/wp-content/uploads/2026/05/FR4_SP_FR_HY_DyM_IMG20260114144201_fav_CMYK_bearbeitet-scaled.jpg",
+        "credit": "bioenergy-news.com",
+        "type": "og-sayfa"
+      },
+      "score": 7,
+      "event_key": "casella-waga-hyland-rng",
+      "slug": "casella-ve-waga-energy-new-york-ta-buyuk-kapasiteli-rng-tesisini-islet"
+    },
+    {
+      "id": "bp-divests-archaea-biogas",
+      "secim": "yedek",
+      "title": "bp, 'zayıf getiri' gerekçesiyle Archaea biyogaz işini satışa çıkardı",
+      "excerpt": "bp, ABD'nin en büyük çöp sahası metanı üreticisi Archaea Energy'yi, şirketi satın almasından yaklaşık dört yıl sonra satışa çıkarıyor. Şirket, 2025 sonunda biyogaz ve güneş enerjisi varlıklarında 4,2 milyar dolar (3,9 milyar euro), 2026'nın ikinci çeyreğinde ise ek 1,1 milyar dolar (1 milyar euro) değer düşüklüğü kaydetti.",
+      "detail": "bp, yeni CEO Meg O'Neill'in şirketin yeşil enerji stratejisinden vazgeçmesiyle, ABD merkezli çöp sahası gazı işi Archaea Energy'yi satışa çıkardığını duyurdu; gerekçe olarak yatırım getirilerinin yetersizliği gösterildi. ABD'nin en büyük çöp sahası metanı üreticisi olan Archaea, gözden geçirilen giderek büyüyen yenilenebilir varlıklar listesine katılıyor. bp, 2025 sonunda biyogaz ve güneş enerjisi varlıklarında 4,2 milyar dolar (3,9 milyar euro) değer düşüklüğüne gitmiş, 2026'nın ikinci çeyreğinde ise ek 1,1 milyar dolar (1 milyar euro) değer düşüklüğü kaydetmişti.\n\nO'Neill, CNBC'ye yaptığı açıklamada bazı yatırımların beklenen getiriyi sağlamadığını söyledi. Bu açıklama, önceki yıla göre %144 artışla 5,7 milyar dolar (5,2 milyar euro) düzeltilmiş ikinci çeyrek kârı açıklamasıyla eş zamanlı geldi; artışın kaynağı daha yüksek petrol ve gaz fiyatları oldu.\n\nNisan ayında Avustralyalı enerji şirketi Woodside'dan bp'ye katılan O'Neill, şirketin portföyünü agresif biçimde yeniden şekillendiriyor. Son hamleler arasında Kuzey Denizi varlıklarının satışı, risk sermayesi biriminin kapatılması ve Avusturya'daki yakıt istasyonlarından çıkış bulunuyor. Borç azaltımı önceliklendiriliyor; bp, 2026 sonu itibarıyla net borcu 18 milyar doların (16,5 milyar euro) altına indirmeyi hedefliyor ve bu, planlanandan bir yıl önce gerçekleşecek. Finansal yükümlülükler çeyrekte 7 milyar dolar (6,4 milyar euro) azaldı; bu tutar borç, hibrit tahvil ve Deepwater Horizon tazminatlarını kapsıyor.",
+      "neden_onemli": null,
+      "category": "biyoyakit",
+      "subcategories": [
+        "biyogaz",
+        "çöp sahası gazı"
+      ],
+      "value_chain": [
+        "donusum-fermantasyon"
+      ],
+      "maturity": "cancelled",
+      "companies": [
+        "bp",
+        "Archaea Energy"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "technologies": [],
+      "capacity": null,
+      "investment": {
+        "amount_original": 4.2,
+        "currency": "USD billion",
+        "amount_usd_million": 4200,
+        "public_support_usd_million": null
+      },
+      "published_date": "2026-08-05",
+      "source": {
+        "name": "bioenergy-news.com",
+        "url": "https://bioenergy-news.com/news/bp-to-divest-archaea-business-due-to-poor-returns",
+        "domain": "bioenergy-news.com",
+        "type": "trade_press",
+        "tier": 2,
+        "primary": true
+      },
+      "supporting_sources": [],
+      "image": {
+        "url": "https://www.bioenergy-news.com/wp-content/uploads/2023/07/bigstock-Champaign-Circa-June-B-477218207.jpg",
+        "credit": "bioenergy-news.com",
+        "type": "og-sayfa"
+      },
+      "score": 7,
+      "event_key": "bp-divests-archaea-biogas",
+      "slug": "bp-zayif-getiri-gerekcesiyle-archaea-biyogaz-isini-satisa-cikardi"
+    },
+    {
+      "id": "insectbiotech-andalusia-bsfl",
+      "secim": "yedek",
+      "title": "InsectBiotech, Andalusia'da böcek larvası üretimini genişletmek için 8,3 milyon dolar aldı",
+      "excerpt": "İspanyol girişim InsectBiotech, zeytinyağı sanayisi yan ürünlerini asker böceği larvalarıyla protein, yağ ve gübreye dönüştürecek bir tesis kurmak için 7,2 milyon euro (8,3 milyon dolar) topladı. Tesis, yılda 7.500 tona kadar tarımsal yan ürün işleyecek ve 2027'nin üçüncü çeyreğinde faaliyete geçmesi hedefleniyor.",
+      "detail": "İspanyol girişim InsectBiotech, zeytinyağı sanayisi ve diğer tarımsal yan akımlardan gelen atıkları asker böceği (black soldier fly) larvaları kullanarak protein, yağ ve gübreye dönüştürecek yeni bir tesis inşa etmek için 7,2 milyon euro (8,3 milyon dolar) topladı. Turu, Arcano Partners'ın Impact Andalusía Innovation fonu ve kimliği açıklanmayan ABD'li yatırımcıların katılımını içeriyor. Fon, yılda 7.500 tona kadar tarımsal yan ürün işleyebilecek bir sahanın inşasını destekleyecek.\n\nOperasyonel olması 2027'nin üçüncü çeyreğinde hedeflenen tesis, şirketin araştırma ve pilot operasyonlardan ticari ölçekli üretime geçişinde önemli bir adım olarak tanımlanıyor. Saha, yılda 1.300 ton taze larva üretecek; bu, 300 ton yüksek proteinli un'a dönüşüyor. Sonrasında larva üretiminin 10.000 tona çıkarılması planlanıyor.\n\nHammadde tedariki için şirket, İspanya'da yılda yaklaşık 5 milyon ton üretilen zeytin posasından yararlanıyor. Kurucu ortak Ben Brown, mekanik işleme sürecinin, standart buğday bazlı formülasyonların dörtte biri kadar yem maliyeti sağladığını ve sürecin onaylı bir patentle korunduğunu belirtti. Ana alım garantisi verenler arasında protein için akuakültür, domuz, kanatlı ve evcil hayvan maması sektörleri; gübre (frass) için bağcılık ve yüksek rotasyonlu ürünler (böğürtlen gibi); yağ için ise biyodizel şirketleri bulunuyor. Şirkete göre yaklaşık on iki niyet mektubu (LOI) imzalanmış durumda.",
+      "neden_onemli": null,
+      "category": "gida-protein",
+      "subcategories": [
+        "böcek proteini",
+        "BSF larvası"
+      ],
+      "value_chain": [
+        "atik-geri-donusum",
+        "urun-uretim"
+      ],
+      "maturity": "construction",
+      "companies": [
+        "InsectBiotech",
+        "Arcano Partners"
+      ],
+      "countries": [
+        "Spain"
+      ],
+      "technologies": [
+        "asker böceği larvası dönüşümü"
+      ],
+      "capacity": "yılda 7.500 ton tarımsal yan ürün işleme",
+      "investment": {
+        "amount_original": 7.2,
+        "currency": "EUR million",
+        "amount_usd_million": 8.3,
+        "public_support_usd_million": null
+      },
+      "published_date": "2026-08-03",
+      "source": {
+        "name": "agfundernews.com",
+        "url": "https://agfundernews.com/insectbiotech-raises-8-3m-to-scale-bsfl-production-in-andalusia-spain",
+        "domain": "agfundernews.com",
+        "type": "trade_press",
+        "tier": 2,
+        "primary": true
+      },
+      "supporting_sources": [],
+      "image": {
+        "url": "https://agfundernews.com/wp-content/uploads/2025/05/Olives-istock-nito100.jpg",
+        "credit": "agfundernews.com",
+        "type": "og-sayfa"
+      },
+      "score": 7,
+      "event_key": "insectbiotech-andalusia-bsfl",
+      "slug": "insectbiotech-andalusia-da-bocek-larvasi-uretimini-genisletmek-icin-8-"
+    },
+    {
+      "id": "adm-every-fermented-protein",
+      "secim": "one_cikan",
+      "title": "ADM ve Rich's, Every'nin fermente yumurta akı proteinini ABD'de ticarileştiriyor",
+      "excerpt": "ADM ve The Every Company, hassas fermantasyonla üretilen yumurta akı proteinini ADM'nin Clinton, Iowa tesisinde ticari ölçekte üretmek için ortaklık kurdu. Peynir altı suyu proteini fiyatının 2026'da Ocak'taki 1,52 dolar/libreden Temmuz'da 2,18 dolar/libreye çıkması, alternatif protein talebini tetikledi.",
+      "detail": "ADM ve The Every Company, hassas fermantasyonla üretilen yumurta akı proteini OvoPro'yu ADM'nin Clinton, Iowa tesisinde ticari ölçekte üretmek üzere bir ortaklık duyurdu. Şirketler, bu tesisin ABD'de bu ölçekte hassas fermantasyon kapasitesine ev sahipliği yapan ilk saha olduğunu belirtti. Ayrı bir ticari anlaşma kapsamında Every, dünyanın en büyük özel gıda şirketlerinden biri olan Rich Products Corporation ile OvoPro bazlı ürünleri ABD'deki fırıncılık, atıştırmalık ve yemek hizmetleri hatlarında geliştirip piyasaya sürmek için ortaklık kurdu.\n\nUSDA verilerine göre peynir altı suyu proteini konsantresi Ocak 2026'da libre başına 1,52 dolardan, Mayıs'ta 1,74 dolara, Temmuz'da ise bazı üreticilerin üretimi tamamen kestiği koşullarda libre başına 2,18 dolara kadar yükseldi. Bu fiyat eğrisi ve peynir altı suyunun yüksek katım oranlarında unlu mamullerde kuru ve tebeşirli bir doku bırakma eğilimi, formülatörleri farklı bir protein takviye yolu aramaya itti.\n\nYumurta fiyatları da dalgalanma gösterdi: ABD perakende yumurta fiyatları Mart 2025'te düzine başına 6,23 dolara ulaştı, Mayıs 2026'da 2,19 dolara düştü, ancak bu yaz kuş gribinin bir düzine eyalette yeniden ortaya çıkmasıyla yeniden yükselişe geçti; ilkbahardan bu yana 12 milyondan fazla tavuk kesildi.\n\nPrecision fermantasyon, hedef bir molekülü - burada bir protein - üretmek üzere programlanmış mikroorganizmaların (tipik olarak maya veya mantar) bir bioreaktörde bir şeker kaynağıyla beslenerek büyütülmesini içeriyor; üretilen protein daha sonra hasat edilip saflaştırılıyor. Every'nin fermente protein ürünü birkaç yıldır mevcuttu ancak eksik olan, çoğuluslu üreticilerin gerçekten ihtiyaç duyduğu hacimlerde tedarik yapabilecek tank kapasitesine ve lojistik ağına sahip bir işleyiciydi.",
+      "neden_onemli": null,
+      "category": "biyomanufaktur",
+      "subcategories": [
+        "hassas fermantasyon",
+        "alternatif protein"
+      ],
+      "value_chain": [
+        "donusum-fermantasyon",
+        "urun-uretim"
+      ],
+      "maturity": "operational",
+      "companies": [
+        "ADM",
+        "The Every Company",
+        "Rich Products Corporation"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "technologies": [
+        "hassas fermantasyon"
+      ],
+      "capacity": null,
+      "investment": null,
+      "published_date": "2026-08-04",
+      "source": {
+        "name": "foodnavigator.com",
+        "url": "https://foodnavigator.com/Article/2026/08/04/adm-and-richs-back-everys-fermented-egg-white-protein",
+        "domain": "foodnavigator.com",
+        "type": "trade_press",
+        "tier": 2,
+        "primary": true
+      },
+      "supporting_sources": [],
+      "image": {
+        "url": null,
+        "credit": null,
+        "type": null
+      },
+      "score": 7,
+      "event_key": "adm-every-fermented-protein",
+      "slug": "adm-ve-rich-s-every-nin-fermente-yumurta-aki-proteinini-abd-de-ticaril"
+    }
+  ],
+  "radar": [
+    {
+      "kume": "Türkiye — Politika ve Destek Programları",
+      "maddeler": [
+        {
+          "title": "KOSGEB, temiz enerji ve iklim teknolojisi girişimleri için COP31 odaklı hızlandırma destek çağrısı açtı",
+          "source": "Anadolu Ajansı",
+          "url": "https://aa.com.tr/tr/ekonomi/bakan-kacir-cop31-odakli-hizlandirma-destegi-cagrisini-acikladi/4021804",
+          "date": "2026-08-08",
+          "category": "politika"
+        },
+        {
+          "title": "Sanayi ve Teknoloji Bakanlığı, öncelikli ürünlerde 5 milyar lira üzerindeki yatırımlara proje bazlı destek duyurdu",
+          "source": "Ekonomim",
+          "url": "https://ekonomim.com/ekonomi/bakanliktan-5-milyar-tl-uzeri-yatirimlara-proje-bazli-destek-haberi-911027",
+          "date": "2026-08-09",
+          "category": "politika"
+        }
+      ]
+    },
+    {
+      "kume": "Türkiye — Şirket ve Atık Dönüşümü Projeleri",
+      "maddeler": [
+        {
+          "title": "RecyLoop, sürdürülebilir kâğıt bardak üretimi için TSKB'den yeşil finansman sağladı",
+          "source": "Ekonomim",
+          "url": "https://ekonomim.com/sirketler/recyloop-yesil-donusum-yolculugunda-tskbden-finansman-sagladi-haberi-910503",
+          "date": "2026-08-06",
+          "category": "biyomalzeme"
+        },
+        {
+          "title": "Tosyalı Harsco'nun cüruf bazlı çevreci asfaltı Kocaeli'nin zorlu yollarında kullanılmaya başlandı",
+          "source": "Ekonomim",
+          "url": "https://ekonomim.com/sirketler/tosyalinin-curuf-bazli-cevreci-asfalti-kocaelinin-en-zorlu-rampalarinda-kullanilmaya-baslandi-haberi-910304",
+          "date": "2026-08-05",
+          "category": "atik-donusum"
+        }
+      ]
+    },
+    {
+      "kume": "Küresel Biyometan ve Biyogaz Projeleri",
+      "maddeler": [
+        {
+          "title": "CHAR Tech'in Bio-Méthane Provence projesi Fransa'da kamu istişaresini tamamladı, 2029'un ikinci yarısında işletim hedefliyor",
+          "source": "Bioenergy Insight Magazine",
+          "url": "https://bioenergy-news.com/news/char-techs-bio-methane-provence-project-clears-french-public-consultation",
+          "date": "2026-08-07",
+          "category": "biyoyakit"
+        },
+        {
+          "title": "İspanya'daki anaerobik çürütme tesisi yılda 58 GWh biyometan üretiminde tam kapasiteye ulaştı",
+          "source": "Bioenergy Insight Magazine",
+          "url": "https://bioenergy-news.com/news/spanish-ad-plant-reaches-full-capacity-with-58-gwh-biomethane-output",
+          "date": "2026-08-05",
+          "category": "biyoyakit"
+        },
+        {
+          "title": "SUEZ, Güney Londra'da yıllık 100.000 ton gıda atığı işleyecek anaerobik çürütme tesisi için planlama itirazını kazandı",
+          "source": "Bioenergy Insight Magazine",
+          "url": "https://bioenergy-news.com/news/suez-wins-appeal-for-100000-tonne-south-london-ad-facility",
+          "date": "2026-08-05",
+          "category": "atik-donusum"
+        },
+        {
+          "title": "Arciplug ve Infistar, Hindistan'da modüler sıkıştırılmış biyogaz tesisleri için Arcistar Bioenergy ortak girişimini kurdu",
+          "source": "Bioenergy Insight Magazine",
+          "url": "https://bioenergy-news.com/news/finnish-firm-partners-to-develop-modular-biomass-biogas-plants-in-india",
+          "date": "2026-08-03",
+          "category": "biyoyakit"
+        },
+        {
+          "title": "Pertamina ve Batı Java, çöp sahası biyometanı ile düşük karbonlu hidrojen projeleri için iş birliği yaptı",
+          "source": "Bioenergy Insight Magazine",
+          "url": "https://bioenergy-news.com/news/pertamina-west-java-develop-landfill-biomethane-and-low-carbon-hydrogen",
+          "date": "2026-08-03",
+          "category": "biyoyakit"
+        },
+        {
+          "title": "Nestlé Pakistan, Punjab'da tarımsal atık yakmayı önlemek için 4,5 milyon dolarlık biyokütle buhar tesisi devreye aldı",
+          "source": "Bioenergy Insight Magazine",
+          "url": "https://bioenergy-news.com/news/nestle-pakistan-inaugurates-4-5m-biomass-steam-plant-to-tackle-crop-burning-in-punjab",
+          "date": "2026-08-03",
+          "category": "atik-donusum"
+        },
+        {
+          "title": "Sofidel, Fransa'daki fabrikasında yıllık 9.100 ton CO2 azaltımı hedefleyen biyokütle kazanı devreye aldı",
+          "source": "Bioenergy Insight Magazine",
+          "url": "https://bioenergy-news.com/news/sofidel-deploys-biomass-boiler-at-french-mill",
+          "date": "2026-08-05",
+          "category": "atik-donusum"
+        }
+      ]
+    },
+    {
+      "kume": "Karbon Yakalama",
+      "maddeler": [
+        {
+          "title": "PureField Ingredients, karbon yakalama tesisini tamamladı ve etanol maliyetini düşürecek genişleme planı açıkladı",
+          "source": "Ethanol Producer Magazine",
+          "url": "https://ethanolproducer.com/articles/purefield-ingredients-celebrates-landmark-carbon-capture-facility-and-announces-expansion-plans",
+          "date": "2026-08-03",
+          "category": "karbon"
+        },
+        {
+          "title": "Veolia, Sheffield Energy Recovery Facility'de amin dışı karbon yakalama teknolojisini Birleşik Krallık'ta ilk kez denedi",
+          "source": "edie.net",
+          "url": "https://edie.net/veolia-trials-new-carbon-capture-technology-in-uk-first",
+          "date": "2026-08-03",
+          "category": "karbon"
+        }
+      ]
+    },
+    {
+      "kume": "Enzim, Fermantasyon ve Biyoaktif Konsolidasyonu",
+      "maddeler": [
+        {
+          "title": "Lallemand, enzim ve mikrobiyal kabiliyetlerini genişletmek için BIO-CAT Enzymes & Microbials'ı satın aldı",
+          "source": "Food Ingredients First",
+          "url": "https://foodingredientsfirst.com/news/lallemand-acquires-bio-cat-food-ingredients.html",
+          "date": "2026-08-06",
+          "category": "biyomanufaktur"
+        },
+        {
+          "title": "Lallemand, ABD'li enzim üreticisi BIO-CAT satın alımını tamamladı",
+          "source": "vegconomist",
+          "url": "https://vegconomist.com/company-news/lallemand-completes-acquisition-us-enzyme-producer-bio-cat",
+          "date": "2026-08-04",
+          "category": "biyomanufaktur"
+        },
+        {
+          "title": "Hyfé, gıda atığı yan akımlarından biyoaktif ve özel lifler çıkarmak için biyorafineri modelini genişletiyor",
+          "source": "AgFunderNews",
+          "url": "https://agfundernews.com/waste-to-value-hyfe-expands-refinery-model-to-extract-fibers-and-bioactives-from-food-side-streams",
+          "date": "2026-08-04",
+          "category": "biyomanufaktur"
+        }
+      ]
+    },
+    {
+      "kume": "Alternatif Protein ve Gıda İnovasyonu",
+      "maddeler": [
+        {
+          "title": "Inaara NeoFoods, Hindistan'da yapay zekâ destekli bitkisel protein platformu için 2,2 milyon dolar topladı",
+          "source": "Green Queen",
+          "url": "https://greenqueen.com.hk/inaara-neofoods-funding-plant-based-protein-functional-nutrition-ai-india",
+          "date": "2026-08-07",
+          "category": "gida-protein"
+        },
+        {
+          "title": "Cultivated Food Labs, bakla kabuğu bazlı kakao alternatifinin ilk ticari üretimini tamamladı, dağıtım Eylül'de başlıyor",
+          "source": "AgFunderNews",
+          "url": "https://agfundernews.com/cultivated-food-labs-advances-faba-bean-hull-based-cocoa-alternative",
+          "date": "2026-08-07",
+          "category": "gida-protein"
+        }
+      ]
+    },
+    {
+      "kume": "Politika, Rapor ve Piyasa Trendleri",
+      "maddeler": [
+        {
+          "title": "AB, yünün biyobazlı ürünlerde kullanımını artırmak için 2009 hayvansal yan ürün düzenlemesini gözden geçiriyor",
+          "source": "Euractiv",
+          "url": "https://euractiv.com/fr/news/la-laine-peut-elle-aider-a-vaincre-la-fast-fashion",
+          "date": "2026-08-04",
+          "category": "politika"
+        },
+        {
+          "title": "NESO analizi, Birleşik Krallık biyometanının 2050'de maddi ödünler olmadan yılda 30 TWh'ye ulaşabileceğini belirledi",
+          "source": "Bioenergy Insight Magazine",
+          "url": "https://bioenergy-news.com/news/uk-biomethane-ambition-stalls-amid-feedstock-trade-offs-neso-finds",
+          "date": "2026-08-04",
+          "category": "rapor"
+        },
+        {
+          "title": "Suzuki, Hindistan'da esnek yakıtlı araç piyasaya sürdü; otomotiv üreticileri biyoyakıt politikasına uyum sağlıyor",
+          "source": "us.ok.com",
+          "url": "https://us.ok.com/ask_news_cars/suzuki-leads-india-s-flex-fuel-push-as-modi-targets-energy-independence",
+          "date": "2026-08-05",
+          "category": "biyoyakit"
+        },
+        {
+          "title": "BioScout, mantar patojenleri için yapay zekâ destekli erken uyarı sistemi geliştirmek üzere 6,75 milyon Avustralya doları aldı",
+          "source": "AgFunderNews",
+          "url": "https://agfundernews.com/bioscout-raises-4-8m-for-early-warning-system-for-fungal-pathogens",
+          "date": "2026-08-07",
+          "category": "tarim"
+        },
+        {
+          "title": "Argus Media, havacılık karbonsuzlaşması için SAF emisyon azaltım endeksleri ve ekonomi hesaplayıcısı başlattı",
+          "source": "Biobased Diesel Daily",
+          "url": "https://biobased-diesel.com/post/argus-launches-saf-emissions-reduction-indexes-economics-calculator",
+          "date": "2026-08-05",
+          "category": "biyoyakit"
+        }
+      ]
+    }
+  ],
+  "hatalar": [],
+  "_model": "anthropic:claude-sonnet-5",
+  "_notlar": [],
+  "_dusen": []
+}

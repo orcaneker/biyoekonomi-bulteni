@@ -1,0 +1,325 @@
+{
+  "issue": {
+    "hafta": "2026-H32",
+    "number": 2,
+    "draft_date": "2026-08-09",
+    "window_days": 7,
+    "coverage_end": "2026-08-09",
+    "coverage_start": "2026-08-02"
+  },
+  "brief": [
+    {
+      "text": "Hindistan Kabinesi, ₹23,731 crore tutarlı GOBARdhan programıyla CBG harmanlama yükümlülüklerini FY2026-27’den FY2028-29’a kadar %3’ten %5’e çıkaracak.",
+      "ref": "india-cbg-2p5bn"
+    },
+    {
+      "text": "Power Wood, Kuzey Alberta’daki iki siyah pelet tesisi için Chair Capital’dan CA$84m finansman sağladı; birleşik kapasite 700,000 tonnes/yıl.",
+      "ref": "power-wood-black-pellets-alberta"
+    },
+    {
+      "text": "ADM’nin Clinton, Iowa tesisi, Every’nin hassas fermantasyonlu yumurta akı proteini için ABD’de ticari ölçekli üretim kapasitesi sağlayacak.",
+      "ref": "adm-every-fermented-egg-protein"
+    },
+    {
+      "text": "Aleph Farms’ın Cultivated Thin-Cut Steak ürünü, Singapore Food Agency onayıyla 2027’nin ilk yarısında seçili restoranlarda hedefleniyor.",
+      "ref": "aleph-farms-singapore-approval"
+    },
+    {
+      "text": "Türkiye’den gelişme bulunmadı; Aleph Farms’ın Singapur onayı, kültürlenmiş sığır eti için dünya çapındaki ikinci düzenleyici onay oldu.",
+      "ref": "aleph-farms-singapore-approval"
+    }
+  ],
+  "lead_id": "india-cbg-2p5bn",
+  "stories": [
+    {
+      "id": "india-cbg-2p5bn",
+      "secim": "one_cikan",
+      "title": "Hindistan ₹23,731 crore’luk ulusal CBG programını onayladı",
+      "excerpt": "Hindistan Kabinesi, sıkıştırılmış biyogaz üretimini ölçeklendirmek üzere Rs 23,731 crore (USD 2.5bn) tutarlı GOBARdhan programını onayladı. Program FY2026-27 ile FY2035-36 arasında uygulanacak.",
+      "detail": "Hindistan Kabinesi, sıkıştırılmış biyogaz (CBG) üretimini ölçeklendirmeye yönelik Rs 23,731 crore (USD 2.5bn) tutarlı ulusal biyoenerji programını onayladı. GOBARdhan (National Circular Bioenergy Scheme), FY2026-27 ile FY2035-36 arasında uygulanacak. Program, yenilenebilir gazı ülkenin enerji bileşiminde önemli bir unsur haline getirmeyi amaçlıyor.\n\nÇerçeve, SATAT programı dahil önceki girişimleri tek program altında birleştiriyor. Ülkede halen faaliyette olan 200’ün üzerinde CBG tesisi bulunuyor. Program, mevcut seviyelere kıyasla yerli CBG üretiminde neredeyse on kat artış hedefliyor.\n\nŞehir Gaz Dağıtımı kuruluşları, CNG taşımacılık ve PNG konut segmentlerinde CBG için zorunlu harmanlama yükümlülüklerine tabi olacak. Zorunlu oran FY2026-27’de %3, FY2027-28’de %4 ve FY2028-29’dan itibaren %5 olarak belirlendi. Çerçeve, bu kuruluşlar yoluyla CBG için güvence altına alınmış alım imkânı sağlıyor.\n\nYeni CBG projelerine, kurulu kapasitenin ton/gün başına Rs 2 crore’a kadar sermaye desteği verilecek. MSME temelli projeler için ayrıca özel kredi garantileri sağlanacak. Sermaye desteği, projenin kurulu kapasitesi üzerinden tanımlandı.\n\nProgramın besleme stoğu tarımsal artıklar, büyükbaş hayvan gübresi, kanalizasyon çamuru ve belediye katı atıklarından oluşacak. Çerçeve, boru hattı altyapısı bağlantıları ile ilçe düzeyindeki uygulamayı ve besleme stoğu değer zincirlerini güçlendirmek üzere bir CBG Ecosystem Challenge Fund kuruyor. Hindistan doğal gaz talebinin yaklaşık yarısını LNG ithalatıyla karşılıyor; gazın enerji bileşimindeki payını mevcut %6’dan 2030’a kadar %15’e yükseltmeyi hedefliyor. Hükümet projeksiyonlarına göre 2028-29’da, 195’i devlet petrol ve gaz şirketleri tarafından geliştirilecek olmak üzere 480 CBG tesisi faaliyette olacak.",
+      "neden_onemli": null,
+      "category": "biyoyakit",
+      "subcategories": [
+        "CBG",
+        "biyogaz"
+      ],
+      "value_chain": [
+        "biyokutle",
+        "donusum-fermantasyon",
+        "kullanim"
+      ],
+      "maturity": "announced",
+      "companies": [],
+      "countries": [
+        "India"
+      ],
+      "technologies": [
+        "compressed biogas"
+      ],
+      "capacity": "480 CBG tesisi (2028-29 projeksiyonu)",
+      "investment": {
+        "amount_original": 23731,
+        "currency": "₹ crore",
+        "amount_usd_million": 2500,
+        "public_support_usd_million": null
+      },
+      "published_date": "2026-08-07",
+      "source": {
+        "name": "bioenergy-news.com",
+        "url": "https://bioenergy-news.com/news/india-invests-in-usd2-5bn-compressed-biogas-expansion",
+        "domain": "bioenergy-news.com",
+        "type": "trade_press",
+        "tier": 2,
+        "primary": true
+      },
+      "supporting_sources": [],
+      "image": {
+        "url": "https://www.bioenergy-news.com/wp-content/uploads/2026/02/bigstock-Growth-And-Expansion-44625217.jpg",
+        "type": "og-sayfa",
+        "credit": "bioenergy-news.com"
+      },
+      "score": 8,
+      "event_key": "india-cbg-2p5bn",
+      "slug": "hindistan-23-731-crore-luk-ulusal-cbg-programini-onayladi"
+    },
+    {
+      "id": "india-gobardhan-cbg-2p7b",
+      "secim": "one_cikan",
+      "title": "WBA, Hindistan’ın US$2.7 billion GOBARdhan programını değerlendirdi",
+      "excerpt": "World Biogas Association, Hindistan’ın ₹23,731 crore tutarlı GOBARdhan National Circular Bioenergy Scheme programını US$2.7 billion büyüklüğünde bir çerçeve olarak değerlendirdi. WBA, programın alım, fiyatlama ve kredi desteğini bir araya getirdiğini belirtti.",
+      "detail": "World Biogas Association (WBA), Hindistan Hükümeti’nin GOBARdhan National Circular Bioenergy Scheme programını onaylamasını değerlendirdi. WBA, programın yatırım büyüklüğünü yaklaşık US$2.7 billion (₹23,731 crore) olarak verdi. Kuruluş, çerçevenin ülke genelinde ölçeklenmiş bir sıkıştırılmış biyogaz (CBG) sektörü oluşturmayı hedeflediğini belirtti.\n\nWBA’ya göre program; güvence altına alınmış alımı, istikrarlı fiyatlamayı, sermaye desteğini, boru hattı bağlantısını, kredi desteğini ve ekosistem geliştirmeyi tek ulusal çerçevede birleştiriyor. Kuruluş, bu unsurların CBG sektöründeki yatırım ve ölçek büyütme kısıtlarını ele aldığını ifade etti. WBA, hızlı ölçek büyümesinin güvenilir tesis işletmesi, güçlü besleme stoğu sistemleri, yüksek metan geri kazanımı, güvenlik, çevresel performans ve digestat kullanımını içermesi gerektiğini kaydetti.\n\nWBA, #MakingBiogasHappen (MBH) programı kapsamında Hindistan’a küresel deneyim ve iyi uygulama desteği sunabileceğini belirtti. Bu destek, Global Biogas Regulatory Framework (GBRF), Anaerobic Digestion Certification Scheme International (ADCS International), teknik kapasite geliştirme, düzenleyici kıyaslama ve uluslararası standartlarla uyumlu gösterim projelerine desteği kapsıyor. WBA, hükümet, sanayi, finans kuruluşları, kooperatifler ve diğer paydaşlarla çalışmayı öngörüyor.\n\nGOBARdhan kapsamındaki politika, yatırım ve ortaklıklar World Biogas Association INDIA Congress 2026’da ele alınacak. Kongre, 8-9 October tarihlerinde New Delhi’de düzenlenecek. WBA, 2016’da Marrakesh’teki COP22’de başlatılan; biyogaz, depolama sahası gazı ve anaerobik çürütme sektörlerine yönelik küresel ticaret birliğidir. Kuruluş, organik atıkların, mahsul artıklarının ve örtü bitkilerinin anaerobik çürütme gibi biyogaz teknolojileriyle geri dönüştürülmesine odaklanıyor.",
+      "neden_onemli": null,
+      "category": "biyoyakit",
+      "subcategories": [
+        "CBG",
+        "biyogaz",
+        "biyometan"
+      ],
+      "value_chain": [
+        "biyokutle",
+        "donusum-fermantasyon",
+        "kullanim"
+      ],
+      "maturity": "announced",
+      "companies": [
+        "World Biogas Association"
+      ],
+      "countries": [
+        "India"
+      ],
+      "technologies": [
+        "compressed biogas",
+        "anaerobic digestion"
+      ],
+      "capacity": null,
+      "investment": {
+        "amount_original": 23731,
+        "currency": "₹ crore",
+        "amount_usd_million": 2700,
+        "public_support_usd_million": null
+      },
+      "published_date": "2026-08-07",
+      "source": {
+        "name": "worldbiogasassociation.org",
+        "url": "https://worldbiogasassociation.org/world-biogas-association-wba-welcomes-indias-us2-7-billion-gobardhan-scheme-as-a-landmark-move-to-scale-the-cbg-sector",
+        "domain": "worldbiogasassociation.org",
+        "type": "company",
+        "tier": 1,
+        "primary": true
+      },
+      "supporting_sources": [],
+      "image": {
+        "url": "https://www.worldbiogasassociation.org/wp-content/uploads/2025/12/WBA-wheel-in-square-transparent.png",
+        "type": "og-sayfa",
+        "credit": "worldbiogasassociation.org"
+      },
+      "score": 8,
+      "event_key": "india-gobardhan-cbg-2p7b",
+      "slug": "wba-hindistan-in-us-2-7-billion-gobardhan-programini-degerlendirdi"
+    },
+    {
+      "id": "power-wood-black-pellets-alberta",
+      "secim": "one_cikan",
+      "title": "Power Wood Alberta’daki iki siyah pelet tesisi için fon sağladı",
+      "excerpt": "Power Wood Holdings, Kuzey Alberta’daki iki gelişmiş siyah pelet tesisi için Chair Capital’dan CA$84m (EUR 57m) yatırım sağladı. Tesislerin birleşik yıllık kapasitesi 700,000 tonnes olacak.",
+      "detail": "Kanadalı biyoyakıt şirketi Power Wood Holdings, Londra merkezli girişim sermayesi şirketi Chair Capital’dan iki gelişmiş siyah pelet üretim tesisi geliştirmek için yatırım sağladı. Finansman tutarı CA$84m (EUR 57m) olarak açıklandı. Yatırım, Kuzey Alberta’daki Peace River ve Hay Meadow tesislerinin geliştirilmesinde kullanılacak.\n\nCA$42m (EUR 28m) tutarındaki ilk dilim, La Crête yakınındaki Peace River tesisinin tamamlanmasını ve ihracat taşımacılığı için bir demiryolu bağlantısının inşasını destekleyecek. İlerleme doğrultusunda ikinci bir CA$42m (EUR 28m) dilim, High Level yakınındaki Hay Meadow tesisi için taahhüt edildi. Her iki dilimin ödemesi, inşaat kilometre taşlarına ve doğrulanabilir ilerlemeye bağlı olacak.\n\nİki tesisin birleşik yıllık üretim kapasitesi 700,000 tonnes olacak. Tesislerde, Northwest Alberta alanlarından sağlanacak orman yangınından zarar görmüş ölü odunlar, hastalıklı ağaçlar ve orman zemini artıkları buharla işlenerek siyah pelete dönüştürülecek. Power Wood, birden fazla Japon enerji şirketiyle 10-year take-or-pay alım anlaşmaları imzaladı.\n\nSiyah peletler, mevcut termik santrallerde altyapı değişikliği gerektirmeden kömürün doğrudan ikamesi olarak kullanılabiliyor. Kaynağa göre besleme stoğundan yakıta dönüşüm, konvansiyonel kömüre kıyasla ihmal edilebilir karbon ayak izi oluşturuyor. Japonya’nın biyoyakıt peleti ithalatı 2025’te %35 artarak 8.4 million tonnes’a ulaştı; ülke dünyanın ikinci büyük ithalatçısı oldu. Küresel siyah pelet pazarı 2025’te US$298.6m (EUR 273m) değerindeydi ve 2040’ta US$3.2bn (EUR 2.9bn) seviyesine ulaşacağı öngörülüyor. Yatırım, üçüncü taraf inşaat finansmanının teyidine ve kesin dokümantasyonun tamamlanmasına bağlı.",
+      "neden_onemli": null,
+      "category": "atik-donusum",
+      "subcategories": [
+        "siyah pelet",
+        "odunsu biyokutle"
+      ],
+      "value_chain": [
+        "biyokutle",
+        "on-isleme",
+        "urun-uretim",
+        "kullanim"
+      ],
+      "maturity": "funded",
+      "companies": [
+        "Power Wood",
+        "Chair Capital"
+      ],
+      "countries": [
+        "Canada",
+        "Japan"
+      ],
+      "technologies": [
+        "steam treatment",
+        "black pellets"
+      ],
+      "capacity": "700,000 tonnes/yıl",
+      "investment": {
+        "amount_original": 84,
+        "currency": "CAD million",
+        "amount_usd_million": null,
+        "public_support_usd_million": null
+      },
+      "published_date": "2026-08-06",
+      "source": {
+        "name": "bioenergy-news.com",
+        "url": "https://bioenergy-news.com/news/power-wood-secures-ca84m-for-alberta-black-pellet-plants",
+        "domain": "bioenergy-news.com",
+        "type": "trade_press",
+        "tier": 2,
+        "primary": true
+      },
+      "supporting_sources": [],
+      "image": {
+        "url": "https://www.bioenergy-news.com/wp-content/uploads/2026/08/Power-Wood-La-Crete-Peace-River-Plant-Earthworks-Aerial-scaled.jpg",
+        "type": "og-sayfa",
+        "credit": "bioenergy-news.com"
+      },
+      "score": 8,
+      "event_key": "power-wood-black-pellets-alberta",
+      "slug": "power-wood-alberta-daki-iki-siyah-pelet-tesisi-icin-fon-sagladi"
+    },
+    {
+      "id": "adm-every-fermented-egg-protein",
+      "secim": "one_cikan",
+      "title": "ADM ve Every, fermantasyonlu yumurta akı proteinini ölçekliyor",
+      "excerpt": "ADM ve The Every Company, hassas fermantasyonla üretilen yumurta akı proteinini Clinton, Iowa tesisinde ticari ölçekte üretmek için ortaklık kurdu. Whey protein concentrate fiyatı Temmuz 2026’da $2.18/lb seviyesine çıktı.",
+      "detail": "ADM ile The Every Company, Every’nin hassas fermantasyonla üretilen yumurta akı proteininin ticari ölçekli üretimi için ortaklık duyurdu. Üretim, ADM’nin Clinton, Iowa tesisinde gerçekleştirilecek. Şirketler, burayı ABD’de bu ölçekte hassas fermantasyon kapasitesine ev sahipliği yapan türünün ilk tesisi olarak tanımlıyor.\n\nWhey protein concentrate fiyatı USDA verilerine göre January 2026’da pound başına $1.52 iken Mayıs’ta $1.74’e, Temmuz’da ise $2.18’e kadar çıktı. Bazı üreticilerin üretimi tamamen azaltması bu fiyat eğrisinin unsurları arasında yer aldı. Kaynak, whey’in yüksek kullanım oranlarında fırıncılık ürünlerini kuru ve tebeşirimsi bırakabilmesinin de formülatörleri protein zenginleştirmede alternatif aramaya yönelttiğini belirtiyor.\n\nABD perakende yumurta fiyatları March 2025’te düzine başına $6.23 ile zirve yaptı ve May 2026’da $2.19’a geriledi. Kuş gribinin yaz döneminde bir düzine eyalette yeniden ortaya çıkmasıyla fiyatlar tekrar yükselmeye başladı. İlkbahardan bu yana 12 million’dan fazla yumurtacı tavuk itlaf edildi.\n\nEvery ayrıca Rich Products Corporation ile ABD’deki Rich’s fırıncılık, atıştırmalık ve gıda hizmeti hatlarında OvoPro bazlı ürünlerin geliştirilmesi ve piyasaya sunulması için ayrı bir ticari anlaşma yaptı. Hassas fermantasyonda, maya veya mantar gibi mikroorganizmalar belirli bir hedef molekülü, bu örnekte proteini, üretmek üzere programlanıyor. Mikroorganizma biyoreaktörde bir şeker kaynağıyla besleniyor; ürettiği protein daha sonra hasat edilip saflaştırılıyor. Aynı geniş teknoloji yaklaşımı peynir yapımında rennet ve diyabet hastaları için insülin üretiminde de kullanılıyor.",
+      "neden_onemli": null,
+      "category": "gida-protein",
+      "subcategories": [
+        "hassas fermantasyon",
+        "yumurta akı proteini"
+      ],
+      "value_chain": [
+        "donusum-fermantasyon",
+        "urun-uretim"
+      ],
+      "maturity": "operational",
+      "companies": [
+        "ADM",
+        "The Every Company",
+        "Rich Products Corporation"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "technologies": [
+        "precision fermentation"
+      ],
+      "capacity": null,
+      "investment": null,
+      "published_date": "2026-08-04",
+      "source": {
+        "name": "foodnavigator.com",
+        "url": "https://foodnavigator.com/Article/2026/08/04/adm-and-richs-back-everys-fermented-egg-white-protein",
+        "domain": "foodnavigator.com",
+        "type": "trade_press",
+        "tier": 2,
+        "primary": true
+      },
+      "supporting_sources": [],
+      "image": {
+        "url": null,
+        "credit": null,
+        "type": null
+      },
+      "score": 8,
+      "event_key": "adm-every-fermented-egg-protein",
+      "slug": "adm-ve-every-fermantasyonlu-yumurta-aki-proteinini-olcekliyor"
+    },
+    {
+      "id": "aleph-farms-singapore-approval",
+      "secim": "one_cikan",
+      "title": "Aleph Farms kültürlenmiş biftek için Singapur onayı aldı",
+      "excerpt": "Aleph Farms, Cultivated Thin-Cut Steak ürünü için Singapore Food Agency’den satış onayı aldı. Ürünün, %10 ile %20 arasında kültürlenmiş sığır eti içeriğiyle 2027’nin ilk yarısında gıda hizmeti kanalında piyasaya sunulması hedefleniyor.",
+      "detail": "Aleph Farms, Cultivated Thin-Cut Steak ürünü için Singapore Food Agency’den (SFA) düzenleyici onay aldı. Onay, kültürlenmiş sığır eti özelinde dünya çapındaki ikinci düzenleyici onay niteliğinde. Daha önceki kültürlenmiş ürün onayları kümes hayvanı, deniz ürünleri veya bıldırcın için verilmişti.\n\nKültürlenmiş sığır eti için diğer uluslararası düzenleyici onay da Aleph Farms’a ait ve şirket bu onayı 2023’te İsrail’de aldı. Singapur kararı, Aleph Farms’ın kendi iç pazarının dışındaki ilk onayı oldu. Şirket, SFA başvurusunu September 2022’de sundu; başvuru, herhangi bir düzenleyicinin kültürlenmiş sığır etini ilk kez değerlendirdiği süreç oldu.\n\nAleph Farms, Singapur’da ilk lansmanı seçili restoran ortaklarıyla gıda hizmeti kanalında 2027’nin ilk yarısı için hedefliyor. Perakende ürünlerinin lansman aşamasında yer almayacağı, daha sonra değerlendirileceği belirtildi. Şirketin Singapur’daki üretim ortağı Cell Agritech ile yerel kapasiteyi genişletmesi planlanıyor; başlangıç hacimleri sınırlı olacak ve hacimlerin 2028 boyunca büyümesi bekleniyor.\n\nÜrün, bu aşamada yalnızca kültürlenmiş sığır etinden oluşmuyor; kültürlenmiş sığır hücreleri ile bitkisel protein tabanını birleştiriyor. Biftekteki kültürlenmiş sığır eti oranı %10 ile %20 arasında olacak. Fiyatlandırma açıklanmadı ve gıda hizmeti ortaklarıyla lansmana daha yakın bir tarihte belirlenecek. Cell Agritech ile sözleşmeli geliştirme ve üretim ortaklığı kapsamında ilk üretimin Singapur’da yapılması, talep arttıkça Cell Agritech’in Penang, Malaysia’daki daha büyük tesisinin genişleyen hacimleri desteklemesi planlanıyor. Aleph Farms ayrıca Cell Agritech ve The Cultured Hub, Switzerland ile teknoloji transferi yürütüyor.",
+      "neden_onemli": null,
+      "category": "gida-protein",
+      "subcategories": [
+        "kültürlenmiş et",
+        "kültürlenmiş sığır eti"
+      ],
+      "value_chain": [
+        "donusum-fermantasyon",
+        "urun-uretim"
+      ],
+      "maturity": "demonstration",
+      "companies": [
+        "Aleph Farms",
+        "Cell Agritech"
+      ],
+      "countries": [
+        "Singapore",
+        "Israel",
+        "Malaysia"
+      ],
+      "technologies": [
+        "cultivated meat"
+      ],
+      "capacity": null,
+      "investment": null,
+      "published_date": "2026-08-04",
+      "source": {
+        "name": "foodnavigator.com",
+        "url": "https://foodnavigator.com/Article/2026/08/04/cultivated-beef-steak-to-hit-singapore-food-scene-with-historic-approval",
+        "domain": "foodnavigator.com",
+        "type": "trade_press",
+        "tier": 2,
+        "primary": true
+      },
+      "supporting_sources": [
+        {
+          "name": "just-food.com",
+          "url": "https://just-food.com/news/aleph-farms-to-launch-cultivated-steak-in-singapore-next-year-after-gaining-regulatory-approval",
+          "domain": "just-food.com"
+        },
+        {
+          "name": "greenqueen.com.hk",
+          "url": "https://greenqueen.com.hk/aleph-farms-lab-grown-meat-cultivated-beef-singapore-approval-launch",
+          "domain": "greenqueen.com.hk"
+        },
+        {
+          "name": "agfundernews.com",
+          "url": "https://agfundernews.com/aleph-farms-plans-2027-cultivated-beef-launch-in-singapore-after-securing-green-light-from-regulators",
+          "domain": "agfundernews.com"
+        },
+        {
+          "name": "foodnavigator.com",
+          "url": "https://foodnavigator.com/Article/2026/08/07/trend-tracker-clean-label-glp-1-and-cultivated-meat",
+          "domain": "foodnavigator.com"
+        }
+      ],
+      "image": {
+        "url": "https://www.foodnavigator.com/resizer/v2/XQYOXGCATVCNVH55UUCZEDE4VY.jpg?auth=3b47e7ab1d7938157e39287c09c4d73e0f146533f5307f4ead9a164a23c92e37&width=1200&height=630&smart=true",
+        "type": "og",
+        "credit": "foodnavigator.com"
+      },
+      "score": 8,
+      "event_key": "aleph-farms-singapore-approval",
+      "slug": "aleph-farms-kulturlenmis-biftek-icin-singapur-onayi-aldi"
+    }
+  ],
+  "radar": [],
+  "hatalar": [
+    "stories az (5)"
+  ],
+  "_model": "openai:gpt-5.6-terra",
+  "_notlar": [],
+  "_dusen": []
+}
