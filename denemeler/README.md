@@ -20,6 +20,7 @@ yazılır. Buraya yalnızca **sonuçlanmış** bir denemenin kaydı taşınır.
 | `rakam_denetimi.py` | metindeki her sayı kaynakta gerçekten var mı |
 | `v1v2_rakam.py` | iki sürüm arasında sayı kaybı oldu mu |
 | `supheli_testi.py` | `gorsel_supheli()` — logo/stok görseli ayırt ediyor mu |
+| `olu_baglanti_testi.py` | `_olu_baglanti()` — ölü bağlantıyı bot engelinden ayırt ediyor mu (çevrimdışı) |
 | `yazim_denetimi_testi.py` | `json_ayikla()` kontrol-karakter onarımı + `yazim_eksik()` tamlık denetimi |
 | `birlestirme_testi.py` | mükerrer olay birleştirme, gerçek Sayı 2 verisiyle |
 | `onizleme.py` | inceleme sayfasını Neon'suz ayağa kaldırır (görsel/kart düzeni denemek için) |
@@ -28,9 +29,9 @@ yazılır. Buraya yalnızca **sonuçlanmış** bir denemenin kaydı taşınır.
 `yollar.py` ortak yol çözümüdür; betikler repo kökünü ve kayıtlı çıktıları
 oradan alır.
 
-## Birim testleri
+## Çevrimdışı testler
 
-`*_birim_testi.py` betikleri **ağ, API anahtarı ve ücret gerektirmez** — ağ
+Aşağıdaki betikler **ağ, API anahtarı ve ücret gerektirmez** — ağ
 çağrıları taklit edilir. İddia üretir ve çıkış kodu dönerler, dolayısıyla
 her kod değişikliğinden sonra saniyeler içinde koşulabilirler.
 
@@ -47,7 +48,17 @@ Hepsini birden koşturmak için:
 | `gorsel_denetim_birim_testi.py` | `gorsel_erisilebilir()`; hotlink engelli görsel elenip sıradaki adaya düşülüyor | 10 |
 | `kaynak_sabitleme_birim_testi.py` | `kaynaklari_sabitle()`; yanlış URL düzeltiliyor, kaynaksız haber yayına girmiyor | 6 |
 | `tarih_raporu_birim_testi.py` | tarihi doğrulanamayan haber sayacı; elenmiyor ama raporda görünüyor | 6 |
+| `olu_baglanti_testi.py` | `_olu_baglanti()`; 404/410 ölü sayılıyor, 403/503 bot engeli ölü SAYILMIYOR | 9 |
+| `supheli_testi.py` | `gorsel_supheli()`; logo ve stok görseli geri plana atılıyor | 8 |
+| `yazim_denetimi_testi.py` | `json_ayikla` kontrol-karakter onarımı + `yazim_eksik` tamlık denetimi | 10 |
 
-Ayrım: birim eki olmayan `*_testi.py` betikleri CANLI testtir — gerçek veri
-ve gerçek LLM/ağ çağrısı kullanır, ücretlidir, sonucunu insan okur.
-`birim_testleri.py` onları bilerek çalıştırmaz.
+⚠ Adlandırmaya güvenilmez: `olu_baglanti_testi.py`, `supheli_testi.py` ve
+`yazim_denetimi_testi.py` "birim" eki taşımadıkları hâlde ÇEVRİMDIŞIDIR —
+sahte yanıt nesneleri kullanır, iddia üretir, çıkış kodu döner. Bir dönem
+yalnızca ada bakıldığı için bunlar hiç koşulmuyordu; artık koşuluyorlar.
+
+CANLI test, `birim_testleri.py` içindeki açık listeyle dışarıda tutulur.
+Şu an tek canlı betik `birlestirme_testi.py` (gerçek sayı verisiyle gerçek
+LLM çağrısı — ücretli, sonucunu insan okur). Yeni test eklerken: gerçek
+ağ/LLM çağrısı yapıyorsa o listeye ekleyin, yapmıyorsa bir şey yapmanız
+gerekmez, kendiliğinden koşulur.
