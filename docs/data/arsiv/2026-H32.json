@@ -29,16 +29,16 @@
     },
     {
       "text": "Montana Renewables, mevcut Shell alım garantisi kapsamında Minneapolis-St. Paul Havalimanı'na yılda 30 milyon galona kadar saf SAF tedarik edecek.",
-      "slug": null
+      "slug": "montana-renewables-minneapolis-havalimanina-yilda-30-milyon-galon-saf-"
     },
     {
       "text": "Casella ve Waga Energy, New York'ta büyük kapasiteli RNG tesisini devreye aldı.  Tesis, yılda 180 GigaWatt saate kadar yenilenebilir gaz üretebilecek.",
-      "slug": null
+      "slug": "casella-ve-waga-energy-new-york-ta-buyuk-kapasiteli-rng-tesisini-devre"
     }
   ],
   "metrics": {
     "aciklanan_yatirim_usd_milyon": 2725,
-    "proje_sayisi": 9,
+    "proje_sayisi": 10,
     "politika_gelismesi": null,
     "kapsanan_ulke": 12
   },
@@ -527,6 +527,63 @@
       ],
       "published_date": "2026-08-04",
       "supporting_sources": []
+    },
+    {
+      "id": "montana-renewables-msp-saf-supply",
+      "secim": "one_cikan",
+      "title": "Montana Renewables, Minneapolis havalimanına yılda 30 milyon galon SAF tedarik edecek",
+      "excerpt": "Montana Renewables, mevcut Shell alım garantisi kapsamında Minneapolis-St. Paul Havalimanı'na yılda 30 milyon galona kadar saf sürdürülebilir havacılık yakıtı (SAF) tedarik edecek. Temmuz sonunda devreye alınan harmanlama tesisi, yakıtın havalimanına 16 kilometrelik boru hattıyla ulaştırılmasını sağlıyor.",
+      "detail": "Calumet'in bağlı kuruluşu Montana Renewables (MRL), Minnesota SAF Merkezi'ne katılarak Minneapolis-St. Paul Uluslararası Havalimanı'na (MSP) yeni tedariki duyurdu. Şirket, hâlihazırda yürürlükte olan Shell alım garantisi kapsamında yılda 30 milyon galona kadar saf sürdürülebilir havacılık yakıtı (SAF) sağlayacak. MRL Genel Müdürü Bruce Fleming, iş birliğini enerji dönüşümünü ilerleten sektörler arası bir örnek olarak değerlendirdi.\n\nTedarikin önünü açan altyapı, Temmuz ayının sonunda devreye alındı. Minnesota'nın Rosemount kentindeki Flint Hills Resources'a ait Pine Bend Rafinerisi'nde kurulan harmanlama tesisi, yılda 30 milyon galona kadar saf SAF'ı kabul edip geleneksel jet yakıtıyla harmanlayabiliyor ve harmanlanmış yakıtı mevcut boru hattı altyapısıyla havalimanına iletebiliyor. Tesis; demiryolu boşaltma sistemleri, büyük hacimli depolama tankları, yer altı boru hatları, enstrümantasyon ve filtrasyon sistemleri, ürün kalite kontrolleri, bir laboratuvar ve doğrudan MSP'ye uzanan 10 millik (yaklaşık 16 kilometre) bir boru hattından oluşuyor.\n\nİşleyiş şöyle kurulmuş: Montana'da üretilen saf SAF demiryoluyla taşınıyor ve Pine Bend'de üretilen geleneksel yakıtla harmanlanıyor. Harmanların test edilmesi ve sertifikalandırılması Flint Hills'in sorumluluğunda; Shell ise saf SAF'ı tedarik ediyor ve ürün kalitesi, tedarik zinciri ile lojistik alanındaki uzmanlığını sürece katıyor. Yeni tesisle birlikte SAF artık MSP'de ticari hacimlerde tedarik edilebiliyor, harmanlanabiliyor ve uçaklara ikmal edilebiliyor; bu da Minnesota'nın SAF vergi kredisinden yararlanılmasını mümkün kılıyor.\n\nMRL'nin Minnesota SAF Merkezi ile ortaklığı 2024'te başlamıştı. Eylül 2024'te merkez, MSP'ye ilk harmanlanmış SAF sevkiyatını ve Delta Air Lines'ın kışlık ketencikten (camelina) üretilen SAF ile kısmen yakıtlandırılan, Kuzey Amerika'daki ilk ticari uçuşunu kutlamıştı. Minnesota SAF Merkezi'nin değerlendirmesine göre harmanlama tesisi, gelecekteki üretimini nereye satacağını değerlendiren SAF üreticileri için pazara açık bir yol oluşturuyor; üreticiler, havayolları ve kurumsal müşteriler için SAF kullanımını ölçeklendirmeye yönelik uygulanabilir bir mekanizma sağlıyor. Great Falls, Montana'da yerleşik MRL, Kuzey Amerika'da ticari ölçekte üretim yapan yalnızca üç SAF üreticisinden biri; SAF'ın yanı sıra yenilenebilir dizel, yenilenebilir hidrojen ve yenilenebilir nafta üretiyor. Hammadde olarak don yağı, damıtık mısır yağı, kanola yağı, kullanılmış kızartma yağı ve ketencik yağı kullanılıyor.",
+      "neden_onemli": null,
+      "category": "biyoyakit",
+      "subcategories": [
+        "SAF",
+        "havacılık"
+      ],
+      "value_chain": [
+        "donusum-fermantasyon"
+      ],
+      "maturity": "operational",
+      "companies": [
+        "Montana Renewables",
+        "Shell",
+        "Flint Hills Resources",
+        "Calumet",
+        "Delta Air Lines"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "technologies": [
+        "SAF",
+        "HEFA"
+      ],
+      "capacity": "30 milyon galon/yıl saf SAF",
+      "investment": null,
+      "published_date": "2026-08-05",
+      "source": {
+        "name": "Biomass Magazine",
+        "domain": "biomassmagazine.com",
+        "url": "https://biomassmagazine.com/articles/montana-renewables-celebrates-minnesota-saf-hub",
+        "type": "trade_press",
+        "tier": 2,
+        "primary": true
+      },
+      "supporting_sources": [
+        {
+          "name": "Biobased Diesel Daily",
+          "domain": "biobased-diesel.com",
+          "url": "https://www.biobased-diesel.com/post/montana-renewables-to-supply-up-to-30-million-gallons-of-saf-to-msp-airport"
+        }
+      ],
+      "image": {
+        "url": "https://static.wixstatic.com/media/80995f_7cd16761d7fe4cdfa17bbb404ea0a342~mv2.jpg/v1/fill/w_1000,h_519,al_c,q_85,usm_0.66_1.00_0.01/80995f_7cd16761d7fe4cdfa17bbb404ea0a342~mv2.jpg",
+        "credit": "biobased-diesel.com",
+        "type": "og-sayfa"
+      },
+      "score": 7,
+      "slug": "montana-renewables-minneapolis-havalimanina-yilda-30-milyon-galon-saf-",
+      "event_key": null
     }
   ],
   "radar": [
