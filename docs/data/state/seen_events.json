@@ -1,5 +1,5 @@
 {
-  "issue_no": 1,
+  "issue_no": 2,
   "events": [
     {
       "baslik_ozet": "HAMR Energy, orman biyokütlesinden yakıt için ARENA'dan 32 milyon dolar aldı",
@@ -40,6 +40,42 @@
     {
       "baslik_ozet": "Neste, yenilenebilir ürünlerde rekor satış marjı ve FAVÖK açıkladı",
       "hafta": "2026-H31"
+    },
+    {
+      "baslik_ozet": "Hindistan, sıkıştırılmış biyogazı on kat büyütecek 2,5 milyar dolarlık plana onay verdi",
+      "hafta": "2026-H32"
+    },
+    {
+      "baslik_ozet": "AB, genetiği düzenlenmiş bitkilere ilişkin kuralları 2028'den itibaren gevşetiyor",
+      "hafta": "2026-H32"
+    },
+    {
+      "baslik_ozet": "Aleph Farms, kültürlenmiş dana eti bifteği için Singapur'dan tarihi onay aldı",
+      "hafta": "2026-H32"
+    },
+    {
+      "baslik_ozet": "SA-H2 Fonu, Güney Afrika'da yeşil hidrojen için 3 milyar rantlık ilk kapanışa ulaştı",
+      "hafta": "2026-H32"
+    },
+    {
+      "baslik_ozet": "Plantible, RuBisCO protein üretimini beş katına çıkarmak için 35 milyon dolar topladı",
+      "hafta": "2026-H32"
+    },
+    {
+      "baslik_ozet": "Casella ve Waga Energy, New York'ta büyük kapasiteli RNG tesisini devreye aldı",
+      "hafta": "2026-H32"
+    },
+    {
+      "baslik_ozet": "bp, 'zayıf getiri' gerekçesiyle biyogaz şirketi Archaea Energy'yi satıyor",
+      "hafta": "2026-H32"
+    },
+    {
+      "baslik_ozet": "InsectBiotech, Andalusia'da zeytin atığından böcek proteini için 8,3 milyon dolar topladı",
+      "hafta": "2026-H32"
+    },
+    {
+      "baslik_ozet": "ADM ve Rich's, Every'nin fermente yumurta akı proteinini ticarileştiriyor",
+      "hafta": "2026-H32"
     }
   ],
   "urls": [
@@ -81,6 +117,50 @@
     "https://bioenergy-news.com/news/spent-coffee-grounds-show-potential-as-biomass-feedstock",
     "https://bioenergy-news.com/news/penn-state-researchers-assess-sustainability-of-biomass-to-fuel-startup-in-pennsylvania",
     "https://aa.com.tr/tr/ekonomi/tpao-bpnin-kerkuk-merkezli-sirketinin-yuzde-15-hissesini-aldi/4011896",
-    "https://enerjigunlugu.net/yeni-dogus-sanliurfadaki-tesisinde-aty-uretimini-arttiracak-69193h.htm"
+    "https://enerjigunlugu.net/yeni-dogus-sanliurfadaki-tesisinde-aty-uretimini-arttiracak-69193h.htm",
+    "https://euractiv.com/news/behind-the-fence-europes-race-for-gene-edited-crops",
+    "https://euractiv.com/fr/news/derriere-la-cloture-la-course-europeenne-aux-cultures-genetiquement-modifiees",
+    "https://biomassmagazine.com/articles/phillips-66-renewable-diesel-facility-operates-at-above-nameplate-capacity-in-q2",
+    "https://biomassmagazine.com/articles/par-pacific-ramps-up-renewable-fuel-production-in-q2",
+    "https://greenqueen.com.hk/aleph-farms-lab-grown-meat-cultivated-beef-singapore-approval-launch",
+    "https://foodnavigator.com/Article/2026/08/04/cultivated-beef-steak-to-hit-singapore-food-scene-with-historic-approval",
+    "https://agfundernews.com/aleph-farms-plans-2027-cultivated-beef-launch-in-singapore-after-securing-green-light-from-regulators",
+    "https://worldbiogasassociation.org/world-biogas-association-wba-welcomes-indias-us2-7-billion-gobardhan-scheme-as-a-landmark-move-to-scale-the-cbg-sector",
+    "https://international-partnerships.ec.europa.eu/news-and-events/news/scaling-green-transition-southern-africa-under-global-gateway-climate-fund-managers-reaches-first-2026-08-06_en",
+    "https://bioenergy-news.com/news/india-invests-in-usd2-5bn-compressed-biogas-expansion",
+    "https://bioenergy-news.com/news/3siif-backs-estonian-biomethane-producer-bioforce-for-cee-expansion",
+    "https://bioenergy-news.com/news/nib-finances-sindal-biogas-expansion-in-denmark",
+    "https://bioenergy-news.com/news/power-wood-secures-ca84m-for-alberta-black-pellet-plants",
+    "https://agfundernews.com/plantible-raises-35m-in-debt-equity-to-increase-rubisco-protein-production-fivefold",
+    "https://vegconomist.com/investments-finance/plantible-secures-35m-usda-backed-debt-equity-quintuple-rubi-protein-output-texas",
+    "https://bioenergy-news.com/news/casella-and-waga-energy-start-large-capacity-rng-facility-at-new-york-landfill",
+    "https://biomassmagazine.com/articles/casella-waste-systems-and-waga-energy-announce-start-of-operations-of-rng-facility-at-hyland-landfill",
+    "https://bioenergy-news.com/news/bp-to-divest-archaea-business-due-to-poor-returns",
+    "https://agfundernews.com/insectbiotech-raises-8-3m-to-scale-bsfl-production-in-andalusia-spain",
+    "https://foodnavigator.com/Article/2026/08/04/adm-and-richs-back-everys-fermented-egg-white-protein",
+    "https://ekonomim.com/ekonomi/bakanliktan-5-milyar-tl-uzeri-yatirimlara-proje-bazli-destek-haberi-911027",
+    "https://ekonomim.com/sirketler/recyloop-yesil-donusum-yolculugunda-tskbden-finansman-sagladi-haberi-910503",
+    "https://ekonomim.com/sirketler/tosyalinin-curuf-bazli-cevreci-asfalti-kocaelinin-en-zorlu-rampalarinda-kullanilmaya-baslandi-haberi-910304",
+    "https://bioenergy-news.com/news/char-techs-bio-methane-provence-project-clears-french-public-consultation",
+    "https://bioenergy-news.com/news/spanish-ad-plant-reaches-full-capacity-with-58-gwh-biomethane-output",
+    "https://bioenergy-news.com/news/suez-wins-appeal-for-100000-tonne-south-london-ad-facility",
+    "https://bioenergy-news.com/news/finnish-firm-partners-to-develop-modular-biomass-biogas-plants-in-india",
+    "https://bioenergy-news.com/news/pertamina-west-java-develop-landfill-biomethane-and-low-carbon-hydrogen",
+    "https://bioenergy-news.com/news/nestle-pakistan-inaugurates-4-5m-biomass-steam-plant-to-tackle-crop-burning-in-punjab",
+    "https://bioenergy-news.com/news/sofidel-deploys-biomass-boiler-at-french-mill",
+    "https://ethanolproducer.com/articles/purefield-ingredients-celebrates-landmark-carbon-capture-facility-and-announces-expansion-plans",
+    "https://edie.net/veolia-trials-new-carbon-capture-technology-in-uk-first",
+    "https://greenqueen.com.hk/plantible-foods-rubisco-protein-lemna-duckweed-funding-usda-loan-eldorado",
+    "https://foodingredientsfirst.com/news/lallemand-acquires-bio-cat-food-ingredients.html",
+    "https://vegconomist.com/company-news/lallemand-completes-acquisition-us-enzyme-producer-bio-cat",
+    "https://greenqueen.com.hk/inaara-neofoods-funding-plant-based-protein-functional-nutrition-ai-india",
+    "https://agfundernews.com/cultivated-food-labs-advances-faba-bean-hull-based-cocoa-alternative",
+    "https://agfundernews.com/waste-to-value-hyfe-expands-refinery-model-to-extract-fibers-and-bioactives-from-food-side-streams",
+    "https://euractiv.com/fr/news/la-laine-peut-elle-aider-a-vaincre-la-fast-fashion",
+    "https://bioenergy-news.com/news/uk-biomethane-ambition-stalls-amid-feedstock-trade-offs-neso-finds",
+    "https://biobased-diesel.com/post/argus-launches-saf-emissions-reduction-indexes-economics-calculator",
+    "https://cordis.europa.eu/article/id/466736-turning-winery-waste-into-livestock-health-solutions",
+    "https://agfundernews.com/bioscout-raises-4-8m-for-early-warning-system-for-fungal-pathogens",
+    "https://us.ok.com/ask_news_cars/suzuki-leads-india-s-flex-fuel-push-as-modi-targets-energy-independence"
   ]
 }
