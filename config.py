@@ -177,18 +177,36 @@ EXA_FIYAT = {
 }
 
 # ============================================================
-# KATEGORİ TAKSONOMİSİ (12)
+# KATEGORİ TAKSONOMİSİ (14)
 # Kod → (Görünen ad, Öne Çıkanlar kota hedefi)
+# ------------------------------------------------------------
+# ⚠ BAKANLIK TAKSONOMİSİYLE HİZALI. Resmî çerçevenin beş alt başlığı ve
+# buradaki karşılıkları:
+#   1) Biyoendüstriyel Ürünler → biyomalzeme
+#   2) Biyoenerji              → biyoyakit
+#   3) Biyoteknoloji           → biyoteknoloji  (ilaç/aşı/peptid/taşıyıcı platform)
+#                                biyomanufaktur (endüstriyel enzim/fermantasyon)
+#   4) Biyotarım               → tarim + atik-donusum (tarımsal atık ekstraktları)
+#   5) Biyo-hizmetler          → biyo-hizmetler
+# Geri kalanlar KESİŞEN başlıklardır (politika, uluslararasi, turkiye, rapor)
+# ya da alt kırılımdır (gida-protein, karbon, deniz).
+#
+# ⚠ ÇERÇEVENİN KAPSAM DIŞI KURALI: karbon emisyonunu azaltan ama BİYOLOJİK
+# çözüm içermeyen proje/yöntem biyoekonomi DEĞİLDİR (yeşil dönüşümden
+# ayrıştırılır). "karbon" kategorisi bu yüzden yalnızca biyokömür ve
+# mikrobiyal/biyolojik CO2 dönüşümünü kapsar; jenerik CCS/ETS kapsam dışıdır.
 # ============================================================
 KATEGORILER = {
     "politika":       {"ad": "Politika & Mevzuat",              "kota": 2},
     "biyoyakit":      {"ad": "Biyoyakıt & Biyoenerji",          "kota": 2},
     "biyomalzeme":    {"ad": "Biyobazlı Malzeme & Kimya",       "kota": 2},
+    "biyoteknoloji":  {"ad": "Biyoteknoloji & Sağlık",          "kota": 1},
     "biyomanufaktur": {"ad": "Biyomanüfaktür & Fermantasyon",   "kota": 1},
     "gida-protein":   {"ad": "Gıda & Alternatif Protein",       "kota": 1},
     "atik-donusum":   {"ad": "Atık Değerlendirme & Döngüsel",   "kota": 1},
-    "tarim":          {"ad": "Tarım & Biostimulant",            "kota": 0},
-    "karbon":         {"ad": "Biyokömür & Biyolojik Karbon",     "kota": 1},
+    "tarim":          {"ad": "Tarım & Biyotarım",               "kota": 1},
+    "karbon":         {"ad": "Biyokömür & Biyolojik Karbon",     "kota": 0},
+    "biyo-hizmetler": {"ad": "Biyo-hizmetler & Sertifikasyon",  "kota": 0},
     "deniz":          {"ad": "Deniz Biyoekonomisi & Alg",       "kota": 0},
     "uluslararasi":   {"ad": "Uluslararası Kuruluşlar",         "kota": 1},
     "turkiye":        {"ad": "Türkiye",                         "kota": 1},
@@ -361,7 +379,6 @@ SORGULAR = [
         "ek_sorgular": [
             "EU bioeconomy strategy bio-based economy regulation",
             "ESPR biobased requirement RED III biomass mandate decision",
-            "EU Biotech Act sustainable carbon cycle policy",
             "biofuel blending mandate sustainable aviation fuel policy",
         ],
         "domain_seti": ["tier1", "tier2"],
@@ -387,11 +404,46 @@ SORGULAR = [
         "ek_sorgular": [
             "bioplastic PLA PHA biopolymer new facility production",
             "bio-based chemicals lignin valorization cellulose materials",
-            "bio-based textile construction material commercial",
             "biodegradable packaging bio-based coating investment",
         ],
         "domain_seti": ["tier1", "tier2"],
         "sonuc": 25,
+    },
+    {
+        # ⚠ TAKSONOMİ 3 — BİYOTEKNOLOJİ (sağlık/yaşam bilimleri).
+        # Bakanlık çerçevesi bu başlığı "ilaç, aşı, protein, peptid, enzim ve
+        # bu moleküllere ilişkin TAŞIYICI PLATFORMLAR" diye tanımlıyor.
+        # Boru hattında karşılığı YOKTU: biyomanufaktur yalnızca endüstriyel
+        # biyoteknolojiyi (enzim, fermantasyon, sentetik biyoloji) tarıyordu.
+        # Biyofarmasötik yatırımları, aşı üretim kapasitesi, mRNA/LNP/viral
+        # vektör platformları ve CDMO anlaşmaları her hafta gözden kaçıyordu.
+        "id": "biyoteknoloji",
+        "kategori": "biyoteknoloji",
+        "sorgu": "biopharmaceutical manufacturing investment and vaccine production capacity",
+        "ek_sorgular": [
+            "biologics manufacturing plant investment CDMO capacity expansion",
+            "vaccine manufacturing facility fill-finish capacity agreement",
+            "mRNA lipid nanoparticle viral vector delivery platform commercial",
+            "therapeutic peptide protein enzyme production scale-up",
+        ],
+        "domain_seti": ["tier1", "tier2", "akademik"],
+        "sonuc": 20,
+    },
+    {
+        # ⚠ TAKSONOMİ 5 — BİYO-HİZMETLER.
+        # "Test, laboratuvar, belgelendirme, akreditasyon ve dijital
+        # hizmetler." Haber hacmi düşüktür (çoğu Radar maddesi olur) ama
+        # sertifikasyon tarafı politikayla kesişiyor: biyobazlı içerik
+        # belgelendirmesi (ISCC, RedCert, TÜV) mevzuat haberi kadar bağlayıcı.
+        "id": "biyo-hizmetler",
+        "kategori": "biyo-hizmetler",
+        "sorgu": "bio-based certification testing and laboratory services",
+        "ek_sorgular": [
+            "ISCC RedCert biobased content certification scheme accreditation",
+            "bioinformatics AI protein design laboratory automation service",
+        ],
+        "domain_seti": ["tier1", "tier2"],
+        "sonuc": 15,
     },
     {
         "id": "biyomanufaktur",
@@ -447,24 +499,11 @@ SORGULAR = [
         # karbon piyasası/iklim politikasını ayrıca eler.
         "id": "karbon",
         "kategori": "karbon",
-        "sorgu": "biochar and biological CO2 conversion to products",
+        "sorgu": "biochar production facility investment biomass carbon",
         "ek_sorgular": [
             "gas fermentation microbial CO2 to fuel or chemical commercial plant",
-            "biochar production facility investment biomass carbon",
-            "CO2-based materials biomanufacturing bioconversion deployment",
         ],
         "domain_seti": ["tier1", "tier2"],
-        "sonuc": 15,
-    },
-    {
-        "id": "deniz",
-        "kategori": "deniz",
-        "sorgu": "marine bioeconomy seaweed and algae industrial cultivation",
-        "ek_sorgular": [
-            "seaweed algae cultivation industrial use commercial project",
-            "marine biomass ocean-based bioeconomy regulation",
-        ],
-        "domain_seti": ["tier1", "tier2", "akademik"],
         "sonuc": 15,
     },
     {
@@ -498,7 +537,6 @@ SORGULAR = [
         "sorgu": "bioeconomy biomanufacturing news Asia and United States",
         "ek_sorgular": [
             "China Japan South Korea bioeconomy biomanufacturing investment policy",
-            "United States bio-based technology biofuel corporate investment",
         ],
         "domain_seti": ["tier1", "tier2"],
         "sonuc": 15,

@@ -15,7 +15,17 @@ olarak yazılır — 8-10'u "öne çıkan", kalanı hakem takası için "yedek".
 # ============================================================
 TRIYAJ_PROMPT = """Sen bir biyoekonomi sektörü haber triyaj motorusun. Yorum yapmıyorsun, sınıflandırıyorsun.
 
-Biyoekonomi kapsamı GENİŞTİR: biyolojik kaynakları (tarım, orman, deniz, atık, mikroorganizma) ekonomik değere dönüştüren tüm faaliyetler — biyoyakıtlar (SAF, biyodizel, biyoetanol, biyometan/biyogaz, yeşil hidrojen), biyoplastikler ve biyobazlı kimyasallar, biyomanüfaktür ve hassas fermantasyon, alternatif proteinler, atık değerlendirme ve döngüsel biyoekonomi, karbon yakalama ve kullanımı (CCU) ve biyokömür, deniz biyoekonomisi (alg/yosun), tarımsal biyolojik ürünler (biostimulant/biopestisit).
+KAPSAM — Sanayi ve Teknoloji Bakanlığı biyoekonomi taksonomisinin BEŞ alt başlığı esastır. Bir haber bu beşten birine giriyorsa kapsam içidir:
+
+1) BİYOENDÜSTRİYEL ÜRÜNLER — biyomalzemeler, biyoplastikler, biyobazlı kimyasallar (lignin, selüloz, biyopolimer), biyolojik kaynaklı endüstriyel ürünler.
+2) BİYOENERJİ — biyodizel, biyoetanol, biyogaz/biyometan, SAF, HVO, biyokütleden yeşil hidrojen ve biyolojik kaynak temelli diğer enerji ürünleri.
+3) BİYOTEKNOLOJİ — ilaç, aşı, terapötik protein, peptid, enzim VE bu moleküllere ilişkin TAŞIYICI PLATFORMLAR (mRNA, lipid nanopartikül, viral vektör, ilaç taşıma sistemleri); biyobenzer üretimi, CDMO kapasitesi, fill-finish. Endüstriyel biyoteknoloji (sanayi enzimi, hassas fermantasyon, sentetik biyoloji) de bu başlığın altındadır.
+4) BİYOTARIM — pestisit yerine biyolojik kaynaklı çözümler (biopestisit, biostimulant, mikrobiyal tohum uygulaması), tarımsal ürün ve TARIMSAL ATIKTAN (posa, küspe, sap-saman) elde edilen ekstraktlar, biyorafinasyon yöntemiyle üretilen ürün grupları.
+5) BİYO-HİZMETLER — test, analiz laboratuvarı, belgelendirme, akreditasyon (biyobazlı içerik sertifikasyonu: ISCC, RedCert, TÜV vb.) ve biyoekonomiye özgü dijital hizmetler (biyoenformatik, yapay zekâ destekli protein/moleküll tasarımı, laboratuvar otomasyonu).
+
+Bunlara ek olarak alternatif proteinler ve gıda fermantasyonu, atık değerlendirme/döngüsel biyoekonomi, biyokömür ve mikrobiyal CO2 dönüşümü, deniz biyoekonomisi (alg/yosun) kapsam içidir.
+
+⚠ ÇERÇEVENİN KAPSAM DIŞI KURALI: Karbon emisyonunu azaltmakla birlikte BİYOLOJİK ÇÖZÜM İÇERMEYEN proje ve yöntemler biyoekonomi DEĞİLDİR — yeşil dönüşüm ile biyoekonomi ayrıştırılır. Jenerik karbon yakalama-depolama (CCS), elektrikli araç, güneş/rüzgâr, şebeke depolama, yeşil çelik gibi haberleri REDDET. Biyolojik/biyobazlı bir üretim, hammadde ya da dönüşüm varsa kapsam içidir.
 
 Sana ham arama sonuçlarından oluşan bir aday listesi verilecek. Her adayın id, başlık, kaynak alan adı, yayın tarihi ve metin parçası var.
 
@@ -55,8 +65,24 @@ GÖREVİN — sırayla:
    - PREVIOUSLY_PUBLISHED listesindeki bir olayın YENİ unsur içermeyen devamı
 
 3) SINIFLANDIRMA — her olayı şu kategorilerden BİRİNE ata:
-   politika | biyoyakit | biyomalzeme | biyomanufaktur | gida-protein |
-   atik-donusum | tarim | karbon | deniz | uluslararasi | turkiye | rapor
+   politika | biyoyakit | biyomalzeme | biyoteknoloji | biyomanufaktur |
+   gida-protein | atik-donusum | tarim | karbon | biyo-hizmetler |
+   deniz | uluslararasi | turkiye | rapor
+
+   Kategori sınırlarında karışan üç çift:
+   · biyoteknoloji ↔ biyomanufaktur — ürün SAĞLIK alanındaysa (ilaç, aşı,
+     terapötik protein/peptid, taşıyıcı platform, biyobenzer, CDMO)
+     "biyoteknoloji"; ürün SANAYİ ya da GIDA girdisiyse (sanayi enzimi,
+     endüstriyel fermantasyon, sentetik biyoloji platformu) "biyomanufaktur".
+   · biyomanufaktur ↔ gida-protein — nihai ürün doğrudan GIDA ise
+     (alternatif protein, kültürlenmiş et, fermente süt proteini)
+     "gida-protein"; üretim kapasitesi/teknolojisi haberiyse "biyomanufaktur".
+   · tarim ↔ atik-donusum — tarımsal ATIKTAN değer üretimi "atik-donusum";
+     tarlada kullanılan biyolojik girdi (biopestisit, biostimulant,
+     mikrobiyal tohum uygulaması) "tarim".
+   · biyo-hizmetler — ürün değil HİZMET satılıyorsa (test, analiz,
+     belgelendirme, akreditasyon, biyoenformatik) buraya. Sertifikasyon
+     ZORUNLULUĞU getiren mevzuat haberi ise "politika".
 
 4) OLGUNLUK — proje/yatırım olaylarında zorunlu:
    research | pilot | demonstration | announced | funded | construction |
@@ -210,7 +236,11 @@ Okuyucun: Sanayi ve teknoloji politikası uzmanları, kamu yöneticileri, sektö
 Ton: Kurumsal, ölçülü, kesin. Gazetecilik heyecanı yok, kamu brifingi disiplini var.
 
 ━━━ KAPSAM ━━━
-Biyoekonomi değer zincirinin TAMAMI: biyoyakıtlar (SAF, biyodizel, biyoetanol,
+Bakanlık taksonomisinin beş alt başlığı: biyoendüstriyel ürünler ·
+biyoenerji · biyoteknoloji (ilaç, aşı, peptid, enzim ve taşıyıcı
+platformlar) · biyotarım · biyo-hizmetler (test, laboratuvar,
+belgelendirme, akreditasyon, dijital hizmetler).
+Değer zincirinin TAMAMI: biyoyakıtlar (SAF, biyodizel, biyoetanol,
 biyometan/biyogaz, yeşil hidrojen), biyoplastikler ve biyobazlı kimyasallar
 (lignin, selüloz, biyopolimer), biyomanüfaktür ve hassas fermantasyon,
 endüstriyel enzimler, alternatif proteinler, atık değerlendirme ve döngüsel
@@ -243,8 +273,9 @@ Türkiye.
      "one_cikan" → bülten gövdesine önerdiğin 8-10 haber
      "yedek"     → takas havuzuna kalan haberler
    Seçimde KATEGORİ ÇEŞİTLİLİĞİ hedefi (katı kota değil):
-     politika 2 · biyoyakit 2 · biyomalzeme 2 · biyomanufaktur 1 ·
-     gida-protein 1 · atik-donusum 1 · karbon 1 · turkiye 1 (varsa) · rapor 1
+     politika 2 · biyoyakit 2 · biyomalzeme 2 · biyoteknoloji 1 ·
+     biyomanufaktur 1 · gida-protein 1 · atik-donusum 1 · tarim 1 ·
+     turkiye 1 (varsa) · rapor 1
    ⚠ Biyoyakıt/SAF ve alternatif protein haberleri bülteni domine ETMEMELİ.
 
 4) RADAR (15-30 olay)

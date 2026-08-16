@@ -1331,8 +1331,15 @@ ESLESME = {
     "biyometan": "biyoyakit", "biyodizel": "biyoyakit", "hidrojen": "biyoyakit",
     "biyoplastik": "biyomalzeme", "biyopolimer": "biyomalzeme",
     "biyokimyasal": "biyomalzeme", "malzeme": "biyomalzeme", "lignin": "biyomalzeme",
-    "fermantasyon": "biyomanufaktur", "biyoteknoloji": "biyomanufaktur",
+    "fermantasyon": "biyomanufaktur", "sanayi-enzimi": "biyomanufaktur",
     "enzim": "biyomanufaktur", "sentetik-biyoloji": "biyomanufaktur",
+    # Sağlık biyoteknolojisi artık AYRI kategori (bakanlık taksonomisi 3).
+    "ilac": "biyoteknoloji", "asi": "biyoteknoloji", "biyofarmasotik": "biyoteknoloji",
+    "biyobenzer": "biyoteknoloji", "peptid": "biyoteknoloji",
+    "tasiyici-platform": "biyoteknoloji", "saglik": "biyoteknoloji",
+    "sertifikasyon": "biyo-hizmetler", "belgelendirme": "biyo-hizmetler",
+    "akreditasyon": "biyo-hizmetler", "laboratuvar": "biyo-hizmetler",
+    "biyoenformatik": "biyo-hizmetler",
     "protein": "gida-protein", "gida": "gida-protein", "alternatif-protein": "gida-protein",
     "atik": "atik-donusum", "dongusel": "atik-donusum", "biyorafineri": "atik-donusum",
     "biostimulant": "tarim", "biopestisit": "tarim", "tarim-biyoloji": "tarim",
@@ -1970,7 +1977,8 @@ def mock_taslak(sayi_no, bas, bit, pencere):
             "score": 9 - (i % 5),
         }
 
-    katlar = ["politika", "biyoyakit", "biyomalzeme", "biyomanufaktur",
+    katlar = ["politika", "biyoyakit", "biyomalzeme", "biyoteknoloji",
+              "biyomanufaktur",
               "gida-protein", "atik-donusum", "karbon", "turkiye", "rapor"]
     stories = [st(i + 1, "one_cikan", katlar[i % len(katlar)],
                   f"[TEST] Öne çıkan haber {i+1}: örnek biyoekonomi gelişmesi")
