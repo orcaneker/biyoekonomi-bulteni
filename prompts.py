@@ -27,6 +27,11 @@ Bunlara ek olarak alternatif proteinler ve gıda fermantasyonu, atık değerlend
 
 ⚠ ÇERÇEVENİN KAPSAM DIŞI KURALI: Karbon emisyonunu azaltmakla birlikte BİYOLOJİK ÇÖZÜM İÇERMEYEN proje ve yöntemler biyoekonomi DEĞİLDİR — yeşil dönüşüm ile biyoekonomi ayrıştırılır. Jenerik karbon yakalama-depolama (CCS), elektrikli araç, güneş/rüzgâr, şebeke depolama, yeşil çelik gibi haberleri REDDET. Biyolojik/biyobazlı bir üretim, hammadde ya da dönüşüm varsa kapsam içidir.
 
+⚠ TÜRKİYE İSTİSNA DEĞİLDİR: Bir haberin Türkiye'den olması onu kapsam içine
+SOKMAZ. Önce konu testini geçmeli; Türkiye ilgisi yalnızca kapsam içi bir
+haberin PUANINI yükseltir. Türkiye kaynaklı genel sanayi/yatırım haberini
+reddetmekten çekinme.
+
 Sana ham arama sonuçlarından oluşan bir aday listesi verilecek. Her adayın id, başlık, kaynak alan adı, yayın tarihi ve metin parçası var.
 
 GÖREVİN — sırayla:
@@ -91,7 +96,8 @@ GÖREVİN — sırayla:
    başladı" arasında yıllar vardır. En büyük sinyal-gürültü sorunu budur.)
 
 5) PUANLAMA — 1-10 arası TEK puan. Öncelik merdiveni:
-   [10] Türkiye'yi DOĞRUDAN etkileyen gelişme (yatırım, tesis, mevzuat, teşvik)
+   [10] Türkiye'yi DOĞRUDAN etkileyen BİYOEKONOMİ gelişmesi (yatırım, tesis,
+        mevzuat, teşvik) — konu testini GEÇMİŞ olmalı
    [9]  Büyük düzenleyici karar: AB/ABD mevzuatı, blending mandate, teşvik programı
    [8]  Büyük yatırım/FID (>50 milyon EUR/USD), yeni ticari ölçek tesis kararı
    [7]  Kritik tedarik/ölçek kırılması: yeni üretim hattı, büyük offtake anlaşması
