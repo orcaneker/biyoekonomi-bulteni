@@ -1,47 +1,4 @@
 {
-  "issue": {
-    "number": 3,
-    "hafta": "2026-H33",
-    "publication_date": "2026-08-17",
-    "coverage_start": "2026-08-09",
-    "coverage_end": "2026-08-16",
-    "window_days": 7,
-    "audio": {
-      "url": "assets/audio/2026-H33.mp3",
-      "duration_sec": 51,
-      "voice": "lxZLq5dcyw12UangGJgN",
-      "chars": 702,
-      "generated_at": "2026-08-17"
-    }
-  },
-  "brief": [
-    {
-      "text": "Brezilya, ulusal SAF zorunluluk programı ProBioQAV'ın uygulama kurallarını belirleyen kararnameyi yayımladı.",
-      "slug": "brezilya-ulusal-saf-zorunlulugu-probioqav-icin-uygulama-kurallarini-ya"
-    },
-    {
-      "text": "Finlandiyalı gaz fermantasyonu şirketi Solar Foods, toplam finansmanının 100 milyon euroyu aştığını duyurdu.",
-      "slug": "solar-foods-100-milyon-euro-finansman-esigini-gecti-factory-02-nihai-t"
-    },
-    {
-      "text": "İsviçreli alternatif et üreticisi Planted, Memmingen, Almanya'daki katı-hal fermantasyon tesisinde üretim kapasitesini iki katına çıkarıyor.",
-      "slug": "planted-almanya-daki-fermantasyon-uretimini-iki-katina-cikariyor"
-    },
-    {
-      "text": "Gas Networks Ireland (GNI), Bia Energy'nin Dublin Huntstown'daki biyometan tesisini doğrudan gaz şebekesine bağladı.",
-      "slug": "bia-energy-nin-90-milyon-euroluk-dublin-tesisi-gas-networks-ireland-a-"
-    },
-    {
-      "text": "Bursa Karacabey'de 73 milyon liralık biyogaz tesisi genişletmesi ve yeni kompost üretim üniteleri devreye giriyor.",
-      "slug": "bursa-karacabey-de-73-milyon-liralik-biyogaz-tesisi-genisletmesi"
-    }
-  ],
-  "metrics": {
-    "aciklanan_yatirim_usd_milyon": 110,
-    "proje_sayisi": 10,
-    "politika_gelismesi": null,
-    "kapsanan_ulke": 10
-  },
   "lead": {
     "id": "brazil-saf-mandate-probioqav",
     "slug": "brezilya-ulusal-saf-zorunlulugu-probioqav-icin-uygulama-kurallarini-ya",
@@ -85,6 +42,231 @@
     ],
     "published_date": "2026-08-14",
     "supporting_sources": []
+  },
+  "brief": [
+    {
+      "slug": "brezilya-ulusal-saf-zorunlulugu-probioqav-icin-uygulama-kurallarini-ya",
+      "text": "Brezilya, ulusal SAF zorunluluk programı ProBioQAV'ın uygulama kurallarını belirleyen kararnameyi yayımladı."
+    },
+    {
+      "slug": null,
+      "text": "Finlandiyalı gaz fermantasyonu şirketi Solar Foods, toplam finansmanının 100 milyon euroyu aştığını duyurdu."
+    },
+    {
+      "slug": "planted-almanya-daki-fermantasyon-uretimini-iki-katina-cikariyor",
+      "text": "İsviçreli alternatif et üreticisi Planted, Memmingen, Almanya'daki katı-hal fermantasyon tesisinde üretim kapasitesini iki katına çıkarıyor."
+    },
+    {
+      "slug": "brezilya-ulusal-saf-zorunlulugu-probioqav-icin-uygulama-kurallarini-ya",
+      "text": "Gas Networks Ireland (GNI), Bia Energy'nin Dublin Huntstown'daki biyometan tesisini doğrudan gaz şebekesine bağladı."
+    },
+    {
+      "slug": "bursa-karacabey-de-73-milyon-liralik-biyogaz-tesisi-genisletmesi",
+      "text": "Bursa Karacabey'de 73 milyon liralık biyogaz tesisi genişletmesi ve yeni kompost üretim üniteleri devreye giriyor."
+    }
+  ],
+  "issue": {
+    "audio": {
+      "url": "assets/audio/2026-H33.mp3",
+      "chars": 702,
+      "voice": "lxZLq5dcyw12UangGJgN",
+      "duration_sec": 51,
+      "generated_at": "2026-08-17"
+    },
+    "hafta": "2026-H33",
+    "number": 3,
+    "window_days": 7,
+    "coverage_end": "2026-08-16",
+    "coverage_start": "2026-08-09",
+    "publication_date": "2026-08-17"
+  },
+  "radar": [
+    {
+      "kume": "Biyoteknoloji ve ilaç onayları",
+      "maddeler": [
+        {
+          "url": "https://nature.com/articles/d41573-026-00136-z",
+          "date": "2026-08-12",
+          "title": "Replimune'un onkolitik virüsü Tudriqev, melanom için FDA hızlandırılmış onayı aldı",
+          "source": "Nature",
+          "category": "biyoteknoloji"
+        },
+        {
+          "url": "https://cnbc.com/2026/08/11/foundayo-eli-lilly-wegovy-pill-uk.html",
+          "date": "2026-08-11",
+          "title": "Eli Lilly'nin GLP-1 kilo verme ilacı Foundayo İngiltere'de onay aldı",
+          "source": "CNBC",
+          "category": "biyoteknoloji"
+        },
+        {
+          "url": "https://greenqueen.com.hk/all-g-precision-fermentation-lactoferrin-funding-xeraya-capital-khazanah-malaysia",
+          "date": "2026-08-11",
+          "title": "All G, hassas fermantasyon kaynaklı laktoferrin için Series B finansman turunu tamamladı",
+          "source": "Green Queen",
+          "category": "biyoteknoloji"
+        }
+      ]
+    },
+    {
+      "kume": "Hassas fermantasyon ve biyomanüfaktür ortaklıkları",
+      "maddeler": [
+        {
+          "url": "https://greenqueen.com.hk/wacker-eu-approval-fermentation-l-cysteine-cystine-pet-food-flavourings",
+          "date": "2026-08-14",
+          "title": "WACKER, fermantasyon kaynaklı L-sistein ve L-sistin için AB onayı aldı",
+          "source": "Green Queen",
+          "category": "biyomanufaktur"
+        },
+        {
+          "url": "https://topsoe.com/news/topsoe-to-provide-ammonia-technology-for-first-ammonias-green-ammonia-project-in-texas",
+          "date": "2026-08-11",
+          "title": "Topsoe, First Ammonia'nın Teksas'taki yeşil amonyak tesisine dinamik sentez teknolojisi sağlayacak",
+          "source": "Topsoe",
+          "category": "biyomanufaktur"
+        },
+        {
+          "url": "https://dsm-firmenich.com/en/businesses/taste-texture-health/news-events/articles/beverage/dsm-firmenich-and-nous-partner.html",
+          "date": "2026-08-13",
+          "title": "dsm-firmenich, Nous ile kafeine alternatif botanik içerik Koncentra için ortaklık kurdu",
+          "source": "dsm-firmenich",
+          "category": "biyomanufaktur"
+        }
+      ]
+    },
+    {
+      "kume": "Alternatif protein ürünleri",
+      "maddeler": [
+        {
+          "url": "https://agfundernews.com/offbeast-develops-worlds-first-beef-plant-hybrid-whole-cuts",
+          "date": "2026-08-13",
+          "title": "Offbeast, sığır eti ve bitkisel proteini birleştiren hibrit bütün-kas ürünler geliştirdi",
+          "source": "AgFunderNews",
+          "category": "gida-protein"
+        },
+        {
+          "url": "https://vegconomist.com/ingredients/nnb-nutrition-axiom-foods-debut-hydrolyzed-plant-protein-line-whey-supply-tightens",
+          "date": "2026-08-11",
+          "title": "NNB Nutrition ve Axiom Foods, PeptiClear hidrolize bitkisel protein hattını tanıttı",
+          "source": "vegconomist",
+          "category": "gida-protein"
+        },
+        {
+          "url": "https://greenqueen.com.hk/scoular-soybean-dehulling-capacity-plant-based-food-milk-covington",
+          "date": "2026-08-11",
+          "title": "Scoular, Ohio'da bitki bazlı gıda ve süt üretimi için soya kabuğu soyma kapasitesini genişletti",
+          "source": "Green Queen",
+          "category": "gida-protein"
+        }
+      ]
+    },
+    {
+      "kume": "Atık dönüşüm ve döngüsel ekonomi",
+      "maddeler": [
+        {
+          "url": "https://bioenergy-news.com/news/enfinium-secures-long-term-fuel-supply-agreement-with-remondis",
+          "date": "2026-08-13",
+          "title": "Enfinium, REMONDIS ile çok yıllı yakıt tedarik anlaşması imzaladı, 2027'den 20 bin tona çıkacak",
+          "source": "Bioenergy Insight Magazine",
+          "category": "atik-donusum"
+        },
+        {
+          "url": "https://bioenergy-news.com/news/indonesia-pursues-pyrolysis-technology-to-bridge-waste-to-energy-gap",
+          "date": "2026-08-10",
+          "title": "Endonezya, çöp sahası atığını dizel eşdeğeri yakıta dönüştüren piroliz teknolojisini teşvik ediyor",
+          "source": "Bioenergy Insight Magazine",
+          "category": "atik-donusum"
+        },
+        {
+          "url": "https://bioenergy-news.com/news/bedford-borough-diverts-1400-tonnes-of-food-waste-to-anaerobic-digestion",
+          "date": "2026-08-14",
+          "title": "Bedford Borough, 1.400 ton gıda atığını anaerobik çürütmeye yönlendirdi, 86,8 ton CO2 tasarrufu sağladı",
+          "source": "Bioenergy Insight Magazine",
+          "category": "atik-donusum"
+        }
+      ]
+    },
+    {
+      "kume": "Biyomalzeme",
+      "maddeler": [
+        {
+          "url": "https://bioenergy-news.com/news/revaterra-secures-1-265m-seed-funding-for-biomass-materials-platform",
+          "date": "2026-08-12",
+          "title": "RevaTerra, biyokütle bazlı endüstriyel enerji malzemeleri platformu için 1,265 milyon dolar tohum yatırımı aldı",
+          "source": "Bioenergy Insight Magazine",
+          "category": "biyomalzeme"
+        },
+        {
+          "url": "https://nature.com/articles/s41598-026-66400-9",
+          "date": "2026-08-13",
+          "title": "Güneydoğu Asya'da tarımsal atıklar Ganoderma lucidum ile yüksek performanslı misel kompozitlere dönüştürüldü",
+          "source": "Nature",
+          "category": "biyomalzeme"
+        }
+      ]
+    },
+    {
+      "kume": "Biyoyakıt ve ulaşım uygulamaları",
+      "maddeler": [
+        {
+          "url": "https://bioenergy-news.com/news/estonias-state-fleet-takes-delivery-of-biomethane-powered-vessel",
+          "date": "2026-08-14",
+          "title": "Estonya devlet filosu, biyometanla çalışan şamandıra gemisi teslim aldı",
+          "source": "Bioenergy Insight Magazine",
+          "category": "biyoyakit"
+        },
+        {
+          "url": "https://bioenergy-news.com/news/viridi-energy-expands-rng-commercialisation-through-citadel-partnership",
+          "date": "2026-08-13",
+          "title": "Viridi Energy, Citadel Energy Marketing ile RNG ticarileştirme anlaşması imzaladı",
+          "source": "Bioenergy Insight Magazine",
+          "category": "biyoyakit"
+        },
+        {
+          "url": "https://ekonomim.com/ekonomi/saf-fiyatlarinda-yuzde-10-artis-haberi-911121",
+          "date": "2026-08-10",
+          "title": "Küresel SAF fiyatları 2026'da yıllık yüzde 10 artarak HEFA bazlı yakıtta 1.817 dolar/tona ulaştı",
+          "source": "Ekonomim",
+          "category": "biyoyakit"
+        }
+      ]
+    },
+    {
+      "kume": "Tarım ve hayvancılık",
+      "maddeler": [
+        {
+          "url": "https://dunya.com/foto-galeri/ekonomi/turkiyede-sigirlarin-genetigi-degisecek-ureticiye-satis-basladi-galeri-836022",
+          "date": "2026-08-13",
+          "title": "Türkiye'nin sığır embriyosu üretim enstitüsü, yüksek verimli genetik embriyoların satışını başlattı",
+          "source": "Dünya Gazetesi",
+          "category": "tarim"
+        },
+        {
+          "url": "https://aa.com.tr/tr/ekonomi/turkiyede-pelemir-uretim-alani-350-dekardan-35-bin-dekara-cikti/4023976",
+          "date": "2026-08-11",
+          "title": "Türkiye'de pelemir üretim alanı 350 dekardan 35 bin dekara çıktı",
+          "source": "Anadolu Ajansı",
+          "category": "tarim"
+        }
+      ]
+    },
+    {
+      "kume": "Biyo-hizmetler",
+      "maddeler": [
+        {
+          "url": "https://gov.uk/government/news/patients-to-benefit-from-faster-access-to-medicines-as-uk-moves-away-from-animal-testing-in-science",
+          "date": "2026-08-12",
+          "title": "İngiltere, ilaç geliştirmede hayvansız test yöntemlerine 2 milyon sterlin yatırım yaptı",
+          "source": "gov.uk",
+          "category": "biyo-hizmetler"
+        }
+      ]
+    }
+  ],
+  "metrics": {
+    "proje_sayisi": 10,
+    "kapsanan_ulke": 10,
+    "politika_gelismesi": null,
+    "aciklanan_yatirim_usd_milyon": 110
   },
   "stories": [
     {
@@ -152,7 +334,7 @@
       "score": 8,
       "secim": "one_cikan",
       "title": "Bursa Karacabey'de 73 milyon liralık biyogaz tesisi genişletmesi",
-      "detail": "Bursa'nın Karacabey ilçesinde faaliyet gösteren Karacabey Biyogaz Enerji Üretim A.Ş., mevcut biyogaz tesisinin kapasitesini artırmak amacıyla 73 milyon lira tutarında yeni bir yatırım gerçekleştiriyor. Yatırım, tesisin genişletilmesinin yanı sıra yeni kompost üretim ünitelerinin devreye alınmasını da kapsıyor.\n\nKompost üniteleri, biyogaz üretim sürecinin yan ürünü olan organik maddenin tarımsal kullanıma uygun hale getirilmesini hedefliyor. Yatırımın Bursa bölgesindeki tarımsal atık yönetimi ve yenilenebilir enerji üretimine katkı sağlaması bekleniyor.",
+      "detail": "Bursa'nın Karacabey ilçesinde faaliyet gösteren Karacabey Biyogaz Enerji Üretim A.Ş., mevcut biyogaz tesisinin kapasitesini artırmak amacıyla 73 milyon lira tutarında yeni bir yatırım gerçekleştiriyor. Yatırım, tesisin genişletilmesinin yanı sıra yeni kompost üretim ünitelerinin devreye alınmasını da kapsıyor. Karasu Mahallesi'ndeki mevcut tesis alanında hayata geçirilecek proje için Çevresel Etki Değerlendirme (ÇED) süreci resmen başlatıldı.\n\nProje kapsamında tesisin günlük biyobozunur atık işleme kapasitesinin 234 tondan 545 tona çıkarılması planlanıyor. Böylece organik atık değerlendirme kapasitesi yaklaşık yüzde 133 artacak. Buna karşılık tesisin elektrik üretim kapasitesinde herhangi bir artış öngörülmüyor ve mevcut 3,002 MWe kurulu güç korunacak. Yatırımın ağırlığı, daha fazla biyobozunur atığın işlenmesi ve biyogaz üretiminden kalan organik materyalin katma değerli ürünlere dönüştürülmesi üzerine kuruluyor.\n\nKapasite artışının yanı sıra tesise ilave sıvı fermente ürün deposu, günlük 70 ton kapasiteli kompost tesisi ve yıllık 32 bin 700 ton üretim kapasitesine sahip organik ve organomineral gübre tesisi eklenecek. Bu yatırımlarla birlikte tesisin yalnızca biyogazdan elektrik üreten bir yapıdan çıkarak organik atıkları enerji, kompost ve gübre ürünlerine dönüştüren daha entegre bir geri kazanım tesisine dönüşmesi hedefleniyor.\n\nYeni üniteler özellikle biyogaz üretimi sonrasında ortaya çıkan fermente organik materyalin tarımsal kullanımını artırmayı amaçlıyor. Kompost ve organik gübre üretiminin devreye alınmasıyla biyobozunur atıkların yalnızca enerji üretiminde değerlendirilmesi yerine, içerdikleri besin maddelerinin yeniden tarımsal üretime kazandırılması mümkün olacak. Bu yönüyle yatırım; yenilenebilir enerji üretimi, organik atık yönetimi ve döngüsel tarım uygulamalarını aynı tesis bünyesinde bir araya getiriyor.",
       "source": {
         "url": "https://ekonomim.com/sektorler/enerji/bursa-karacabeyde-73-milyon-liralik-biyogaz-yatirimi-haberi-911570",
         "name": "ekonomim.com",
@@ -551,188 +733,6 @@
           "url": "https://greenqueen.com.hk/millow-sweden-funding-mycelium-oats-meat-protein",
           "name": "greenqueen.com.hk",
           "domain": "greenqueen.com.hk"
-        }
-      ]
-    }
-  ],
-  "radar": [
-    {
-      "kume": "Biyoteknoloji ve ilaç onayları",
-      "maddeler": [
-        {
-          "url": "https://nature.com/articles/d41573-026-00136-z",
-          "date": "2026-08-12",
-          "title": "Replimune'un onkolitik virüsü Tudriqev, melanom için FDA hızlandırılmış onayı aldı",
-          "source": "Nature",
-          "category": "biyoteknoloji"
-        },
-        {
-          "url": "https://cnbc.com/2026/08/11/foundayo-eli-lilly-wegovy-pill-uk.html",
-          "date": "2026-08-11",
-          "title": "Eli Lilly'nin GLP-1 kilo verme ilacı Foundayo İngiltere'de onay aldı",
-          "source": "CNBC",
-          "category": "biyoteknoloji"
-        },
-        {
-          "url": "https://greenqueen.com.hk/all-g-precision-fermentation-lactoferrin-funding-xeraya-capital-khazanah-malaysia",
-          "date": "2026-08-11",
-          "title": "All G, hassas fermantasyon kaynaklı laktoferrin için Series B finansman turunu tamamladı",
-          "source": "Green Queen",
-          "category": "biyoteknoloji"
-        }
-      ]
-    },
-    {
-      "kume": "Hassas fermantasyon ve biyomanüfaktür ortaklıkları",
-      "maddeler": [
-        {
-          "url": "https://greenqueen.com.hk/wacker-eu-approval-fermentation-l-cysteine-cystine-pet-food-flavourings",
-          "date": "2026-08-14",
-          "title": "WACKER, fermantasyon kaynaklı L-sistein ve L-sistin için AB onayı aldı",
-          "source": "Green Queen",
-          "category": "biyomanufaktur"
-        },
-        {
-          "url": "https://topsoe.com/news/topsoe-to-provide-ammonia-technology-for-first-ammonias-green-ammonia-project-in-texas",
-          "date": "2026-08-11",
-          "title": "Topsoe, First Ammonia'nın Teksas'taki yeşil amonyak tesisine dinamik sentez teknolojisi sağlayacak",
-          "source": "Topsoe",
-          "category": "biyomanufaktur"
-        },
-        {
-          "url": "https://dsm-firmenich.com/en/businesses/taste-texture-health/news-events/articles/beverage/dsm-firmenich-and-nous-partner.html",
-          "date": "2026-08-13",
-          "title": "dsm-firmenich, Nous ile kafeine alternatif botanik içerik Koncentra için ortaklık kurdu",
-          "source": "dsm-firmenich",
-          "category": "biyomanufaktur"
-        }
-      ]
-    },
-    {
-      "kume": "Alternatif protein ürünleri",
-      "maddeler": [
-        {
-          "url": "https://agfundernews.com/offbeast-develops-worlds-first-beef-plant-hybrid-whole-cuts",
-          "date": "2026-08-13",
-          "title": "Offbeast, sığır eti ve bitkisel proteini birleştiren hibrit bütün-kas ürünler geliştirdi",
-          "source": "AgFunderNews",
-          "category": "gida-protein"
-        },
-        {
-          "url": "https://vegconomist.com/ingredients/nnb-nutrition-axiom-foods-debut-hydrolyzed-plant-protein-line-whey-supply-tightens",
-          "date": "2026-08-11",
-          "title": "NNB Nutrition ve Axiom Foods, PeptiClear hidrolize bitkisel protein hattını tanıttı",
-          "source": "vegconomist",
-          "category": "gida-protein"
-        },
-        {
-          "url": "https://greenqueen.com.hk/scoular-soybean-dehulling-capacity-plant-based-food-milk-covington",
-          "date": "2026-08-11",
-          "title": "Scoular, Ohio'da bitki bazlı gıda ve süt üretimi için soya kabuğu soyma kapasitesini genişletti",
-          "source": "Green Queen",
-          "category": "gida-protein"
-        }
-      ]
-    },
-    {
-      "kume": "Atık dönüşüm ve döngüsel ekonomi",
-      "maddeler": [
-        {
-          "url": "https://bioenergy-news.com/news/enfinium-secures-long-term-fuel-supply-agreement-with-remondis",
-          "date": "2026-08-13",
-          "title": "Enfinium, REMONDIS ile çok yıllı yakıt tedarik anlaşması imzaladı, 2027'den 20 bin tona çıkacak",
-          "source": "Bioenergy Insight Magazine",
-          "category": "atik-donusum"
-        },
-        {
-          "url": "https://bioenergy-news.com/news/indonesia-pursues-pyrolysis-technology-to-bridge-waste-to-energy-gap",
-          "date": "2026-08-10",
-          "title": "Endonezya, çöp sahası atığını dizel eşdeğeri yakıta dönüştüren piroliz teknolojisini teşvik ediyor",
-          "source": "Bioenergy Insight Magazine",
-          "category": "atik-donusum"
-        },
-        {
-          "url": "https://bioenergy-news.com/news/bedford-borough-diverts-1400-tonnes-of-food-waste-to-anaerobic-digestion",
-          "date": "2026-08-14",
-          "title": "Bedford Borough, 1.400 ton gıda atığını anaerobik çürütmeye yönlendirdi, 86,8 ton CO2 tasarrufu sağladı",
-          "source": "Bioenergy Insight Magazine",
-          "category": "atik-donusum"
-        }
-      ]
-    },
-    {
-      "kume": "Biyomalzeme",
-      "maddeler": [
-        {
-          "url": "https://bioenergy-news.com/news/revaterra-secures-1-265m-seed-funding-for-biomass-materials-platform",
-          "date": "2026-08-12",
-          "title": "RevaTerra, biyokütle bazlı endüstriyel enerji malzemeleri platformu için 1,265 milyon dolar tohum yatırımı aldı",
-          "source": "Bioenergy Insight Magazine",
-          "category": "biyomalzeme"
-        },
-        {
-          "url": "https://nature.com/articles/s41598-026-66400-9",
-          "date": "2026-08-13",
-          "title": "Güneydoğu Asya'da tarımsal atıklar Ganoderma lucidum ile yüksek performanslı misel kompozitlere dönüştürüldü",
-          "source": "Nature",
-          "category": "biyomalzeme"
-        }
-      ]
-    },
-    {
-      "kume": "Biyoyakıt ve ulaşım uygulamaları",
-      "maddeler": [
-        {
-          "url": "https://bioenergy-news.com/news/estonias-state-fleet-takes-delivery-of-biomethane-powered-vessel",
-          "date": "2026-08-14",
-          "title": "Estonya devlet filosu, biyometanla çalışan şamandıra gemisi teslim aldı",
-          "source": "Bioenergy Insight Magazine",
-          "category": "biyoyakit"
-        },
-        {
-          "url": "https://bioenergy-news.com/news/viridi-energy-expands-rng-commercialisation-through-citadel-partnership",
-          "date": "2026-08-13",
-          "title": "Viridi Energy, Citadel Energy Marketing ile RNG ticarileştirme anlaşması imzaladı",
-          "source": "Bioenergy Insight Magazine",
-          "category": "biyoyakit"
-        },
-        {
-          "url": "https://ekonomim.com/ekonomi/saf-fiyatlarinda-yuzde-10-artis-haberi-911121",
-          "date": "2026-08-10",
-          "title": "Küresel SAF fiyatları 2026'da yıllık yüzde 10 artarak HEFA bazlı yakıtta 1.817 dolar/tona ulaştı",
-          "source": "Ekonomim",
-          "category": "biyoyakit"
-        }
-      ]
-    },
-    {
-      "kume": "Tarım ve hayvancılık",
-      "maddeler": [
-        {
-          "url": "https://dunya.com/foto-galeri/ekonomi/turkiyede-sigirlarin-genetigi-degisecek-ureticiye-satis-basladi-galeri-836022",
-          "date": "2026-08-13",
-          "title": "Türkiye'nin sığır embriyosu üretim enstitüsü, yüksek verimli genetik embriyoların satışını başlattı",
-          "source": "Dünya Gazetesi",
-          "category": "tarim"
-        },
-        {
-          "url": "https://aa.com.tr/tr/ekonomi/turkiyede-pelemir-uretim-alani-350-dekardan-35-bin-dekara-cikti/4023976",
-          "date": "2026-08-11",
-          "title": "Türkiye'de pelemir üretim alanı 350 dekardan 35 bin dekara çıktı",
-          "source": "Anadolu Ajansı",
-          "category": "tarim"
-        }
-      ]
-    },
-    {
-      "kume": "Biyo-hizmetler",
-      "maddeler": [
-        {
-          "url": "https://gov.uk/government/news/patients-to-benefit-from-faster-access-to-medicines-as-uk-moves-away-from-animal-testing-in-science",
-          "date": "2026-08-12",
-          "title": "İngiltere, ilaç geliştirmede hayvansız test yöntemlerine 2 milyon sterlin yatırım yaptı",
-          "source": "gov.uk",
-          "category": "biyo-hizmetler"
         }
       ]
     }
