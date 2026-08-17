@@ -1540,6 +1540,47 @@ def dogrula_taslak(b, kapsam_bas=None, kapsam_bit=None):
         else:
             yeni_brief.append({"text": m.get("text", ""), "ref": m.get("ref")})
     b["brief"] = yeni_brief
+
+    # --- brief bağlantı onarımı ---
+    # ⚠ NEDEN: Sayı 3'te yazım modeli bir maddeyi bağlantısız bıraktı, bir
+    # başkasını da YANLIŞ habere (1. maddeyle aynı slug'a) bağladı. Okuyucu
+    # "60 Saniyede" maddesine tıklayınca alakasız haber açılıyordu.
+    # Burada iki kusur da yakalanır: boş ref ve MÜKERRER ref. Madde metni
+    # haber başlıklarıyla eşleştirilip en güçlü aday atanır; yeterince
+    # benzeyen aday yoksa ref boş bırakılır (yanlış bağlamaktansa bağlamamak).
+    baslik = {s.get("id"): s.get("title", "") for s in stories if s.get("id")}
+    gecerli = set(baslik)
+
+    def _en_iyi_eslesme(metin):
+        aday, skor = None, 0.0
+        for sid, blk in baslik.items():
+            s, ortak = benzerlik(metin, blk)
+            if ortak >= 2 and s > skor:
+                aday, skor = sid, s
+        return (aday, skor) if skor >= 0.12 else (None, skor)
+
+    kullanilan = set()
+    for i, m in enumerate(b["brief"], 1):
+        ref = m.get("ref")
+        gecersiz = ref is not None and ref not in gecerli
+        mukerrer = ref is not None and ref in kullanilan
+        if ref and not gecersiz and not mukerrer:
+            kullanilan.add(ref)
+            continue
+
+        yeni, skor = _en_iyi_eslesme(m.get("text", ""))
+        if yeni and yeni not in kullanilan:
+            m["ref"] = yeni
+            kullanilan.add(yeni)
+            sebep = ("mükerrer" if mukerrer else
+                     "geçersiz" if gecersiz else "boş")
+            hatalar.append(f"brief {i}: {sebep} bağlantı onarıldı → "
+                           f"{baslik[yeni][:40]} (benzerlik {skor:.2f})")
+        elif ref:
+            m["ref"] = None      # yanlış bağlamaktansa bağlantısız bırak
+            hatalar.append(f"brief {i}: {'mükerrer' if mukerrer else 'geçersiz'} "
+                           f"bağlantı kaldırıldı (uygun haber bulunamadı)")
+
     return hatalar
 
 
