@@ -1,5 +1,5 @@
 {
-  "issue_no": 2,
+  "issue_no": 3,
   "events": [
     {
       "baslik_ozet": "HAMR Energy, orman biyokütlesinden yakıt için ARENA'dan 32 milyon dolar aldı",
@@ -80,6 +80,46 @@
     {
       "baslik_ozet": "Montana Renewables, Minneapolis havalimanına yılda 30 milyon galon SAF tedarik edecek",
       "hafta": "2026-H32"
+    },
+    {
+      "baslik_ozet": "Brezilya, ulusal SAF zorunluluğu ProBioQAV için uygulama kurallarını yayımladı",
+      "hafta": "2026-H33"
+    },
+    {
+      "baslik_ozet": "Solar Foods 100 milyon euro finansman eşiğini geçti, Factory 02 nihai tasarımda",
+      "hafta": "2026-H33"
+    },
+    {
+      "baslik_ozet": "Bursa Karacabey'de 73 milyon liralık biyogaz tesisi genişletmesi",
+      "hafta": "2026-H33"
+    },
+    {
+      "baslik_ozet": "Türkiye'de 2027'den itibaren havza ürün desenine göre üretim izni verilecek",
+      "hafta": "2026-H33"
+    },
+    {
+      "baslik_ozet": "Bia Energy'nin 90 milyon euroluk Dublin tesisi Gas Networks Ireland'a bağlandı",
+      "hafta": "2026-H33"
+    },
+    {
+      "baslik_ozet": "Planted, Almanya'daki fermantasyon üretimini iki katına çıkarıyor",
+      "hafta": "2026-H33"
+    },
+    {
+      "baslik_ozet": "Standard Life, İngiltere'deki Snetterton biyokütle santraline 61 milyon sterlin finansman sağladı",
+      "hafta": "2026-H33"
+    },
+    {
+      "baslik_ozet": "TUI Cruises, sıvılaştırılmış biyometan kullanımını Avrupa filosunda genişletiyor",
+      "hafta": "2026-H33"
+    },
+    {
+      "baslik_ozet": "Deeside anaerobik çürütme tesisi İngiltere'nin en büyüğü olarak onaylandı",
+      "hafta": "2026-H33"
+    },
+    {
+      "baslik_ozet": "İsveçli Millow, yulaf-misel proteini için 2 milyon euro yatırım aldı",
+      "hafta": "2026-H33"
     }
   ],
   "urls": [
@@ -167,6 +207,47 @@
     "https://agfundernews.com/bioscout-raises-4-8m-for-early-warning-system-for-fungal-pathogens",
     "https://us.ok.com/ask_news_cars/suzuki-leads-india-s-flex-fuel-push-as-modi-targets-energy-independence",
     "https://biomassmagazine.com/articles/montana-renewables-celebrates-minnesota-saf-hub",
-    "https://biobased-diesel.com/post/montana-renewables-to-supply-up-to-30-million-gallons-of-saf-to-msp-airport"
+    "https://biobased-diesel.com/post/montana-renewables-to-supply-up-to-30-million-gallons-of-saf-to-msp-airport",
+    "https://dunya.com/sirketler/petkimden-turkiyeye-7-milyar-dolarlik-dev-yatirim-plani-ithalati-15-milyar-dolar-azaltabilir-haberi-835620",
+    "https://bioenergy-news.com/news/indias-gobardhan-scheme-could-cut-gas-imports-by-5-billion-says-iba",
+    "https://plasticseurope.org/de/2026/08/11/neues-verpackungsrecht-tritt-in-kraft-kreislaufwirtschaft-braucht-weniger-buerokratie-und-mehr-investitionssicherheit",
+    "https://germany.representation.ec.europa.eu/nachrichten-und-veranstaltungen/pressemitteilungen/verbraucher-und-umweltschutz-neue-verpackungsvorschriften-der-eu-2026-08-11_de",
+    "https://foodnavigator.com/Article/2026/08/12/ppwr-6-things-manufacturers-need-to-know",
+    "https://environment.ec.europa.eu/news/new-eu-rules-packaging-enter-application-2026-08-11_en",
+    "https://edie.net/eu-packaging-and-packaging-waste-regulation-enters-into-force-everything-you-need-to-know",
+    "https://environment.ec.europa.eu/news/new-eu-rules-packaging-set-enter-application-2026-08-11_en",
+    "https://vegconomist.com/company-news/solar-foods-passes-100m-funding-mark-factory-02-enters-final-design",
+    "https://ekonomim.com/sektorler/enerji/bursa-karacabeyde-73-milyon-liralik-biyogaz-yatirimi-haberi-911570",
+    "https://tarimdanhaber.com/tarimda-2027den-itibaren-yeni-donem-her-urune-uretim-izni-verilmeyecek",
+    "https://bioenergy-news.com/news/gas-networks-ireland-connects-first-direct-biomethane-producer",
+    "https://agfundernews.com/swiss-alt-meat-startup-planted-scales-fermented-whole-cut-platform-eyes-b2b-partnerships",
+    "https://vegconomist.com/manufacturing-technology/planted-double-german-fermentation-output-weighs-supplying-rival-brands",
+    "https://biomassmagazine.com/articles/brazil-publishes-regulations-for-probioqav-the-countrys-saf-mandate",
+    "https://biomassmagazine.com/articles/american-airlines-and-infinium-announce-commercial-passenger-flight-powered-by-esaf",
+    "https://bioenergy-news.com/news/standard-life-deploys-matching-adjustment-structure-for-uk-biomass-financing",
+    "https://bioenergy-news.com/news/tui-cruises-scales-liquefied-biomethane-deployment-across-european-fleet",
+    "https://bioenergy-news.com/news/deeside-anaerobic-digestion-plant-approved-to-become-uks-largest-waste-to-energy-facility",
+    "https://agfundernews.com/millow-raises-2-3m-gears-up-for-commercial-launch-of-minimally-processed-alt-meat",
+    "https://greenqueen.com.hk/millow-sweden-funding-mycelium-oats-meat-protein",
+    "https://nature.com/articles/d41573-026-00136-z",
+    "https://cnbc.com/2026/08/11/foundayo-eli-lilly-wegovy-pill-uk.html",
+    "https://greenqueen.com.hk/all-g-precision-fermentation-lactoferrin-funding-xeraya-capital-khazanah-malaysia",
+    "https://greenqueen.com.hk/wacker-eu-approval-fermentation-l-cysteine-cystine-pet-food-flavourings",
+    "https://topsoe.com/news/topsoe-to-provide-ammonia-technology-for-first-ammonias-green-ammonia-project-in-texas",
+    "https://dsm-firmenich.com/en/businesses/taste-texture-health/news-events/articles/beverage/dsm-firmenich-and-nous-partner.html",
+    "https://agfundernews.com/offbeast-develops-worlds-first-beef-plant-hybrid-whole-cuts",
+    "https://vegconomist.com/ingredients/nnb-nutrition-axiom-foods-debut-hydrolyzed-plant-protein-line-whey-supply-tightens",
+    "https://greenqueen.com.hk/scoular-soybean-dehulling-capacity-plant-based-food-milk-covington",
+    "https://bioenergy-news.com/news/enfinium-secures-long-term-fuel-supply-agreement-with-remondis",
+    "https://bioenergy-news.com/news/indonesia-pursues-pyrolysis-technology-to-bridge-waste-to-energy-gap",
+    "https://bioenergy-news.com/news/bedford-borough-diverts-1400-tonnes-of-food-waste-to-anaerobic-digestion",
+    "https://bioenergy-news.com/news/revaterra-secures-1-265m-seed-funding-for-biomass-materials-platform",
+    "https://nature.com/articles/s41598-026-66400-9",
+    "https://bioenergy-news.com/news/estonias-state-fleet-takes-delivery-of-biomethane-powered-vessel",
+    "https://bioenergy-news.com/news/viridi-energy-expands-rng-commercialisation-through-citadel-partnership",
+    "https://ekonomim.com/ekonomi/saf-fiyatlarinda-yuzde-10-artis-haberi-911121",
+    "https://dunya.com/foto-galeri/ekonomi/turkiyede-sigirlarin-genetigi-degisecek-ureticiye-satis-basladi-galeri-836022",
+    "https://aa.com.tr/tr/ekonomi/turkiyede-pelemir-uretim-alani-350-dekardan-35-bin-dekara-cikti/4023976",
+    "https://gov.uk/government/news/patients-to-benefit-from-faster-access-to-medicines-as-uk-moves-away-from-animal-testing-in-science"
   ]
 }
