@@ -1,5 +1,16 @@
 [
   {
+    "number": 4,
+    "hafta": "2026-H34",
+    "publication_date": "2026-08-23",
+    "coverage_start": "2026-08-16",
+    "coverage_end": "2026-08-23",
+    "lead_title": "AB Komisyonu, Hollanda'nın 290 milyon euroluk SAF destek planını onayladı",
+    "story_count": 8,
+    "radar_count": 26,
+    "file": "data/arsiv/2026-H34.json"
+  },
+  {
     "number": 3,
     "hafta": "2026-H33",
     "publication_date": "2026-08-17",

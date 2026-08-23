@@ -1,5 +1,5 @@
 {
-  "issue_no": 3,
+  "issue_no": 4,
   "events": [
     {
       "baslik_ozet": "HAMR Energy, orman biyokütlesinden yakıt için ARENA'dan 32 milyon dolar aldı",
@@ -120,6 +120,42 @@
     {
       "baslik_ozet": "İsveçli Millow, yulaf-misel proteini için 2 milyon euro yatırım aldı",
       "hafta": "2026-H33"
+    },
+    {
+      "baslik_ozet": "AB Komisyonu, Hollanda'nın 290 milyon euroluk SAF destek planını onayladı",
+      "hafta": "2026-H34"
+    },
+    {
+      "baslik_ozet": "Finlandiya, ilk endüstriyel ölçekli sıvı biyogaz tesisini devreye aldı",
+      "hafta": "2026-H34"
+    },
+    {
+      "baslik_ozet": "Mitsui, Danimarka'da dünyanın ilk ticari sentetik metanol tesisini işletmeye aldı",
+      "hafta": "2026-H34"
+    },
+    {
+      "baslik_ozet": "Moderna-Merck mRNA melanom aşısı Faz 3 hedeflerine ulaştı",
+      "hafta": "2026-H34"
+    },
+    {
+      "baslik_ozet": "Türkiye'nin 2025-2028 Döngüsel Ekonomi Stratejisi yedi sektörü önceliklendiriyor",
+      "hafta": "2026-H34"
+    },
+    {
+      "baslik_ozet": "dsm-firmenich, Protopia maya proteinini endüstriyel ölçeğe taşıyor",
+      "hafta": "2026-H34"
+    },
+    {
+      "baslik_ozet": "MHRA, mikrobiyom bazlı tıbbi ürünler için düzenleyici yolu netleştirdi",
+      "hafta": "2026-H34"
+    },
+    {
+      "baslik_ozet": "Avantium, Delfzijl'deki dünyanın ilk ticari FDCA tesisinde devreye alma sürecine ilerliyor",
+      "hafta": "2026-H34"
+    },
+    {
+      "baslik_ozet": "Pakistan'ın ilk tam ölçekli biyokütle-yakıt tesisi 1,25 milyon sterlin fonla ticari denemeye geçti",
+      "hafta": "2026-H34"
     }
   ],
   "urls": [
@@ -248,6 +284,48 @@
     "https://ekonomim.com/ekonomi/saf-fiyatlarinda-yuzde-10-artis-haberi-911121",
     "https://dunya.com/foto-galeri/ekonomi/turkiyede-sigirlarin-genetigi-degisecek-ureticiye-satis-basladi-galeri-836022",
     "https://aa.com.tr/tr/ekonomi/turkiyede-pelemir-uretim-alani-350-dekardan-35-bin-dekara-cikti/4023976",
-    "https://gov.uk/government/news/patients-to-benefit-from-faster-access-to-medicines-as-uk-moves-away-from-animal-testing-in-science"
+    "https://gov.uk/government/news/patients-to-benefit-from-faster-access-to-medicines-as-uk-moves-away-from-animal-testing-in-science",
+    "https://eureporter.co/business/aviationairlines/2026/08/19/commission-approves-e290-million-dutch-state-aid-to-support-sustainable-aviation-fuels-2",
+    "https://ethanolproducer.com/articles/european-commission-approves-dutch-state-aid-to-support-saf",
+    "https://bioenergy-news.com/news/finland-inaugurates-first-industrial-scale-liquefied-biogas-facility",
+    "https://briefasia.com/en/article/mitsui-launches-commercial-synthetic-methanol-plant-denmark",
+    "https://asia.nikkei.com/business/energy/japan-s-mitsui-fully-launches-synthetic-fuel-plant-in-denmark",
+    "https://cnbc.com/2026/08/19/moderna-merck-cancer-vaccine-shows-initial-late-stage-melanoma-data.html",
+    "https://ekonomim.com/kose-yazisi/dongusel-ekonomi-turkiyenin-yeni-sanayilesme-hikayesi-olabilir/912503",
+    "https://agfundernews.com/dsm-firmenich-takes-protopia-yeast-protein-to-industrial-scale-targets-fishmeal-and-whey",
+    "https://gov.uk/government/news/mhra-sets-out-position-on-regulation-of-microbiome-based-medicinal-products",
+    "https://newsroom.avantium.com/avantium-progresses-toward-fdca-flagship-plant-start-up-strengthens-commercial-and-licensing-momentum-and-prepares-financing-package-for-next-growth-phase",
+    "https://bioenergy-news.com/news/pakistans-first-full-scale-biomass-waste-to-fuel-plant-moves-into-commercial-demonstration",
+    "https://ethanolproducer.com/articles/targeting-saf-at-a-handful-of-major-airports-could-deliver-outsized-climate-and-health-benefits-new-catf-analysis-finds",
+    "https://biomassmagazine.com/articles/nextchem-maire-awarded-licensing-process-design-package-and-engineering-services-for-australian-saf-project",
+    "https://bioenergy-news.com/news/waga-energy-commissions-eighth-us-rng-unit-in-indiana",
+    "https://bioenergy-news.com/news/ukraine-biogas-complex-doubles-capacity-to-72-million-cubic-metres",
+    "https://chemanager-online.com/en/news/mitsui-co-and-european-energy-supply-omv-with-e-methanol-from-a-ptx-plant",
+    "https://nature.com/articles/s41587-026-03266-2",
+    "https://cordis.europa.eu/article/id/467267-nanotech-cuts-the-complexity-and-cost-of-frontier-cancer-therapy",
+    "https://nature.com/articles/s41587-026-03258-2",
+    "https://nature.com/articles/s41467-026-76647-5",
+    "https://pnas.org/doi/10.1073/pnas.2409572122",
+    "https://onlinelibrary.wiley.com/doi/10.1002/anie.2026-m0808105700?af=R",
+    "https://cnbc.com/2026/08/19/biomarin-to-acquire-alesta-therapeutics-for-275-million.html",
+    "https://chemanager-online.com/en/news/eurofins-cdmo-alphora-expands-capacity-and-hpapi-capabilities",
+    "https://chemanager-online.com/en/news/piramal-pharma-acquires-yapan-bio",
+    "https://cordis.europa.eu/article/id/467268-improved-muscle-cells-to-beef-up-the-cultivated-meat-industry",
+    "https://greenqueen.com.hk/perfect-day-precision-fermentation-animal-free-dairy-whey-protein",
+    "https://greenqueen.com.hk/ever-after-foods-funding-fishway-acquisition-cultivated-lab-grown-meat",
+    "https://ethanolproducer.com/articles/usgbc-guatemala-launches-first-central-american-e10-mandate-opening-160-million-annual-export-market-for-us-ethanol",
+    "https://ethanolproducer.com/articles/epa-issues-waiver-ending-summer-blend-gasoline-requirement-early-extends-e15-waiver",
+    "https://worldbiogasassociation.org/global-biogas-news-round-up-july-august-2026",
+    "https://bioenergy-news.com/news/us-grant-backs-tribal-forest-biomass-market-development-across-60-member-nations",
+    "https://bioenergy-news.com/news/nestle-uk-generates-47-of-steam-from-spent-coffee-biomass",
+    "https://bioenergy-news.com/news/protos-energy-from-waste-facility-begins-operations-with-carbon-capture",
+    "https://bioenergy-news.com/news/indonesias-palm-oil-waste-could-generate-3-6-billion-cubic-metres-of-biogas-annually",
+    "https://bioenergy-news.com/news/economad-solutions-secures-230k-for-on-farm-waste-to-energy-system",
+    "https://bioenergy-news.com/news/ai-adoption-accelerating-across-biogas-upgrading-markets",
+    "https://vegconomist.com/ingredients/dohler-opens-64m-mexico-ingredients-plant-adds-natural-colours-line-second-phase",
+    "https://aa.com.tr/en/economy/world-s-first-fully-self-sufficient-luxury-living-model-takes-shape-in-turkiye/4029526",
+    "https://enerjigunlugu.net/tenmak-boren-lityum-borat-tuzlari-uretim-tesisi-devrede-69513h.htm",
+    "https://aa.com.tr/tr/ekonomi/erzurumda-osbnin-elektriginin-yuzde-90i-gunesten-saglanacak/4030028",
+    "https://vegconomist.com/politics-law/hungarys-new-government-weighs-vat-cut-produce-plant-based-advocates-gain-ground"
   ]
 }
