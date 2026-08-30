@@ -1,5 +1,5 @@
 {
-  "issue_no": 4,
+  "issue_no": 5,
   "events": [
     {
       "baslik_ozet": "HAMR Energy, orman biyokütlesinden yakıt için ARENA'dan 32 milyon dolar aldı",
@@ -156,6 +156,42 @@
     {
       "baslik_ozet": "Pakistan'ın ilk tam ölçekli biyokütle-yakıt tesisi 1,25 milyon sterlin fonla ticari denemeye geçti",
       "hafta": "2026-H34"
+    },
+    {
+      "baslik_ozet": "Meksika, RNA temelli biyofungisit Oifirax'ı dünyada ilk onayladı",
+      "hafta": "2026-H35"
+    },
+    {
+      "baslik_ozet": "Cargill, Dilovası'nda FR3 sıvısı üretim kapasitesini ikiye katladı",
+      "hafta": "2026-H35"
+    },
+    {
+      "baslik_ozet": "Taebaek'te 15 bin ton/yıl biyometanol tesisi için tedarik anlaşması imzalandı",
+      "hafta": "2026-H35"
+    },
+    {
+      "baslik_ozet": "St1 Biokraft, Danimarka pazarına Danish Bio Commodities alımıyla girdi",
+      "hafta": "2026-H35"
+    },
+    {
+      "baslik_ozet": "ADM, Clinton'daki hassas fermantasyon tesisi için 2,23 milyon dolarlık vergi kredisi aldı",
+      "hafta": "2026-H35"
+    },
+    {
+      "baslik_ozet": "Kültür eti atığından mikroalg üretimi besiyeri maliyetlerini düşürebilir",
+      "hafta": "2026-H35"
+    },
+    {
+      "baslik_ozet": "İki Türk şirketi Ufuk Avrupa hidrojen projelerinden 1,17 milyon euro destek alacak",
+      "hafta": "2026-H35"
+    },
+    {
+      "baslik_ozet": "Mersin'de zeytin çekirdeğinden piroliz yöntemiyle biyokömür üretilecek",
+      "hafta": "2026-H35"
+    },
+    {
+      "baslik_ozet": "Bursa'da DOA sayma-doğrulama tesisi faaliyete başladı, 130 milyon ambalaj geri kazanıldı",
+      "hafta": "2026-H35"
     }
   ],
   "urls": [
@@ -326,6 +362,44 @@
     "https://aa.com.tr/en/economy/world-s-first-fully-self-sufficient-luxury-living-model-takes-shape-in-turkiye/4029526",
     "https://enerjigunlugu.net/tenmak-boren-lityum-borat-tuzlari-uretim-tesisi-devrede-69513h.htm",
     "https://aa.com.tr/tr/ekonomi/erzurumda-osbnin-elektriginin-yuzde-90i-gunesten-saglanacak/4030028",
-    "https://vegconomist.com/politics-law/hungarys-new-government-weighs-vat-cut-produce-plant-based-advocates-gain-ground"
+    "https://vegconomist.com/politics-law/hungarys-new-government-weighs-vat-cut-produce-plant-based-advocates-gain-ground",
+    "https://science.org/content/article/global-first-mexico-approves-use-rna-based-fungicide",
+    "https://cargill.com/2026/cargill-doubles-fr3-production-capacity-turkiye",
+    "https://biofuelsdigest.com/taebaek-methanol-project-lines-up-shipping-buyers-before-construction",
+    "https://bioenergy-news.com/news/st1-biokraft-completes-danish-bio-commodities-acquisition",
+    "https://bioenergy-news.com/news/galia-green-power-secures-e89-3m-for-polish-biomethane-expansion",
+    "https://bioenergy-news.com/news/nova-pangaea-technologies-completes-waste-biomass-saf-trial",
+    "https://bioenergy-news.com/news/united-utilities-plans-140m-advanced-anaerobic-digestion-biogas-upgrade",
+    "https://greenqueen.com.hk/adm-precision-fermentation-capacity-facility-clinton-iowa-tax-credit",
+    "https://vegconomist.com/fermentation/adm-secures-2-2m-state-tax-credits-convert-idle-clinton-space-precision-fermentation-site",
+    "https://greenqueen.com.hk/cultivated-lab-grown-meat-waste-microalgae-growth-factors-culture-media-costs",
+    "https://foodingredientsfirst.com/news/microalgae-cultivated-meat-media-costs.html",
+    "https://yesilekonomi.com/iki-turk-sirketi-horizon-europe-destekli-hidrojen-projelerinde-yer-alacak",
+    "https://enerjigunlugu.net/mersin-cozum-gumrukleme-biyokomur-uretecek-69551h.htm",
+    "https://ekonomim.com/ekonomi/bursada-geri-donusum-yatirimi-buyuyor-hedef-2-yilda-800-milyon-ambalaji-ekonomiye-kazandirmak-haberi-913877",
+    "https://aa.com.tr/tr/gundem/doa-ile-130-milyon-icecek-ambalaji-geri-donusume-kazandirildi/4040803",
+    "https://dunya.com/gundem/bakan-kurum-acikladi-doa-sistemi-ekonomiye-yillik-30-milyar-lira-katki-saglayacak-haberi-837976",
+    "https://vegconomist.com/approvals/ingredion-wins-eu-clearance-carrot-derived-prebiotic-acquired-nutrileads",
+    "https://foodingredientsfirst.com/news/ingredion-benicaros-carrot-fiber-eu.html",
+    "https://bioenergy-news.com/news/chinas-1-gw-coal-unit-achieves-10-biomass-co-firing-milestone",
+    "https://bioenergy-news.com/news/refuels-expands-bio-cng-network-with-carlisle-station-opening-2027",
+    "https://biodieselmagazine.com/articles/orlen-certified-for-biofuel-component-production-at-pock-refinery",
+    "https://bioenergy-news.com/news/envitec-biogas-advances-two-french-biomethane-conversion-projects",
+    "https://bioenergy-news.com/news/canada-funds-food-waste-rng-facility-expansion-in-ontario",
+    "https://events.renewable-carbon.eu/event/hiccups-seminar-can-co2-become-food-packaging-the-hiccups-story",
+    "https://bioenergy-news.com/news/emvolon-converts-landfill-biogas-to-methanol-using-containerised-engine-technology",
+    "https://nature.com/articles/s41587-026-03288-w",
+    "https://chemanager-online.com/en/news/hovione-completes-40-million-expansion-of-loures-tablet-manufacturing-center",
+    "https://chemistryworld.com/news/bakers-yeast-engineered-to-produce-precursor-for-essential-cancer-drugs/4024051.article",
+    "https://nature.com/articles/s43587-026-01181-4",
+    "https://science.org/doi/10.1126/sciadv.adr8638",
+    "https://vegconomist.com/company-news/maash-raises-12-15m-names-ex-enough-executive-samah-garringer-ceo",
+    "https://greenqueen.com.hk/time-travelling-milkman-ttm-ingredients-sunflower-fat-oleosome-dairy-alternative",
+    "https://cordis.europa.eu/article/id/467327-synthesising-dna-on-a-chip-using-water",
+    "https://agfundernews.com/livestock-management-app-breedr-plans-expansion-after-27m-raise-led-by-partechs-impact-arm",
+    "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/biological-ai-models-new-paradigms-leverage-languages-life-2026-08-24_en",
+    "https://bioenergy-news.com/news/choctaw-county-alabama-awarded-bdo-zone-a-rating-for-woody-biomass",
+    "https://bioenergy-news.com/news/allegany-county-ny-earns-top-bdo-zone-rating-for-biomass",
+    "https://dunya.com/ekonomi/hayvan-yemi-olarak-kullaniliyordu-degeri-sonrada-ortaya-cikti-haberi-837526"
   ]
 }
