@@ -1,5 +1,5 @@
 {
-  "issue_no": 5,
+  "issue_no": 6,
   "events": [
     {
       "baslik_ozet": "HAMR Energy, orman biyokütlesinden yakıt için ARENA'dan 32 milyon dolar aldı",
@@ -192,6 +192,46 @@
     {
       "baslik_ozet": "Bursa'da DOA sayma-doğrulama tesisi faaliyete başladı, 130 milyon ambalaj geri kazanıldı",
       "hafta": "2026-H35"
+    },
+    {
+      "baslik_ozet": "İsviçre'de Niederwil tesisi Avrupa'nın ilk sınır ötesi BECCS operasyonunu başlattı",
+      "hafta": "2026-H36"
+    },
+    {
+      "baslik_ozet": "ABD Enerji Bakanlığı biyokütle bazlı kimyasallar için 58 milyon dolar açtı",
+      "hafta": "2026-H36"
+    },
+    {
+      "baslik_ozet": "Louis Dreyfus, São Paulo'da dünyanın en büyük turunçgil biyogaz tesisini inşa ediyor",
+      "hafta": "2026-H36"
+    },
+    {
+      "baslik_ozet": "Evonik, Vancouver'da LNP kapasitesini üçe katlayacak yeni GMP tesisine yatırım yapıyor",
+      "hafta": "2026-H36"
+    },
+    {
+      "baslik_ozet": "AB Komisyonu, yeni genomik teknikli bitkiler için düzenleme görüşü topluyor",
+      "hafta": "2026-H36"
+    },
+    {
+      "baslik_ozet": "SABIC Avrupa petrokimya varlıklarını satıyor, Geleen'deki SPEAR projesi risk altına girdi",
+      "hafta": "2026-H36"
+    },
+    {
+      "baslik_ozet": "Singapur kargo SAF vergisini 2028'e erteledi, yıl sonunda ihale planlıyor",
+      "hafta": "2026-H36"
+    },
+    {
+      "baslik_ozet": "ABD DOE, sanayiyi güçlendirmek için 56 projeye 117 milyon dolar aktardı",
+      "hafta": "2026-H36"
+    },
+    {
+      "baslik_ozet": "David Protein'in sahibi Medici Brands 250 milyon dolarlık Seri B turu topladı",
+      "hafta": "2026-H36"
+    },
+    {
+      "baslik_ozet": "Türkiye'nin enerji dönüşümü için 200 milyar dolarlık yol haritası açıklandı",
+      "hafta": "2026-H36"
     }
   ],
   "urls": [
@@ -400,6 +440,49 @@
     "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/biological-ai-models-new-paradigms-leverage-languages-life-2026-08-24_en",
     "https://bioenergy-news.com/news/choctaw-county-alabama-awarded-bdo-zone-a-rating-for-woody-biomass",
     "https://bioenergy-news.com/news/allegany-county-ny-earns-top-bdo-zone-rating-for-biomass",
-    "https://dunya.com/ekonomi/hayvan-yemi-olarak-kullaniliyordu-degeri-sonrada-ortaya-cikti-haberi-837526"
+    "https://dunya.com/ekonomi/hayvan-yemi-olarak-kullaniliyordu-degeri-sonrada-ortaya-cikti-haberi-837526",
+    "https://bioenergy-news.com/news/switzerland-launches-europes-first-commercial-cross-border-beccs-operation",
+    "https://energy.gov/cmei/fuels/articles/does-alternative-fuels-and-feedstocks-office-announces-58-million-promote",
+    "https://bioenergy-news.com/news/ldc-builds-citrus-effluent-biogas-plant-in-sao-paulo",
+    "https://chemanager-online.com/en/news/evonik-invests-93-million-in-vancouver-gmp-plant-to-triple-lnp-capacity",
+    "https://food.ec.europa.eu/food-safety-news/biotechnologies-commission-publishes-call-evidence-delegated-and-implementing-acts-support-2026-08-31_en",
+    "https://bioplasticsnews.com/2026/08/31/saudi-arabia-abandons-europes-chemical-recycling-ship",
+    "https://seaandjob.com/singapore-defers-cargo-saf-levy-to-2028-plans-year-end-tender",
+    "https://spglobal.com/energy/en/news-research/latest-news/crude-oil/090326-singapore-defers-cargo-saf-levy-to-2028-plans-year-end-tender",
+    "https://energy.gov/cmei/articles/does-office-critical-minerals-and-energy-innovation-announces-117-million-strengthen",
+    "https://agfundernews.com/one-of-the-fastest-growing-cpg-brands-in-america-david-protein-owner-hits-2-25bn-valuation-on-250m-series-b",
+    "https://aa.com.tr/tr/ekonomi/turkiyenin-enerji-donusumune-200-milyar-dolar-yatirim-ongoruluyor/4042448",
+    "https://dunya.com/enerji/turkiyenin-enerjide-200-milyar-dolarlik-yol-haritasi-aciklandi-haberi-838207",
+    "https://calumet.investorroom.com/2026-09-01-Montana-Renewables-Announces-Innovative,-Capital-Efficient-Expansion-to-200-Million-Gallons-of-Sustainable-Aviation-Fuel",
+    "https://biomassmagazine.com/articles/montana-renewables-announces-innovative-capital-efficient-expansion-to-200-million-gallons-of-saf",
+    "https://topsoe.com/news/topsoe-wins-contract-for-unipers-e-methanol-facility-in-sweden",
+    "https://ethanolproducer.com/articles/icm-selected-to-supply-technology-for-atvos-first-co-located-corn-ethanol-facility-in-brazil",
+    "https://euractiv.com/opinion/farmers-need-faster-access-to-biological-crop-protection-technologies-is-the-goal-of-the-food-and-feed-safety-omnibus-x-dead",
+    "https://bioenergy-news.com/news/gas-network-ireland-connects-second-biomethane-facility-to-grid-this-month",
+    "https://bioenergy-news.com/news/cadent-upgrade-opens-peterborough-network-to-biomethane",
+    "https://bioenergy-news.com/news/colombian-dairy-farm-replaces-propane-with-whey-biogas",
+    "https://bioenergy-news.com/news/pretoria-energy-proposes-second-biogas-plant-alongside-chatteris-facility",
+    "https://bioenergy-news.com/news/haffner-energy-targets-data-centres-with-biomass-power-and-cooling",
+    "https://newsroom.avantium.com/sukano-signs-capacity-reservation-agreement-for-releaf-with-avantium",
+    "https://bioplasticsmagazine.com/en/news/meldungen/20260901-Michelin-and-Axens-want-to-accelerate-PEF-precursor-HMF.php",
+    "https://cinea.ec.europa.eu/news-events/news/nearly-300-life-projects-showcased-eu-platform-promising-solutions-2026-09-03_en",
+    "https://vegconomist.com/materials/plant-based-performance-foam-from-von-holzhausen-targets-petroleum-midsoles",
+    "https://greenqueen.com.hk/paleo-belgium-funding-precision-fermentation-myoglobin-heme-protein-meat",
+    "https://greenqueen.com.hk/moa-foodtech-eic-funding-ai-food-waste-yeast-fermentation-egg-replacer",
+    "https://vegconomist.com/retail-e-commerce/oshi-lands-whole-foods-placement-plant-based-salmon-slated-for-december-2026",
+    "https://vegconomist.com/retail-e-commerce/steakholder-foods-starts-u-s-retail-sales-five-product-perfecta-range",
+    "https://greenqueen.com.hk/europe-alternative-protein-funding-fermentation-plant-based-cultivated-investment",
+    "https://vegconomist.com/investments-finance/investments-acquisitions/australian-algae-producer-genesis-acquires-pet-nutrition-brand-proudi-38m-deal",
+    "https://blue-economy-observatory.ec.europa.eu/news/germany-becomes-innovation-hub-modern-fish-farming-2026-09-02_en",
+    "https://bioenergy-news.com/news/australia-targets-au15-billion-bioenergy-feedstock-market",
+    "https://epa.gov/newsreleases/what-they-are-saying-leaders-across-us-applaud-epas-action-2025-small-refinery",
+    "https://gov.uk/government/collections/product-regulation-sandboxes",
+    "https://dunya.com/gundem/tkyb-ve-dunya-bankasindan-yesil-donusume-630-milyon-dolarlik-yeni-kaynak-haberi-838891",
+    "https://dunya.com/kose-yazisi/organize-tarim-bolgeleri-ile-gelecegi-insa-etmek/838273",
+    "https://dunya.com/is-dunyasi/simav-jeotermal-sera-osbde-sona-yaklasildi-haberi-838541",
+    "https://renewable-carbon.eu/news/aio-and-tftak-secure-e1-94m-to-make-microbial-oil-production-faster-smarter-and-more-competitive",
+    "https://vegconomist.com/investments-finance/aak-secures-2m-freeport-backing-expand-plant-based-oils-capacity-hull",
+    "https://defrafarming.blog.gov.uk/2026/09/01/small-rd-partnerships-competition-now-open",
+    "https://finance.yahoo.com/healthcare/articles/arrowhead-pharmaceuticals-presents-phase-3-153000973.html"
   ]
 }
