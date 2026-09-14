@@ -1,5 +1,5 @@
 {
-  "issue_no": 6,
+  "issue_no": 7,
   "events": [
     {
       "baslik_ozet": "HAMR Energy, orman biyokütlesinden yakıt için ARENA'dan 32 milyon dolar aldı",
@@ -232,6 +232,38 @@
     {
       "baslik_ozet": "Türkiye'nin enerji dönüşümü için 200 milyar dolarlık yol haritası açıklandı",
       "hafta": "2026-H36"
+    },
+    {
+      "baslik_ozet": "GSK'nın yeni Ar-Ge merkezi Cambridge Biomedical Campus'ta tamamlanma aşamasında",
+      "hafta": "2026-H37"
+    },
+    {
+      "baslik_ozet": "BIOWEG, Almanya'da Avrupa'nın en büyük bakteriyel selüloz tesisini kuruyor",
+      "hafta": "2026-H37"
+    },
+    {
+      "baslik_ozet": "Avantium, dünyanın ilk ticari ölçekli FDCA tesisinde arıtma ünitesini devreye aldı",
+      "hafta": "2026-H37"
+    },
+    {
+      "baslik_ozet": "AB Komisyonu ve AYB, Ethris'e solunum virüsleri için 30 milyon euro yatırım yaptı",
+      "hafta": "2026-H37"
+    },
+    {
+      "baslik_ozet": "İrlanda, 2030'a kadar 5,7 TWh biyometan hedefiyle sektörü hızlandırıyor",
+      "hafta": "2026-H37"
+    },
+    {
+      "baslik_ozet": "Çekya'nın ilk biyometan destek ihalesine dört kat fazla başvuru geldi",
+      "hafta": "2026-H37"
+    },
+    {
+      "baslik_ozet": "İngiltere, küçük biyokütle santrallerine sübvansiyon desteğini 2027'de sona erdiriyor",
+      "hafta": "2026-H37"
+    },
+    {
+      "baslik_ozet": "Onego Bio, hayvansal olmayan yumurta proteinini Zen Waffles'a tedarik edecek",
+      "hafta": "2026-H37"
     }
   ],
   "urls": [
@@ -483,6 +515,48 @@
     "https://renewable-carbon.eu/news/aio-and-tftak-secure-e1-94m-to-make-microbial-oil-production-faster-smarter-and-more-competitive",
     "https://vegconomist.com/investments-finance/aak-secures-2m-freeport-backing-expand-plant-based-oils-capacity-hull",
     "https://defrafarming.blog.gov.uk/2026/09/01/small-rd-partnerships-competition-now-open",
-    "https://finance.yahoo.com/healthcare/articles/arrowhead-pharmaceuticals-presents-phase-3-153000973.html"
+    "https://finance.yahoo.com/healthcare/articles/arrowhead-pharmaceuticals-presents-phase-3-153000973.html",
+    "https://cambridgeshirepeterborough-ca.gov.uk/news/paul-bristow-visits-new-home-of-gsk-on-cambridge-biomedical-campus",
+    "https://nature.com/articles/s41587-026-03304-z",
+    "https://bioplasticsmagazine.com/en/news/meldungen/20260911-BIOWEG-to-build-Europe-s-largest-bacterial-cellulose-plant.php",
+    "https://newsroom.avantium.com/avantium-completes-commissioning-of-purification-unit-at-fdca-flagship-plant",
+    "https://health.ec.europa.eu/latest-updates/commission-invests-development-innovative-therapeutics-against-respiratory-viruses-2026-09-11_en",
+    "https://chemanager-online.com/en/news/northway-biotech-opens-61-million-cell-therapy-and-personalized-medicine-cdmo",
+    "https://nature.com/articles/s41587-026-03316-9",
+    "https://worldbiogasassociation.org/member-press-release-opinion-piece-supporting-irelands-expanding-biogas-sector",
+    "https://bioenergy-news.com/news/czechias-biomethane-auction-oversubscribed-fourfold",
+    "https://biomassmagazine.com/articles/niutech-signs-agreement-with-global-energy-major-for-waste-plastic-pyrolysis-line-to-produce-saf",
+    "https://bioenergy-news.com/news/20862",
+    "https://chemanager-online.com/en/news/cordenpharma-invests-80-million-to-expand-sterile-injectable-capacity",
+    "https://chemanager-online.com/en/news/lonza-announces-addition-of-commercial-spray-drying-facility-at-bend-site",
+    "https://basf.com/sg/en/media/news-releases",
+    "https://greenqueen.com.hk/onego-bio-precision-fermentation-egg-high-protein-zen-waffles",
+    "https://vegconomist.com/food-and-beverage/egg-alternatives/onego-bio-moves-bioalbumen-packaged-breakfast-zen-waffles-supply-deal",
+    "https://ekonomim.com/sehirler/pelemir-projesi-gelisimine-devam-ediyor-2026-2027-hedefi-100-bin-dekar-haberi-917207",
+    "https://yesilekonomi.com/turkiye-yesil-fonu-diseraya-yatirim-yapti",
+    "https://biomassmagazine.com/articles/brimex-energy-becomes-the-first-rng-project-in-mexico-registered-on-the-cleancounts-registry",
+    "https://worldbiogasassociation.org/imo-net-zero-framework",
+    "https://bioenergy-news.com/news/gasum-opens-13th-biogas-filling-station-in-norway",
+    "https://aa.com.tr/tr/ekonomi/havacilik-ve-denizcilik-sektorunde-dusuk-karbonlu-yakit-arayisi-biyoyakita-yonelimi-artiriyor/4054081",
+    "https://renewable-carbon.eu/news/envalior-and-secara-collaborate-to-deliver-circular-pa6-for-automotive-applications-in-line-with-coming-regulations",
+    "https://newsroom.avantium.com/avantium-partners-with-sojitz-pla-net-to-drive-adoption-of-releaf-in-the-japanese-market",
+    "https://bioplasticsmagazine.com/en/news/meldungen/20260910-Compostable-healthcare-packaging-in-practice.php",
+    "https://bioenergy-news.com/news/noble-county-earns-first-in-state-bdo-zone-a-rating-for-corn-stover",
+    "https://bioplasticsmagazine.com/en/news/meldungen/20260907-Purtiso-plans-2027-pilot-trials-for-PU-recycling-process.php",
+    "https://cordis.europa.eu/article/id/467339-from-biowaste-to-precision-cancer-treatment",
+    "https://cell.com/chem-catalysis/abstract/S2667-1093(26)00196-X",
+    "https://greenqueen.com.hk/revo-foods-dairy-free-vegan-cottage-cheese-apricot-kernel-protein",
+    "https://vegconomist.com/retail-e-commerce/redefine-meat-lands-tesco-listing-award-winning-burgers-kofta-mix",
+    "https://vegconomist.com/products-launches/tempty-foods-launches-bulk-frozen-mycelium-chunks-danish-canteen-kitchens",
+    "https://vegconomist.com/products-launches/agrocorps-herbyvore-enters-protein-powder-category-pea-rice-blend",
+    "https://vegconomist.com/investments-finance/omg-groups-incoming-oat-milk-manufacturer-becomes-shareholder",
+    "https://vegconomist.com/products-launches/beyond-meat-adds-protein-powder-bars-vegetable-burger-direct-to-consumer-phytosphere-launch",
+    "https://cell.com/molecular-therapy-family/advances/fulltext/S3117-387X(26)00125-4",
+    "https://nature.com/articles/s41587-026-03323-w",
+    "https://cell.com/molecular-therapy-family/advances/fulltext/S3117-387X(26)00165-5",
+    "https://cell.com/molecular-therapy-family/nucleic-acids/fulltext/S2162-2531(26)00201-5",
+    "https://gov.uk/government/publications/amendments-to-approved-documents-l-energy-and-greenhouse-gas-emissions-and-f-ventilation-circular-042026/amendments-to-approved-documents-l-energy-and-greenhouse-gas-emissions-and-f-ventilation-circular-042026-letter",
+    "https://gov.uk/government/publications/trade-remedies-notice-registration-of-imports-of-hydrotreated-vegetable-oil-hvo-biodiesel-originating-from-the-united-states-of-america-usa/trade-remedies-notice-202627-rejection-of-the-tras-recommendation-to-apply-a-definitive-anti-subsidy-measure-on-hvo-biodiesel-originating-from-the",
+    "https://agfundernews.com/knip-bets-on-postbiotics-not-commodity-protein-as-it-scales-biomass-fermentation"
   ]
 }
