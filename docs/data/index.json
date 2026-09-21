@@ -1,5 +1,16 @@
 [
   {
+    "number": 8,
+    "hafta": "2026-H38",
+    "publication_date": "2026-09-21",
+    "coverage_start": "2026-09-13",
+    "coverage_end": "2026-09-20",
+    "lead_title": "Türkiye'nin hayvansal atıkları 2040'a kadar 10 milyar m3 biyometan potansiyeli taşıyor",
+    "story_count": 10,
+    "radar_count": 23,
+    "file": "data/arsiv/2026-H38.json"
+  },
+  {
     "number": 7,
     "hafta": "2026-H37",
     "publication_date": "2026-09-14",

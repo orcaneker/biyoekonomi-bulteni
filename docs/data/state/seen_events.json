@@ -1,5 +1,5 @@
 {
-  "issue_no": 7,
+  "issue_no": 8,
   "events": [
     {
       "baslik_ozet": "HAMR Energy, orman biyokütlesinden yakıt için ARENA'dan 32 milyon dolar aldı",
@@ -264,6 +264,50 @@
     {
       "baslik_ozet": "Onego Bio, hayvansal olmayan yumurta proteinini Zen Waffles'a tedarik edecek",
       "hafta": "2026-H37"
+    },
+    {
+      "baslik_ozet": "Türkiye'nin hayvansal atıkları 2040'a kadar 10 milyar m3 biyometan potansiyeli taşıyor",
+      "hafta": "2026-H38"
+    },
+    {
+      "baslik_ozet": "Türkiye, SHT-SAF talimatıyla havacılıkta 2030'a kadar %5 emisyon azaltım hedefi koydu",
+      "hafta": "2026-H38"
+    },
+    {
+      "baslik_ozet": "AB'de SAF arzı 2025'te 193 bin tondan 1,1 milyon tona çıkarak altı kat arttı",
+      "hafta": "2026-H38"
+    },
+    {
+      "baslik_ozet": "Bioweg, 35 milyon euroluk finansmanla Elsdorf'ta Avrupa'nın en büyük bakteriyel selüloz tesisini kuracak",
+      "hafta": "2026-H38"
+    },
+    {
+      "baslik_ozet": "Von der Leyen, biyometanı nükleer ve yenilenebilirlerle birlikte enerji bağımsızlığı aracı ilan etti",
+      "hafta": "2026-H38"
+    },
+    {
+      "baslik_ozet": "Dünya Bankası, Brezilya'nın enerji-yoğun sanayisi için 1,06 milyar dolarlık kredi paketini onayladı",
+      "hafta": "2026-H38"
+    },
+    {
+      "baslik_ozet": "WELTEC BIOPOWER, Madrid yakınında 60 GWh'lik biyometan tesisinin inşaatına başladı",
+      "hafta": "2026-H38"
+    },
+    {
+      "baslik_ozet": "Neste ve United Airlines, ABD ve Hollanda'da SAF tedarik anlaşmalarını uzattı",
+      "hafta": "2026-H38"
+    },
+    {
+      "baslik_ozet": "Kanadevia Inova, Hollandalı biyometan geliştiricisi BioValue'da kontrol hissesi aldı",
+      "hafta": "2026-H38"
+    },
+    {
+      "baslik_ozet": "Altı küresel tüketici şirketi, kağıt bazlı esnek ambalaj için PaperFlex Konsorsiyumu'nu kurdu",
+      "hafta": "2026-H38"
+    },
+    {
+      "baslik_ozet": "Novo Nordisk ve Anthropic, Claude ile yapay zeka destekli ilaç keşfinde iş birliği yapacak",
+      "hafta": "2026-H38"
     }
   ],
   "urls": [
@@ -557,6 +601,50 @@
     "https://cell.com/molecular-therapy-family/nucleic-acids/fulltext/S2162-2531(26)00201-5",
     "https://gov.uk/government/publications/amendments-to-approved-documents-l-energy-and-greenhouse-gas-emissions-and-f-ventilation-circular-042026/amendments-to-approved-documents-l-energy-and-greenhouse-gas-emissions-and-f-ventilation-circular-042026-letter",
     "https://gov.uk/government/publications/trade-remedies-notice-registration-of-imports-of-hydrotreated-vegetable-oil-hvo-biodiesel-originating-from-the-united-states-of-america-usa/trade-remedies-notice-202627-rejection-of-the-tras-recommendation-to-apply-a-definitive-anti-subsidy-measure-on-hvo-biodiesel-originating-from-the",
-    "https://agfundernews.com/knip-bets-on-postbiotics-not-commodity-protein-as-it-scales-biomass-fermentation"
+    "https://agfundernews.com/knip-bets-on-postbiotics-not-commodity-protein-as-it-scales-biomass-fermentation",
+    "https://aa.com.tr/en/energy/renewable/turkiyes-livestock-waste-offers-major-untapped-energy-potential/59703",
+    "https://dunya.com/ekonomi/turkiyenin-10-milyar-metrekupluk-gizli-enerji-kaynagi-haberi-840091",
+    "https://bioenergy-news.com/news/turkey-aims-to-unlock-10-bcm-of-annual-biomethane-production-by-2040",
+    "https://ekonomim.com/havacilik/bakan-uraloglu-acikladi-havacilikta-emisyonlar-yuzde-5-azaltilacak-haberi-918535",
+    "https://aa.com.tr/tr/ekonomi/bakan-uraloglundan-surdurulebilir-havacilikta-emisyon-azaltim-hedefi/4058594",
+    "https://transport.ec.europa.eu/news-events/news/new-report-shows-strong-progress-sustainable-aviation-fuel-saf-availability-across-eu-2026-09-17_en",
+    "https://chemanager-online.com/en/news/bioweg-to-build-europe-039-s-largest-bacterial-cellulose-plant",
+    "https://dunya.com/sirketler/vakifbanktan-dongusel-ekonomiye-10-milyar-tl-haberi-840153",
+    "https://yesilekonomi.com/vakifbank-dongusel-ekonomi-yatirimlarina-finansman-saglayacak",
+    "https://aa.com.tr/tr/ekonomi/sifir-atik-vakfi-ve-vakifbank-stratejik-isbirligi-protokolu-imzaladi/4057822",
+    "https://aa.com.tr/tr/ekonomi/alpladan-adanaya-10-milyon-avroluk-yeni-fabrika-yatirimi/4058792",
+    "https://dunya.com/surdurulebilir-dunya/ambalajda-yatirimin-rotasi-dongusel-uretim-haberi-840456",
+    "https://aa.com.tr/tr/ekonomi/alpla-izmirde-20-milyon-avroluk-fabrikayi-hizmete-aldi/4058921",
+    "https://luxembourg.representation.ec.europa.eu/actualites-et-evenements/actualites/2026-state-union-address-president-von-der-leyen-2026-09-16_en",
+    "https://bioenergy-news.com/news/von-der-leyen-positions-biomethane-as-europes-strategic-energy-independence-tool",
+    "https://worldbank.org/en/news/press-release/2026/09/15/world-bank-group-backs-transformation-of-energy-intensive-industries-in-brazil",
+    "https://bioenergy-news.com/news/weltec-biopower-begins-construction-on-60-gwh-spanish-biomethane-plant",
+    "https://biomassmagazine.com/articles/neste-and-united-airlines-extended-agreements-for-saf-supply-in-the-us-and-the-netherlands",
+    "https://bioenergy-news.com/news/kanadevia-inova-strengthens-northern-european-biogas-platform-with-biovalue-acquisition",
+    "https://ellenmacarthurfoundation.org/press-release-the-paperflex-consortium-launched-to-accelerate-paper-based-flexible-packaging-innovation",
+    "https://chemanager-online.com/en/news/novo-nordisk-and-anthropic-will-collaborate-on-drug-discovery-with-claude",
+    "https://dunya.com/is-dunyasi/asonun-teknoloji-ve-yesil-donusum-projeleri-erdogana-sunuldu-haberi-840469",
+    "https://bioenergy-news.com/news/veolia-opens-integrated-composting-and-biomass-facility-in-zaragoza",
+    "https://enerjigunlugu.net/ordunun-findik-kabuklarindan-komur-uretilecek-69803h.htm",
+    "https://bioenergy-news.com/news/woodchuck-opens-crowdfunding-as-ai-driven-waste-to-energy-model-scales",
+    "https://greenqueen.com.hk/greencovery-funding-upycled-cocoa-waste-fibre-extract-functional-ingredients",
+    "https://bioplasticsmagazine.com/en/news/meldungen/20260915-Kloeckner-Pentaplast-signs-PEF-capacity-reservation-agreement-with-Avantium.php",
+    "https://chemanager-online.com/de/news/europas-ziele-fuer-die-kreislaufwirtschaft-im-kunststoffbereich-erfordern-einen-innovationsfreundlichen-rahmen",
+    "https://vegconomist.com/politics-law/england-confirms-weekly-pulse-requirement-school-meals-from-2027",
+    "https://gov.uk/government/publications/food-standards-agency-business-committee-meeting-september-2026/regulatory-sandbox-report-for-cell-cultivated-products-fsa-business-committee",
+    "https://vegconomist.com/investments-finance/brazil-adds-alternative-proteins-treasury-backed-innovation-fund-auction",
+    "https://vegconomist.com/investments-finance/microlub-raises-10m-scale-water-based-fat-replacer-plant-based-reduced-fat-foods",
+    "https://greenqueen.com.hk/ayana-bio-zenfold-meati-foods-fermentation-assets-plant-cell-culture-acquisition",
+    "https://greenqueen.com.hk/dutch-plant-based-action-plan-netherlands-meer-plantaardige-voeding",
+    "https://greenqueen.com.hk/eu-research-and-innovation-strategy-fermentation-alternative-protein-funding",
+    "https://agfundernews.com/robigo-bio-eyes-commercialization-for-its-ag-biologicals-with-leaps-by-bayer-investment",
+    "https://agfundernews.com/exclusive-spearhead-bio-lands-oversubscribed-seed-round-for-faster-more-precise-gene-editing-tech",
+    "https://agfundernews.com/digital-ag-platform-xfarm-expands-to-sugarcane-biofuels-with-sibium-analytics-acquisition",
+    "https://investor.wedbush.com/wedbush/article/bizwire-2026-9-16-twist-bioscience-joins-lilly-tunelab-to-advance-antibody-drug-discovery",
+    "https://our-company.dsm-firmenich.com/en/our-company/news/trade-news/2026/dsm-firmenich-strengthens-commitment-to-indonesia-with-new-jakarta-office-and-karawang-manufacturing-expansion.html",
+    "https://tubitak.gov.tr/en/announcement/1832-green-transformation-industry-2026-2-call-open-applications",
+    "https://braskem.com/news-detail/braskem-achieves-more-than-two-thirds-of-its-2030-decarbonization-objective",
+    "https://bioenergy-news.com/news/building-carbon-removal-at-scale-carbonxs-biochar-strategy-in-bolivia",
+    "https://oceans-and-fisheries.ec.europa.eu/news/oyster-heaven-rebuilding-reefs-and-restoring-seas-2026-09-18_en"
   ]
 }
