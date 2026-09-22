@@ -27,7 +27,10 @@ def _env_yukle(dosya=".env"):
         return
     # errors="replace": .env'i Not Defteri ANSI olarak kaydederse Türkçe
     # karakterli yorum satırı yüzünden çökmesin — anahtarlar zaten ASCII.
-    with open(yol, encoding="utf-8", errors="replace") as f:
+    # utf-8-sig: Not Defteri "UTF-8 (BOM ile)" kaydederse dosyanın başındaki
+    # görünmez işaret İLK satırın değişken adına yapışır (﻿EXA_API_KEY)
+    # ve o anahtar sessizce yüklenmez. utf-8-sig bunu yutar.
+    with open(yol, encoding="utf-8-sig", errors="replace") as f:
         for satir in f:
             satir = satir.strip()
             if not satir or satir.startswith("#") or "=" not in satir:
