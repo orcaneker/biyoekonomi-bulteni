@@ -40,7 +40,8 @@ KULLANIM
 GEREKEN ANAHTARLAR
 ------------------
   EXA_API_KEY                      kaynak metinlerini yeniden çekmek için
-  OPENAI_API_KEY / ANTHROPIC_API_KEY   seçilen modele göre
+  OPENROUTER_API_KEY               openrouter: modelleri için (varsayılan)
+  OPENAI_API_KEY / ANTHROPIC_API_KEY   diğer sağlayıcılar seçilirse
   DATABASE_URL                     yalnızca --hafta / --geri-yaz kullanılırsa
 """
 
@@ -384,7 +385,8 @@ def main():
 
     # ── anahtar kontrolü — değerler ASLA ekrana basılmaz ──
     if args.kontrol:
-        for k in ("EXA_API_KEY", "OPENAI_API_KEY", "ANTHROPIC_API_KEY"):
+        for k in ("EXA_API_KEY", "OPENROUTER_API_KEY", "OPENAI_API_KEY",
+                  "ANTHROPIC_API_KEY"):
             v = os.environ.get(k, "")
             if not v or v == "BURAYA_YAPISTIR":
                 print(f"  {k:20} ✗ EKSİK")
@@ -430,7 +432,7 @@ def main():
         return
 
     if not args.model:
-        sys.exit("--model gerekli (ör. openai:gpt-5.6-terra)")
+        sys.exit("--model gerekli (ör. openrouter:anthropic/claude-sonnet-5)")
     if args.model not in FIYAT:
         print(f"⚠ {args.model} FIYAT tablosunda yok — maliyet raporlanamayacak")
     if args.effort:

@@ -80,8 +80,18 @@ AYARLAR = {
     "radar_min": 15,
     "radar_max": 30,
 
-    # LLM — sağlayıcı öneki zorunlu: "anthropic:..." veya "openai:..."
-    "model_triyaj": "anthropic:claude-haiku-4-5-20251001",
+    # LLM — sağlayıcı öneki zorunlu:
+    #   "openrouter:..." → OpenRouter geçidi (KURUMSAL HESAP, varsayılan)
+    #   "anthropic:..."  → doğrudan Anthropic (ANTHROPIC_API_KEY ile; yedek yol)
+    #   "openai:..."     → OpenAI
+    # ⚠ OpenRouter model adı org öneki + NOKTALI sürüm kullanır
+    # ("anthropic/claude-haiku-4.5"). Anthropic'in tarihli kimlikleri
+    # ("claude-haiku-4-5-20251001") OpenRouter'da yoktur → 404.
+    # Modeller BİLEREK aynı bırakıldı: triyaj Haiku 4.5, yazım Sonnet 5.
+    # Geçidi devre dışı bırakmak için (doğrudan Anthropic'e dönüş):
+    #   "model_triyaj": "anthropic:claude-haiku-4-5-20251001"
+    #   "model_yazim":  "anthropic:claude-sonnet-5"
+    "model_triyaj": "openrouter:anthropic/claude-haiku-4.5",
     # Yazım Sonnet 5'te (30 Tem 2026). Kısa geçmiş: Sonnet 4.6 → Luna → Sonnet 5.
     # Luna denendi ve BIRAKILDI: Türkçe akıcılığı iyiydi ama halüsinasyon oranı
     # yüksek, kaynaktaki birçok detayı atlıyordu.
@@ -91,20 +101,54 @@ AYARLAR = {
     #   · Yeni tokenizer aynı metni ~%30 daha fazla token sayar.
     #   · temperature/top_p/top_k ve budget_tokens 400 döndürür — llm.py bunları
     #     zaten göndermiyor, ek iş gerekmedi.
-    # Geri dönmek için: "anthropic:claude-sonnet-4-6"
-    "model_yazim": "anthropic:claude-sonnet-5",
+    # Geri dönmek için: "openrouter:anthropic/claude-sonnet-4.6"
+    "model_yazim": "openrouter:anthropic/claude-sonnet-5",
     # NOT: temperature parametresi BİLEREK gönderilmiyor (model uyumsuzluk deneyimi).
 
-    # OpenAI reasoning modelleri (gpt-5.6 ailesi) için akıl yürütme seviyesi:
-    # none | low | medium | high | xhigh | max
+    # AKIL YÜRÜTME SEVİYESİ — none | low | medium | high | xhigh | max
+    # ⚠ Bu ayar HEM OpenAI (reasoning_effort) HEM Anthropic (output_config.effort)
+    # modellerine gider. (Eski yorumda "Anthropic'te yok sayılır" yazıyordu —
+    # llm.py effort'u Sonnet 4.6+/5, Opus 4.5+ ve Fable'a GÖNDERİYOR. Haiku 4.5
+    # ve Sonnet 4.5 kabul etmediği için onlara gönderilmez.)
     # ⚠ Düşünme token'ları ÇIKTI fiyatından faturalanır — seviye yükseldikçe
-    # maliyet artar. "low" denendi: çıktı Sonnet'in ~%65'i kadar kaldı, yani
-    # kaynaktaki veriyi eleyerek kısaltıyordu. "medium" bu yüzden seçildi.
-    # REASONING_EFFORT ortam değişkeni bu ayarı ezer (deneme yaparken pratik).
-    # Anthropic modellerinde yok sayılır.
-    "reasoning_effort": "medium",
+    # maliyet artar.
+    # Geçmiş: gpt-5.6'da "low" denendi, çıktı Sonnet'in ~%65'i kadar kaldı
+    # (kaynaktaki veriyi eleyerek kısaltıyordu) → "medium" seçilmişti.
+    # 22 Eylül 2026: Sonnet 5 için "high"a çıkıldı. Gerekçe: bültenin işi
+    # İngilizce kaynaktan Türkçe haber üretmek — çeviri + veri aktarımı
+    # doğruluğa duyarlı bir iş ve Anthropic'in kendi varsayılanı da "high".
+    # Yazım adımında düşünme payı artar; max_tokens_yazim_reasoning (96K)
+    # bunun için zaten geniş bırakılmıştı.
+    # REASONING_EFFORT ortam değişkeni bu ayarı EZER — tek çalışmayı
+    # etkilediği için A/B denemesinde config'i kurcalamaya gerek yok:
+    #   $env:REASONING_EFFORT="medium"; python yeniden_yaz.py --hafta ...
+    "reasoning_effort": "high",
     "triyaj_batch": 40,              # tek seferde triyaja giden aday sayısı
-    "model_birlestirme": "anthropic:claude-sonnet-5",   # olay birlestirme
+    # OpenRouter hangi altyapıyı kullansın? (yalnızca openrouter: modelleri)
+    # Aynı Claude modeli birden çok altyapıdan sunuluyor: Anthropic'in kendi
+    # API'si, Amazon Bedrock, Google Vertex, Azure. Model aynı; parametre
+    # desteği ve bölge farklı olabilir.
+    #
+    # ⚠ 22 Eylül 2026 — KURUMSAL HESAP ANTHROPIC UCUNU GÖRMÜYOR.
+    # {"order": ["anthropic"], "allow_fallbacks": False} ile denendi, istek
+    # 404 "No endpoints found" döndü. OpenRouter'ın yönlendirme hunisi:
+    #     8 uç → bölgesel ek ücret filtresi: 4 → guardrails filtresi: 2
+    #          → fallback filtresi (bizim sabitlememiz): 0
+    # Yani hesabın guardrails/bölge kuralları Anthropic'in kendi ucunu zaten
+    # eliyor; sabitleme de geriye kalanı sıfırlıyordu. Sabitleme kaldırılınca
+    # isteği AMAZON BEDROCK karşıladı.
+    #
+    # Bu yüzden: Bedrock TERCİH edilir ama yedeğe izin verilir. allow_fallbacks
+    # True olmalı — False, hesabın izin verdiği uçlar değişince yine sıfırlar.
+    #   None → seçimi tamamen OpenRouter yapar
+    #   {"order": ["amazon-bedrock"], "allow_fallbacks": True} → tercih + yedek
+    # ⚠ OPENROUTER_SAGLAYICI ortam değişkeni bu ayarı EZER (Render'da kod
+    #   değiştirmeden denemek için):
+    #       serbest                      → blok hiç gönderilmez
+    #       amazon-bedrock,google-vertex → bu tercih sırası (yedeğe izinli)
+    #       sadece:anthropic             → katı sabitleme (yedek yok)
+    "openrouter_saglayici": {"order": ["amazon-bedrock"], "allow_fallbacks": True},
+    "model_birlestirme": "openrouter:anthropic/claude-sonnet-5",   # olay birlestirme
     # ^ girdi kucuk (yalnizca olay ozetleri) -> guclu model ucuza gelir
     "max_tokens_birlestirme": 4000,
     "max_tokens_triyaj": 8000,
@@ -144,6 +188,11 @@ AYARLAR = {
 # ============================================================
 # FİYATLANDIRMA (USD / 1 milyon token) — maliyet TAHMİNİ için
 # ⚠ Fiyatlar değişebilir; console.anthropic.com / platform.openai.com'dan doğrula.
+# ⚠ openrouter: satırları YEDEKTİR — OpenRouter yanıtta gerçek maliyeti
+# (usage.cost) döndürür ve llm.py onu kullanır. Bu satırlar yalnızca cost
+# gelmediğinde (ör. akışlı istekte) tahmin için devreye girer.
+# OpenRouter token fiyatını sağlayıcıdan aynen geçirir; kendi komisyonunu
+# (%5,5, min $0.80) kredi SATIN ALIRKEN alır, istek başına eklemez.
 # ============================================================
 FIYAT = {
     "anthropic:claude-sonnet-4-6":         {"in": 3.00, "out": 15.00, "cache_w": 3.75, "cache_r": 0.30},
@@ -162,6 +211,12 @@ FIYAT = {
     # tanıtım fiyatı $2/$10. Aşağıda LİSTE fiyatı yazılı — maliyet raporu böylece
     # olduğundan düşük görünmez. Tanıtım bitince satır zaten doğru kalır.
     "anthropic:claude-sonnet-5":           {"in": 3.00, "out": 15.00, "cache_w": 3.75, "cache_r": 0.30},
+    # ── OpenRouter geçidi (22 Eylül 2026'da openrouter.ai/api/v1/models'dan okundu) ──
+    # Sonnet 5 burada tanıtım fiyatıyla listeli ($2/$10); tanıtım bitince
+    # Anthropic liste fiyatına ($3/$15) döner — o gün bu satırı güncelle.
+    "openrouter:anthropic/claude-sonnet-5":  {"in": 2.00, "out": 10.00, "cache_w": 2.50, "cache_r": 0.20},
+    "openrouter:anthropic/claude-haiku-4.5": {"in": 1.00, "out":  5.00, "cache_w": 1.25, "cache_r": 0.10},
+    "openrouter:anthropic/claude-sonnet-4.6": {"in": 3.00, "out": 15.00, "cache_w": 3.75, "cache_r": 0.30},
 }
 
 # ============================================================

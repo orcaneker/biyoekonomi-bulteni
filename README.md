@@ -20,7 +20,7 @@ LLM katmanı, cron **Render**'da, yayın **GitHub Pages** üzerinden.
 ```
 config.py            Sorgular (12), kategori taksonomisi (12), kaynaklar, ayarlar
 prompts.py           LLM promptları — triyaj + yazım
-llm.py               Sağlayıcı soyutlama (anthropic:… / openai:…)
+llm.py               Sağlayıcı soyutlama (openrouter:… / anthropic:… / openai:…)
 pipeline.py          CRON 1 (Pazar 12:00 TSİ): tarama → taslak → Neon → davet
 publish.py           CRON 2 (Pazartesi 08:00 TSİ): yayın veya hatırlatma
 db.py                Neon Postgres şeması + CRUD + hakem yönetimi
@@ -57,7 +57,8 @@ Repo'yu Render'a bağlayın — `render.yaml` otomatik algılanır (Blueprint).
 | Anahtar | Zorunlu | Not |
 |---|---|---|
 | `EXA_API_KEY` | ✅ (cron 1) | exa.ai |
-| `ANTHROPIC_API_KEY` | ✅ (cron 1) | |
+| `OPENROUTER_API_KEY` | ✅ (cron 1) | openrouter.ai/settings/keys — `sk-or-v1-…`; anahtara kredi limiti koyun |
+| `ANTHROPIC_API_KEY` | — | yedek: `config.py`'de `anthropic:` modeline dönülürse |
 | `OPENAI_API_KEY` | — | sadece `openai:` modeli denenirse |
 | `DATABASE_URL` | ✅ (hepsi) | Neon |
 | `RESEND_API_KEY` | ✅ (hepsi) | resend.com |
@@ -75,14 +76,38 @@ sonra cron'ların environment'ına yazın.
 `config.py`:
 
 ```python
-"model_triyaj": "anthropic:claude-haiku-4-5-20251001",   # vars.
-"model_yazim":  "anthropic:claude-sonnet-4-6",           # vars.
+"model_triyaj": "openrouter:anthropic/claude-haiku-4.5",   # vars.
+"model_yazim":  "openrouter:anthropic/claude-sonnet-5",    # vars.
+# Doğrudan Anthropic'e dönüş (ANTHROPIC_API_KEY gerekir):
+# "model_triyaj": "anthropic:claude-haiku-4-5-20251001",
+# "model_yazim":  "anthropic:claude-sonnet-5",
 # OpenAI denemesi: OPENAI_API_KEY tanımlayıp şunları yazın:
 # "model_triyaj": "openai:gpt-5-mini",
 # "model_yazim":  "openai:gpt-5.1",
 ```
 
 Yeni model kullanırken `FIYAT` sözlüğüne fiyatını da ekleyin (maliyet raporu için).
+
+### OpenRouter geçidi hakkında
+
+Modeller OpenRouter'ın **Anthropic-uyumlu** ucundan (`/api/v1/messages`)
+çağrılır; OpenAI formatındaki `/chat/completions` kullanılmaz. Böylece istek
+gövdesi (system bloğu, `cache_control`, `output_config.effort`) ve akış
+olayları Anthropic'in kendi şemasında kalır — `llm.py` tek fonksiyonla iki
+yolu birlikte kullanır.
+
+Dikkat edilecekler:
+
+* Model adı **org öneki + noktalı sürüm**: `anthropic/claude-haiku-4.5`.
+  Anthropic'in tarihli kimlikleri (`…-20251001`) OpenRouter'da yoktur → 404.
+* İstek gövdesine `provider: {"order": ["anthropic"], "allow_fallbacks": false}`
+  eklenir: aynı model Bedrock/Vertex üzerinden de sunulabiliyor ve orada
+  `output_config` reddedilebiliyor. Anthropic erişilemezse istek hata verir,
+  sessizce başka altyapıya kaymaz.
+* Maliyet raporunda "(gerçek)" yazan satırlar OpenRouter'ın `usage.cost`
+  değeridir; "(tahmin)" satırları `FIYAT` tablosundan hesaplanır.
+* Bağlantı testi (bülteni etkilemez, ~$0.01):
+  `python denemeler/araclar/openrouter_testi.py`
 
 ## Haftalık akış
 

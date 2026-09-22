@@ -137,8 +137,9 @@
 #   haber (Öne Çıkanlar) : 8-10  ·  derin olay: 14  ·  radar: 15-30
 #   pencere: 7 gün (yetersizse 14) ·  brief: 5 madde
 #   yayım: Pazartesi 08:00 TSİ  ·  taslak: Pazar 12:00 TSİ
-#   model_triyaj: anthropic:claude-haiku-4-5-20251001
-#   model_yazim:  anthropic:claude-sonnet-4-6
+#   model_triyaj: openrouter:anthropic/claude-haiku-4.5
+#   model_yazim:  openrouter:anthropic/claude-sonnet-5
+#   (çağrılar OpenRouter'ın Anthropic-uyumlu ucundan geçer; modeller aynı)
 #   site_url: https://orcaneker.github.io/biyoekonomi-bulteni
 #
 # ⚠ İlk yayın öncesi: AYARLAR["sayi_no_sabit"] = None yapın
