@@ -1,5 +1,5 @@
 {
-  "issue_no": 8,
+  "issue_no": 9,
   "events": [
     {
       "baslik_ozet": "HAMR Energy, orman biyokütlesinden yakıt için ARENA'dan 32 milyon dolar aldı",
@@ -308,6 +308,58 @@
     {
       "baslik_ozet": "Novo Nordisk ve Anthropic, Claude ile yapay zeka destekli ilaç keşfinde iş birliği yapacak",
       "hafta": "2026-H38"
+    },
+    {
+      "baslik_ozet": "Montauk Renewables, Kuzey Karolina'da 200 milyon dolarlık biyogaz tesisini açtı",
+      "hafta": "2026-H39"
+    },
+    {
+      "baslik_ozet": "AB, Almanya-Polonya sınırındaki biyokütle bölge ısıtmasına 81,4 milyon euro fon ayırdı",
+      "hafta": "2026-H39"
+    },
+    {
+      "baslik_ozet": "Avusturya, BECCS'e kapı açmak için 15 yıllık CO2 depolama yasağını kaldırıyor",
+      "hafta": "2026-H39"
+    },
+    {
+      "baslik_ozet": "Twelve, Moses Lake e-SAF tesisini büyütmek için 45 milyon dolarlık kredi sağladı",
+      "hafta": "2026-H39"
+    },
+    {
+      "baslik_ozet": "ORLEN, Płock rafinerisinde biyoyakıt ortak-hidrotreatment sertifikası aldı",
+      "hafta": "2026-H39"
+    },
+    {
+      "baslik_ozet": "Biyogüvenlik Kurulu, Livzym'in ihraç amaçlı beta-laktoglobulin üretimine onay verdi",
+      "hafta": "2026-H39"
+    },
+    {
+      "baslik_ozet": "Türkiye Yeşil Taksonomisi Yönetmeliği yürürlüğe girdi",
+      "hafta": "2026-H39"
+    },
+    {
+      "baslik_ozet": "2026 CBE JU çağrısına 272 proje başvurusu ve 1,65 milyar euro talep geldi",
+      "hafta": "2026-H39"
+    },
+    {
+      "baslik_ozet": "Verbio, Bitterfeld'de dünyanın ilk endüstriyel ölçekli etenoliz tesisini açıyor",
+      "hafta": "2026-H39"
+    },
+    {
+      "baslik_ozet": "AB'de RED III'ün kademeli kullanım ilkesi odun biyokütlesi için bağlayıcı hale geliyor",
+      "hafta": "2026-H39"
+    },
+    {
+      "baslik_ozet": "İtalya, AB'de PPWR istisnasıyla kompostlanabilir tek kullanımlık ambalaja izin veren ilk ülke oldu",
+      "hafta": "2026-H39"
+    },
+    {
+      "baslik_ozet": "SABA üyeleri, Infinium'un Project Atlas e-SAF tesisinden sertifika almayı taahhüt etti",
+      "hafta": "2026-H39"
+    },
+    {
+      "baslik_ozet": "Worley, D-CRBN'in Antwerp'teki yenilenebilir sentez gazı tesisi için mühendislik sözleşmesi aldı",
+      "hafta": "2026-H39"
     }
   ],
   "urls": [
@@ -645,6 +697,46 @@
     "https://tubitak.gov.tr/en/announcement/1832-green-transformation-industry-2026-2-call-open-applications",
     "https://braskem.com/news-detail/braskem-achieves-more-than-two-thirds-of-its-2030-decarbonization-objective",
     "https://bioenergy-news.com/news/building-carbon-removal-at-scale-carbonxs-biochar-strategy-in-bolivia",
-    "https://oceans-and-fisheries.ec.europa.eu/news/oyster-heaven-rebuilding-reefs-and-restoring-seas-2026-09-18_en"
+    "https://oceans-and-fisheries.ec.europa.eu/news/oyster-heaven-rebuilding-reefs-and-restoring-seas-2026-09-18_en",
+    "https://dunya.com/enerji/mavi-ufkun-3-milyar-dolarlik-gucu-haberi-841319",
+    "https://aa.com.tr/tr/ekonomi/turkiyenin-ilk-denizustu-ruzgar-yekasi-3-milyar-dolarlik-yatirim-potansiyeli-tasiyor/4067367",
+    "https://bioenergy-news.com/news/eu-allocates-e81-4-million-to-cross-border-biomass-district-heating-expansion",
+    "https://biomassmagazine.com/articles/eu-awards-funding-to-biomass-fueled-district-heating-project-serving-cities-in-poland-germany",
+    "https://bioenergy-news.com/news/austria-opens-door-for-beccs-development",
+    "https://biofuelsdigest.com/twelve-secures-up-to-45-million-to-expand-e-fuels-plant",
+    "https://renewable-carbon.eu/news/twelve-secures-45-million-financing-for-co2-based-clean-fuels-plant",
+    "https://bioenergy-news.com/news/montauk-renewables-opens-200-million-biogas-facility-in-north-carolina",
+    "https://biomassmagazine.com/tag/advanced-biofuels/1",
+    "https://gidahatti.com/haber/28865019/biyoguvenlik-kurulundan-yeni-gdo-izni",
+    "https://aa.com.tr/tr/ekonomi/beta-laktoglobulin-sut-proteini-ihracat-sartiyla-uretilebilecek/4067278",
+    "https://dunya.com/ekonomi/yesil-finansmana-yeni-filtre-gelir-ve-yatirim-orani-olculecek-haberi-841233",
+    "https://gidahatti.com/haber/28865051/yesile-boyama-onlenecek",
+    "https://yesilekonomi.com/yesil-taksonomi-yonetmeligi-yayimlandi",
+    "https://cbe.europa.eu/news/2026-cbe-ju-call-attracts-272-project-proposals",
+    "https://bioenergy-news.com/news/verbio-expands-biomethane-production",
+    "https://bioenergy-news.com/news/red-iii-cascading-principle-to-take-effect-for-woody-biomass",
+    "https://bioplasticsnews.com/2026/09/25/italy-defies-brussels-on-compostable-plastics",
+    "https://biofuelsdigest.com/saba-members-to-buy-safc-from-infinium-energys-project-atlas",
+    "https://renewable-carbon.eu/news/worley-awarded-engineering-contract-for-d-crbns-renewable-syngas-demonstration-plant",
+    "https://greenqueen.com.hk/elian-barcelona-cofides-funding-spain-plant-based-protein-eu-sovereignty",
+    "https://vegconomist.com/startups-accelerators-incubators/react-foods-launches-dkk-4-2m-to-pilot-farmland-free-yeast-protein-denmark",
+    "https://vegconomist.com/manufacturing-technology/sunopta-lifts-network-capacity-10-35m-texas-line-for-plant-based-milks-creamers",
+    "https://policy.trade.ec.europa.eu/news/commission-acts-against-imports-pea-protein-china-2026-09-25_en",
+    "https://vegconomist.com/manufacturing-technology/genscripts-bestzyme-completes-100-ton-sweet-protein-line-china",
+    "https://renewable-carbon.eu/news/evonik-breaks-ground-on-biotechnology-expansion-in-slovakia",
+    "https://bioenergy-news.com/news/german-utility-targets-biomethane-in-duisburg-chp-upgrade",
+    "https://bioenergy-news.com/news/vorn-acquires-five-italian-biogas-plants",
+    "https://bioenergy-news.com/news/new-brunswick-biogas-plant-cleared-for-construction",
+    "https://gasworld.com/story/waga-energy-to-build-rng-production-plant-in-illinois/2260397.article",
+    "https://bioenergy-news.com/news/delorean-and-opal-advance-biogas-project-at-victoria-paper-mill",
+    "https://braskem.com/usa/news-detail/braskem-achieves-more-than-two-thirds-of-its-2030-decarbonization-target",
+    "https://biofuelsdigest.com/green-fuel-forward-expands-partnership-structure",
+    "https://prnewswire.co.uk/news-releases/velocys-expands-fischer-tropsch-reactor-roadmap-with-alphacore-800-for-larger-scale-saf-and-e-fuels-projects-302883899.html",
+    "https://bioplasticsnews.com/2026/09/23/eni-priolo-pyrolysis-plant-a-risk-analysis",
+    "https://biofuelsdigest.com/lactips-smartsolve-expand-their-biobased-packaging-pact",
+    "https://aa.com.tr/tr/ekonomi/surdurulebilir-tarim-ve-akilli-ulasim-projelerine-yesil-donusum-destegi/4065894",
+    "https://aa.com.tr/tr/ekonomi/turkiye-tarim-gida-sektorunun-istihdam-ve-kirsal-refah-icin-donusum-projesi-basladi/4068958",
+    "https://dunya.com/ihracat/turkiyenin-en-buyuk-propan-tanki-ceyhana-kuruluyor-haberi-841521",
+    "https://ekonomim.com/sirketler/pasifik-holdingin-sirketi-aden-pelletten-giresunda-rekor-ihracat-haberi-920459"
   ]
 }
