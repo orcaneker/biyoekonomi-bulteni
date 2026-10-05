@@ -1,5 +1,5 @@
 {
-  "issue_no": 9,
+  "issue_no": 10,
   "events": [
     {
       "baslik_ozet": "HAMR Energy, orman biyokütlesinden yakıt için ARENA'dan 32 milyon dolar aldı",
@@ -360,6 +360,42 @@
     {
       "baslik_ozet": "Worley, D-CRBN'in Antwerp'teki yenilenebilir sentez gazı tesisi için mühendislik sözleşmesi aldı",
       "hafta": "2026-H39"
+    },
+    {
+      "baslik_ozet": "AB'de 2025'te SAF arzı 1,1 milyon tona çıkarak %2 hedefini aştı",
+      "hafta": "2026-H40"
+    },
+    {
+      "baslik_ozet": "Özbekistan'da 6,1 milyar dolarlık e-SAF kompleksi mühendislik aşamasına geçti",
+      "hafta": "2026-H40"
+    },
+    {
+      "baslik_ozet": "AB'nin Biyoteknoloji Yasası endüstriyel biyoteknolojiyi kapsayacak şekilde genişliyor",
+      "hafta": "2026-H40"
+    },
+    {
+      "baslik_ozet": "OMV Petrom, Romanya'da 250 bin ton/yıl kapasiteli SAF/HVO ünitesini inşa ediyor",
+      "hafta": "2026-H40"
+    },
+    {
+      "baslik_ozet": "Hindistan, Kandla'da 150 ton/gün kapasiteli ilk liman tipi e-metanol tesisinin temelini attı",
+      "hafta": "2026-H40"
+    },
+    {
+      "baslik_ozet": "Genentech, Hillsboro, Oregon'da 750 milyon dolarlık üretim tesisinin temelini attı",
+      "hafta": "2026-H40"
+    },
+    {
+      "baslik_ozet": "Biotrend ve Uniper, Türkiye'den Avrupa'ya biyometan ihracatı için mutabakat imzaladı",
+      "hafta": "2026-H40"
+    },
+    {
+      "baslik_ozet": "Danone ve Michelin'in 20 milyon euroluk fermantasyon tesisi Fransa'da açıldı",
+      "hafta": "2026-H40"
+    },
+    {
+      "baslik_ozet": "Horizon Europe'a 2026-2027 için 500 milyon euro ek kaynak ayrıldı",
+      "hafta": "2026-H40"
     }
   ],
   "urls": [
@@ -737,6 +773,51 @@
     "https://aa.com.tr/tr/ekonomi/surdurulebilir-tarim-ve-akilli-ulasim-projelerine-yesil-donusum-destegi/4065894",
     "https://aa.com.tr/tr/ekonomi/turkiye-tarim-gida-sektorunun-istihdam-ve-kirsal-refah-icin-donusum-projesi-basladi/4068958",
     "https://dunya.com/ihracat/turkiyenin-en-buyuk-propan-tanki-ceyhana-kuruluyor-haberi-841521",
-    "https://ekonomim.com/sirketler/pasifik-holdingin-sirketi-aden-pelletten-giresunda-rekor-ihracat-haberi-920459"
+    "https://ekonomim.com/sirketler/pasifik-holdingin-sirketi-aden-pelletten-giresunda-rekor-ihracat-haberi-920459",
+    "https://biofuelsdigest.com/uzbekistans-6-1-billion-saf-project-enters-design-phase",
+    "https://biofuelsdigest.com/eu-aviation-safety-agency-report-shows-2026-saf-supply-exceeds-mandatory-target",
+    "https://labiotech.eu/in-depth/biospain-2026",
+    "https://biofuelsdigest.com/omv-petrom-advances-saf-hvo-project-at-petrobrazi",
+    "https://biofuelsdigest.com/india-lays-foundation-for-e-methanol-plant-at-kandla",
+    "https://newsroom.avantium.com/avantium-publishes-half-year-2026-financial-statements-and-completes-worley-contractual-close-out-for-fdca-flagship-plant",
+    "https://valleytimes.news/2026/09/29/genentech-breaks-ground-on-750m-hillsboro-manufacturing-expansion",
+    "https://markets.ft.com/data/announce/detail?dockey=600-202609281800BIZWIRE_USPRX____20260928_BW061898-1",
+    "https://aa.com.tr/tr/ekonomi/turkiye-atiklardan-uretilen-yenilenebilir-gazi-avrupaya-tasimaya-hazirlaniyor/4076784",
+    "https://bloomberght.com/borsa/hisse/biotrend-cevre-v/kap-haberi/348985",
+    "https://yesilekonomi.com/biotrend-ile-ugc-biyometan-is-birligi-icin-gorusmelere-basladi",
+    "https://ekonomim.com/sehirler/biotrend-ve-uniper-turkiyenin-biyometan-potansiyeli-icin-isbirligine-gidiyor-haberi-922197",
+    "https://vegconomist.com/fermentation/danone-michelins-20m-fermentation-scale-up-site-opens-outside-projects-france",
+    "https://greenqueen.com.hk/biotech-open-platform-danone-michelin-precision-fermentation-facility",
+    "https://euraxess.ec.europa.eu/worldwide/india/news/eu500-million-additional-funding-horizon-europe-2026-2027",
+    "https://biofuelsdigest.com/sustainable-aviation-buyers-alliance-members-back-next-gen-saf-production-with-long-term-purchase-commitments",
+    "https://biofuelsdigest.com/petrobras-forecasts-an-intense-increase-in-saf-production",
+    "https://biofuelsdigest.com/uniper-and-arcadia-efuels-sign-long-term-agreement-to-accelerate-aviation-decarbonization",
+    "https://biofuelsdigest.com/coureurs-de-bois-haffner-energy-incad-find-the-right-value-equation-for-the-forest-bioeconomy",
+    "https://biofuelsdigest.com/q8-aviation-signs-e-saf-dupply-deal-with-verso-energys-dezir-project-in-normandy",
+    "https://gov.uk/government/news/belfast-cleantech-firm-catagen-takes-off-with-government-backed-finance",
+    "https://biofuelsdigest.com/renewable-naptha-from-uco-co-produced-with-saf-at-cosmo-oil-refinery",
+    "https://biofuelsdigest.com/ineratec-and-ramboll-expand-esaf-production-collaboration",
+    "https://biofuelsdigest.com/haffner-energy-launches-sb-hefa-process-to-produce-renewable-diesel-saf",
+    "https://biofuelsdigest.com/xcf-global-sells-10m-of-renewable-diesel-in-august-from-new-rise-renewables-reno",
+    "https://bioenergy-news.com/news/nord-gas-solutions-to-build-polands-first-biolng-plant",
+    "https://bioenergy-news.com/news/polands-first-agricultural-biomethane-plant-begins-grid-injection",
+    "https://bioenergy-news.com/news/waga-energy-grows-rng-output-31-as-landfill-gas-portfolio-expands",
+    "https://bioenergy-news.com/news/moore-county-secures-bdo-zone-a-rating-for-woody-biomass",
+    "https://bioenergy-news.com/news/belledune-joint-venture-secures-landmark-biomass-supply-agreement-with-nb-power",
+    "https://bioenergy-news.com/news/valmet-to-supply-biomass-technology-for-louisiana-green-fuels-project",
+    "https://biofuelsdigest.com/anaergia-lands-ad-project-with-hungarys-largest-duck-producer",
+    "https://biofuelsdigest.com/hyorc-completes-off-site-modular-build-of-first-commercial-waste-to-methanol-plant-bound-for-porto",
+    "https://agfundernews.com/%F0%9F%8E%A5-meatly-bets-on-20000-liter-scale-to-prove-cultivated-meat-economics",
+    "https://greenqueen.com.hk/those-vegan-cowboys-precision-fermentation-casein-sports-nutrition-funding",
+    "https://biofuelsdigest.com/brazil-approves-next-generation-biocontrol-production-for-soybeans-and-corn",
+    "https://gov.uk/government/publications/cell-cultivated-products-regulatory-authorisation/cell-cultivated-products-regulatory-authorisation",
+    "https://vegconomist.com/politics-law/dutch-parliament-votes-fold-plant-based-action-plan-into-nitrogen-food-policy",
+    "https://ekonomim.com/kose-yazisi/desanin-yeni-sayfasinda-toskana-ve-biyomalzeme-var-olmazi-oldurmak/921104",
+    "https://bioplasticsmagazine.com/en/news/meldungen/20261002-Recyclable-paper-sachet-with-drop-in-biobased-coating-for-a-liquid-product.php",
+    "https://bioenergy-news.com/news/ecostrat-new-energy-risk-and-yilkins-form-alliance-to-de-risk-biomass-project-financing",
+    "https://vegconomist.com/agriculture-agribusiness/zymofix-moves-solid-state-fermentation-industrial-scale-6m-belgian-plant",
+    "https://vegconomist.com/manufacturing-technology/gea-build-25m-manufacturing-drying-hub-next-to-wisconsin-new-food-center",
+    "https://biofuelsdigest.com/eu-project-uncover-to-demonstrate-six-co2-conversion-technologies",
+    "https://biofuelsdigest.com/skyrenu-technologies-delivers-first-batch-of-efuels-and-echemicals-based-on-university-of-sherbrooke-tech"
   ]
 }
