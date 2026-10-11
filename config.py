@@ -90,11 +90,18 @@ AYARLAR = {
     # ⚠ OpenRouter model adı org öneki + NOKTALI sürüm kullanır
     # ("anthropic/claude-haiku-4.5"). Anthropic'in tarihli kimlikleri
     # ("claude-haiku-4-5-20251001") OpenRouter'da yoktur → 404.
-    # Modeller BİLEREK aynı bırakıldı: triyaj Haiku 4.5, yazım Sonnet 5.
     # Geçidi devre dışı bırakmak için (doğrudan Anthropic'e dönüş):
-    #   "model_triyaj": "anthropic:claude-haiku-4-5-20251001"
+    #   "model_triyaj": "anthropic:<Haiku 5.5 API kimliği — Anthropic
+    #                    belgelerinden doğrula; OpenRouter slug'ı orada geçmez>"
     #   "model_yazim":  "anthropic:claude-sonnet-5"
-    "model_triyaj": "openrouter:anthropic/claude-haiku-4.5",
+    # Triyaj Haiku 5.5'te (11 Eki 2026; öncesi Haiku 4.5). Notlar:
+    #   · Fiyat Haiku 4.5'in onda biri ($0.10/$0.50 — $1/$5 idi).
+    #   · Haiku 4.5'ten FARKLI olarak effort KABUL EDİYOR (llm.py kapısı
+    #     sürüme bakıyor) ve temperature kabul ETMİYOR (zaten gönderilmiyor).
+    #   · 5 ailesinde adaptif düşünme varsayılan açık → düşünme token'ları
+    #     max_tokens_triyaj bütçesinden düşer; bütçe bu yüzden genişletildi.
+    # Geri dönmek için: "openrouter:anthropic/claude-haiku-4.5"
+    "model_triyaj": "openrouter:anthropic/claude-haiku-5.5",
     # Yazım Sonnet 5'te (30 Tem 2026). Kısa geçmiş: Sonnet 4.6 → Luna → Sonnet 5.
     # Luna denendi ve BIRAKILDI: Türkçe akıcılığı iyiydi ama halüsinasyon oranı
     # yüksek, kaynaktaki birçok detayı atlıyordu.
@@ -111,8 +118,9 @@ AYARLAR = {
     # AKIL YÜRÜTME SEVİYESİ — none | low | medium | high | xhigh | max
     # ⚠ Bu ayar HEM OpenAI (reasoning_effort) HEM Anthropic (output_config.effort)
     # modellerine gider. (Eski yorumda "Anthropic'te yok sayılır" yazıyordu —
-    # llm.py effort'u Sonnet 4.6+/5, Opus 4.5+ ve Fable'a GÖNDERİYOR. Haiku 4.5
-    # ve Sonnet 4.5 kabul etmediği için onlara gönderilmez.)
+    # llm.py effort'u Sonnet 4.6+/5, Opus 4.5+, Haiku 5+ ve Fable'a GÖNDERİYOR.
+    # Haiku 4.5 ve Sonnet 4.5 kabul etmediği için onlara gönderilmez.)
+    # ⚠ 11 Eki 2026'dan beri triyaj (Haiku 5.5) da bu seviyeyle çalışır.
     # ⚠ Düşünme token'ları ÇIKTI fiyatından faturalanır — seviye yükseldikçe
     # maliyet artar.
     # Geçmiş: gpt-5.6'da "low" denendi, çıktı Sonnet'in ~%65'i kadar kaldı
@@ -154,7 +162,12 @@ AYARLAR = {
     "model_birlestirme": "openrouter:anthropic/claude-sonnet-5",   # olay birlestirme
     # ^ girdi kucuk (yalnizca olay ozetleri) -> guclu model ucuza gelir
     "max_tokens_birlestirme": 4000,
-    "max_tokens_triyaj": 8000,
+    # 8000 → 32000 (11 Eki 2026, Haiku 5.5'e geçiş): Haiku 4.5 düşünmüyordu,
+    # 40 adaylık partinin JSON'u 8K'ya sığıyordu. Haiku 5.5'te düşünme token'ları
+    # da bu bütçeden düşer; kesilen JSON partiyi SESSİZCE kaybettirir (yalnızca
+    # "Triyaj partisi başarısız" satırı düşer). Tavan maliyet değil — yalnızca
+    # üretilen token faturalanır.
+    "max_tokens_triyaj": 32000,
     "max_tokens_yazim": 48000,       # 14 haberin TAMAMI yazıldığı için GENİŞ olmalı.
                                      # ⚠ Düşük tutulursa çıktı JSON tamamlanmadan kesilir.
     # Akıl yürüten modellerde (gpt-5.x, Sonnet 5, Opus 4.7+, Fable 5) "düşünme"
@@ -219,6 +232,8 @@ FIYAT = {
     # Anthropic liste fiyatına ($3/$15) döner — o gün bu satırı güncelle.
     "openrouter:anthropic/claude-sonnet-5":  {"in": 2.00, "out": 10.00, "cache_w": 2.50, "cache_r": 0.20},
     "openrouter:anthropic/claude-haiku-4.5": {"in": 1.00, "out":  5.00, "cache_w": 1.25, "cache_r": 0.10},
+    # 11 Eki 2026'da openrouter.ai/api/v1/models'dan okundu
+    "openrouter:anthropic/claude-haiku-5.5": {"in": 0.10, "out":  0.50, "cache_w": 0.125, "cache_r": 0.01},
     "openrouter:anthropic/claude-sonnet-4.6": {"in": 3.00, "out": 15.00, "cache_w": 3.75, "cache_r": 0.30},
 }
 

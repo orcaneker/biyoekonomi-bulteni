@@ -10,7 +10,7 @@ Exa → triyaj (Haiku) → yazım (Sonnet) → Neon taslak → hakem incelemesi 
 ```
 
 Eski Perplexity + Netlify tabanlı sistemin yerini alan yeni mimari:
-arama motoru **Exa AI**, triyaj **Claude Haiku 4.5**, yazım **Claude Sonnet 4.6**,
+arama motoru **Exa AI**, triyaj **Claude Haiku 5.5**, yazım **Claude Sonnet 5**,
 yayın öncesi **onay katmanı** (Neon + Resend + FastAPI inceleme arayüzü), tüm
 derin olayların yazılması (**hakem takası için yedek havuz**), sağlayıcı-bağımsız
 LLM katmanı, cron **Render**'da, yayın **GitHub Pages** üzerinden.
@@ -76,10 +76,10 @@ sonra cron'ların environment'ına yazın.
 `config.py`:
 
 ```python
-"model_triyaj": "openrouter:anthropic/claude-haiku-4.5",   # vars.
+"model_triyaj": "openrouter:anthropic/claude-haiku-5.5",   # vars. (öncesi haiku-4.5)
 "model_yazim":  "openrouter:anthropic/claude-sonnet-5",    # vars.
 # Doğrudan Anthropic'e dönüş (ANTHROPIC_API_KEY gerekir):
-# "model_triyaj": "anthropic:claude-haiku-4-5-20251001",
+# "model_triyaj": "anthropic:<Haiku 5.5 API kimliği>",
 # "model_yazim":  "anthropic:claude-sonnet-5",
 # OpenAI denemesi: OPENAI_API_KEY tanımlayıp şunları yazın:
 # "model_triyaj": "openai:gpt-5-mini",
@@ -98,7 +98,7 @@ yolu birlikte kullanır.
 
 Dikkat edilecekler:
 
-* Model adı **org öneki + noktalı sürüm**: `anthropic/claude-haiku-4.5`.
+* Model adı **org öneki + noktalı sürüm**: `anthropic/claude-haiku-5.5`.
   Anthropic'in tarihli kimlikleri (`…-20251001`) OpenRouter'da yoktur → 404.
 * İstek gövdesine `provider: {"order": ["anthropic"], "allow_fallbacks": false}`
   eklenir: aynı model Bedrock/Vertex üzerinden de sunulabiliyor ve orada
