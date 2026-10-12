@@ -1,5 +1,5 @@
 {
-  "issue_no": 10,
+  "issue_no": 11,
   "events": [
     {
       "baslik_ozet": "HAMR Energy, orman biyokütlesinden yakıt için ARENA'dan 32 milyon dolar aldı",
@@ -396,6 +396,46 @@
     {
       "baslik_ozet": "Horizon Europe'a 2026-2027 için 500 milyon euro ek kaynak ayrıldı",
       "hafta": "2026-H40"
+    },
+    {
+      "baslik_ozet": "İtalya, EMBRACED modelini genişleterek 11 biyorafineriye 109 milyon euro ayırdı",
+      "hafta": "2026-H41"
+    },
+    {
+      "baslik_ozet": "Verbio, Bitterfeld'de dünyanın ilk büyük ölçekli etenolisis tesisini devreye aldı",
+      "hafta": "2026-H41"
+    },
+    {
+      "baslik_ozet": "Bayer, Ohio'da 2,2 milyar dolarlık modüler ilaç üretim tesisi kuracak",
+      "hafta": "2026-H41"
+    },
+    {
+      "baslik_ozet": "CIP, İtalya'da Via Verde biyometan platformunda nihai yatırım kararı aldı",
+      "hafta": "2026-H41"
+    },
+    {
+      "baslik_ozet": "İrlanda, Cork'ta 32 milyon euroluk biyometan şebeke enjeksiyon tesisini açtı",
+      "hafta": "2026-H41"
+    },
+    {
+      "baslik_ozet": "Algiecel, Kalundborg'da mikroalg üretimini beş katına çıkaran tesis açtı",
+      "hafta": "2026-H41"
+    },
+    {
+      "baslik_ozet": "UCB, Georgia'da yaklaşık 2 milyar dolarlık biyolojik ilaç kampüsü için sahayı tahsis etti",
+      "hafta": "2026-H41"
+    },
+    {
+      "baslik_ozet": "AFYREN, biyobazlı propiyonik asitle ilk kozmetik ürünün küresel lansmanını yaptı",
+      "hafta": "2026-H41"
+    },
+    {
+      "baslik_ozet": "SunBridge, Hindistan'ın Seoni kentinde ticari tahıl etanolü üretimine başladı",
+      "hafta": "2026-H41"
+    },
+    {
+      "baslik_ozet": "Sterling Pharma, Deeside'de 500 litrelik GMP ADC üretim süitini tamamladı",
+      "hafta": "2026-H41"
     }
   ],
   "urls": [
@@ -818,6 +858,50 @@
     "https://vegconomist.com/agriculture-agribusiness/zymofix-moves-solid-state-fermentation-industrial-scale-6m-belgian-plant",
     "https://vegconomist.com/manufacturing-technology/gea-build-25m-manufacturing-drying-hub-next-to-wisconsin-new-food-center",
     "https://biofuelsdigest.com/eu-project-uncover-to-demonstrate-six-co2-conversion-technologies",
-    "https://biofuelsdigest.com/skyrenu-technologies-delivers-first-batch-of-efuels-and-echemicals-based-on-university-of-sherbrooke-tech"
+    "https://biofuelsdigest.com/skyrenu-technologies-delivers-first-batch-of-efuels-and-echemicals-based-on-university-of-sherbrooke-tech",
+    "https://cbe.europa.eu/achievements/embraced-successful-demonstrator-triggers-eur109-million-investment-wave-italy",
+    "https://bioplasticsmagazine.com/en/news/meldungen/20261007-Verbio-starts-industrial-production-of-renewable-chemicals.php",
+    "https://biofuelsdigest.com/verbio-commissioned-worlds-first-large-scale-ethenolysis-plant-based-on-rme",
+    "https://chemanager-online.com/en/news/bayer-to-invest-2-2-billion-in-new-us-pharma-manufacturing-site",
+    "https://bioenergy-news.com/news/copenhagen-infrastructure-partners-backs-via-verde-to-enter-italian-biomethane-market",
+    "https://biofuelsdigest.com/cip-invests-in-italian-via-verde-biomethane-platform-with-20-projects",
+    "https://bioenergy-news.com/news/ireland-opens-first-of-its-kind-e32m-biomethane-grid-injection-hub-in-cork",
+    "https://biofuelsdigest.com/irelands-central-grid-injection-facility-can-meet-12-of-2030-target",
+    "https://vegconomist.com/algae-microalgae-seaweed/algiecel-scales-microalgae-output-nearly-fivefold-novonesis-kalundborg-enzyme-site",
+    "https://bioplasticsmagazine.com/en/news/meldungen/20261008-Avantium-starts-up-its-Flagship-Plant-with-the-first-batch-of-FDCA-produced.php",
+    "https://renewable-carbon.eu/news/carbios-reports-first-half-2026-results",
+    "https://ucb-usa.com/stories-media/UCB-U-S-News/detail/article/ucb-dedicates-site-new-us-biologics-manufacturing-0",
+    "https://markets.ft.com/data/announce/detail?dockey=600-202610091558PR_NEWS_USPRX____CL68153-1",
+    "https://renewable-carbon.eu/news/global-launch-of-cosmetic-product-based-on-afyrens-100-natural-propionic-acid",
+    "https://biofuelsdigest.com/hapag-lloyd-completes-first-biomethanol-bunkering-in-south-korea",
+    "https://biofuelsdigest.com/first-batch-of-products-from-worlds-largest-green-methanol-project-shipped-out",
+    "https://biofuelsdigest.com/sunbridge-starts-commercial-grain-ethanol-production",
+    "https://chemanager-online.com/en/news/sterling-expands-adc-manufacturing-capacity-and-capabilities",
+    "https://news.cision.com/se/astrazeneca/r/astrazeneca-opens-new-global-strategic-r-d-centre-in-kendall-square--cambridge--massachusetts,c4404837",
+    "https://news.cision.com/se/astrazeneca/r/astrazeneca-completes-equity-investment-in-summit-therapeutics,c4404407",
+    "https://marketchameleon.com/PressReleases/i/2388446/SRRK/scholar-rock-resubmits-apitegromab-marketing-authorisation-a",
+    "https://finance.yahoo.com/healthcare/articles/vaxcyte-reports-positive-topline-data-100000000.html",
+    "https://biofuelsdigest.com/biotech-open-platform-builds-e20-million-bridge-from-lab-to-industrial-scale",
+    "https://cbe.europa.eu/achievements/estonian-pilot-global-biomaterials-platform-fibenol-builds-sweetwoods",
+    "https://renewable-carbon.eu/news/zymofix-to-build-flagship-microbial-manufacturing-plant-as-it-takes-solid-state-fermentation-to-industrial-scale",
+    "https://renewable-carbon.eu/news/spiber-launches-spiber-biofoundry-opening-the-biomanufacturing-platform-behind-brewed-protein-to-partners",
+    "https://agfundernews.com/%F0%9F%8E%A5-verley-scales-blg-to-2000000-l-as-precision-fermentation-enters-its-prove-it-phase",
+    "https://greenqueen.com.hk/edonia-spirulina-protein-microalgae-edo-mince-funding",
+    "https://renewable-carbon.eu/news/unlocking-europes-bioeconomy-new-eu-study-highlights-major-potential-of-bio-based-industries-and-biotechnology-for-europes-green-transition",
+    "https://bioenergy-news.com/news/eba-identifies-five-regulatory-barriers-holding-back-european-biogas-sector",
+    "https://ebb-eu.org/news/a-more-resilient-europe-needs-an-enduring-transport-target-under-the-renewable-energy-directive",
+    "https://biofuelsdigest.com/qantas-and-virgin-float-passing-saf-costs-onto-passengers",
+    "https://biofuelsdigest.com/indias-readiness-for-saf-at-52-boeing-says",
+    "https://gov.uk/government/news/332m-to-protect-public-from-future-epidemics-and-pandemics",
+    "https://renewable-carbon.eu/news/eni-and-petronas-explore-innovative-biofuel-solutions",
+    "https://biofuelsdigest.com/indonesia-plans-1m-hectares-of-sugarcane-for-e20",
+    "https://renewable-carbon.eu/news/moeve-launches-construction-of-the-first-phase-of-europes-largest-green-hydrogen-project",
+    "https://bioenergy-news.com/news/toyota-tsusho-and-kbi-launch-indonesian-biomethane-venture",
+    "https://bioenergy-news.com/news/metacon-wins-eu-funding-for-biomethane-to-hydrogen-pilot-in-crete",
+    "https://bioenergy-news.com/news/vietnam-starts-building-mekong-delta-rice-husk-biomass-fuel-hub",
+    "https://biofuelsdigest.com/indian-minister-launches-commercial-use-of-bio-based-biodegradable-pla-plastic",
+    "https://research-and-innovation.ec.europa.eu/news/all-research-and-innovation-news/commission-earmarks-eur65-million-safeguard-critical-data-life-sciences-and-biotechnology-2026-10-06_en",
+    "https://labiotech.eu/partner/biologics-testing-europe-merck-darmstadt",
+    "https://unite.ai/xtalpi-unveils-kodexia-a-closed-loop-ai-platform-for-sirna-discovery"
   ]
 }

@@ -1,754 +1,795 @@
 {
   "issue": {
-    "number": 10,
-    "hafta": "2026-H40",
-    "publication_date": "2026-10-05",
-    "coverage_start": "2026-09-27",
-    "coverage_end": "2026-10-04",
+    "number": 11,
+    "hafta": "2026-H41",
+    "publication_date": "2026-10-12",
+    "coverage_start": "2026-10-04",
+    "coverage_end": "2026-10-11",
     "window_days": 7,
     "audio": {
-      "url": "assets/audio/2026-H40.mp3",
-      "duration_sec": 47,
+      "url": "assets/audio/2026-H41.mp3",
+      "duration_sec": 57,
       "voice": "lxZLq5dcyw12UangGJgN",
-      "chars": 611,
-      "generated_at": "2026-10-05"
+      "chars": 772,
+      "generated_at": "2026-10-12"
     }
   },
   "brief": [
     {
-      "text": "Avrupa Komisyonu, Horizon Europe programına 2026-2027 için 500 milyon euro ek kaynak ayırdı.",
-      "slug": "horizon-europe-a-2026-2027-icin-500-milyon-euro-ek-kaynak-ayrildi"
+      "text": "İtalya, EMBRACED modelini esas alarak 11 yeni biyorafineri için Ulusal Kurtarma Planı kapsamında 109 milyon euro ayırdı.",
+      "slug": "italya-embraced-modelini-genisleterek-11-biyorafineriye-109-milyon-eur"
     },
     {
-      "text": "Özbekistan'da Allied Biofuels'in 6,1 milyar dolarlık e-SAF kompleksi mühendislik tasarım aşamasına geçti.",
-      "slug": "ozbekistan-da-6-1-milyar-dolarlik-e-saf-kompleksi-muhendislik-asamasin"
+      "text": "Bayer, Ohio'da modüler ilaç üretim kampüsüne 2,2 milyar dolar yatıracağını, ilk modülün 2031'de açılacağını duyurdu.",
+      "slug": "bayer-ohio-da-2-2-milyar-dolarlik-moduler-ilac-uretim-tesisi-kuracak"
     },
     {
-      "text": "Avantium, Hollanda'daki dünyanın ilk ticari ölçekli FDCA tesisinde ilk üretim partisini gerçekleştirdi.",
-      "slug": "hindistan-kandla-da-150-ton-gun-kapasiteli-ilk-liman-tipi-e-metanol-te"
+      "text": "Fransız greentech şirketi AFYREN, biyobazlı propiyonik asitle formüle edilen ilk kozmetik ürününü piyasaya sürdü.",
+      "slug": "afyren-biyobazli-propiyonik-asitle-ilk-kozmetik-urunun-kuresel-lansman"
     },
     {
-      "text": "AB'de 2025'te SAF arzı 1,1 milyon tona çıkarak zorunlu %2 hedefini aştı.",
-      "slug": "ab-de-2025-te-saf-arzi-1-1-milyon-tona-cikarak-2-hedefini-asti"
+      "text": "Verbio, Bitterfeld'de yaklaşık 100 milyon euroluk yatırımla yılda 60 bin ton kapasiteli ilk büyük ölçekli etenolisis tesisini devreye aldı.",
+      "slug": "verbio-bitterfeld-de-dunyanin-ilk-buyuk-olcekli-etenolisis-tesisini-de"
     },
     {
-      "text": "Türkiye'nin Biotrend'i ile Almanya'nın Uniper'ı biyometan ihracatı için mutabakat imzaladı.",
-      "slug": "biotrend-ve-uniper-turkiye-den-avrupa-ya-biyometan-ihracati-icin-mutab"
+      "text": "Copenhagen Infrastructure Partners, İtalya'daki Via Verde biyometan platformu için nihai yatırım kararı aldı; 20 proje yılda 1 TWh üretecek.",
+      "slug": "cip-italya-da-via-verde-biyometan-platformunda-nihai-yatirim-karari-al"
     }
   ],
   "metrics": {
-    "aciklanan_yatirim_usd_milyon": 7090,
-    "proje_sayisi": 9,
-    "politika_gelismesi": 2,
-    "kapsanan_ulke": 9
+    "aciklanan_yatirim_usd_milyon": 4200,
+    "proje_sayisi": 10,
+    "politika_gelismesi": null,
+    "kapsanan_ulke": 10
   },
   "lead": {
-    "id": "eu-saf-supply-2025-exceeds-target",
-    "slug": "ab-de-2025-te-saf-arzi-1-1-milyon-tona-cikarak-2-hedefini-asti",
+    "id": "embraced-italy-biorefineries-109m",
+    "slug": "italya-embraced-modelini-genisleterek-11-biyorafineriye-109-milyon-eur",
     "image": {
-      "url": "https://airportindustry-news.com/wp-content/uploads/sites/2/2025/05/Government-Introduces-New-Measures-to-Accelerate-SAF-Adoption.jpg",
+      "url": "https://www.cbe.europa.eu/sites/default/files/styles/cbe_ju_rounded_image_switcher/public/2026-10/EMBRACED%20thumbnail_0.png?itok=FxCgoejD",
       "type": "hakem",
-      "credit": "airportindustry-news.com"
+      "credit": "cbe.europa.eu"
     },
-    "score": 9,
+    "score": 8,
     "secim": "one_cikan",
-    "title": "AB'de 2025'te SAF arzı 1,1 milyon tona çıkarak %2 hedefini aştı",
-    "detail": "EASA'nın 2026 ReFuelEU Aviation Yıllık Teknik Raporu'na göre AB havayolu yakıt tedarikçileri 2025'te Birlik havalimanlarında 39,3 milyon ton havacılık yakıtı tedarik etti. Bunun 1,1 milyon tonu, yani %2,8'i sürdürülebilir havacılık yakıtından (SAF) oluştu. Bu oran, 2025'te uygulamaya giren %2'lik asgari zorunlu SAF payını aştı.\n\n2025 verileri, Avrupa'da SAF arzında büyük bir artışa işaret ediyor. Arz, 2024'teki 193 bin tondan 2025'te 1,1 milyon tona çıktı; bu, zorunluluk yürürlüğe girmeden önceki yılın yaklaşık altı katı bir hacme denk geliyor. SAF, 27 AB üye ülkesindeki 121 Birlik havalimanında tedarik edildi.\n\nBirlik havalimanlarının %79'u yıl içinde SAF aldı. Bu oran 2024'te sadece 33 Birlik havalimanıyla sınırlıydı. Hesaplamalara göre SAF'ın geleneksel jet yakıtı yerine kullanılması, Birlik havalimanlarında 2025'te sera gazı emisyonlarını 3,77 milyon ton azalttı.",
+    "title": "İtalya, EMBRACED modelini genişleterek 11 biyorafineriye 109 milyon euro ayırdı",
+    "detail": "Circular Bio-based Europe Ortak Girişimi (CBE JU) tarafından desteklenen EMBRACED projesi, bebek bezi, kadın hijyen ürünü ve inkontinans pedi gibi emilici hijyen ürünlerini (AHP) geri dönüştürmeyi hedefledi. Bu atık akımı uzun süre geri dönüştürülemez kabul edildi. Avrupa'da yılda yaklaşık 8,5 milyon ton AHP atığı oluşuyor ve bunun büyük kısmı yakılıyor veya düzenli depolama alanlarına gönderiliyor.\n\nProje, bu atığın bir biyorafineri sürecinden geçirilerek biyobazlı malzemeye, gübreye ve biyoplastiğe dönüştürülebileceğini kanıtladı. Pilot tesisin etkisi fabrika sınırlarını aştı. EMBRACED, endüstriyel ölçekte işleyen bir döngüsel ekonomi modeli göstererek İtalyan hükümetine biyobazlı sanayinin büyütülmesi için somut bir yol haritası sundu; hükümet de bu yol haritasını uygulamaya koydu.\n\nİtalya'nın Ulusal Kurtarma ve Dayanıklılık Planı, EMBRACED modelini yeni bölgelere ve atık akımlarına yaymak amacıyla ülke çapında 11 yeni biyorafineri inşası için 109 milyon euronun üzerinde kaynak ayırdı. Bu biyorafinerilerin ilki Temmuz 2025'te Treviso'da açıldı. EMBRACED proje temsilcisi Marco Mattiello, 109 milyon euroluk tahsisatın biyorafineri altyapısını genişleteceğini, modeli farklı atık akımlarına taşıyacağını ve biyoyakıt, biyoplastik ile biyomalzeme üretimini çeşitlendireceğini belirtti. Mattiello, hükümetin bu adımla sanayi inovasyonunu artırmayı, yatırım çekmeyi ve yeşil teknolojilerde rekabetçiliği güçlendirmeyi hedeflediğini aktardı.\n\nTeknoloji tedarikçisi i-Foria, AHP atığından selüloz, plastik ve polimeri ayrıştıran ön işleme sürecini geliştirmeye devam etti. Bu ilerleme sayesinde İtalya, 20 milyon kişiye hizmet veren kaynağında ayrıştırılmış AHP toplama sistemini devreye aldı. Ülke ayrıca dünyanın ilk AHP Atık Sonu kararnamesini kabul ederek bu alanda Avrupa'nın öncüsü konumuna geldi. i-Foria kurucusu Marcello Somma, bir sonraki adımın biyorafineri konseptini tüm kentsel biyoatığı kapsayacak şekilde genişletmek olduğunu söyledi.\n\nFosil yakıtlara ve ithal hammaddeye bağımlılığı azaltarak, EMBRACED gibi projeler biyorafinerilerin Avrupa'nın dayanıklılığını ve enerji bağımsızlığını güçlendirebileceğini gösteriyor. Proje, tesislerin kurulduğu bölgelerde biyoteknoloji, atık yönetimi ve imalat alanlarında istihdam yaratıyor.",
     "source": {
-      "url": "https://biofuelsdigest.com/eu-aviation-safety-agency-report-shows-2026-saf-supply-exceeds-mandatory-target",
-      "name": "biofuelsdigest.com",
-      "tier": 2,
-      "type": "trade_press",
-      "domain": "biofuelsdigest.com",
+      "url": "https://cbe.europa.eu/achievements/embraced-successful-demonstrator-triggers-eur109-million-investment-wave-italy",
+      "name": "cbe.europa.eu",
+      "tier": 1,
+      "type": "official",
+      "domain": "cbe.europa.eu",
       "primary": true
     },
-    "excerpt": "EASA'nın raporuna göre 2025'te AB'de sürdürülebilir havacılık yakıtı (SAF) arzı 1,1 milyon tona ulaştı. Bu rakam, ReFuelEU Havacılık düzenlemesinin öngördüğü %2'lik asgari payı aşarak %2,8'e karşılık geldi. Arz, 2024'teki 193 bin tondan altı kat büyüdü.",
-    "capacity": "1,1 milyon ton SAF (39,3 milyon ton toplam havacılık yakıtının %2,8'i)",
-    "category": "biyoyakit",
-    "maturity": "operational",
+    "excerpt": "AB destekli EMBRACED gösterim tesisinin başarısı, İtalya'nın Ulusal Kurtarma ve Dayanıklılık Planı kapsamında 11 yeni biyorafineri için 109 milyon euroluk yatırım dalgasını tetikledi. Avrupa'da yılda yaklaşık 8,5 milyon ton emilici hijyen ürünü atığı üretiliyor ve bu atığın büyük kısmı yakılıyor veya düzenli depolama alanına gönderiliyor.",
+    "capacity": null,
+    "category": "atik-donusum",
+    "maturity": "funded",
     "companies": [
-      "EASA"
+      "i-Foria"
     ],
     "countries": [
-      "European Union"
+      "Italy"
     ],
-    "event_key": "eu-saf-supply-2025-exceeds-target",
-    "investment": null,
+    "event_key": "embraced-italy-biorefineries-109m",
+    "investment": {
+      "currency": "EUR",
+      "amount_original": 109,
+      "amount_usd_million": null,
+      "public_support_usd_million": null
+    },
     "value_chain": [
-      "urun-uretim",
-      "kullanim"
+      "biyokutle",
+      "atik-geri-donusum",
+      "urun-uretim"
     ],
     "neden_onemli": null,
-    "technologies": null,
-    "subcategories": [
-      "SAF",
-      "ReFuelEU"
+    "technologies": [
+      "biyorafineri",
+      "ön işleme (pre-treatment)"
     ],
-    "published_date": "2026-09-29",
+    "subcategories": [
+      "AHP geri dönüşümü",
+      "biorafineri",
+      "döngüsel ekonomi"
+    ],
+    "published_date": "2026-10-06",
     "supporting_sources": []
   },
   "stories": [
     {
-      "id": "uzbekistan-allied-biofuels-saf-complex",
-      "slug": "ozbekistan-da-6-1-milyar-dolarlik-e-saf-kompleksi-muhendislik-asamasin",
+      "id": "verbio-bitterfeld-ethenolysis-commissioned",
+      "slug": "verbio-bitterfeld-de-dunyanin-ilk-buyuk-olcekli-etenolisis-tesisini-de",
       "image": {
-        "url": "https://timesca.com/wp-content/uploads/2026/09/5300847507606810387.jpg",
-        "type": "hakem",
-        "credit": "timesca.com"
-      },
-      "score": 9,
-      "secim": "one_cikan",
-      "title": "Özbekistan'da 6,1 milyar dolarlık e-SAF kompleksi mühendislik aşamasına geçti",
-      "detail": "Özbekistan'ın batısındaki Harezm bölgesinde, 6,1 milyar dolarlık bir sürdürülebilir havacılık yakıtı (SAF) kompleksi planlanıyor. The Times of Central Asia'nın haberine göre proje, mühendislik tasarım aşamasına girdi.\n\nProjenin geliştiricisi Allied Biofuels, inşaata geçiş yönünde nihai yatırım kararını (FID) 2027'nin birinci çeyreğinde verecek. Şirket, bu kararı mühendislik aşamasını tamamladıktan sonra açıklamayı planlıyor.\n\nSinopec, projede ön uç mühendislik tasarımı (FEED), sistem entegrasyonu, detay mühendisliği ve maliyet geliştirme çalışmalarından sorumlu.\n\nAllied Biofuels ile Sinopec, mühendislik sözleşmesini Haziran ayında Taşkent Uluslararası Yatırım Forumu'nda imzaladı. Habere göre anlaşma, proje ilerlerse mühendislik, tedarik ve inşaat (EPC) sözleşmesine dönüşecek şekilde yapılandırıldı.\n\nTopsoe ve Sasol, yenilenebilir hidrojen ve yakalanan karbon kullanılarak üretilen elektro-sentetik sürdürülebilir havacılık yakıtı (e-SAF) için teknoloji sağlıyor. Plug Power'ın hidrojen üretimi için komplekse 2,4 GW'a kadar elektrolizör sistemi tedarik etmesi bekleniyor.\n\nAllied Biofuels, kompleksin tam kapasitede yıllık yaklaşık 160 bin ton SAF üretmesini bekliyor. Tesis ayrıca yılda 257 bin ton e-SAF ve 5 bin ton yenilenebilir dizel üretecek.",
-      "source": {
-        "url": "https://biofuelsdigest.com/uzbekistans-6-1-billion-saf-project-enters-design-phase",
-        "name": "biofuelsdigest.com",
-        "tier": 2,
-        "type": "trade_press",
-        "domain": "biofuelsdigest.com",
-        "primary": true
-      },
-      "excerpt": "Özbekistan'ın Harezm bölgesinde planlanan 6,1 milyar dolarlık sürdürülebilir havacılık yakıtı (SAF) kompleksi mühendislik tasarım aşamasına girdi. Geliştirici Allied Biofuels, nihai yatırım kararını (FID) 2027'nin birinci çeyreğinde verecek. Tesis tam kapasitede yıllık 257 bin ton e-SAF üretmeyi hedefliyor.",
-      "capacity": "160 bin ton/yıl SAF, 257 bin ton/yıl e-SAF, 5 bin ton/yıl yenilenebilir dizel",
-      "category": "biyoyakit",
-      "maturity": "demonstration",
-      "companies": [
-        "Allied Biofuels",
-        "Sinopec",
-        "Topsoe",
-        "Sasol",
-        "Plug Power"
-      ],
-      "countries": [
-        "Uzbekistan"
-      ],
-      "event_key": "uzbekistan-allied-biofuels-saf-complex",
-      "investment": {
-        "currency": "USD",
-        "amount_original": 6.1,
-        "amount_usd_million": 6100,
-        "public_support_usd_million": null
-      },
-      "value_chain": [
-        "donusum-fermantasyon",
-        "urun-uretim"
-      ],
-      "neden_onemli": null,
-      "technologies": [
-        "e-SAF",
-        "elektroliz"
-      ],
-      "subcategories": [
-        "SAF",
-        "e-SAF"
-      ],
-      "published_date": "2026-09-29",
-      "supporting_sources": []
-    },
-    {
-      "id": "eu-biotech-act-industrial-focus",
-      "slug": "ab-nin-biyoteknoloji-yasasi-endustriyel-biyoteknolojiyi-kapsayacak-sek",
-      "image": {
-        "url": "https://www.labiotech.eu/wp-content/uploads/2026/10/antonio-gabola-nh3rDHdApPE-unsplash.jpg",
-        "type": "og",
-        "credit": "labiotech.eu"
-      },
-      "score": 8,
-      "secim": "one_cikan",
-      "title": "AB'nin Biyoteknoloji Yasası endüstriyel biyoteknolojiyi kapsayacak şekilde genişliyor",
-      "detail": "Bilbao'da düzenlenen BIOSPAIN 2026 konferansında Avrupa Biyoteknoloji Yasası tartışmaların merkezinde yer aldı. İspanya biyoteknoloji derneği AseBio, konferansın ilk iki gününde ana sahnede yasaya ayrılan iki oturum düzenledi. Oturumlardan biri yasanın sağlık biyoteknolojisini hedefleyen ilk bölümüne, diğeri endüstriyel biyoteknoloji ve biyomanüfaktürü kapsayacak yakında gelecek Biyoteknoloji Yasası II'ye odaklandı.\n\nAvrupa Komisyonu verilerine göre Avrupa, dünyanın önde gelen biyoteknoloji bilimsel yayınlarının %21'ini üretiyor. Ancak sağlık biyoteknolojisindeki küresel risk sermayesi yatırımından aldığı pay yalnızca %7; bu oran ABD için %63, Çin için %14. 2019-2025 arasında halka arz gerçekleştiren 67 AB biyoteknoloji şirketinden 66'sı birlik dışındaki borsalarda listelenmeyi tercih etti.\n\nKomisyon tarafından Aralık 2025'te önerilen Yasa'nın ilk bölümü finansmana erişimin iyileştirilmesini, Ar-Ge ile üretimin bağlanmasını ve düzenlemenin sadeleştirilmesini hedefliyor. 2026'da beklenen ikinci öneri, bu yaklaşımı sağlık alanının dışına taşıyarak endüstriyel biyoteknoloji ve biyomanüfaktüre genişletecek. İspanya PERTE Öncü Sağlık komiseri Raquel Yotti, bilimsel kalitenin temel sorun olmadığını, asıl eksikliklerin parçalı altyapı ve sermayeye erişimde görüldüğünü belirtti.\n\nKomisyon, AB ile ABD biyoteknoloji sektörleri arasındaki yıllık yatırım farkını yaklaşık 40 milyar euro olarak hesaplıyor. Bu açığı kapatmak için Avrupa, ulusal ve özel sermayeyi birleştiren bir Sağlık Biyoteknolojisi Yatırım Pilotu önerdi. İspanya Sanayi Stratejisi ve KOBİ'ler Genel Müdürü Miguel Gómez-Pavón, tartışmayı değer zincirinin ilerisine taşıdı.",
-      "source": {
-        "url": "https://labiotech.eu/in-depth/biospain-2026",
-        "name": "labiotech.eu",
-        "tier": 2,
-        "type": "trade_press",
-        "domain": "labiotech.eu",
-        "primary": true
-      },
-      "excerpt": "BIOSPAIN 2026'da gündeme gelen Avrupa Biyoteknoloji Yasası'nın ikinci bölümü, kapsamı endüstriyel biyoteknoloji ve biyomanüfaktüre genişletecek. Avrupa Komisyonu, AB ve ABD biyoteknoloji sektörleri arasındaki yıllık yatırım farkını yaklaşık 40 milyar euro olarak hesaplıyor. 2019-2025 arasında halka açılan 67 AB biyoteknoloji şirketinden 66'sı birlik dışındaki borsalarda listelendi.",
-      "capacity": null,
-      "category": "politika",
-      "maturity": "announced",
-      "companies": [
-        "AseBio"
-      ],
-      "countries": [
-        "European Union",
-        "Spain"
-      ],
-      "event_key": "eu-biotech-act-industrial-focus",
-      "investment": null,
-      "value_chain": [
-        "urun-uretim"
-      ],
-      "neden_onemli": null,
-      "technologies": null,
-      "subcategories": [
-        "Biyoteknoloji Yasası",
-        "endüstriyel biyoteknoloji"
-      ],
-      "published_date": "2026-10-02",
-      "supporting_sources": []
-    },
-    {
-      "id": "omv-petrom-petrobrazi-saf-hvo",
-      "slug": "omv-petrom-romanya-da-250-bin-ton-yil-kapasiteli-saf-hvo-unitesini-ins",
-      "image": {
-        "url": "https://bioenergybusiness.com/wp-content/uploads/2026/09/OMV-Petrom-Petrobrazi-SAF-HVO-Project.jpg",
-        "type": "hakem",
-        "credit": "bioenergybusiness.com"
-      },
-      "score": 8,
-      "secim": "one_cikan",
-      "title": "OMV Petrom, Romanya'da 250 bin ton/yıl kapasiteli SAF/HVO ünitesini inşa ediyor",
-      "detail": "Romanya'da OMV Petrom, Petrobrazi rafinerisinde yeni sürdürülebilir yakıt üretim ünitesinin inşaatını ilerlettiğini duyurdu. Yatırım, rafineriyi bölgenin sürdürülebilir yakıtlarda ilk büyük üreticisi konumuna getirecek. Şirket, temellerin atıldığını ve kolonlar ile reaktörler dahil ana işleme ekipmanının monte edilip kurulduğunu bildirdi.\n\n250 bin ton/yıl kapasiteye sahip yeni ünite, sürdürülebilir havacılık yakıtı (SAF) ve yenilenebilir dizel üretecek. Bu yakıtlar, havacılık ve ağır taşımacılık gibi elektrifikasyonu zor sektörlerde emisyon azaltımına katkı sunabilecek.\n\nYeni SAF/HVO ünitesi, yenilenebilir hammaddeler olan bitkisel yağları ve kullanılmış kızartma yağlarını yeşil hidrojen yardımıyla işleyecek. Şirket, çıkan ürünlerin konvansiyonel yakıtlara benzer nitelikte olacağını ancak yaşam döngüsü emisyonlarının önemli ölçüde daha düşük olacağını belirtti.",
-      "source": {
-        "url": "https://biofuelsdigest.com/omv-petrom-advances-saf-hvo-project-at-petrobrazi",
-        "name": "biofuelsdigest.com",
-        "tier": 2,
-        "type": "trade_press",
-        "domain": "biofuelsdigest.com",
-        "primary": true
-      },
-      "excerpt": "OMV Petrom, Petrobrazi rafinerisinde 250 bin ton/yıl kapasiteli sürdürülebilir yakıt ünitesinin inşaatını sürdürüyor. Temeller atıldı, kolon ve reaktörler dahil ana ekipman monte edildi. Ünite, bitkisel yağları ve kullanılmış kızartma yağlarını yeşil hidrojenle işleyerek SAF ve yenilenebilir dizel üretecek.",
-      "capacity": "250 bin ton/yıl SAF ve yenilenebilir dizel",
-      "category": "biyoyakit",
-      "maturity": "construction",
-      "companies": [
-        "OMV Petrom"
-      ],
-      "countries": [
-        "Romania"
-      ],
-      "event_key": "omv-petrom-petrobrazi-saf-hvo",
-      "investment": null,
-      "value_chain": [
-        "donusum-fermantasyon",
-        "urun-uretim"
-      ],
-      "neden_onemli": null,
-      "technologies": [
-        "HVO",
-        "yeşil hidrojen"
-      ],
-      "subcategories": [
-        "SAF",
-        "HVO"
-      ],
-      "published_date": "2026-09-29",
-      "supporting_sources": []
-    },
-    {
-      "id": "deendayal-port-e-methanol-plant",
-      "slug": "hindistan-kandla-da-150-ton-gun-kapasiteli-ilk-liman-tipi-e-metanol-te",
-      "image": {
-        "url": "https://maritime-executive.com/cdn-cgi/image/width=1024,format=auto,quality=80,fit=scale-down,onerror=redirect,trim.left=0,trim.top=7,trim.width=657,trim.height=369/media/images/article/Photos/Ports/Deendayal-Port-Authority.jpg",
-        "type": "hakem",
-        "credit": "maritime-executive.com"
-      },
-      "score": 8,
-      "secim": "one_cikan",
-      "title": "Hindistan, Kandla'da 150 ton/gün kapasiteli ilk liman tipi e-metanol tesisinin temelini attı",
-      "detail": "Hindistan'da Gujarat ve Assam eyalet başbakanları ile federal limanlar bakanı, Gujarat'ın Kandla kentindeki Deendayal Limanı'nda ülkenin ilk liman tabanlı e-metanol tesisinin temel atma törenini gerçekleştirdi. 150 ton/gün kapasiteli tesis, Asya'dan Avrupa'ya giden ticaret rotasındaki gemilere yakıt tedarik edecek.\n\nDeendayal Port Authority ve Assam Petro-Chemicals ortaklığındaki proje yaklaşık 240 milyon dolar değerinde. Tesis yenilenebilir elektrik, su ve biyojenik karbondioksit kullanacak. İlk aşamada Ocak 2027'ye kadar 50 ton/gün kapasite eklenecek. Bunu Mart 2027'ye kadar devreye girecek 100 ton/gün daha takip edecek.\n\nDeendayal Port Authority'nin projeye katkısı öz kaynak sermayesi, 75 akre (yaklaşık 303 dönüm) arazi, tuzdan arındırılmış su ve yeşil hidrojen tedarikinden oluşuyor. Hükümet, tesiste e-metanolün ton başına yaklaşık 750 dolara üretileceğini açıkladı. Bu rakam, küresel 1.300 dolarlık orana kıyasla düşük.",
-      "source": {
-        "url": "https://biofuelsdigest.com/india-lays-foundation-for-e-methanol-plant-at-kandla",
-        "name": "biofuelsdigest.com",
-        "tier": 2,
-        "type": "trade_press",
-        "domain": "biofuelsdigest.com",
-        "primary": true
-      },
-      "excerpt": "Hindistan'ın Kandla kentindeki Deendayal Limanı'nda, ülkenin ilk liman tipi e-metanol tesisinin temeli atıldı. Yaklaşık 240 milyon dolarlık proje, 150 ton/gün kapasiteyle Asya-Avrupa ticaret rotasındaki gemilere yakıt sağlayacak. Hükümet, tesiste e-metanolün ton başına 750 dolara üretilmesini, küresel 1.300 dolarlık orana kıyasla hedefliyor.",
-      "capacity": "150 ton/gün (50 ton/gün Ocak 2027, +100 ton/gün Mart 2027)",
-      "category": "karbon",
-      "maturity": "construction",
-      "companies": [
-        "Deendayal Port Authority",
-        "Assam Petro-Chemicals"
-      ],
-      "countries": [
-        "India"
-      ],
-      "event_key": "deendayal-port-e-methanol-plant",
-      "investment": {
-        "currency": "USD",
-        "amount_original": 240,
-        "amount_usd_million": 240,
-        "public_support_usd_million": null
-      },
-      "value_chain": [
-        "donusum-fermantasyon",
-        "urun-uretim"
-      ],
-      "neden_onemli": null,
-      "technologies": [
-        "e-metanol",
-        "yeşil hidrojen",
-        "biyojenik CO2"
-      ],
-      "subcategories": [
-        "e-metanol",
-        "CCU"
-      ],
-      "published_date": "2026-09-30",
-      "supporting_sources": []
-    },
-    {
-      "id": "genentech-750m-oregón-manufacturing",
-      "slug": "genentech-hillsboro-oregon-da-750-milyon-dolarlik-uretim-tesisinin-tem",
-      "image": {
-        "url": "https://valleytimes.news/wp-content/uploads/sites/30/2026/09/news_genentechhilly_092826_fgn.jpeg",
+        "url": "https://www.bioplasticsmagazine.com/bioplasticsmagazine-wAssets/img/20261007-verbio.jpeg",
         "type": "og-sayfa",
-        "credit": "valleytimes.news"
+        "credit": "bioplasticsmagazine.com"
       },
       "score": 8,
       "secim": "one_cikan",
-      "title": "Genentech, Hillsboro, Oregon'da 750 milyon dolarlık üretim tesisinin temelini attı",
-      "detail": "Oregon valisi, yerel seçilmiş yetkililer ve Genentech liderleri, 28 Eylül Pazartesi günü Hillsboro'da şirketin yeni cihaz dolum-bitirme üretim tesisinin temel atma törenini gerçekleştirdi. 750 milyon dolarlık yatırım, şirketin 75 akrelik (yaklaşık 303 dönüm) Hillsboro kampüsünün büyüklüğünü neredeyse iki katına çıkaracak. Tesis, önceden doldurulmuş şırıngalar, otomatik enjektörler ve diğer ilaç dağıtım cihazlarını üretecek.\n\nTicari operasyonların 2031'de başlaması bekleniyor. Proje, zaten 800'den fazla kişiyi istihdam eden kampüse 250 kalıcı iş getirecek. İnşaat sürecinde yaklaşık 200 kişinin çalışması öngörülüyor.\n\nGenentech CEO'su Ashley Magargee, yatırımın sadece ilaç geliştirmeye değil hastaların ilaçlara ulaşım şeklini iyileştirmeye yönelik olduğunu söyledi. Genentech Hillsboro Teknik Operasyonları Başkan Yardımcısı Phil Adamson, ABD'deki hastalar için cihazların şu anda dünyanın başka yerlerinden ithal edildiğini belirtti. Yeni tesisle Hillsboro'da milyonlarca cihaz üretilecek. Tesis otomasyon, robotik ve dijital ikiz teknolojilerini de içerecek.\n\nHillsboro projesinin, Genentech ve ana şirketi Roche Group'un ABD'de ilaç üretimini ve Ar-Ge'yi genişletmeye yönelik 50 milyar dolarlık geniş kapsamlı taahhüdünün bir parçası olduğu bildirildi. Genentech, Hillsboro'da 2006'dan beri faaliyet gösteriyor.",
+      "title": "Verbio, Bitterfeld'de dünyanın ilk büyük ölçekli etenolisis tesisini devreye aldı",
+      "detail": "Verbio, yaklaşık 100 milyon euroluk yatırımla biyobazlı kimyasalların büyük ölçekli üretimine giriyor. Şirket, kolza metil esterine (RME) dayalı dünyanın ilk büyük ölçekli etenolisis tesisini Bitterfeld sahasında resmen devreye aldı. Yeni tesis yılda 60 bin tona kadar biyobazlı kimyasal üretebiliyor. Bu yenilenebilir karbon bileşikleri, yağlayıcı, deterjan, temizlik ürünü ve plastiklerde fosil bazlı hammaddenin yerini alabiliyor.\n\nYatırım, Verbio'nun iş modelini biyoyakıt pazarının ötesine taşıyor. Bundan sonra Bitterfeld'de üretilen RME, sadece biyodizel formunda enerji kaynağı olarak değil, daha yüksek değerli kimyasalların üretiminde hammadde olarak da kullanılacak. Bu durum, şirketin zaten büyük hacimde ürettiği bir hammadde için ek bir satış pazarı açmasını sağlıyor. Verbio CEO'su Claus Sauter, bu yatırımla biyorafineriye değer zincirinde yeni bir aşama eklediklerini ve Avrupa kolza yağını işleyerek bölgesel tarımı güçlendirip küresel tedarik zincirlerine bağımlılığı azalttıklarını belirtti.\n\nYatırım, Avrupa kimya sektöründe köklü değişimlerin yaşandığı bir döneme denk geliyor. Artan uluslararası rekabet, yüksek üretim maliyetleri ve yeni bir hammadde tabanına geçiş ihtiyacı sektör üzerindeki dönüşüm baskısını artırıyor. Almanya Federal Araştırma, Teknoloji ve Uzay Bakanı Dorothee Bär, yeni tesisi Almanya ve Avrupa kimya sanayisinin geleceği için önemli bir işaret olarak değerlendirdi.\n\nKarbon, kimya sanayisi için vazgeçilmez bir hammadde olmayı sürdürüyor. Sektörün fosil hammaddeye bağımlılığını azaltmak için endüstriyel ölçekte bulunabilir, ölçeklenebilir ve ekonomik olarak uygulanabilir biyobazlı karbon kaynaklarına ihtiyacı var. Verbio, bu ihtiyaca yanıt olarak biyobazlı özel kimyasallar 1-deken ve 9-DAME'yi üretiyor.",
       "source": {
-        "url": "https://valleytimes.news/2026/09/29/genentech-breaks-ground-on-750m-hillsboro-manufacturing-expansion",
-        "name": "valleytimes.news",
-        "tier": 3,
-        "type": "news_agency",
-        "domain": "valleytimes.news",
+        "url": "https://bioplasticsmagazine.com/en/news/meldungen/20261007-Verbio-starts-industrial-production-of-renewable-chemicals.php",
+        "name": "bioplasticsmagazine.com",
+        "tier": 2,
+        "type": "trade_press",
+        "domain": "bioplasticsmagazine.com",
         "primary": true
       },
-      "excerpt": "Genentech, Oregon'un Hillsboro kentindeki kampüsünde 750 milyon dolarlık cihaz dolum-bitirme tesisinin temelini attı. Tesis, önceden doldurulmuş şırıngalar ve otomatik enjektörler gibi ilaç dağıtım cihazlarını üretecek. Proje, bildirildiğine göre Roche Group'un ABD'de ilaç üretimine yönelik 50 milyar dolarlık genel taahhüdünün bir parçası.",
-      "capacity": null,
-      "category": "biyoteknoloji",
-      "maturity": "construction",
+      "excerpt": "Verbio, kolza metil esterine (RME) dayalı dünyanın ilk büyük ölçekli etenolisis tesisini Almanya'nın Bitterfeld sahasında resmen devreye aldı. Yaklaşık 100 milyon euroluk yatırımla kurulan tesis, yılda 60 bin tona kadar biyobazlı kimyasal üretebilecek.",
+      "capacity": "60 bin ton/yıl biyobazlı kimyasal",
+      "category": "rapor",
+      "maturity": "commissioning",
       "companies": [
-        "Genentech",
-        "Roche"
+        "Verbio",
+        "XiMo"
       ],
       "countries": [
-        "United States"
+        "Germany",
+        "Hungary"
       ],
-      "event_key": "genentech-750m-oregón-manufacturing",
+      "event_key": "verbio-bitterfeld-ethenolysis-commissioned",
       "investment": {
-        "currency": "USD",
-        "amount_original": 750,
-        "amount_usd_million": 750,
+        "currency": "EUR",
+        "amount_original": 100,
+        "amount_usd_million": null,
         "public_support_usd_million": null
       },
       "value_chain": [
+        "on-isleme",
         "urun-uretim"
       ],
       "neden_onemli": null,
       "technologies": [
-        "dolum-bitirme (fill-finish)",
-        "otomasyon",
-        "dijital ikiz"
+        "etenolisis",
+        "kolza metil esteri (RME)"
       ],
       "subcategories": [
-        "ilaç üretimi",
-        "cihaz dolum-bitirme"
+        "biyobazlı kimyasallar",
+        "etenolisis"
       ],
-      "published_date": "2026-09-29",
+      "published_date": "2026-10-07",
       "supporting_sources": [
         {
-          "url": "https://markets.ft.com/data/announce/detail?dockey=600-202609281800BIZWIRE_USPRX____20260928_BW061898-1",
-          "name": "markets.ft.com",
-          "domain": "markets.ft.com"
+          "url": "https://biofuelsdigest.com/verbio-commissioned-worlds-first-large-scale-ethenolysis-plant-based-on-rme",
+          "name": "biofuelsdigest.com",
+          "domain": "biofuelsdigest.com"
         }
       ]
     },
     {
-      "id": "biotrend-uniper-turkey-biomethane",
-      "slug": "biotrend-ve-uniper-turkiye-den-avrupa-ya-biyometan-ihracati-icin-mutab",
+      "id": "bayer-ohio-pharma-site",
+      "slug": "bayer-ohio-da-2-2-milyar-dolarlik-moduler-ilac-uretim-tesisi-kuracak",
       "image": {
-        "url": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/10/03/thumbs_b_c_a067d02d9d8741117a1bd00aa03bf323.jpg",
+        "url": "https://chemanager-online.com/media/story/60158/meta-01-bayer-us-facility-graphic.jpg",
         "type": "og-sayfa",
-        "credit": "aa.com.tr"
+        "credit": "chemanager-online.com"
       },
-      "score": 8,
+      "score": 6,
       "secim": "one_cikan",
-      "title": "Biotrend ve Uniper, Türkiye'den Avrupa'ya biyometan ihracatı için mutabakat imzaladı",
-      "detail": "Doğanlar Holding bünyesindeki Biotrend Enerji ve Çevre Yatırımları AŞ ile Almanya merkezli Uniper Global Commodities SE, Türkiye-Kuzey Ren-Vestfalya İş Forumu kapsamında 30 Eylül 2026'da İstanbul'da bağlayıcı olmayan bir mutabakat zaptı (MOU) imzaladı. Mutabakat, Biotrend'in mevcut atık bazlı biyogaz tesislerinin biyometan üretimine dönüştürülmesini ve yeni kapasite geliştirme imkanlarını kapsıyor. Üretilecek biyometanın Türkiye doğal gaz şebekesi üzerinden Avrupa'ya ulaştırılması seçenekleri de değerlendirilecek.\n\nTürkiye'nin yıllık biyometan potansiyelinin 50 teravatsaat (TWh) seviyesine kadar ulaşabileceği değerlendiriliyor. Biotrend'in mevcut tesis portföyü, yaklaşık 1,4 TWh'lik yıllık üretim potansiyeli taşıyor. Biyometan, mevcut doğal gaz altyapısında kullanılabilmesi ve sanayi ile ulaşım sektörlerinde emisyon azaltımına katkı sağlayabilmesi nedeniyle öne çıkıyor.\n\nUniper CEO'su Michael Lewis, Türkiye'den Almanya'ya biyometan ithalatının önünü açabilecek bir işbirliği üzerinde çalıştıklarını söyledi. Lewis, mevzuata ilişkin konuların yanı sıra ticari ve teknik meselelerin de netleştirilmesi gerektiğini belirtti. Nihai varış noktasının Almanya ya da genel olarak Avrupa Birliği olacağını ifade etti.\n\nLewis, biyometanın mevcut doğal gaz boru hatlarına enjekte edilerek taşınabileceğini aktardı. Sisteme verilen miktarın sertifikalarla doğrulanması gerektiğini söyledi. Çalışmaların şu anda kavramsal geliştirme aşamasında olduğunu, henüz bir takvim bulunmadığını belirtti. Doğanlar Holding Grup CEO'su Hakan Göral, mutabakatı Türkiye'deki biyogaz potansiyelini büyüyen biyometan pazarına taşıma açısından önemli bir başlangıç olarak değerlendirdi.",
+      "title": "Bayer, Ohio'da 2,2 milyar dolarlık modüler ilaç üretim tesisi kuracak",
+      "detail": "Bayer, ABD'nin New Albany, Ohio kentinde yeni bir ilaç üretim tesisine 2,2 milyar dolar yatırım yapma planını duyurdu. Yatırım, şirketin son beş yılda ABD ilaç Ar-Ge ve üretimine ayırdığı 7 milyar doların üzerindeki harcamanın üzerine inşa ediliyor. Proje, Bayer'in en büyük ilaç pazarındaki uzun dönemli büyüme stratejisinin merkezi bir unsuru olarak tanımlanıyor. Bayer CEO'su Bill Anderson, ABD'yi uzun süredir kilit bir üretim üssü ve inovasyon merkezi olarak gördüklerini söyledi.\n\nYatırım kapsamında New Albany International Business Park'ta yaklaşık 600 yüksek değerli iş yaratılması bekleniyor. İnşaat sürecinde ayrıca yaklaşık 1.500 inşaat işi oluşacak. Bayer Pharmaceuticals Küresel Operasyon Direktörü Sebastian Guth, bu genişlemenin ABD pazarındaki talebi karşılamak için önemli bir adım olduğunu belirtti.\n\nEsnek, modüler kampüs ilaç etken maddesi ve ilaç ürünü üretimini bir arada barındıracak şekilde tasarlandı. Tesis, ileri dijital ve otomasyon teknolojilerinden yararlanacak ve başlangıçta onkoloji, kardiyovasküler ve renal bakım alanlarındaki portföyü destekleyecek. İlaç etken maddesi üretimine ayrılan ilk modülün 2031'de, ilaç ürünü üretimine ayrılan ikinci modülün ise 2034'te devreye girmesi planlanıyor.\n\nYeni saha, Bayer'in Whippany, New Jersey'deki ABD ilaç genel merkezini ve Pittsburgh, Pennsylvania; Berkeley, California; Cambridge, Massachusetts; Research Triangle Park, North Carolina ile San Diego, California'daki diğer tesislerini tamamlayacak. Bayer Pharmaceuticals Ürün Tedarik Başkanı Holger Weintritt, saha ekosisteminin akademik inovasyonu ileri üretim uzmanlığıyla birleştirmeyi amaçladığını aktardı.",
       "source": {
-        "url": "https://aa.com.tr/tr/ekonomi/turkiye-atiklardan-uretilen-yenilenebilir-gazi-avrupaya-tasimaya-hazirlaniyor/4076784",
-        "name": "aa.com.tr",
+        "url": "https://chemanager-online.com/en/news/bayer-to-invest-2-2-billion-in-new-us-pharma-manufacturing-site",
+        "name": "chemanager-online.com",
         "tier": 2,
-        "type": "news_agency",
-        "domain": "aa.com.tr",
+        "type": "trade_press",
+        "domain": "chemanager-online.com",
         "primary": true
       },
-      "excerpt": "Doğanlar Holding bünyesindeki Biotrend Enerji ve Almanya merkezli Uniper, atık bazlı biyogaz tesislerinin biyometana dönüştürülmesi ve üretilen gazın Avrupa'ya ihraç edilmesi için bağlayıcı olmayan bir mutabakat zaptı imzaladı. Türkiye'nin yıllık biyometan potansiyeli 50 teravatsaate kadar ulaşabiliyor. Biotrend'in mevcut tesisleri yaklaşık 1,4 teravatsaat üretim potansiyeli taşıyor.",
-      "capacity": "Biotrend portföyü ~1,4 TWh/yıl; Türkiye potansiyeli 50 TWh/yıl'a kadar",
-      "category": "biyoyakit",
+      "excerpt": "Bayer, ABD'nin Ohio eyaletindeki New Albany'de 2,2 milyar dolarlık yeni bir ilaç üretim tesisine yatırım yapacağını duyurdu. Modüler kampüs, ilaç etken maddesi ve ürün üretimini kapsayacak; ilk modül 2031'de, ikinci modül 2034'te devreye girecek.",
+      "capacity": null,
+      "category": "biyoteknoloji",
       "maturity": "announced",
       "companies": [
-        "Biotrend Enerji ve Çevre Yatırımları",
-        "Uniper",
-        "Doğanlar Holding"
+        "Bayer"
       ],
       "countries": [
-        "Turkey",
-        "Germany"
+        "USA"
       ],
-      "event_key": "biotrend-uniper-turkey-biomethane",
+      "event_key": "bayer-ohio-pharma-site",
+      "investment": {
+        "currency": "USD",
+        "amount_original": 2.2,
+        "amount_usd_million": 2200,
+        "public_support_usd_million": null
+      },
+      "value_chain": [
+        "urun-uretim"
+      ],
+      "neden_onemli": null,
+      "technologies": [
+        "modüler üretim"
+      ],
+      "subcategories": [
+        "ilaç üretimi",
+        "biyoüretim"
+      ],
+      "published_date": "2026-10-05",
+      "supporting_sources": []
+    },
+    {
+      "id": "cip-via-verde-biomethane-fid",
+      "slug": "cip-italya-da-via-verde-biyometan-platformunda-nihai-yatirim-karari-al",
+      "image": {
+        "url": "https://www.bioenergy-news.com/wp-content/uploads/2025/05/bigstock-Finance-And-Investment-Concept-223569811.jpg",
+        "type": "og-sayfa",
+        "credit": "bioenergy-news.com"
+      },
+      "score": 6,
+      "secim": "one_cikan",
+      "title": "CIP, İtalya'da Via Verde biyometan platformunda nihai yatırım kararı aldı",
+      "detail": "Copenhagen Infrastructure Partners (CIP), İtalyan biyometan platformu Via Verde için nihai yatırım kararı (FID) aldı. Bu karar, şirketin İtalya biyometan sektörüne ilk girişini işaret ediyor. Yatırım, Avrupa çapında tarımsal atığı ve diğer sürdürülebilir hammaddeleri biyometana dönüştüren biyogaz tesislerinin geliştirilmesine, inşasına ve işletilmesine odaklanan İkinci Gelişmiş Biyoenerji Fonu (ABF II) aracılığıyla yapıldı. Via Verde, fonun ilk yatırımı.\n\nPlatformun Lombardy, Abruzzo ve Campania dahil çeşitli İtalyan bölgelerinde 20 projelik bir geliştirme hattı bulunuyor. Her tesisin yılda yaklaşık 60 bin ile 100 bin ton arasında tarımsal atık işlemesi bekleniyor.\n\n20 projenin tamamı işletmeye girdiğinde Via Verde'nin yılda yaklaşık 1 TWh biyometan üretmesi öngörülüyor. Bu miktar, yaklaşık 60 bin İtalyan hanesinin yıllık gaz tüketimine eşdeğer. CIP, yatırımın yerel istihdam yaratacağını ve ithal fosil gazın yerine yerli üretilen biyometan sağlayacağını belirtti.\n\nCIP Ortağı Andreas F. Brandt, Via Verde'nin şirketin Avrupa'nın en cazip biyometan pazarlarından birine girişini işaret ettiğini söyledi. Brandt, İtalya'nın 2030 biyometan hedeflerine ulaşmasında bu yatırımın güçlü bir temel oluşturacağını ve biyometanın İtalya'nın enerji bağımsızlığını güçlendirmede kilit rol oynayacağını aktardı.",
+      "source": {
+        "url": "https://bioenergy-news.com/news/copenhagen-infrastructure-partners-backs-via-verde-to-enter-italian-biomethane-market",
+        "name": "bioenergy-news.com",
+        "tier": 2,
+        "type": "trade_press",
+        "domain": "bioenergy-news.com",
+        "primary": true
+      },
+      "excerpt": "Copenhagen Infrastructure Partners (CIP), İkinci Gelişmiş Biyoenerji Fonu (ABF II) üzerinden İtalya'daki Via Verde biyometan platformu için nihai yatırım kararı aldı. Platformun 20 projelik geliştirme hattı tamamlandığında yılda yaklaşık 1 TWh biyometan üretecek; bu, 60 bin İtalyan hanesinin yıllık gaz tüketimine eşdeğer.",
+      "capacity": "~1 TWh/yıl biyometan (20 proje tamamlandığında)",
+      "category": "biyoyakit",
+      "maturity": "funded",
+      "companies": [
+        "Copenhagen Infrastructure Partners",
+        "Via Verde"
+      ],
+      "countries": [
+        "Italy"
+      ],
+      "event_key": "cip-via-verde-biomethane-fid",
       "investment": null,
       "value_chain": [
-        "atik-geri-donusum",
+        "biyokutle",
         "donusum-fermantasyon"
       ],
       "neden_onemli": null,
       "technologies": [
-        "biyometan zenginleştirme"
+        "anaerobik çürütme"
       ],
       "subcategories": [
-        "biyometan"
+        "biyometan",
+        "tarımsal atık"
       ],
-      "published_date": "2026-10-03",
+      "published_date": "2026-10-07",
       "supporting_sources": [
         {
-          "url": "https://bloomberght.com/borsa/hisse/biotrend-cevre-v/kap-haberi/348985",
-          "name": "bloomberght.com",
-          "domain": "bloomberght.com"
-        },
-        {
-          "url": "https://yesilekonomi.com/biotrend-ile-ugc-biyometan-is-birligi-icin-gorusmelere-basladi",
-          "name": "yesilekonomi.com",
-          "domain": "yesilekonomi.com"
-        },
-        {
-          "url": "https://ekonomim.com/sehirler/biotrend-ve-uniper-turkiyenin-biyometan-potansiyeli-icin-isbirligine-gidiyor-haberi-922197",
-          "name": "ekonomim.com",
-          "domain": "ekonomim.com"
+          "url": "https://biofuelsdigest.com/cip-invests-in-italian-via-verde-biomethane-platform-with-20-projects",
+          "name": "biofuelsdigest.com",
+          "domain": "biofuelsdigest.com"
         }
       ]
     },
     {
-      "id": "danone-michelin-fermentation-platform-fr",
-      "slug": "danone-ve-michelin-in-20-milyon-euroluk-fermantasyon-tesisi-fransa-da-",
+      "id": "gas-networks-ireland-mitchelstown-cgi-opened",
+      "slug": "irlanda-cork-ta-32-milyon-euroluk-biyometan-sebeke-enjeksiyon-tesisini",
       "image": {
-        "url": "https://assets.vegconom.de/media/wp-content/uploads/sites/3/2026/09/30140851/biotech-open-platform-cq5dam.web_.1280.1280.jpeg",
-        "type": "hakem",
-        "credit": "assets.vegconom.de"
+        "url": "https://www.bioenergy-news.com/wp-content/uploads/2026/10/ireland.jpg",
+        "type": "og-sayfa",
+        "credit": "bioenergy-news.com"
       },
-      "score": 7,
+      "score": 6,
       "secim": "one_cikan",
-      "title": "Danone ve Michelin'in 20 milyon euroluk fermantasyon tesisi Fransa'da açıldı",
-      "detail": "Danone, Michelin ve dört bölgesel/sanayi ortağının 2024'te kurduğu paylaşımlı fermantasyon tesisi Biotech Open Platform (BIOP), Fransa'nın Clermont-Ferrand kentinde açıldı ve ilk ileri fermantasyon projelerini kabul etmeye başladı. Tesis, Michelin'in Cataroux İnovasyon Parkı'ndaki Sürdürülebilir Malzemeler Merkezi'nde konumlanıyor. İlk aşama yatırımı, platform Haziran 2024'te duyurulduğunda taahhüt edilen 16 milyon euronun üzerinde, 20 milyon euroyu geçti.\n\nTesisin ekipmanları arasında 15 metreküpe kadar kapasiteli komple bir fermantasyon hattı, yarı endüstriyel saflaştırma sistemleri ve biyoproses geliştirme kapasiteleri bulunuyor. BIOP; proteinler, enzimler, gıda bileşenleri, kozmetik aktifler ve biyo-bazlı malzemeler üretmek üzere mayalar, bakteriler, mikroalgler veya mantarlarla çalışan girişimlere, sanayi şirketlerine ve Ar-Ge kuruluşlarına açık.\n\nBIOP'un kurucuları arasında Danone ve Michelin'in yanı sıra ABD'li biyoüretici DMC Biotechnologies, Crédit Agricole Centre France, Clermont Auvergne Innovation ve Greentech bulunuyor. Proje, Auvergne-Rhône-Alpes Bölgesi'nin yönettiği AB Avrupa Bölgesel Kalkınma Fonu'ndan ve Clermont Auvergne Métropole'den de destek aldı. BIOP CEO'su Khadidja Romari, ölçeklendirmenin deneyim, teknik know-how ve sürecin bir ölçekten diğerine geçerken ortaya çıkan sorunları çözme becerisi gerektirdiğini söyledi.\n\nMichelin Grup Başkanı Florent Menegaux, platformun lastik üreticisi için petrokimyasal kökenli bazı molekülleri daha sürdürülebilir biyo-bazlı alternatiflerle değiştirmede bir test alanı olduğunu belirtti. Hassas fermantasyonla besin takviyesi bileşenleri ve kimyasal ara ürünler üreten DMC Biotechnologies ise erken aşama bir sürecin hacimde kanıtlanmasının maliyetinin sektördeki başlıca engel olduğuna işaret etti.",
+      "title": "İrlanda, Cork'ta 32 milyon euroluk biyometan şebeke enjeksiyon tesisini açtı",
+      "detail": "Gas Networks Ireland, Co Cork'taki Mitchelstown'da 32 milyon euroluk Merkezi Şebeke Enjeksiyon (CGI) tesisini açtı. Tesis, boru hattı şebekesine çok uzak konumlanan biyometan üreticilerine yenilenebilir gazı ulusal şebekeye verme yolu sağlıyor. Şirket, bunun İrlanda'da ve Avrupa'da türünün ilk tesisi olduğunu belirtiyor. Tesis, 2 Ekim'de Başbakan Micheál Martin tarafından resmen açıldı.\n\nBağımsız anaerobik çürütme tesislerinde üretilen biyometan, kamyonla Mitchelstown'a taşınıyor; burada şebeke standartlarına getirilip ulusal ağa enjekte ediliyor. Tesis, çiftlik ve gıda atığından üretilen yenilenebilir gazı almak üzere tasarlandı.\n\nTam kapasitede saha, yılda 700 GWh'ye kadar biyometan enjekte edebiliyor. Bu miktar, hükümetin 2030 yılı için öngördüğü 5,7 TWh'lik yerli biyometan üretim hedefinin yaklaşık %12'sine karşılık geliyor. Gas Networks Ireland, tesisin yılda yaklaşık 130 bin ton CO2 tasarrufu sağlayabileceğini tahmin ediyor.\n\nŞirket, Munster bölgesindeki toplam yatırımının, daha önce duyurulan 50 milyon euroluk Southern Area yükseltme çalışmalarıyla birlikte 80 milyon euroyu aşacağını belirtti. Gas Networks Ireland, şebekeye bağlanmak için yedi büyük yeni üreticiyle anlaşma imzaladı; bunlar arasında Co Meath'teki 35 milyon euroluk College Group biyometan tesisi ve Dublin'deki 90 milyon euroluk Bia Energy tesisi bulunuyor. Mitchelstown tesisi, büyük ölçekli tarımsal biyometan kümelerini göstermeyi amaçlayan GRAZE projesinin bir parçası.",
       "source": {
-        "url": "https://vegconomist.com/fermentation/danone-michelins-20m-fermentation-scale-up-site-opens-outside-projects-france",
+        "url": "https://bioenergy-news.com/news/ireland-opens-first-of-its-kind-e32m-biomethane-grid-injection-hub-in-cork",
+        "name": "bioenergy-news.com",
+        "tier": 2,
+        "type": "trade_press",
+        "domain": "bioenergy-news.com",
+        "primary": true
+      },
+      "excerpt": "Gas Networks Ireland, Co Cork'taki Mitchelstown'da 32 milyon euroluk Merkezi Şebeke Enjeksiyon (CGI) tesisini açtı. Tesis tam kapasitede yılda 700 GWh biyometan enjekte edebilecek; bu da hükümetin 2030 hedefinin yaklaşık %12'sine karşılık geliyor.",
+      "capacity": "700 GWh/yıl (tam kapasite)",
+      "category": "biyoyakit",
+      "maturity": "operational",
+      "companies": [
+        "Gas Networks Ireland"
+      ],
+      "countries": [
+        "Ireland"
+      ],
+      "event_key": "gas-networks-ireland-mitchelstown-cgi-opened",
+      "investment": {
+        "currency": "EUR",
+        "amount_original": 32,
+        "amount_usd_million": null,
+        "public_support_usd_million": null
+      },
+      "value_chain": [
+        "donusum-fermantasyon",
+        "kullanim"
+      ],
+      "neden_onemli": null,
+      "technologies": [
+        "anaerobik çürütme",
+        "şebeke enjeksiyonu"
+      ],
+      "subcategories": [
+        "biyometan",
+        "şebeke altyapısı"
+      ],
+      "published_date": "2026-10-05",
+      "supporting_sources": [
+        {
+          "url": "https://biofuelsdigest.com/irelands-central-grid-injection-facility-can-meet-12-of-2030-target",
+          "name": "biofuelsdigest.com",
+          "domain": "biofuelsdigest.com"
+        }
+      ]
+    },
+    {
+      "id": "algiecel-microalgae-kalundborg-expansion",
+      "slug": "algiecel-kalundborg-da-mikroalg-uretimini-bes-katina-cikaran-tesis-act",
+      "image": {
+        "url": "https://assets.vegconom.de/media/wp-content/uploads/sites/3/2026/10/07145218/Algiecel-scaled.jpg",
+        "type": "og",
+        "credit": "vegconomist.com"
+      },
+      "score": 6,
+      "secim": "one_cikan",
+      "title": "Algiecel, Kalundborg'da mikroalg üretimini beş katına çıkaran tesis açtı",
+      "detail": "Danimarkalı mikroalg girişimi Algiecel, Novonesis'in Kalundborg'daki enzim üretim sahası içinde yeni bir üretim tesisi açtı. Tesis, şirketin kapasitesini neredeyse beş katına çıkardı. Algiecel, 2027'den itibaren yılda 12 ton mikroalg biyokütlesi üretmeyi, bunu balık yağına alternatif olarak evcil hayvan maması ve kozmetik müşterilerine sunmayı hedefliyor.\n\nTesis, aynı sahadaki bir biyogaz tesisinden yakalanan CO2 ile çalışıyor. Algiecel, bu durumun yıllardır süren pilot ölçek testlerinin ardından sürecin gerçek endüstriyel koşullarda çalıştığını kanıtladığını belirtiyor. Şirket, talep arttıkça aynı tasarımda ek üniteler kurarak kapasite ekleyebiliyor.\n\nBalık yağı, evcil hayvan maması ve kozmetikte yaygın bir bileşen; bu yıl tedarik sıkışıklığı yaşandı. Algiecel, IFFO verilerine atıfla, Peru, Şili ve Norveç dahil büyük üretici ülkelerde balık yağı üretiminin Haziran ayı başı itibarıyla 2025 seviyelerinin yaklaşık %31 altında seyrettiğini aktarıyor. Tahmin uzmanları, geçmişte balık yağı fiyatlarını rekor seviyelere taşıyan yeni bir El Niño olayının bu sezon için belirlendiğini de öngörüyor. İskoç şirket MiAlgae de geçen yılın sonlarında Grangemouth'ta balıksız omega-3 tesisi inşasına başlayarak aynı müşterileri hedefliyor.\n\nTesisin açılışı, Algiecel'in 2024'te kapattığını belirttiği 60 milyon Danimarka kronu (yaklaşık 8 milyon euro) tutarındaki fonlama turunun ardından geldi. Şirket, ticari tedariğe geçiş sürecini yönetmek üzere bu yaz yeni bir mali işler direktörü ve yönetim kurulu başkanı atadı. CEO Susanne Palsten Buchardt, pilot reaktörün 10 binden fazla operasyonel saat çalıştığını ve biyolojinin tasarlandığı gibi performans gösterdiğini belirtti.",
+      "source": {
+        "url": "https://vegconomist.com/algae-microalgae-seaweed/algiecel-scales-microalgae-output-nearly-fivefold-novonesis-kalundborg-enzyme-site",
         "name": "vegconomist.com",
         "tier": 2,
         "type": "trade_press",
         "domain": "vegconomist.com",
         "primary": true
       },
-      "excerpt": "Danone, Michelin ve ortaklarının 2024'te kurduğu paylaşımlı fermantasyon tesisi Biotech Open Platform (BIOP), Clermont-Ferrand'da açıldı ve dış projeleri kabul etmeye başladı. İlk aşama yatırımı 20 milyon euroyu aştı; tesis 15 metreküp kapasiteli tam bir fermantasyon hattına sahip. Platform, Haziran 2024'te duyurulduğunda 16 milyon euro taahhüt almıştı.",
-      "capacity": "15 m³ fermantasyon hattı",
-      "category": "biyomanufaktur",
+      "excerpt": "Danimarkalı Algiecel, Novonesis'in Kalundborg'daki enzim üretim sahasında yeni bir mikroalg tesisi açarak kapasitesini neredeyse beş katına çıkardı. Şirket, 2027'den itibaren yılda 12 ton mikroalg biyokütlesi üretmeyi ve bunu balık yağına alternatif olarak evcil hayvan maması ile kozmetik müşterilerine sunmayı hedefliyor.",
+      "capacity": "12 ton/yıl mikroalg biyokütlesi (2027'den itibaren)",
+      "category": "deniz",
       "maturity": "operational",
       "companies": [
-        "Danone",
-        "Michelin",
-        "DMC Biotechnologies"
+        "Algiecel",
+        "Novonesis"
       ],
       "countries": [
-        "France"
+        "Denmark"
       ],
-      "event_key": "danone-michelin-fermentation-platform-fr",
+      "event_key": "algiecel-microalgae-kalundborg-expansion",
       "investment": {
-        "currency": "EUR",
-        "amount_original": 20,
+        "currency": "DKK",
+        "amount_original": 60,
         "amount_usd_million": null,
         "public_support_usd_million": null
       },
       "value_chain": [
-        "donusum-fermantasyon"
+        "biyokutle",
+        "urun-uretim"
       ],
       "neden_onemli": null,
       "technologies": [
-        "hassas fermantasyon",
-        "biyoproses geliştirme"
+        "mikroalg üretimi",
+        "CO2 yakalama"
       ],
       "subcategories": [
-        "hassas fermantasyon",
-        "ölçeklendirme"
+        "mikroalg",
+        "alternatif omega-3"
       ],
-      "published_date": "2026-09-30",
+      "published_date": "2026-10-07",
+      "supporting_sources": []
+    },
+    {
+      "id": "ucb-georgia-biologics-campus",
+      "slug": "ucb-georgia-da-yaklasik-2-milyar-dolarlik-biyolojik-ilac-kampusu-icin-",
+      "image": {
+        "url": "https://mmx.prnewswire.com/media/MS2006199/UCB-Dedicates-Site-for-New-Campus.jpg?id=OA2998413",
+        "type": "og",
+        "credit": "markets.ft.com"
+      },
+      "score": 8,
+      "secim": "one_cikan",
+      "title": "UCB, Georgia'da yaklaşık 2 milyar dolarlık biyolojik ilaç kampüsü için sahayı tahsis etti",
+      "detail": "UCB, 9 Ekim 2026'da ABD'deki Gwinnett County, Georgia'da kuracağı yeni biyolojik ilaç üretim kampüsünün Rowen bölgesindeki sahasının tahsis törenini düzenledi. Törene Georgia, ABD Ticaret Bakanlığı ve Gwinnett County yetkilileri, Belçika Konsolosluğu, UCB liderleri, toplum ortakları ve sektör temsilcileri katıldı. Yatırımın, Georgia tarihindeki en büyük yaşam bilimleri üretim yatırımlarından biri olduğu bildirildi.\n\nTören kapsamında, kampüs girişindeki döner kavşakta tamamlanan anma niteliğinde taş işçiliği kurulumu Emmanuel Janssen Circle açığa çıkarıldı. Bu alan, UCB'yi yaklaşık bir asır önce kuran isim ve ailesi onuruna adlandırıldı. Kurdele kesme töreni, gelecekteki üretim kampüsünün geliştirilmesinde yeni aşamanın başlangıcını işaret etti.\n\nTörende Georgia Valisi Brian Kemp, ABD Ticaret Bakanlığı Sanayi ve Güvenlik Müsteşarı Jeffrey Kessler, Gwinnett County Başkanı Nicole Love Hendrickson, Belçika Konsolosu Katherine Raeymaekers ve UCB liderliği konuştu. UCB CEO'su Jean-Christophe Tellier, ABD'deki üretim yatırımının hastalara olan uzun süreli bağlılıklarını yansıttığını ve bilimsel inovasyonu, yüksek nitelikli işleri ve Georgia'daki ekonomik büyümeyi destekleyeceğini belirtti.",
+      "source": {
+        "url": "https://ucb-usa.com/stories-media/UCB-U-S-News/detail/article/ucb-dedicates-site-new-us-biologics-manufacturing-0",
+        "name": "ucb-usa.com",
+        "tier": 3,
+        "type": "company",
+        "domain": "ucb-usa.com",
+        "primary": true
+      },
+      "excerpt": "UCB, ABD'deki Gwinnett County, Georgia'daki Rowen bölgesinde kuracağı ilk ABD biyolojik ilaç üretim kampüsünün sahasını tahsis etti. Yatırımın, Georgia tarihinin en büyük yaşam bilimleri üretim yatırımlarından biri olduğu bildirildi.",
+      "capacity": null,
+      "category": "biyoteknoloji",
+      "maturity": "construction",
+      "companies": [
+        "UCB"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "event_key": "ucb-georgia-biologics-campus",
+      "investment": {
+        "currency": "USD",
+        "amount_original": 2,
+        "amount_usd_million": 2000,
+        "public_support_usd_million": null
+      },
+      "value_chain": [
+        "urun-uretim"
+      ],
+      "neden_onemli": null,
+      "technologies": [],
+      "subcategories": [
+        "biyolojik ilaç üretimi"
+      ],
+      "published_date": "2026-10-09",
       "supporting_sources": [
         {
-          "url": "https://greenqueen.com.hk/biotech-open-platform-danone-michelin-precision-fermentation-facility",
-          "name": "greenqueen.com.hk",
-          "domain": "greenqueen.com.hk"
+          "url": "https://markets.ft.com/data/announce/detail?dockey=600-202610091558PR_NEWS_USPRX____CL68153-1",
+          "name": "markets.ft.com",
+          "domain": "markets.ft.com"
         }
       ]
     },
     {
-      "id": "horizon-europe-500m-additional-funding",
-      "slug": "horizon-europe-a-2026-2027-icin-500-milyon-euro-ek-kaynak-ayrildi",
+      "id": "afyren-bio-propionic-cosmetic-launch",
+      "slug": "afyren-biyobazli-propiyonik-asitle-ilk-kozmetik-urunun-kuresel-lansman",
       "image": {
-        "url": "https://euraxess.ec.europa.eu/sites/default/files/2026-09/%E2%82%AC500%20million%20additional%20funding%20for%20Horizon%20Europe%20in%202026-2027.png",
+        "url": "https://renewable-carbon.eu/news/media/2026/10/Photo-packshot-ESSE-1-e1790776708632.png",
         "type": "og-sayfa",
-        "credit": "euraxess.ec.europa.eu"
+        "credit": "renewable-carbon.eu"
       },
-      "score": 7,
+      "score": 6,
       "secim": "one_cikan",
-      "title": "Horizon Europe'a 2026-2027 için 500 milyon euro ek kaynak ayrıldı",
-      "detail": "Avrupa Komisyonu, AB'nin araştırma ve inovasyon programı Horizon Europe'a 2026-2027 döneminin son iki yılı için 500 milyon euro ek kaynak ayırdığını duyurdu. Bu ekleme, programın 2026-2027 bütçesini yaklaşık 14,8 milyar euroya yükseltiyor. Değişiklik; biyoçeşitlilik, ileri teknolojiler, yapay zeka, enerji, beceriler ve araştırma sonuçlarının pazara aktarılması alanlarında yeni fon fırsatları getiriyor.\n\nDeğiştirilmiş Horizon Europe Çalışma Programı iki büyük yatay çağrı sunuyor. \"Doğa-Pozitif Ekonomiye ve Topluma Dönüşüm\" çağrısı 237 milyon euro bütçeyle 11 araştırma ve inovasyon eylemini destekleyecek; bu eylemler Horizon Europe Stratejik Planı 2025-2027 kapsamındaki %10'luk biyoçeşitlilik harcama hedefine katkı sağlayacak. \"Köprü Eylemleri 2027\" çağrısı ise 260 milyon euro ile 16 eylemi finanse edecek ve araştırma ile pazara geçiş arasındaki bağlantıyı güçlendirmeyi hedefliyor.\n\nDeğiştirilmiş Çalışma Programı ayrıca Yeni Avrupa Bauhaus Akademisi'ne destek sağlayacak; bu kapsamda inşaat ekosisteminde çalışanların beceri geliştirme ve yeniden eğitim faaliyetleri finanse edilecek. Komisyon, aynı zamanda Horizon Europe'un durumunu inceleyen iki izleme raporu da yayımladı.\n\nHorizon Europe Durum Raporu'na göre program şu ana kadar yaklaşık 61 milyar euro hibe ve 1,3 milyar euro öz kaynak yatırımı yaptı. Bu kapsamda 34 bini aşkın kuruluşun katıldığı yaklaşık 23 bin proje desteklendi. Katılımcı kuruluşların 20 binden fazlası şirket, özel sektör toplamda 11 milyar euroyu aşan fon aldı. Program kapsamındaki projeler 32.300'den fazla hakemli yayın üretti. Doktora adayları ile doktora sonrası araştırmacılar dahil 151 bini aşkın erken kariyer araştırmacı destekleniyor. Katılımcıların %55'i AB araştırma programlarına yeni dahil oldu ve bu yeni katılımcıların yaklaşık üçte ikisi şirketlerden oluşuyor.",
+      "title": "AFYREN, biyobazlı propiyonik asitle ilk kozmetik ürünün küresel lansmanını yaptı",
+      "detail": "AFYREN, Güney Afrika merkezli Esse Skincare ile ortaklığı kapsamında, dünyanın doğal propiyonik asitle formüle edilen ilk cilt bakım ürünü Esse Barrier Rescue'nun lansmanını sağladı. Ürün, kuru ve reaktif cildi rahatlatan ve cildin doğal ekosistemini güçlendiren, propiyonik asit ile seramidleri birleştiren yoğun nemlendirici bir ürün. Ürün artık dünya çapında cilt bakım uzmanları ve tüketicilere sunuluyor.\n\nPropiyonik asit, dengeli bir cilt mikrobiyomunun korunması için gerekli, doğal olarak oluşan kısa zincirli bir yağ asidi. Gelişmekte olan araştırmalar, bu asidin inflamasyonu düzenlemeye, bariyer dayanıklılığını güçlendirmeye ve mikrobiyal dengeyi korumaya yardımcı olduğunu gösteriyor. Şimdiye kadar propiyonik asit endüstriyel ölçekte öncelikle petrokimyasal kaynaklardan temin ediliyordu.\n\nBu ortaklık sayesinde Esse, AFYREN'in sürdürülebilir şekilde üretilen, COSMOS sertifikalı biyobazlı propiyonik asit alternatifine erişim sağladı. Ürün, şirketin amiral gemi endüstriyel biyorafinerisi AFYREN NEOXY'de üretiliyor. Şirketin özel döngüsel, düşük karbonlu fermantasyon süreci kullanılarak çalışan tesis, dünyada ticari ölçekte bir organik asit portföyü üretebilen ilk tesis olarak tanımlanıyor.\n\nAFYREN COO'su Joachim Merziger, bu ortaklığın biyoteknolojinin kozmetikte performans ve sürdürülebilirlik açısından nasıl yeni fırsatlar açabileceğini gösterdiğini belirtti.",
       "source": {
-        "url": "https://euraxess.ec.europa.eu/worldwide/india/news/eu500-million-additional-funding-horizon-europe-2026-2027",
-        "name": "euraxess.ec.europa.eu",
-        "tier": 1,
-        "type": "official",
-        "domain": "euraxess.ec.europa.eu",
+        "url": "https://renewable-carbon.eu/news/global-launch-of-cosmetic-product-based-on-afyrens-100-natural-propionic-acid",
+        "name": "renewable-carbon.eu",
+        "tier": 2,
+        "type": "trade_press",
+        "domain": "renewable-carbon.eu",
         "primary": true
       },
-      "excerpt": "Avrupa Komisyonu, Horizon Europe programına 2026-2027 dönemi için 500 milyon euro ek kaynak ayırdığını duyurdu. Bu ekleme, programın bütçesini yaklaşık 14,8 milyar euroya çıkarıyor. Yeni çağrılardan biri biyoçeşitlilik için 237 milyon euro, diğeri piyasaya geçiş eylemleri için 260 milyon euro ayırıyor.",
+      "excerpt": "Fransız greentech şirketi AFYREN, Güney Afrikalı Esse Skincare ile ortaklığı kapsamında dünyanın %100 doğal propiyonik asitle formüle edilen ilk cilt bakım ürünü Esse Barrier Rescue'yu küresel olarak piyasaya sürdü. Ürün, AFYREN NEOXY biyorafinerisinde fermantasyonla üretilen COSMOS sertifikalı propiyonik asidi kullanıyor.",
       "capacity": null,
-      "category": "politika",
-      "maturity": "funded",
-      "companies": null,
+      "category": "rapor",
+      "maturity": "operational",
+      "companies": [
+        "AFYREN",
+        "Esse Skincare"
+      ],
       "countries": [
-        "European Union"
+        "France",
+        "South Africa"
       ],
-      "event_key": "horizon-europe-500m-additional-funding",
-      "investment": {
-        "currency": "EUR",
-        "amount_original": 500,
-        "amount_usd_million": null,
-        "public_support_usd_million": null
-      },
-      "value_chain": null,
+      "event_key": "afyren-bio-propionic-cosmetic-launch",
+      "investment": null,
+      "value_chain": [
+        "donusum-fermantasyon",
+        "urun-uretim"
+      ],
       "neden_onemli": null,
-      "technologies": null,
-      "subcategories": [
-        "AB fonlama",
-        "Ar-Ge"
+      "technologies": [
+        "fermantasyon"
       ],
-      "published_date": "2026-09-30",
+      "subcategories": [
+        "fermantasyon",
+        "kozmetik ingredyan"
+      ],
+      "published_date": "2026-10-08",
+      "supporting_sources": []
+    },
+    {
+      "id": "sunbridge-seoni-grain-ethanol-commercial",
+      "slug": "sunbridge-hindistan-in-seoni-kentinde-ticari-tahil-etanolu-uretimine-b",
+      "image": {
+        "url": "https://agrospectrumindia.com/uploads/articles/sunbridge_plant-34929.jpg",
+        "type": "hakem",
+        "credit": "agrospectrumindia.com"
+      },
+      "score": 6,
+      "secim": "one_cikan",
+      "title": "SunBridge, Hindistan'ın Seoni kentinde ticari tahıl etanolü üretimine başladı",
+      "detail": "AgroSpectrum'un haberine göre, SunBridge BioEnergy Hindistan'ın Madhya Pradesh eyaletindeki Seoni kentinde günlük 300 bin litre kapasiteli tahıl bazlı etanol tesisinde ticari üretime başladı. Tesisin 11 milyon litre depolama kapasitesi bulunuyor. Tesis, insan tüketimine uygun olmayan hasarlı mısır ve kırık pirinç gibi tahıllardan yakıt dereceli etanol üretiyor.\n\nTesis ayrıca hayvan yemi pazarları için DDGS ve damıtıcı mısır yağı üretiyor. Üretim, su geri kazanım sistemleri ve sıfır sıvı deşarjı operasyonlarını içeriyor.\n\nSunBridge, Chhattisgarh'ın Raipur kentinde planlanan günlük 400 bin litre kapasiteli tesis devreye girdiğinde toplam etanol kapasitesini günde 700 bin litreye çıkarmayı planlıyor.",
+      "source": {
+        "url": "https://biofuelsdigest.com/sunbridge-starts-commercial-grain-ethanol-production",
+        "name": "biofuelsdigest.com",
+        "tier": 2,
+        "type": "trade_press",
+        "domain": "biofuelsdigest.com",
+        "primary": true
+      },
+      "excerpt": "SunBridge BioEnergy, Hindistan'ın Madhya Pradesh eyaletindeki Seoni'de günlük 300 bin litre kapasiteli tahıl bazlı etanol tesisinde ticari üretime başladı. Tesis, insan tüketimine uygun olmayan hasarlı mısır ve kırık pirinçten yakıt dereceli etanol üretiyor.",
+      "capacity": "300 bin litre/gün (genişleme sonrası 700 bin litre/gün)",
+      "category": "biyoyakit",
+      "maturity": "operational",
+      "companies": [
+        "SunBridge BioEnergy"
+      ],
+      "countries": [
+        "India"
+      ],
+      "event_key": "sunbridge-seoni-grain-ethanol-commercial",
+      "investment": null,
+      "value_chain": [
+        "donusum-fermantasyon",
+        "urun-uretim"
+      ],
+      "neden_onemli": null,
+      "technologies": [
+        "tahıl fermantasyonu",
+        "sıfır sıvı deşarjı"
+      ],
+      "subcategories": [
+        "tahıl etanolü"
+      ],
+      "published_date": "2026-10-08",
+      "supporting_sources": []
+    },
+    {
+      "id": "sterling-adc-suite",
+      "slug": "sterling-pharma-deeside-de-500-litrelik-gmp-adc-uretim-suitini-tamamla",
+      "image": {
+        "url": "https://chemanager-online.com/media/story/60160/meta-01-sterling-pharma-solutions-doubles-bioconjugation-manufacturing-capacity-at-its-deeside-facility-with-a-new-500-litre-gmp-suite.jpg",
+        "type": "og-sayfa",
+        "credit": "chemanager-online.com"
+      },
+      "score": 6,
+      "secim": "one_cikan",
+      "title": "Sterling Pharma, Deeside'de 500 litrelik GMP ADC üretim süitini tamamladı",
+      "detail": "Sözleşmeli geliştirme ve üretim kuruluşu (CDMO) Sterling Pharma Solutions, İngiltere'deki özel biyokonjugasyon tesisinde ek, büyük ölçekli bir GMP üretim süiti tamamladığını duyurdu. Yeni süit, tesisin kapasitesini ikiye katlıyor ve üretim ölçeğini 500 litreye yükseltiyor. Çok milyon sterlinlik yatırım, Deeside'deki tesiste yeni bir analitik geliştirme laboratuvarı ve ek ofis alanının inşasını da kapsadı.\n\nYeni GMP üretim süiti, 500 litre reaktör ve 1.400 fit² büyüklüğünde bir Grade C temiz oda içeriyor; bu da sahanın ilaç ve biyoteknoloji müşterileri için büyük ölçekli GMP projelerini desteklemesini sağlıyor. Süit, yüksek potansiyelli bileşiklerin işlenebilmesi için esnek ve sert konteynerleme teknolojilerini birlikte kullanıyor. Deeside tesisi, 0,05 nanogram/metreküp seviyesine (OEB 5) kadar maruziyet sınırına sahip moleküllerle çalışabiliyor ve işlemler tek kullanımlık biyoreaktörlerde gerçekleştiriliyor.\n\nYeni GMP süitine ek olarak Sterling, toplam 3.400 fit² büyüklüğünde yeni bir analitik hizmetler laboratuvarına yatırım yaptı; bu laboratuvar sahadaki HPLC ve UPLC kapasitesini artırıyor. Yeni kabiliyetler arasında bir UPLC-LC/MS cihazı, parçacık boyutu görüntüleme için Bio-Techne MFI, protein stabilite karakterizasyon cihazı ve otomatik plaka bazlı ultrafiltrasyon/diyafiltrasyon cihazı bulunuyor. Laboratuvar ayrıca hücre deneyi yöntem geliştirme ve analizi için özel bir alan içeriyor.\n\nSterling EMEA Başkanı ve Ticari Direktörü Andrew Henderson, Deeside'deki bu ek kapasitenin tesisin ve biyokonjugasyon hizmet teklifinin gelişiminde bir kilometre taşı olduğunu belirtti. Henderson, artan kapasite ve daha büyük parti büyüklükleriyle geliştirme çalışmalarını üçüncü faza ve nihayetinde ticari üretime kadar destekleyebileceklerini söyledi.",
+      "source": {
+        "url": "https://chemanager-online.com/en/news/sterling-expands-adc-manufacturing-capacity-and-capabilities",
+        "name": "chemanager-online.com",
+        "tier": 2,
+        "type": "trade_press",
+        "domain": "chemanager-online.com",
+        "primary": true
+      },
+      "excerpt": "İngiliz CDMO Sterling Pharma Solutions, Deeside'deki biyokonjugasyon tesisinde 500 litre reaktör kapasiteli yeni bir GMP üretim süiti tamamladı; bu yatırım tesisin antikor-ilaç konjugatı (ADC) üretim kapasitesini ikiye katlıyor. Çok milyon sterlinlik yatırım, yeni bir analitik geliştirme laboratuvarı ve ek ofis alanı da içeriyor.",
+      "capacity": "500 litre GMP reaktör (kapasite iki katına çıktı)",
+      "category": "biyoteknoloji",
+      "maturity": "operational",
+      "companies": [
+        "Sterling Pharma Solutions"
+      ],
+      "countries": [
+        "UK"
+      ],
+      "event_key": "sterling-adc-suite",
+      "investment": null,
+      "value_chain": [
+        "urun-uretim"
+      ],
+      "neden_onemli": null,
+      "technologies": [
+        "biyokonjugasyon",
+        "tek kullanımlık biyoreaktörler"
+      ],
+      "subcategories": [
+        "ADC üretimi",
+        "biyokonjugasyon"
+      ],
+      "published_date": "2026-10-05",
       "supporting_sources": []
     }
   ],
   "radar": [
     {
-      "kume": "SAF ve e-SAF projeleri",
+      "kume": "Biyoteknoloji yatırımları ve Ar-Ge",
       "maddeler": [
         {
-          "url": "https://biofuelsdigest.com/q8-aviation-signs-e-saf-dupply-deal-with-verso-energys-dezir-project-in-normandy",
-          "date": "2026-09-29",
-          "title": "Q8 Aviation, Verso Energy'nin Normandiya'daki DEZiR projesinden e-SAF tedarik anlaşması imzaladı, 2030 hedefleniyor",
-          "source": "biofuelsdigest.com",
-          "category": "biyoyakit"
+          "url": "https://news.cision.com/se/astrazeneca/r/astrazeneca-opens-new-global-strategic-r-d-centre-in-kendall-square--cambridge--massachusetts,c4404837",
+          "date": "2026-10-05",
+          "title": "AstraZeneca, Cambridge'deki Kendall Square'de 1 milyar dolardan fazla yatırımla küresel stratejik Ar-Ge merkezi açtı",
+          "source": "news.cision.com",
+          "category": "biyoteknoloji"
         },
         {
-          "url": "https://gov.uk/government/news/belfast-cleantech-firm-catagen-takes-off-with-government-backed-finance",
-          "date": "2026-10-01",
-          "title": "CATAGEN, ClimaHtech Green Flight yan kuruluşu üzerinden SAF üretimi için devlet destekli finansman aldı",
-          "source": "gov.uk",
-          "category": "biyoyakit"
+          "url": "https://news.cision.com/se/astrazeneca/r/astrazeneca-completes-equity-investment-in-summit-therapeutics,c4404407",
+          "date": "2026-10-05",
+          "title": "AstraZeneca, ivonescimab geliştirmesi için Summit Therapeutics'e 2 milyar dolarlık sermaye yatırımını tamamladı",
+          "source": "news.cision.com",
+          "category": "biyoteknoloji"
         },
         {
-          "url": "https://biofuelsdigest.com/renewable-naptha-from-uco-co-produced-with-saf-at-cosmo-oil-refinery",
-          "date": "2026-09-29",
-          "title": "Cosmo Oil ve Maruzen Petrochemical, Sakai Rafinerisi'nde SAF ile birlikte üretilen yenilenebilir naftayı kullanmaya başladı",
-          "source": "biofuelsdigest.com",
-          "category": "biyoyakit"
+          "url": "https://marketchameleon.com/PressReleases/i/2388446/SRRK/scholar-rock-resubmits-apitegromab-marketing-authorisation-a",
+          "date": "2026-10-08",
+          "title": "Scholar Rock, apitegromab için pazarlama izni başvurusunu alternatif ABD dolum tesisiyle EMA'ya yeniden sundu",
+          "source": "marketchameleon.com",
+          "category": "biyoteknoloji"
         },
         {
-          "url": "https://biofuelsdigest.com/ineratec-and-ramboll-expand-esaf-production-collaboration",
-          "date": "2026-10-01",
-          "title": "INERATEC ve Ramboll, Frankfurt-Höchst'teki ERA ONE e-SAF tesisinde yükseltme ünitesiyle işbirliğini genişletti",
-          "source": "biofuelsdigest.com",
-          "category": "biyoyakit"
-        },
-        {
-          "url": "https://biofuelsdigest.com/haffner-energy-launches-sb-hefa-process-to-produce-renewable-diesel-saf",
-          "date": "2026-09-27",
-          "title": "Haffner Energy, yenilenebilir dizel ve SAF üretimi için SB-HEFA sürecini piyasaya sürdü",
-          "source": "biofuelsdigest.com",
-          "category": "biyoyakit"
-        },
-        {
-          "url": "https://biofuelsdigest.com/xcf-global-sells-10m-of-renewable-diesel-in-august-from-new-rise-renewables-reno",
-          "date": "2026-09-29",
-          "title": "XCF Global, Ağustos'ta 1,3 milyon galon yenilenebilir dizel satışından 10 milyon dolar gelir bildirdi",
-          "source": "biofuelsdigest.com",
-          "category": "biyoyakit"
+          "url": "https://finance.yahoo.com/healthcare/articles/vaxcyte-reports-positive-topline-data-100000000.html",
+          "date": "2026-10-05",
+          "title": "Vaxcyte, VAX-31 pnömokok aşısının Faz 3 OPUS-1 denemesinden olumlu sonuçlar sunacağını bildirdi",
+          "source": "finance.yahoo.com",
+          "category": "biyoteknoloji"
         }
       ]
     },
     {
-      "kume": "Biyometan ve bioLNG tesisleri",
+      "kume": "Biyomanüfaktür ve fermantasyon altyapısı",
       "maddeler": [
         {
-          "url": "https://bioenergy-news.com/news/nord-gas-solutions-to-build-polands-first-biolng-plant",
-          "date": "2026-09-29",
-          "title": "Nord Gas Solutions, Polonya'nın ilk bioLNG tesisini 35 ton/gün kapasiteyle inşa edecek",
-          "source": "bioenergy-news.com",
-          "category": "biyoyakit"
-        },
-        {
-          "url": "https://bioenergy-news.com/news/polands-first-agricultural-biomethane-plant-begins-grid-injection",
-          "date": "2026-09-30",
-          "title": "Axpo ve Agro-Biogas, Polonya'nın ilk tarımsal biyometan tesisini doğrudan şebeke enjeksiyonuyla devreye aldı",
-          "source": "bioenergy-news.com",
-          "category": "biyoyakit"
-        },
-        {
-          "url": "https://bioenergy-news.com/news/waga-energy-grows-rng-output-31-as-landfill-gas-portfolio-expands",
-          "date": "2026-09-29",
-          "title": "Waga Energy, İspanya'nın Granada kentinde biyometan üretimine başlayarak RNG portföyünü genişletiyor",
-          "source": "bioenergy-news.com",
-          "category": "biyoyakit"
-        }
-      ]
-    },
-    {
-      "kume": "Orman biyokütlesi tedarik zincirleri",
-      "maddeler": [
-        {
-          "url": "https://bioenergy-news.com/news/moore-county-secures-bdo-zone-a-rating-for-woody-biomass",
-          "date": "2026-09-30",
-          "title": "Moore County, yıllık 925 bin kuru ton odunsu biyokütle için A dereceli BDO Bölgesi güvencesi aldı",
-          "source": "bioenergy-news.com",
-          "category": "biyoyakit"
-        },
-        {
-          "url": "https://bioenergy-news.com/news/belledune-joint-venture-secures-landmark-biomass-supply-agreement-with-nb-power",
-          "date": "2026-10-02",
-          "title": "Belledune Ortak Girişimi, torrefiye pelet tesisi için NB Power ile biyokütle tedarik anlaşması imzaladı",
-          "source": "bioenergy-news.com",
-          "category": "biyoyakit"
-        },
-        {
-          "url": "https://bioenergy-news.com/news/valmet-to-supply-biomass-technology-for-louisiana-green-fuels-project",
-          "date": "2026-09-30",
-          "title": "Valmet, Louisiana Green Fuels projesine biyokütle enerji üretimi ve baca gazı temizleme teknolojisi tedarik edecek",
-          "source": "bioenergy-news.com",
-          "category": "biyoyakit"
-        }
-      ]
-    },
-    {
-      "kume": "Atık değerlendirme ve döngüsel biyoekonomi",
-      "maddeler": [
-        {
-          "url": "https://biofuelsdigest.com/anaergia-lands-ad-project-with-hungarys-largest-duck-producer",
-          "date": "2026-09-30",
-          "title": "Anaergia, Macaristan'ın en büyük ördek üreticisi TisVet ile 36 milyon Kanada doları değerinde atık-enerji anlaşması imzaladı",
+          "url": "https://biofuelsdigest.com/biotech-open-platform-builds-e20-million-bridge-from-lab-to-industrial-scale",
+          "date": "2026-10-05",
+          "title": "Biotech Open Platform, Clermont-Ferrand'da fermantasyon ölçeklendirmesi için 20 milyon euroluk merkez açtı",
           "source": "biofuelsdigest.com",
-          "category": "atik-donusum"
+          "category": "biyomanufaktur"
         },
         {
-          "url": "https://biofuelsdigest.com/hyorc-completes-off-site-modular-build-of-first-commercial-waste-to-methanol-plant-bound-for-porto",
-          "date": "2026-09-27",
-          "title": "HyOrc, Porto'ya gönderilecek ilk ticari atıktan metanole dönüşüm tesisinin modüler imalatını tamamladı",
-          "source": "biofuelsdigest.com",
-          "category": "atik-donusum"
+          "url": "https://cbe.europa.eu/achievements/estonian-pilot-global-biomaterials-platform-fibenol-builds-sweetwoods",
+          "date": "2026-10-06",
+          "title": "Fibenol, SWEETWOODS pilotunun ardından Letonya'da ilk ticari ölçekli sert ağaç biyorafinerisini hazırlıyor",
+          "source": "cbe.europa.eu",
+          "category": "biyomanufaktur"
+        },
+        {
+          "url": "https://renewable-carbon.eu/news/zymofix-to-build-flagship-microbial-manufacturing-plant-as-it-takes-solid-state-fermentation-to-industrial-scale",
+          "date": "2026-10-08",
+          "title": "Zymofix, katı hal fermantasyonunu endüstriyelleştirmek için Belçika'nın Deinze kentinde 6 milyon euroluk tesis kuracak",
+          "source": "renewable-carbon.eu",
+          "category": "biyomanufaktur"
+        },
+        {
+          "url": "https://renewable-carbon.eu/news/spiber-launches-spiber-biofoundry-opening-the-biomanufacturing-platform-behind-brewed-protein-to-partners",
+          "date": "2026-10-07",
+          "title": "Spiber, Brewed Protein fermantasyon platformunu sözleşmeli üretim hizmeti olarak ortaklara açtı",
+          "source": "renewable-carbon.eu",
+          "category": "biyomanufaktur"
         }
       ]
     },
     {
-      "kume": "Tarım ve alternatif gıda",
+      "kume": "Alternatif protein ve mikroalg",
       "maddeler": [
         {
-          "url": "https://agfundernews.com/%F0%9F%8E%A5-meatly-bets-on-20000-liter-scale-to-prove-cultivated-meat-economics",
-          "date": "2026-09-28",
-          "title": "Meatly, İngiltere'de 20 bin litrelik üretim tesisini düşük yatırım maliyetiyle devreye aldı",
+          "url": "https://agfundernews.com/%F0%9F%8E%A5-verley-scales-blg-to-2000000-l-as-precision-fermentation-enters-its-prove-it-phase",
+          "date": "2026-10-06",
+          "title": "Verley, hassas fermantasyonla üretilen BLG süt proteinini 200 bin litrelik tanklara ölçeklendirdi",
           "source": "agfundernews.com",
           "category": "gida-protein"
         },
         {
-          "url": "https://greenqueen.com.hk/those-vegan-cowboys-precision-fermentation-casein-sports-nutrition-funding",
-          "date": "2026-09-28",
-          "title": "Those Vegan Cowboys, hassas fermantasyonla üretilen kazein spor beslenme prototipleri için 1,29 milyon euro AB fonu aldı",
+          "url": "https://greenqueen.com.hk/edonia-spirulina-protein-microalgae-edo-mince-funding",
+          "date": "2026-10-07",
+          "title": "Edonia, Brittany'de endüstriyel spirulina protein tesisi açmak için 15 milyon euro topladı",
           "source": "greenqueen.com.hk",
           "category": "gida-protein"
-        },
-        {
-          "url": "https://biofuelsdigest.com/brazil-approves-next-generation-biocontrol-production-for-soybeans-and-corn",
-          "date": "2026-09-27",
-          "title": "Brezilya, soya ve mısır için genetiği değiştirilmiş mikroorganizmalarla biyolojik korumanın ticari üretimini ilk kez onayladı",
-          "source": "biofuelsdigest.com",
-          "category": "tarim"
         }
       ]
     },
     {
-      "kume": "Düzenleme ve politika",
+      "kume": "Politika ve düzenleme",
       "maddeler": [
         {
-          "url": "https://gov.uk/government/publications/cell-cultivated-products-regulatory-authorisation/cell-cultivated-products-regulatory-authorisation",
-          "date": "2026-09-30",
-          "title": "İngiltere Gıda Standartları Ajansı, hücresel ürünler için düzenleyici onay kılavuzunu yayımladı",
+          "url": "https://renewable-carbon.eu/news/unlocking-europes-bioeconomy-new-eu-study-highlights-major-potential-of-bio-based-industries-and-biotechnology-for-europes-green-transition",
+          "date": "2026-10-06",
+          "title": "AB çalışması, biyoekonomi talebinin yalnızca atıklarla karşılanamayacağını belirterek politika çerçevesi çağrısı yaptı",
+          "source": "renewable-carbon.eu",
+          "category": "politika"
+        },
+        {
+          "url": "https://bioenergy-news.com/news/eba-identifies-five-regulatory-barriers-holding-back-european-biogas-sector",
+          "date": "2026-10-08",
+          "title": "Avrupa Biyogaz Birliği, biyogaz sektöründe ölçeklenmeyi engelleyen beş düzenleyici engel belirleyip tek durak izin çağrısı yaptı",
+          "source": "bioenergy-news.com",
+          "category": "politika"
+        },
+        {
+          "url": "https://ebb-eu.org/news/a-more-resilient-europe-needs-an-enduring-transport-target-under-the-renewable-energy-directive",
+          "date": "2026-10-08",
+          "title": "Avrupa Biyodizel Kurulu, 2030 sonrası için REDIV çerçevesinde kalıcı ulaşım yakıtı tedarikçi yükümlülüğü istedi",
+          "source": "ebb-eu.org",
+          "category": "politika"
+        },
+        {
+          "url": "https://biofuelsdigest.com/qantas-and-virgin-float-passing-saf-costs-onto-passengers",
+          "date": "2026-10-06",
+          "title": "Qantas ve Virgin, SAF ve biyoyakıt maliyetlerini karşılamak için yolcu biletlerine yeşil yakıt harcı önerdi",
+          "source": "biofuelsdigest.com",
+          "category": "politika"
+        },
+        {
+          "url": "https://biofuelsdigest.com/indias-readiness-for-saf-at-52-boeing-says",
+          "date": "2026-10-06",
+          "title": "Boeing ve RSB raporu, Hindistan'ın SAF hazırlık puanını politika ve altyapı boşluklarına atfen %52 olarak belirledi",
+          "source": "biofuelsdigest.com",
+          "category": "rapor"
+        },
+        {
+          "url": "https://gov.uk/government/news/332m-to-protect-public-from-future-epidemics-and-pandemics",
+          "date": "2026-10-08",
+          "title": "İngiltere hükümeti, salgın hazırlığı için sekiz aşı projesine 33,2 milyon sterlin ayırdı",
           "source": "gov.uk",
           "category": "politika"
-        },
-        {
-          "url": "https://vegconomist.com/politics-law/dutch-parliament-votes-fold-plant-based-action-plan-into-nitrogen-food-policy",
-          "date": "2026-09-29",
-          "title": "Hollanda Parlamentosu, bitki bazlı eylem planını azot ve gıda politikası çerçevelerine entegre etti",
-          "source": "vegconomist.com",
-          "category": "politika"
         }
       ]
     },
     {
-      "kume": "Biyomalzeme",
+      "kume": "Küresel SAF ve biyoyakıt projeleri",
       "maddeler": [
         {
-          "url": "https://ekonomim.com/kose-yazisi/desanin-yeni-sayfasinda-toskana-ve-biyomalzeme-var-olmazi-oldurmak/921104",
-          "date": "2026-09-28",
-          "title": "DESA, Gozen Bioworks ve Gozen Institute ile nano-selüloz bazlı Lunaform malzemesini geliştirmek için ortak girişim kurdu",
-          "source": "ekonomim.com",
-          "category": "biyomalzeme"
+          "url": "https://renewable-carbon.eu/news/eni-and-petronas-explore-innovative-biofuel-solutions",
+          "date": "2026-10-05",
+          "title": "Eni ve PETRONAS, Malezya'daki Pengerang biyorafinerisi dahil HVO ve SAF üretimi için biyoyakıt çözümlerini araştırıyor",
+          "source": "renewable-carbon.eu",
+          "category": "biyoyakit"
         },
         {
-          "url": "https://bioplasticsmagazine.com/en/news/meldungen/20261002-Recyclable-paper-sachet-with-drop-in-biobased-coating-for-a-liquid-product.php",
-          "date": "2026-10-02",
-          "title": "Kelpi ve Bower Collective, deniz yosunu bazlı kaplamayla dünyanın ilk sıvı kağıt saşesini tanıttı",
-          "source": "bioplasticsmagazine.com",
-          "category": "biyomalzeme"
-        }
-      ]
-    },
-    {
-      "kume": "Biyomanüfaktür altyapısı",
-      "maddeler": [
+          "url": "https://biofuelsdigest.com/indonesia-plans-1m-hectares-of-sugarcane-for-e20",
+          "date": "2026-10-08",
+          "title": "Endonezya, planlanan E20 benzin programı için yaklaşık 1 milyon hektar yeni şeker kamışı ekim alanı planlıyor",
+          "source": "biofuelsdigest.com",
+          "category": "biyoyakit"
+        },
         {
-          "url": "https://bioenergy-news.com/news/ecostrat-new-energy-risk-and-yilkins-form-alliance-to-de-risk-biomass-project-financing",
-          "date": "2026-10-01",
-          "title": "Ecostrat, New Energy Risk ve Yilkins, biyokütle proje finansmanı riskini azaltmak için hammadde tedarik sigortası ittifakı kurdu",
+          "url": "https://renewable-carbon.eu/news/moeve-launches-construction-of-the-first-phase-of-europes-largest-green-hydrogen-project",
+          "date": "2026-10-09",
+          "title": "Moeve, Onuba yeşil hidrojen projesinin ilk aşaması ile SAF ve HVO üretecek 2G biyoyakıt tesisinin inşasına başladı",
+          "source": "renewable-carbon.eu",
+          "category": "biyoyakit"
+        },
+        {
+          "url": "https://bioenergy-news.com/news/toyota-tsusho-and-kbi-launch-indonesian-biomethane-venture",
+          "date": "2026-10-06",
+          "title": "KIS Group ve Toyota Tsusho, Güney Sumatra'da palm yağı atık suyundan biyometan üretmek için KTBI ortak girişimini kurdu",
           "source": "bioenergy-news.com",
-          "category": "biyomanufaktur"
+          "category": "biyoyakit"
         },
         {
-          "url": "https://vegconomist.com/agriculture-agribusiness/zymofix-moves-solid-state-fermentation-industrial-scale-6m-belgian-plant",
-          "date": "2026-10-01",
-          "title": "Zymofix, Belçika'nın Deinze kentinde 6 milyon euroluk endüstriyel ölçekli katı-hal fermantasyon tesisini açtı",
-          "source": "vegconomist.com",
-          "category": "biyomanufaktur"
+          "url": "https://bioenergy-news.com/news/metacon-wins-eu-funding-for-biomethane-to-hydrogen-pilot-in-crete",
+          "date": "2026-10-09",
+          "title": "Metacon, Girit'teki Ierapetra biyogaz sahasında biyometanı hidrojene dönüştüren BIOH2VAP pilotu için AB fonu kazandı",
+          "source": "bioenergy-news.com",
+          "category": "biyoyakit"
         },
         {
-          "url": "https://vegconomist.com/manufacturing-technology/gea-build-25m-manufacturing-drying-hub-next-to-wisconsin-new-food-center",
-          "date": "2026-10-02",
-          "title": "GEA, Wisconsin'in Janesville kentinde hassas fermantasyon ekipmanları için 25 milyon dolarlık üretim ve kurutma merkezi kuracak",
-          "source": "vegconomist.com",
-          "category": "biyomanufaktur"
+          "url": "https://bioenergy-news.com/news/vietnam-starts-building-mekong-delta-rice-husk-biomass-fuel-hub",
+          "date": "2026-10-06",
+          "title": "Vietnam'ın Can Tho kentinde biyomas yakıt tedarik merkezi içeren Green CT pirinç işleme kompleksinin inşaatı başladı",
+          "source": "bioenergy-news.com",
+          "category": "biyoyakit"
         }
       ]
     },
     {
-      "kume": "Karbon yakalama ve kullanımı",
+      "kume": "Biyomalzemeler",
       "maddeler": [
         {
-          "url": "https://biofuelsdigest.com/eu-project-uncover-to-demonstrate-six-co2-conversion-technologies",
-          "date": "2026-09-30",
-          "title": "Horizon Europe destekli UNCOVER projesi, atık, odun ve çimento genelinde altı CO2 dönüşüm teknolojisini sergiledi",
+          "url": "https://biofuelsdigest.com/indian-minister-launches-commercial-use-of-bio-based-biodegradable-pla-plastic",
+          "date": "2026-10-04",
+          "title": "Hindistan, BioE3 programı kapsamında Kumbhi'deki pilot tesiste biyobazlı PLA plastiğin ticari kullanımını başlattı",
           "source": "biofuelsdigest.com",
-          "category": "karbon"
+          "category": "biyomalzeme"
+        }
+      ]
+    },
+    {
+      "kume": "Biyo-hizmetler ve dijital araçlar",
+      "maddeler": [
+        {
+          "url": "https://research-and-innovation.ec.europa.eu/news/all-research-and-innovation-news/commission-earmarks-eur65-million-safeguard-critical-data-life-sciences-and-biotechnology-2026-10-06_en",
+          "date": "2026-10-06",
+          "title": "Avrupa Komisyonu, yaşam bilimleri ve biyoteknoloji verilerini korumak için Horizon Europe kapsamında 65 milyon euro ayırdı",
+          "source": "research-and-innovation.ec.europa.eu",
+          "category": "bio-hizmetler"
         },
         {
-          "url": "https://biofuelsdigest.com/skyrenu-technologies-delivers-first-batch-of-efuels-and-echemicals-based-on-university-of-sherbrooke-tech",
-          "date": "2026-09-29",
-          "title": "Skyrenu Technologies, Secant Fuel'e sentetik yakıt üretimi için ilk doğrudan hava yakalama CO2 partisini teslim etti",
-          "source": "biofuelsdigest.com",
-          "category": "karbon"
+          "url": "https://labiotech.eu/partner/biologics-testing-europe-merck-darmstadt",
+          "date": "2026-10-06",
+          "title": "Merck'in Darmstadt'taki 25 milyon euroluk BioReliance test tesisi, AB biyolojik ilaç testleri için 2027 başında açılacak",
+          "source": "labiotech.eu",
+          "category": "bio-hizmetler"
+        },
+        {
+          "url": "https://unite.ai/xtalpi-unveils-kodexia-a-closed-loop-ai-platform-for-sirna-discovery",
+          "date": "2026-10-06",
+          "title": "XtalPi, siRNA tasarımı için kapalı döngü yapay zeka platformu Kodexia'yı tanıttı",
+          "source": "unite.ai",
+          "category": "bio-hizmetler"
         }
       ]
     }
