@@ -1,47 +1,4 @@
 {
-  "issue": {
-    "number": 11,
-    "hafta": "2026-H41",
-    "publication_date": "2026-10-12",
-    "coverage_start": "2026-10-04",
-    "coverage_end": "2026-10-11",
-    "window_days": 7,
-    "audio": {
-      "url": "assets/audio/2026-H41.mp3",
-      "duration_sec": 57,
-      "voice": "lxZLq5dcyw12UangGJgN",
-      "chars": 772,
-      "generated_at": "2026-10-12"
-    }
-  },
-  "brief": [
-    {
-      "text": "İtalya, EMBRACED modelini esas alarak 11 yeni biyorafineri için Ulusal Kurtarma Planı kapsamında 109 milyon euro ayırdı.",
-      "slug": "italya-embraced-modelini-genisleterek-11-biyorafineriye-109-milyon-eur"
-    },
-    {
-      "text": "Bayer, Ohio'da modüler ilaç üretim kampüsüne 2,2 milyar dolar yatıracağını, ilk modülün 2031'de açılacağını duyurdu.",
-      "slug": "bayer-ohio-da-2-2-milyar-dolarlik-moduler-ilac-uretim-tesisi-kuracak"
-    },
-    {
-      "text": "Fransız greentech şirketi AFYREN, biyobazlı propiyonik asitle formüle edilen ilk kozmetik ürününü piyasaya sürdü.",
-      "slug": "afyren-biyobazli-propiyonik-asitle-ilk-kozmetik-urunun-kuresel-lansman"
-    },
-    {
-      "text": "Verbio, Bitterfeld'de yaklaşık 100 milyon euroluk yatırımla yılda 60 bin ton kapasiteli ilk büyük ölçekli etenolisis tesisini devreye aldı.",
-      "slug": "verbio-bitterfeld-de-dunyanin-ilk-buyuk-olcekli-etenolisis-tesisini-de"
-    },
-    {
-      "text": "Copenhagen Infrastructure Partners, İtalya'daki Via Verde biyometan platformu için nihai yatırım kararı aldı; 20 proje yılda 1 TWh üretecek.",
-      "slug": "cip-italya-da-via-verde-biyometan-platformunda-nihai-yatirim-karari-al"
-    }
-  ],
-  "metrics": {
-    "aciklanan_yatirim_usd_milyon": 4200,
-    "proje_sayisi": 10,
-    "politika_gelismesi": null,
-    "kapsanan_ulke": 10
-  },
   "lead": {
     "id": "embraced-italy-biorefineries-109m",
     "slug": "italya-embraced-modelini-genisleterek-11-biyorafineriye-109-milyon-eur",
@@ -52,8 +9,8 @@
     },
     "score": 8,
     "secim": "one_cikan",
-    "title": "İtalya, EMBRACED modelini genişleterek 11 biyorafineriye 109 milyon euro ayırdı",
-    "detail": "Circular Bio-based Europe Ortak Girişimi (CBE JU) tarafından desteklenen EMBRACED projesi, bebek bezi, kadın hijyen ürünü ve inkontinans pedi gibi emilici hijyen ürünlerini (AHP) geri dönüştürmeyi hedefledi. Bu atık akımı uzun süre geri dönüştürülemez kabul edildi. Avrupa'da yılda yaklaşık 8,5 milyon ton AHP atığı oluşuyor ve bunun büyük kısmı yakılıyor veya düzenli depolama alanlarına gönderiliyor.\n\nProje, bu atığın bir biyorafineri sürecinden geçirilerek biyobazlı malzemeye, gübreye ve biyoplastiğe dönüştürülebileceğini kanıtladı. Pilot tesisin etkisi fabrika sınırlarını aştı. EMBRACED, endüstriyel ölçekte işleyen bir döngüsel ekonomi modeli göstererek İtalyan hükümetine biyobazlı sanayinin büyütülmesi için somut bir yol haritası sundu; hükümet de bu yol haritasını uygulamaya koydu.\n\nİtalya'nın Ulusal Kurtarma ve Dayanıklılık Planı, EMBRACED modelini yeni bölgelere ve atık akımlarına yaymak amacıyla ülke çapında 11 yeni biyorafineri inşası için 109 milyon euronun üzerinde kaynak ayırdı. Bu biyorafinerilerin ilki Temmuz 2025'te Treviso'da açıldı. EMBRACED proje temsilcisi Marco Mattiello, 109 milyon euroluk tahsisatın biyorafineri altyapısını genişleteceğini, modeli farklı atık akımlarına taşıyacağını ve biyoyakıt, biyoplastik ile biyomalzeme üretimini çeşitlendireceğini belirtti. Mattiello, hükümetin bu adımla sanayi inovasyonunu artırmayı, yatırım çekmeyi ve yeşil teknolojilerde rekabetçiliği güçlendirmeyi hedeflediğini aktardı.\n\nTeknoloji tedarikçisi i-Foria, AHP atığından selüloz, plastik ve polimeri ayrıştıran ön işleme sürecini geliştirmeye devam etti. Bu ilerleme sayesinde İtalya, 20 milyon kişiye hizmet veren kaynağında ayrıştırılmış AHP toplama sistemini devreye aldı. Ülke ayrıca dünyanın ilk AHP Atık Sonu kararnamesini kabul ederek bu alanda Avrupa'nın öncüsü konumuna geldi. i-Foria kurucusu Marcello Somma, bir sonraki adımın biyorafineri konseptini tüm kentsel biyoatığı kapsayacak şekilde genişletmek olduğunu söyledi.\n\nFosil yakıtlara ve ithal hammaddeye bağımlılığı azaltarak, EMBRACED gibi projeler biyorafinerilerin Avrupa'nın dayanıklılığını ve enerji bağımsızlığını güçlendirebileceğini gösteriyor. Proje, tesislerin kurulduğu bölgelerde biyoteknoloji, atık yönetimi ve imalat alanlarında istihdam yaratıyor.",
+    "title": "İtalya, EMBRACED modelini genişleterek İtalya’nın sanayi yapsını yeniden şekillendiriyor",
+    "detail": "Circular Bio-based Europe Ortak Girişimi (CBE JU) tarafından desteklenen EMBRACED projesi, bebek bezleri, kadın hijyen ürünleri ve yetişkin hasta bezlerini kapsayan Emici Hijyen Ürünlerinin (Absorbent Hygiene Products – AHP) geri dönüştürülmesini hedeflediğinde, uzun yıllardır geri dönüştürülemez olarak değerlendirilen bir atık türüne çözüm geliştirmeyi amaçlıyordu. Avrupa'da her yıl yaklaşık 8,5 milyon ton emici hijyen ürünü atığı oluşuyor ve bu atıkların neredeyse tamamı yakılıyor veya düzenli depolama sahalarına gönderiliyor.\n\nEMBRACED, yenilikçi bir biyorafineri süreci aracılığıyla bu atıkların biyobazlı malzemelere, gübrelere ve biyoplastiklere dönüştürülebileceğini kanıtladı. Projenin etkisi, pilot tesisin çok ötesine ulaştı. Döngüsel ekonomi modelinin endüstriyel ölçekte uygulanabilirliğini ortaya koyan EMBRACED, İtalya Hükûmetine biyobazlı sanayinin ölçeklendirilmesi için açık ve uygulanabilir bir model sundu. İtalya Hükûmeti de bu modeli hayata geçirmek üzere harekete geçti.\n\nİtalya'nın Ulusal Kurtarma ve Dayanıklılık Planı, EMBRACED modelini yeni bölgelere ve atık akımlarına yaymak amacıyla ülke çapında 11 yeni biyorafineri inşası için 109 milyon euronun üzerinde kaynak ayırdı. Bu biyorafinerilerin ilki Temmuz 2025'te Treviso'da açıldı. EMBRACED proje temsilcisi Marco Mattiello, 109 milyon euroluk tahsisatın biyorafineri altyapısını genişleteceğini, modeli farklı atık akımlarına taşıyacağını ve biyoyakıt, biyoplastik ile biyomalzeme üretimini çeşitlendireceğini belirtti. Mattiello, hükümetin bu adımla sanayi inovasyonunu artırmayı, yatırım çekmeyi ve yeşil teknolojilerde rekabetçiliği güçlendirmeyi hedeflediğini aktardı.\n\nEMBRACED'in başarısı, yeni teknolojik gelişmelerin de temelini oluşturdu. Teknoloji tedarikçisi i-Foria, projenin sonuçlarından yararlanarak emici hijyen ürünü atıklarındaki selüloz, plastik ve polimerleri birbirinden ayıran ön işlem sürecini geliştirdi. Bu ilerlemeler sayesinde İtalya, 20 milyon vatandaşa hizmet veren, emici hijyen ürünü atıklarının kaynağında ayrı toplanmasına yönelik bir sistem oluşturdu. i-Foria kurucusu Marcello Somma, bir sonraki adımın biyorafineri konseptini tüm kentsel biyoatığı kapsayacak şekilde genişletmek olduğunu söyledi.\n\nÜlke ayrıca, emici hijyen ürünlerine yönelik dünyanın ilk Atık Statüsünden Çıkış (End-of-Waste) Kararnamesini kabul etti. Geri dönüştürülmüş atıkların hangi koşullarda hukuken atık olmaktan çıkıp normal bir ürün olarak değerlendirilebileceğini belirleyen bu düzenleme, İtalya'yı döngüsel ekonominin bu özel alanında Avrupa'nın öncü ülkelerinden biri konumuna taşıdı.\n\nEMBRACED gibi projeler, fosil yakıtlara ve ithal ham maddelere bağımlılığı azaltarak biyorerafinerilerin Avrupa'nın ekonomik dayanıklılığını ve enerji bağımsızlığını nasıl güçlendirebileceğini ortaya koyuyor.\nAynı zamanda bu tesisler, kuruldukları bölgelerde biyoteknoloji, atık yönetimi ve imalat sanayisi alanlarında yeni istihdam olanakları yaratıyor. EMBRACED, farklı bölgelerde tekrarlanabilme ve yeni yatırımları harekete geçirebilme potansiyeliyle, CBE JU finansmanının Avrupa biyoekonomisi açısından gerçekleştirmeyi amaçladığı etkiyi somut biçimde temsil ediyor.",
     "source": {
       "url": "https://cbe.europa.eu/achievements/embraced-successful-demonstrator-triggers-eur109-million-investment-wave-italy",
       "name": "cbe.europa.eu",
@@ -62,7 +19,7 @@
       "domain": "cbe.europa.eu",
       "primary": true
     },
-    "excerpt": "AB destekli EMBRACED gösterim tesisinin başarısı, İtalya'nın Ulusal Kurtarma ve Dayanıklılık Planı kapsamında 11 yeni biyorafineri için 109 milyon euroluk yatırım dalgasını tetikledi. Avrupa'da yılda yaklaşık 8,5 milyon ton emilici hijyen ürünü atığı üretiliyor ve bu atığın büyük kısmı yakılıyor veya düzenli depolama alanına gönderiliyor.",
+    "excerpt": "Circular Bio-based Europe Ortak Girişimi (CBE JU) tarafından desteklenen EMBRACED'in bebek bezi atıklarını değerli kaynaklara dönüştüren gösterim tesisinin başarısı, İtalya'nın Ulusal Kurtarma ve Dayanıklılık Planı kapsamında 11 yeni biyorafineri için 109 milyon euroluk yatırım dalgasını tetikledi.",
     "capacity": null,
     "category": "atik-donusum",
     "maturity": "funded",
@@ -96,6 +53,268 @@
     ],
     "published_date": "2026-10-06",
     "supporting_sources": []
+  },
+  "brief": [
+    {
+      "slug": "italya-embraced-modelini-genisleterek-11-biyorafineriye-109-milyon-eur",
+      "text": "İtalya, EMBRACED modelini esas alarak 11 yeni biyorafineri için Ulusal Kurtarma Planı kapsamında 109 milyon euro ayırdı."
+    },
+    {
+      "slug": "bayer-ohio-da-2-2-milyar-dolarlik-moduler-ilac-uretim-tesisi-kuracak",
+      "text": "Bayer, Ohio'da modüler ilaç üretim kampüsüne 2,2 milyar dolar yatıracağını, ilk modülün 2031'de açılacağını duyurdu."
+    },
+    {
+      "slug": "afyren-biyobazli-propiyonik-asitle-ilk-kozmetik-urunun-kuresel-lansman",
+      "text": "Fransız greentech şirketi AFYREN, biyobazlı propiyonik asitle formüle edilen ilk kozmetik ürününü piyasaya sürdü."
+    },
+    {
+      "slug": "verbio-bitterfeld-de-dunyanin-ilk-buyuk-olcekli-etenolisis-tesisini-de",
+      "text": "Verbio, Bitterfeld'de yaklaşık 100 milyon euroluk yatırımla yılda 60 bin ton kapasiteli ilk büyük ölçekli etenolisis tesisini devreye aldı."
+    },
+    {
+      "slug": "cip-italya-da-via-verde-biyometan-platformunda-nihai-yatirim-karari-al",
+      "text": "Copenhagen Infrastructure Partners, İtalya'daki Via Verde biyometan platformu için nihai yatırım kararı aldı; 20 proje yılda 1 TWh üretecek."
+    }
+  ],
+  "issue": {
+    "audio": {
+      "url": "assets/audio/2026-H41.mp3",
+      "chars": 772,
+      "voice": "lxZLq5dcyw12UangGJgN",
+      "duration_sec": 57,
+      "generated_at": "2026-10-12"
+    },
+    "hafta": "2026-H41",
+    "number": 11,
+    "window_days": 7,
+    "coverage_end": "2026-10-11",
+    "coverage_start": "2026-10-04",
+    "publication_date": "2026-10-12"
+  },
+  "radar": [
+    {
+      "kume": "Biyoteknoloji yatırımları ve Ar-Ge",
+      "maddeler": [
+        {
+          "url": "https://news.cision.com/se/astrazeneca/r/astrazeneca-opens-new-global-strategic-r-d-centre-in-kendall-square--cambridge--massachusetts,c4404837",
+          "date": "2026-10-05",
+          "title": "AstraZeneca, Cambridge'deki Kendall Square'de 1 milyar dolardan fazla yatırımla küresel stratejik Ar-Ge merkezi açtı",
+          "source": "news.cision.com",
+          "category": "biyoteknoloji"
+        },
+        {
+          "url": "https://news.cision.com/se/astrazeneca/r/astrazeneca-completes-equity-investment-in-summit-therapeutics,c4404407",
+          "date": "2026-10-05",
+          "title": "AstraZeneca, ivonescimab geliştirmesi için Summit Therapeutics'e 2 milyar dolarlık sermaye yatırımını tamamladı",
+          "source": "news.cision.com",
+          "category": "biyoteknoloji"
+        },
+        {
+          "url": "https://marketchameleon.com/PressReleases/i/2388446/SRRK/scholar-rock-resubmits-apitegromab-marketing-authorisation-a",
+          "date": "2026-10-08",
+          "title": "Scholar Rock, apitegromab için pazarlama izni başvurusunu alternatif ABD dolum tesisiyle EMA'ya yeniden sundu",
+          "source": "marketchameleon.com",
+          "category": "biyoteknoloji"
+        },
+        {
+          "url": "https://finance.yahoo.com/healthcare/articles/vaxcyte-reports-positive-topline-data-100000000.html",
+          "date": "2026-10-05",
+          "title": "Vaxcyte, VAX-31 pnömokok aşısının Faz 3 OPUS-1 denemesinden olumlu sonuçlar sunacağını bildirdi",
+          "source": "finance.yahoo.com",
+          "category": "biyoteknoloji"
+        }
+      ]
+    },
+    {
+      "kume": "Biyomanüfaktür ve fermantasyon altyapısı",
+      "maddeler": [
+        {
+          "url": "https://biofuelsdigest.com/biotech-open-platform-builds-e20-million-bridge-from-lab-to-industrial-scale",
+          "date": "2026-10-05",
+          "title": "Biotech Open Platform, Clermont-Ferrand'da fermantasyon ölçeklendirmesi için 20 milyon euroluk merkez açtı",
+          "source": "biofuelsdigest.com",
+          "category": "biyomanufaktur"
+        },
+        {
+          "url": "https://cbe.europa.eu/achievements/estonian-pilot-global-biomaterials-platform-fibenol-builds-sweetwoods",
+          "date": "2026-10-06",
+          "title": "Fibenol, SWEETWOODS pilotunun ardından Letonya'da ilk ticari ölçekli sert ağaç biyorafinerisini hazırlıyor",
+          "source": "cbe.europa.eu",
+          "category": "biyomanufaktur"
+        },
+        {
+          "url": "https://renewable-carbon.eu/news/zymofix-to-build-flagship-microbial-manufacturing-plant-as-it-takes-solid-state-fermentation-to-industrial-scale",
+          "date": "2026-10-08",
+          "title": "Zymofix, katı hal fermantasyonunu endüstriyelleştirmek için Belçika'nın Deinze kentinde 6 milyon euroluk tesis kuracak",
+          "source": "renewable-carbon.eu",
+          "category": "biyomanufaktur"
+        },
+        {
+          "url": "https://renewable-carbon.eu/news/spiber-launches-spiber-biofoundry-opening-the-biomanufacturing-platform-behind-brewed-protein-to-partners",
+          "date": "2026-10-07",
+          "title": "Spiber, Brewed Protein fermantasyon platformunu sözleşmeli üretim hizmeti olarak ortaklara açtı",
+          "source": "renewable-carbon.eu",
+          "category": "biyomanufaktur"
+        }
+      ]
+    },
+    {
+      "kume": "Alternatif protein ve mikroalg",
+      "maddeler": [
+        {
+          "url": "https://agfundernews.com/%F0%9F%8E%A5-verley-scales-blg-to-2000000-l-as-precision-fermentation-enters-its-prove-it-phase",
+          "date": "2026-10-06",
+          "title": "Verley, hassas fermantasyonla üretilen BLG süt proteinini 200 bin litrelik tanklara ölçeklendirdi",
+          "source": "agfundernews.com",
+          "category": "gida-protein"
+        },
+        {
+          "url": "https://greenqueen.com.hk/edonia-spirulina-protein-microalgae-edo-mince-funding",
+          "date": "2026-10-07",
+          "title": "Edonia, Brittany'de endüstriyel spirulina protein tesisi açmak için 15 milyon euro topladı",
+          "source": "greenqueen.com.hk",
+          "category": "gida-protein"
+        }
+      ]
+    },
+    {
+      "kume": "Politika ve düzenleme",
+      "maddeler": [
+        {
+          "url": "https://renewable-carbon.eu/news/unlocking-europes-bioeconomy-new-eu-study-highlights-major-potential-of-bio-based-industries-and-biotechnology-for-europes-green-transition",
+          "date": "2026-10-06",
+          "title": "AB çalışması, biyoekonomi talebinin yalnızca atıklarla karşılanamayacağını belirterek politika çerçevesi çağrısı yaptı",
+          "source": "renewable-carbon.eu",
+          "category": "politika"
+        },
+        {
+          "url": "https://bioenergy-news.com/news/eba-identifies-five-regulatory-barriers-holding-back-european-biogas-sector",
+          "date": "2026-10-08",
+          "title": "Avrupa Biyogaz Birliği, biyogaz sektöründe ölçeklenmeyi engelleyen beş düzenleyici engel belirleyip tek durak izin çağrısı yaptı",
+          "source": "bioenergy-news.com",
+          "category": "politika"
+        },
+        {
+          "url": "https://ebb-eu.org/news/a-more-resilient-europe-needs-an-enduring-transport-target-under-the-renewable-energy-directive",
+          "date": "2026-10-08",
+          "title": "Avrupa Biyodizel Kurulu, 2030 sonrası için REDIV çerçevesinde kalıcı ulaşım yakıtı tedarikçi yükümlülüğü istedi",
+          "source": "ebb-eu.org",
+          "category": "politika"
+        },
+        {
+          "url": "https://biofuelsdigest.com/qantas-and-virgin-float-passing-saf-costs-onto-passengers",
+          "date": "2026-10-06",
+          "title": "Qantas ve Virgin, SAF ve biyoyakıt maliyetlerini karşılamak için yolcu biletlerine yeşil yakıt harcı önerdi",
+          "source": "biofuelsdigest.com",
+          "category": "politika"
+        },
+        {
+          "url": "https://biofuelsdigest.com/indias-readiness-for-saf-at-52-boeing-says",
+          "date": "2026-10-06",
+          "title": "Boeing ve RSB raporu, Hindistan'ın SAF hazırlık puanını politika ve altyapı boşluklarına atfen %52 olarak belirledi",
+          "source": "biofuelsdigest.com",
+          "category": "rapor"
+        },
+        {
+          "url": "https://gov.uk/government/news/332m-to-protect-public-from-future-epidemics-and-pandemics",
+          "date": "2026-10-08",
+          "title": "İngiltere hükümeti, salgın hazırlığı için sekiz aşı projesine 33,2 milyon sterlin ayırdı",
+          "source": "gov.uk",
+          "category": "politika"
+        }
+      ]
+    },
+    {
+      "kume": "Küresel SAF ve biyoyakıt projeleri",
+      "maddeler": [
+        {
+          "url": "https://renewable-carbon.eu/news/eni-and-petronas-explore-innovative-biofuel-solutions",
+          "date": "2026-10-05",
+          "title": "Eni ve PETRONAS, Malezya'daki Pengerang biyorafinerisi dahil HVO ve SAF üretimi için biyoyakıt çözümlerini araştırıyor",
+          "source": "renewable-carbon.eu",
+          "category": "biyoyakit"
+        },
+        {
+          "url": "https://biofuelsdigest.com/indonesia-plans-1m-hectares-of-sugarcane-for-e20",
+          "date": "2026-10-08",
+          "title": "Endonezya, planlanan E20 benzin programı için yaklaşık 1 milyon hektar yeni şeker kamışı ekim alanı planlıyor",
+          "source": "biofuelsdigest.com",
+          "category": "biyoyakit"
+        },
+        {
+          "url": "https://renewable-carbon.eu/news/moeve-launches-construction-of-the-first-phase-of-europes-largest-green-hydrogen-project",
+          "date": "2026-10-09",
+          "title": "Moeve, Onuba yeşil hidrojen projesinin ilk aşaması ile SAF ve HVO üretecek 2G biyoyakıt tesisinin inşasına başladı",
+          "source": "renewable-carbon.eu",
+          "category": "biyoyakit"
+        },
+        {
+          "url": "https://bioenergy-news.com/news/toyota-tsusho-and-kbi-launch-indonesian-biomethane-venture",
+          "date": "2026-10-06",
+          "title": "KIS Group ve Toyota Tsusho, Güney Sumatra'da palm yağı atık suyundan biyometan üretmek için KTBI ortak girişimini kurdu",
+          "source": "bioenergy-news.com",
+          "category": "biyoyakit"
+        },
+        {
+          "url": "https://bioenergy-news.com/news/metacon-wins-eu-funding-for-biomethane-to-hydrogen-pilot-in-crete",
+          "date": "2026-10-09",
+          "title": "Metacon, Girit'teki Ierapetra biyogaz sahasında biyometanı hidrojene dönüştüren BIOH2VAP pilotu için AB fonu kazandı",
+          "source": "bioenergy-news.com",
+          "category": "biyoyakit"
+        },
+        {
+          "url": "https://bioenergy-news.com/news/vietnam-starts-building-mekong-delta-rice-husk-biomass-fuel-hub",
+          "date": "2026-10-06",
+          "title": "Vietnam'ın Can Tho kentinde biyomas yakıt tedarik merkezi içeren Green CT pirinç işleme kompleksinin inşaatı başladı",
+          "source": "bioenergy-news.com",
+          "category": "biyoyakit"
+        }
+      ]
+    },
+    {
+      "kume": "Biyomalzemeler",
+      "maddeler": [
+        {
+          "url": "https://biofuelsdigest.com/indian-minister-launches-commercial-use-of-bio-based-biodegradable-pla-plastic",
+          "date": "2026-10-04",
+          "title": "Hindistan, BioE3 programı kapsamında Kumbhi'deki pilot tesiste biyobazlı PLA plastiğin ticari kullanımını başlattı",
+          "source": "biofuelsdigest.com",
+          "category": "biyomalzeme"
+        }
+      ]
+    },
+    {
+      "kume": "Biyo-hizmetler ve dijital araçlar",
+      "maddeler": [
+        {
+          "url": "https://research-and-innovation.ec.europa.eu/news/all-research-and-innovation-news/commission-earmarks-eur65-million-safeguard-critical-data-life-sciences-and-biotechnology-2026-10-06_en",
+          "date": "2026-10-06",
+          "title": "Avrupa Komisyonu, yaşam bilimleri ve biyoteknoloji verilerini korumak için Horizon Europe kapsamında 65 milyon euro ayırdı",
+          "source": "research-and-innovation.ec.europa.eu",
+          "category": "bio-hizmetler"
+        },
+        {
+          "url": "https://labiotech.eu/partner/biologics-testing-europe-merck-darmstadt",
+          "date": "2026-10-06",
+          "title": "Merck'in Darmstadt'taki 25 milyon euroluk BioReliance test tesisi, AB biyolojik ilaç testleri için 2027 başında açılacak",
+          "source": "labiotech.eu",
+          "category": "bio-hizmetler"
+        },
+        {
+          "url": "https://unite.ai/xtalpi-unveils-kodexia-a-closed-loop-ai-platform-for-sirna-discovery",
+          "date": "2026-10-06",
+          "title": "XtalPi, siRNA tasarımı için kapalı döngü yapay zeka platformu Kodexia'yı tanıttı",
+          "source": "unite.ai",
+          "category": "bio-hizmetler"
+        }
+      ]
+    }
+  ],
+  "metrics": {
+    "proje_sayisi": 10,
+    "kapsanan_ulke": 10,
+    "politika_gelismesi": null,
+    "aciklanan_yatirim_usd_milyon": 4200
   },
   "stories": [
     {
@@ -573,225 +792,6 @@
       ],
       "published_date": "2026-10-05",
       "supporting_sources": []
-    }
-  ],
-  "radar": [
-    {
-      "kume": "Biyoteknoloji yatırımları ve Ar-Ge",
-      "maddeler": [
-        {
-          "url": "https://news.cision.com/se/astrazeneca/r/astrazeneca-opens-new-global-strategic-r-d-centre-in-kendall-square--cambridge--massachusetts,c4404837",
-          "date": "2026-10-05",
-          "title": "AstraZeneca, Cambridge'deki Kendall Square'de 1 milyar dolardan fazla yatırımla küresel stratejik Ar-Ge merkezi açtı",
-          "source": "news.cision.com",
-          "category": "biyoteknoloji"
-        },
-        {
-          "url": "https://news.cision.com/se/astrazeneca/r/astrazeneca-completes-equity-investment-in-summit-therapeutics,c4404407",
-          "date": "2026-10-05",
-          "title": "AstraZeneca, ivonescimab geliştirmesi için Summit Therapeutics'e 2 milyar dolarlık sermaye yatırımını tamamladı",
-          "source": "news.cision.com",
-          "category": "biyoteknoloji"
-        },
-        {
-          "url": "https://marketchameleon.com/PressReleases/i/2388446/SRRK/scholar-rock-resubmits-apitegromab-marketing-authorisation-a",
-          "date": "2026-10-08",
-          "title": "Scholar Rock, apitegromab için pazarlama izni başvurusunu alternatif ABD dolum tesisiyle EMA'ya yeniden sundu",
-          "source": "marketchameleon.com",
-          "category": "biyoteknoloji"
-        },
-        {
-          "url": "https://finance.yahoo.com/healthcare/articles/vaxcyte-reports-positive-topline-data-100000000.html",
-          "date": "2026-10-05",
-          "title": "Vaxcyte, VAX-31 pnömokok aşısının Faz 3 OPUS-1 denemesinden olumlu sonuçlar sunacağını bildirdi",
-          "source": "finance.yahoo.com",
-          "category": "biyoteknoloji"
-        }
-      ]
-    },
-    {
-      "kume": "Biyomanüfaktür ve fermantasyon altyapısı",
-      "maddeler": [
-        {
-          "url": "https://biofuelsdigest.com/biotech-open-platform-builds-e20-million-bridge-from-lab-to-industrial-scale",
-          "date": "2026-10-05",
-          "title": "Biotech Open Platform, Clermont-Ferrand'da fermantasyon ölçeklendirmesi için 20 milyon euroluk merkez açtı",
-          "source": "biofuelsdigest.com",
-          "category": "biyomanufaktur"
-        },
-        {
-          "url": "https://cbe.europa.eu/achievements/estonian-pilot-global-biomaterials-platform-fibenol-builds-sweetwoods",
-          "date": "2026-10-06",
-          "title": "Fibenol, SWEETWOODS pilotunun ardından Letonya'da ilk ticari ölçekli sert ağaç biyorafinerisini hazırlıyor",
-          "source": "cbe.europa.eu",
-          "category": "biyomanufaktur"
-        },
-        {
-          "url": "https://renewable-carbon.eu/news/zymofix-to-build-flagship-microbial-manufacturing-plant-as-it-takes-solid-state-fermentation-to-industrial-scale",
-          "date": "2026-10-08",
-          "title": "Zymofix, katı hal fermantasyonunu endüstriyelleştirmek için Belçika'nın Deinze kentinde 6 milyon euroluk tesis kuracak",
-          "source": "renewable-carbon.eu",
-          "category": "biyomanufaktur"
-        },
-        {
-          "url": "https://renewable-carbon.eu/news/spiber-launches-spiber-biofoundry-opening-the-biomanufacturing-platform-behind-brewed-protein-to-partners",
-          "date": "2026-10-07",
-          "title": "Spiber, Brewed Protein fermantasyon platformunu sözleşmeli üretim hizmeti olarak ortaklara açtı",
-          "source": "renewable-carbon.eu",
-          "category": "biyomanufaktur"
-        }
-      ]
-    },
-    {
-      "kume": "Alternatif protein ve mikroalg",
-      "maddeler": [
-        {
-          "url": "https://agfundernews.com/%F0%9F%8E%A5-verley-scales-blg-to-2000000-l-as-precision-fermentation-enters-its-prove-it-phase",
-          "date": "2026-10-06",
-          "title": "Verley, hassas fermantasyonla üretilen BLG süt proteinini 200 bin litrelik tanklara ölçeklendirdi",
-          "source": "agfundernews.com",
-          "category": "gida-protein"
-        },
-        {
-          "url": "https://greenqueen.com.hk/edonia-spirulina-protein-microalgae-edo-mince-funding",
-          "date": "2026-10-07",
-          "title": "Edonia, Brittany'de endüstriyel spirulina protein tesisi açmak için 15 milyon euro topladı",
-          "source": "greenqueen.com.hk",
-          "category": "gida-protein"
-        }
-      ]
-    },
-    {
-      "kume": "Politika ve düzenleme",
-      "maddeler": [
-        {
-          "url": "https://renewable-carbon.eu/news/unlocking-europes-bioeconomy-new-eu-study-highlights-major-potential-of-bio-based-industries-and-biotechnology-for-europes-green-transition",
-          "date": "2026-10-06",
-          "title": "AB çalışması, biyoekonomi talebinin yalnızca atıklarla karşılanamayacağını belirterek politika çerçevesi çağrısı yaptı",
-          "source": "renewable-carbon.eu",
-          "category": "politika"
-        },
-        {
-          "url": "https://bioenergy-news.com/news/eba-identifies-five-regulatory-barriers-holding-back-european-biogas-sector",
-          "date": "2026-10-08",
-          "title": "Avrupa Biyogaz Birliği, biyogaz sektöründe ölçeklenmeyi engelleyen beş düzenleyici engel belirleyip tek durak izin çağrısı yaptı",
-          "source": "bioenergy-news.com",
-          "category": "politika"
-        },
-        {
-          "url": "https://ebb-eu.org/news/a-more-resilient-europe-needs-an-enduring-transport-target-under-the-renewable-energy-directive",
-          "date": "2026-10-08",
-          "title": "Avrupa Biyodizel Kurulu, 2030 sonrası için REDIV çerçevesinde kalıcı ulaşım yakıtı tedarikçi yükümlülüğü istedi",
-          "source": "ebb-eu.org",
-          "category": "politika"
-        },
-        {
-          "url": "https://biofuelsdigest.com/qantas-and-virgin-float-passing-saf-costs-onto-passengers",
-          "date": "2026-10-06",
-          "title": "Qantas ve Virgin, SAF ve biyoyakıt maliyetlerini karşılamak için yolcu biletlerine yeşil yakıt harcı önerdi",
-          "source": "biofuelsdigest.com",
-          "category": "politika"
-        },
-        {
-          "url": "https://biofuelsdigest.com/indias-readiness-for-saf-at-52-boeing-says",
-          "date": "2026-10-06",
-          "title": "Boeing ve RSB raporu, Hindistan'ın SAF hazırlık puanını politika ve altyapı boşluklarına atfen %52 olarak belirledi",
-          "source": "biofuelsdigest.com",
-          "category": "rapor"
-        },
-        {
-          "url": "https://gov.uk/government/news/332m-to-protect-public-from-future-epidemics-and-pandemics",
-          "date": "2026-10-08",
-          "title": "İngiltere hükümeti, salgın hazırlığı için sekiz aşı projesine 33,2 milyon sterlin ayırdı",
-          "source": "gov.uk",
-          "category": "politika"
-        }
-      ]
-    },
-    {
-      "kume": "Küresel SAF ve biyoyakıt projeleri",
-      "maddeler": [
-        {
-          "url": "https://renewable-carbon.eu/news/eni-and-petronas-explore-innovative-biofuel-solutions",
-          "date": "2026-10-05",
-          "title": "Eni ve PETRONAS, Malezya'daki Pengerang biyorafinerisi dahil HVO ve SAF üretimi için biyoyakıt çözümlerini araştırıyor",
-          "source": "renewable-carbon.eu",
-          "category": "biyoyakit"
-        },
-        {
-          "url": "https://biofuelsdigest.com/indonesia-plans-1m-hectares-of-sugarcane-for-e20",
-          "date": "2026-10-08",
-          "title": "Endonezya, planlanan E20 benzin programı için yaklaşık 1 milyon hektar yeni şeker kamışı ekim alanı planlıyor",
-          "source": "biofuelsdigest.com",
-          "category": "biyoyakit"
-        },
-        {
-          "url": "https://renewable-carbon.eu/news/moeve-launches-construction-of-the-first-phase-of-europes-largest-green-hydrogen-project",
-          "date": "2026-10-09",
-          "title": "Moeve, Onuba yeşil hidrojen projesinin ilk aşaması ile SAF ve HVO üretecek 2G biyoyakıt tesisinin inşasına başladı",
-          "source": "renewable-carbon.eu",
-          "category": "biyoyakit"
-        },
-        {
-          "url": "https://bioenergy-news.com/news/toyota-tsusho-and-kbi-launch-indonesian-biomethane-venture",
-          "date": "2026-10-06",
-          "title": "KIS Group ve Toyota Tsusho, Güney Sumatra'da palm yağı atık suyundan biyometan üretmek için KTBI ortak girişimini kurdu",
-          "source": "bioenergy-news.com",
-          "category": "biyoyakit"
-        },
-        {
-          "url": "https://bioenergy-news.com/news/metacon-wins-eu-funding-for-biomethane-to-hydrogen-pilot-in-crete",
-          "date": "2026-10-09",
-          "title": "Metacon, Girit'teki Ierapetra biyogaz sahasında biyometanı hidrojene dönüştüren BIOH2VAP pilotu için AB fonu kazandı",
-          "source": "bioenergy-news.com",
-          "category": "biyoyakit"
-        },
-        {
-          "url": "https://bioenergy-news.com/news/vietnam-starts-building-mekong-delta-rice-husk-biomass-fuel-hub",
-          "date": "2026-10-06",
-          "title": "Vietnam'ın Can Tho kentinde biyomas yakıt tedarik merkezi içeren Green CT pirinç işleme kompleksinin inşaatı başladı",
-          "source": "bioenergy-news.com",
-          "category": "biyoyakit"
-        }
-      ]
-    },
-    {
-      "kume": "Biyomalzemeler",
-      "maddeler": [
-        {
-          "url": "https://biofuelsdigest.com/indian-minister-launches-commercial-use-of-bio-based-biodegradable-pla-plastic",
-          "date": "2026-10-04",
-          "title": "Hindistan, BioE3 programı kapsamında Kumbhi'deki pilot tesiste biyobazlı PLA plastiğin ticari kullanımını başlattı",
-          "source": "biofuelsdigest.com",
-          "category": "biyomalzeme"
-        }
-      ]
-    },
-    {
-      "kume": "Biyo-hizmetler ve dijital araçlar",
-      "maddeler": [
-        {
-          "url": "https://research-and-innovation.ec.europa.eu/news/all-research-and-innovation-news/commission-earmarks-eur65-million-safeguard-critical-data-life-sciences-and-biotechnology-2026-10-06_en",
-          "date": "2026-10-06",
-          "title": "Avrupa Komisyonu, yaşam bilimleri ve biyoteknoloji verilerini korumak için Horizon Europe kapsamında 65 milyon euro ayırdı",
-          "source": "research-and-innovation.ec.europa.eu",
-          "category": "bio-hizmetler"
-        },
-        {
-          "url": "https://labiotech.eu/partner/biologics-testing-europe-merck-darmstadt",
-          "date": "2026-10-06",
-          "title": "Merck'in Darmstadt'taki 25 milyon euroluk BioReliance test tesisi, AB biyolojik ilaç testleri için 2027 başında açılacak",
-          "source": "labiotech.eu",
-          "category": "bio-hizmetler"
-        },
-        {
-          "url": "https://unite.ai/xtalpi-unveils-kodexia-a-closed-loop-ai-platform-for-sirna-discovery",
-          "date": "2026-10-06",
-          "title": "XtalPi, siRNA tasarımı için kapalı döngü yapay zeka platformu Kodexia'yı tanıttı",
-          "source": "unite.ai",
-          "category": "bio-hizmetler"
-        }
-      ]
     }
   ]
 }
