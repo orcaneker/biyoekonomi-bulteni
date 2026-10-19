@@ -1,0 +1,823 @@
+{
+  "issue": {
+    "number": 12,
+    "hafta": "2026-H42",
+    "publication_date": "2026-10-19",
+    "coverage_start": "2026-10-11",
+    "coverage_end": "2026-10-18",
+    "window_days": 7,
+    "audio": {
+      "url": "assets/audio/2026-H42.mp3",
+      "duration_sec": 54,
+      "voice": "lxZLq5dcyw12UangGJgN",
+      "chars": 747,
+      "generated_at": "2026-10-19"
+    }
+  },
+  "brief": [
+    {
+      "text": "Singapur, biyoekonomi araştırmalarını desteklemek amacıyla yaklaşık 92 milyon ABD doları tutarında Biyoekonomi Finansman Girişimi başlattı.",
+      "slug": "singapur-biyoekonomi-arastirmalari-icin-118-milyon-singapur-dolari-ayi"
+    },
+    {
+      "text": "Novonesis, Hindistan'daki Patalganga tesisine 600 milyon euroluk enzim fabrikası yatırımı yapacak.",
+      "slug": "novonesis-hindistan-da-patalganga-ya-600-milyon-euroluk-enzim-tesisi-y"
+    },
+    {
+      "text": "Avrupa Komisyonu, endüstriyel biyoteknoloji ve biyolojik üretim alanlarını kapsaması planlanan Biyoteknoloji Yasası II için paydaş çalıştayı düzenledi",
+      "slug": "ab-komisyonu-biyoteknoloji-yasasi-ii-icin-paydas-calistayi-duzenledi"
+    },
+    {
+      "text": "YPF ve Essential Energy ortaklığı, Arjantin'in San Lorenzo biyorafinerisi için TotalEnergies ile 170 bin ton/yıl SAF alım anlaşması imzaladı.",
+      "slug": "ypf-san-lorenzo-biyorafinerisi-icin-totalenergies-ile-saf-alim-anlasma"
+    },
+    {
+      "text": "AB LIFE Programı desteğiyle geliştirilen bitkisel lif bazlı hafif araç parçaları Avrupa yollarında.",
+      "slug": "life-biobcompo-nun-bitki-elyafli-hafif-arac-parcalari-avrupa-yollarind"
+    }
+  ],
+  "metrics": {
+    "aciklanan_yatirim_usd_milyon": 1900,
+    "proje_sayisi": 11,
+    "politika_gelismesi": 4,
+    "kapsanan_ulke": 12
+  },
+  "lead": {
+    "id": "novonesis-patalganga-enzyme-plant",
+    "slug": "novonesis-hindistan-da-patalganga-ya-600-milyon-euroluk-enzim-tesisi-y",
+    "image": {
+      "url": "https://renewable-carbon.eu/news/media/2026/10/novonesis-hq-lyngby-dk-2026-002-novonesis-1.jpg.webp",
+      "type": "og-sayfa",
+      "credit": "renewable-carbon.eu"
+    },
+    "score": 8,
+    "secim": "one_cikan",
+    "title": "Novonesis, Hindistan'da 600 milyon euroluk enzim üretim tesisi yatırımı yapacak",
+    "detail": "Novonesis, Hindistan'ın Patalganga bölgesindeki tesisini genişleterek dünyanın en gelişmiş enzim üretim tesislerinden birini inşa etmeyi planlıyor. 600 milyon euroluk yatırım, şirketin biyolojik çözümlerine yönelik artan küresel talebi karşılamayı ve tedarik ağının esnekliğini ve dayanıklılığını güçlendirmeyi amaçlıyor.\n\nTesisin 2030 yılında tam kapasiteyle faaliyete geçmesi ve biyoyakıt, ev bakım ürünleri ile gıda ve içecek sektörleri başta olmak üzere çeşitli endüstriler için enzim üretmesi bekleniyor. Novonesis CEO'su Ester Baiget, yatırımın şirketin sürdürülebilir büyüme stratejisinin önemli bir parçası olduğunu belirtti. Şirketin Operasyon Direktörü Anders Lund ise yatırımın üretim kapasitesini, operasyonel verimliliği ve tedarik esnekliğini artıracağını ifade etti.\n\nPatalganga yatırımı, Novonesis'in küresel üretim ağını güçlendirmeye yönelik yatırımlarının bir parçasını oluşturuyor. Şirket, bu kapsamda Tayland'ın Rayong, ABD'nin Franklinton ve West Allis, Çin'in Taicang ve Brezilya'nın Araucaria kentlerindeki tesislerini de genişletti. Yeni tesisin, Novonesis'in Orta Doğu, Hindistan ve Afrika'daki müşterilerine yakınlığını artırması bekleniyor. Şirket, bu pazarlardaki büyümenin önümüzdeki yıllarda gelişmiş pazarlardan daha hızlı gerçekleşeceğini öngörüyor.\n\nYeni tesis, su ve enerji tüketimini azaltacak teknolojilerle tasarlanacak. Tatlı suyun geri kazanılarak yeniden kullanılması, tesisin ihtiyaç duyduğu su miktarını azaltırken entegre ısı pompaları da enerji tüketiminin düşürülmesini sağlayacak. Bu uygulamalarla tesisin doğrudan faaliyetlerinden kaynaklanan Kapsam 1 ve satın alınan enerjiden kaynaklanan Kapsam 2 sera gazı emisyonlarının azaltılması hedefleniyor.",
+    "source": {
+      "url": "https://renewable-carbon.eu/news/novonesis-to-build-next-generation-enzyme-production-facility-in-india",
+      "name": "renewable-carbon.eu",
+      "tier": 2,
+      "type": "trade_press",
+      "domain": "renewable-carbon.eu",
+      "primary": true
+    },
+    "excerpt": "Novonesis, Hindistan'ın Patalganga bölgesindeki mevcut üretim tesisini genişletmek ve dünyanın en gelişmiş enzim üretim tesislerinden birini kurmak için 600 milyon euro yatırım yapacağını duyurdu. Küresel enzim üretim kapasitesini artırmayı hedefleyen tesisin 2030 yılında tam kapasiteyle faaliyete geçmesi bekleniyor.",
+    "capacity": null,
+    "category": "rapor",
+    "maturity": "announced",
+    "companies": [
+      "Novonesis"
+    ],
+    "countries": [
+      "India"
+    ],
+    "event_key": "novonesis-patalganga-enzyme-plant",
+    "investment": {
+      "currency": "EUR",
+      "amount_original": 600,
+      "amount_usd_million": null,
+      "public_support_usd_million": null
+    },
+    "value_chain": [
+      "urun-uretim"
+    ],
+    "neden_onemli": null,
+    "technologies": [
+      "enzim üretimi",
+      "ısı pompası",
+      "tatlı su geri dönüşümü"
+    ],
+    "subcategories": [
+      "endüstriyel enzimler"
+    ],
+    "published_date": "2026-10-14",
+    "supporting_sources": []
+  },
+  "stories": [
+    {
+      "id": "ypf-totalenergies-santa-fe-saf",
+      "slug": "ypf-san-lorenzo-biyorafinerisi-icin-totalenergies-ile-saf-alim-anlasma",
+      "image": {
+        "url": "https://www.renovablesverdes.com/wp-content/uploads/2025/08/YPF-planta-de-biocombustibles-en-Santa-Fe.jpg.webp",
+        "type": "hakem",
+        "credit": "renovablesverdes.com"
+      },
+      "score": 8,
+      "secim": "one_cikan",
+      "title": "YPF ve Essential Energy ortaklığı, TotalEnergies ile SAF alım anlaşması imzaladı",
+      "detail": "Arjantinli enerji şirketi YPF ile Essential Energy'nin ortak girişimi Santa Fe Bio, Santa Fe eyaletindeki San Lorenzo biyorafinerisinde üretilecek sürdürülebilir havacılık yakıtı (SAF) ve diğer yenilenebilir yakıtların satışına yönelik TOTSA TotalEnergies Trading SA ile uzun vadeli bir anlaşma imzaladı. YPF, anlaşmanın projenin geliştirilmesi ve finansmanı açısından önemli bir aşama olduğunu belirtti. Anlaşmanın, proje finansmanı modeli kapsamında mühendislik ve geliştirme çalışmalarının ilerletilmesi için ticari öngörülebilirlik sağlaması bekleniyor.\n\nPlanlanan biyorafineri, yıllık toplam yaklaşık 170 bin ton SAF ve hidroişlenmiş bitkisel yağ (HVO) üretim kapasitesine sahip olacak. Üretimin büyük bölümü uluslararası pazarlara yönlendirilecek. Anlaşma kapsamında TOTSA TotalEnergies Trading SA, üretimin büyük kısmını bağlayıcı uzun vadeli alım taahhüdüyle satın alacak ve kalan üretim miktarı üzerinde öncelikli satın alma hakkına sahip olacak.\n\nProje, mevcut San Lorenzo sanayi kompleksinin biyorafineriye dönüştürülmesi için 400 milyon ABD dolarını aşan yatırım öngörüyor. Tesisin 2029 yılı sonuna doğru faaliyete geçmesi planlanıyor. Projenin hayata geçirilmesiyle Arjantin'in sürdürülebilir havacılık yakıtı üretim kapasitesinin geliştirilmesi ve uluslararası yenilenebilir yakıt pazarındaki konumunun güçlendirilmesi hedefleniyor.",
+      "source": {
+        "url": "https://biofuelsdigest.com/ypf-to-start-producing-saf-in-santa-fe",
+        "name": "biofuelsdigest.com",
+        "tier": 2,
+        "type": "trade_press",
+        "domain": "biofuelsdigest.com",
+        "primary": true
+      },
+      "excerpt": "YPF ve Essential Energy'nin ortak girişimi Santa Fe Bio, Arjantin'in San Lorenzo kentinde üretilecek sürdürülebilir havacılık yakıtı (SAF) ve diğer yenilenebilir yakıtlar için TOTSA TotalEnergies Trading SA ile uzun vadeli alım anlaşması imzaladı. Proje, 400 milyon ABD dolarını aşan yatırımla yıllık yaklaşık 170 bin ton üretim kapasitesine ulaşmayı hedefliyor.",
+      "capacity": "170 bin ton/yıl SAF+HVO",
+      "category": "biyoyakit",
+      "maturity": "announced",
+      "companies": [
+        "YPF",
+        "Essential Energy",
+        "Santa Fe Bio",
+        "TotalEnergies"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "event_key": "ypf-totalenergies-santa-fe-saf",
+      "investment": {
+        "currency": "USD",
+        "amount_original": 400,
+        "amount_usd_million": 400,
+        "public_support_usd_million": null
+      },
+      "value_chain": [
+        "urun-uretim",
+        "kullanim"
+      ],
+      "neden_onemli": null,
+      "technologies": [
+        "HVO",
+        "SAF"
+      ],
+      "subcategories": [
+        "SAF",
+        "HVO"
+      ],
+      "published_date": "2026-10-13",
+      "supporting_sources": []
+    },
+    {
+      "id": "singapore-bioeconomy-fi-s118m",
+      "slug": "singapur-biyoekonomi-arastirmalari-icin-118-milyon-singapur-dolari-ayi",
+      "image": {
+        "url": "https://cassette.sphdigital.com.sg/image/straitstimes/5370f8eba0b5748312c2451253e14e0ce442b9dc9027552fee77a345d5fc9ad4",
+        "type": "hakem",
+        "credit": "cassette.sphdigital.com.sg"
+      },
+      "score": 7,
+      "secim": "one_cikan",
+      "title": "Singapur, biyoekonomi araştırmaları için 118 milyon Singapur doları ayırdı",
+      "detail": "Singapur, Araştırma, İnovasyon ve Girişimcilik (RIE) 2030 Planı kapsamında Biyoekonomi Finansman Girişimi'ni (FI) duyurdu. Girişim, kamu araştırma kuruluşlarının özel kimyasallara yönelik biyobazlı çözümler ile Singapur'un mevcut Enerji ve Kimyasallar (E&C) sektöründeki üretim süreçlerinde geleneksel girdilerin yerine doğrudan kullanılabilecek biyomoleküller geliştirmesine yönelik sanayi odaklı araştırmaları destekleyecek.\n\nGirişim, diğer programlarla birlikte önümüzdeki beş yıl boyunca biyoekonomi alanında yaklaşık 200 milyon Singapur dolarlık toplam finansman taahhüdünün bir parçasını oluşturuyor. Finansman beş yıllık döneme yayılacak. Programın yürütülmesi amacıyla Bilim, Teknoloji ve Araştırma Ajansı (ASTAR) bünyesinde Biyoekonomi İnovasyon Ofisi kuruldu. Ofis, biyoekonomi alanındaki yeni Ar-Ge projelerinin belirlenmesi, koordinasyonu ve yönetiminden sorumlu olacak. Singapur Ekonomik Kalkınma Kurulu (EDB) ise sanayi iş birliklerinin geliştirilmesini destekleyecek. Programda ASTAR ve yükseköğretim kurumlarının mevcut araştırma altyapılarından da yararlanılacak.\n\nProgram kapsamında dört öncelikli araştırma alanı belirlendi. Bunlar; tarımsal yan ürünler ve diğer ikincil kaynaklardan yeni karbon kaynaklarının elde edilmesi, yeni nesil mikroorganizma suşları ve enzim üretim yollarının geliştirilmesi, biyoproseslerin ve ürün geri kazanım süreçlerinin optimize edilmesi ile ticari potansiyeli yüksek ürünler için biyolojik ve kimyasal üretim yöntemlerinin değerlendirilmesini kapsıyor.\n\nSingapur'un Enerji ve Kimyasallar sektörü, ülkenin toplam imalat üretiminin yaklaşık %20'sini oluşturuyor. Küresel biyobazlı kimyasallar pazarının ise 2030 yılına kadar 200 milyar ABD dolarını aşması bekleniyor. Girişim, Singapur'un küresel biyoekonomi alanındaki konumunu güçlendirmeyi ve araştırma yetkinliklerini ticari sonuçlara dönüştürmeyi hedefliyor. Bu doğrultuda şirketlerin ham madde kaynaklarını çeşitlendirmesi, daha yüksek performanslı yeni ürünler geliştirmesi ve yerel girişimlerin büyümesi desteklenecek.",
+      "source": {
+        "url": "https://renewable-carbon.eu/news/announcement-of-bioeconomy-funding-initiative-fi",
+        "name": "renewable-carbon.eu",
+        "tier": 2,
+        "type": "trade_press",
+        "domain": "renewable-carbon.eu",
+        "primary": true
+      },
+      "excerpt": "Singapur, biyobazlı kimyasalların üretimine yönelik araştırmaları desteklemek ve bu alandaki teknolojilerin ticarileşmesini hızlandırmak amacıyla 118 milyon Singapur doları (yaklaşık 92 milyon ABD doları) tutarında Biyoekonomi Finansman Girişimi başlattı. Program, ülkenin biyoekonomi sektörünü geliştirmeye yönelik bugüne kadarki en büyük finansman girişimi olma özelliği taşıyor.",
+      "capacity": null,
+      "category": "politika",
+      "maturity": "funded",
+      "companies": [],
+      "countries": [
+        "Singapore"
+      ],
+      "event_key": "singapore-bioeconomy-fi-s118m",
+      "investment": {
+        "currency": "SGD",
+        "amount_original": 118,
+        "amount_usd_million": 92.1,
+        "public_support_usd_million": 92.1
+      },
+      "value_chain": [],
+      "neden_onemli": null,
+      "technologies": [],
+      "subcategories": [
+        "biyoekonomi finansmanı",
+        "biyobazlı kimyasallar"
+      ],
+      "published_date": "2026-10-12",
+      "supporting_sources": [
+        {
+          "url": "https://biofuelsdigest.com/singapore-sets-aside-92-million-for-research-into-bio-based-chemicals",
+          "name": "biofuelsdigest.com",
+          "domain": "biofuelsdigest.com"
+        }
+      ]
+    },
+    {
+      "id": "indonesia-e50-ethanol-roadmap",
+      "slug": "endonezya-2028-e-kadar-benzinde-etanol-harmanini-e50-ye-cikaracak-yol-",
+      "image": {
+        "url": "https://cdn.antaranews.com/cache/1200x800/2026/10/12/IMG_0240.jpg.webp",
+        "type": "hakem",
+        "credit": "cdn.antaranews.com"
+      },
+      "score": 7,
+      "secim": "one_cikan",
+      "title": "Endonezya, benzindeki etanol oranını 2028'e kadar %50'ye çıkarmayı hedefliyor",
+      "detail": "Endonezya, benzin ithalatına bağımlılığını azaltmak ve enerji arz güvenliğini güçlendirmek amacıyla benzindeki etanol karışım oranını 2028 yılına kadar kademeli olarak E50 seviyesine yükseltmeyi planlıyor. İleri İşleme ve Enerji Dönüşümünden Sorumlu Koordinasyon Bakanı Bahlil Lahadalia, söz konusu hedefi Cakarta'da düzenlenen Endonezya Yerli Girişimciler Derneği'nin (HIPPI) 3. Ulusal Çalışma Toplantısı'nda açıkladı.\n\nBahlil, hükümetin yerli üretim kapasitesine uygun şekilde daha yüksek etanol karışım oranlarına geçişi sağlayacak yol haritasına son şeklini vermek üzere olduğunu belirtti. Etanol harmanlama zorunluluğunun uygulanabilmesi için yeterli yerli üretim kapasitesinin oluşturulması gerektiğini vurgulayan Bahlil, ham madde ithalatına bağımlılığın önlenmesinin önemine dikkat çekti.\n\nEtanol üretiminde kullanılacak ham madde tedarikini güvence altına almak amacıyla hükümet, Cava, Sumatra ve Papua bölgelerinde potansiyel tarım alanları belirledi. Yapılan hesaplamalara göre üretim hedeflerinin karşılanabilmesi için yaklaşık 1 milyon hektar manyok, 1,1 milyon hektar şeker kamışı ve 1 milyon hektar mısır ekim alanına ihtiyaç duyuluyor. Hükümet, bu kapsamda yerli tarımsal üretimi artırarak biyoyakıt sektörünün gelişimini desteklemeyi ve ithal benzine olan bağımlılığı azaltmayı amaçlıyor.",
+      "source": {
+        "url": "https://biofuelsdigest.com/indonesia-pushes-ethanol-expansion-to-curb-gasoline-imports-targets-e50-blending",
+        "name": "biofuelsdigest.com",
+        "tier": 2,
+        "type": "trade_press",
+        "domain": "biofuelsdigest.com",
+        "primary": true
+      },
+      "excerpt": "Endonezya hükümeti, benzin ithalatını azaltmak ve enerji arz güvenliğini güçlendirmek amacıyla benzindeki etanol karışım oranını 2028 yılına kadar kademeli olarak %50'ye (E50) çıkarmayı hedefleyen bir yol haritası hazırlıyor. Yerli etanol üretimini artırmak için Cava, Sumatra ve Papua bölgelerinde manyok, şeker kamışı ve mısır yetiştiriciliğine uygun tarım alanları belirlendi.",
+      "capacity": "E50 (benzinde %50 etanol harmanı)",
+      "category": "biyoyakit",
+      "maturity": "announced",
+      "companies": [],
+      "countries": [
+        "Indonesia"
+      ],
+      "event_key": "indonesia-e50-ethanol-roadmap",
+      "investment": null,
+      "value_chain": [
+        "biyokutle",
+        "kullanim"
+      ],
+      "neden_onemli": null,
+      "technologies": [
+        "etanol harmanlama"
+      ],
+      "subcategories": [
+        "biyoetanol",
+        "harman mandatı"
+      ],
+      "published_date": "2026-10-16",
+      "supporting_sources": []
+    },
+    {
+      "id": "france-2027-budget-esaf-auction",
+      "slug": "fransa-nin-2027-butcesi-e-saf-ihalesini-ve-1-4-milyar-dolarlik-hidroje",
+      "image": {
+        "url": "https://oenergetice.cz/_next/image?url=https%3A%2F%2Foenergetice.cz%2Fwp-content%2Fuploads%2F2026%2F05%2Fvecteezy_green-hydrogen-renewable-energy-production-facility-green_22151873-1024x683.jpg&w=1024&q=75",
+        "type": "hakem",
+        "credit": "oenergetice.cz"
+      },
+      "score": 7,
+      "secim": "one_cikan",
+      "title": "Fransa'nın 2027 bütçe taslağı, e-SAF ihalesini ve 1,4 milyar dolarlık hidrojen desteğini içeriyor",
+      "detail": "Fransa'da hidrojen sektörünü temsil eden France Hydrogène, ülkenin 2027 bütçe taslağında yer alan üç önemli düzenlemeyi olumlu karşıladı. Bunlar; sentetik sürdürülebilir havacılık yakıtlarının (e-SAF) geliştirilmesini destekleyecek çift taraflı ihale mekanizmasının oluşturulması, yakıtların karbon yoğunluğunu azaltmayı teşvik eden IRICC düzenlemesinin yürürlüğe girmesi ve düşük karbonlu hidrojen üretimini destekleme mekanizmasının ikinci aşaması için 1,2 milyar euro (yaklaşık 1,4 milyar ABD doları) kaynak ayrılmasını kapsıyor.\n\nFrance Hydrogène, söz konusu düzenlemelerin 2027 yılında hidrojen projelerinin nihai yatırım kararı (FID) aşamasına geçmesini kolaylaştıracağını ve 5 milyar euronun (yaklaşık 5,9 milyar ABD doları) üzerinde özel sektör yatırımını harekete geçirebileceğini belirtti. Çift taraflı ihale mekanizmasının, e-SAF üreticileri ile alıcıları arasındaki uzun vadeli sözleşme ihtiyaçlarını uyumlu hale getirerek yatırımların finansmanını kolaylaştırması hedefleniyor.\n\nKuruluşa göre Fransa, Avrupa'nın en büyük, Çin'in ardından ise dünyanın ikinci büyük e-SAF proje portföyüne sahip. Ülkede 2030-2035 döneminde faaliyete geçebilecek 12 proje, yıllık 800 bin tonun üzerinde üretim kapasitesi ve 14 milyar euroyu (yaklaşık 16,4 milyar ABD doları) aşan potansiyel yatırımı temsil ediyor. Planlanan destek mekanizmasıyla yıllık 160 bin tona kadar e-SAF üretiminin güvence altına alınması ve sektörün ticari ölçekte gelişiminin hızlandırılması amaçlanıyor.",
+      "source": {
+        "url": "https://biofuelsdigest.com/frances-2027-budget-backs-e-saf-auction-iricc-and-1-4-billion-hydrogen-support",
+        "name": "biofuelsdigest.com",
+        "tier": 2,
+        "type": "trade_press",
+        "domain": "biofuelsdigest.com",
+        "primary": true
+      },
+      "excerpt": "Fransa'nın 2027 bütçe taslağı, sentetik sürdürülebilir havacılık yakıtı (e-SAF) üretimini desteklemek için çift taraflı ihale mekanizmasını, yakıtların karbon yoğunluğunu azaltmaya yönelik IRICC düzenlemesini ve düşük karbonlu hidrojen üretimi için yaklaşık 1,4 milyar dolarlık desteği içeriyor. Sektör kuruluşu France Hydrogène, bu tedbirlerin 5,9 milyar doların üzerinde özel sektör yatırımını harekete geçirebileceğini açıkladı.",
+      "capacity": "800 bin ton/yıl üzeri e-SAF potansiyeli (12 proje, 2030-2035)",
+      "category": "politika",
+      "maturity": "announced",
+      "companies": [
+        "France Hydrogène"
+      ],
+      "countries": [
+        "France"
+      ],
+      "event_key": "france-2027-budget-esaf-auction",
+      "investment": {
+        "currency": "USD",
+        "amount_original": 1.4,
+        "amount_usd_million": 1400,
+        "public_support_usd_million": 1400
+      },
+      "value_chain": [],
+      "neden_onemli": null,
+      "technologies": [
+        "e-SAF",
+        "düşük karbonlu hidrojen"
+      ],
+      "subcategories": [
+        "e-SAF",
+        "hidrojen"
+      ],
+      "published_date": "2026-10-11",
+      "supporting_sources": []
+    },
+    {
+      "id": "cj-adm-amino-acid-jv",
+      "slug": "cj-cheiljedang-ve-adm-amerika-da-yem-amino-asidi-icin-ortak-girisim-ku",
+      "image": {
+        "url": "https://wimg.sedaily.com/news/cms/2026/10/02/news-p.v1.20261002.939c92234b4d45e49e6310a37081a66e_P1.png",
+        "type": "hakem",
+        "credit": "wimg.sedaily.com"
+      },
+      "score": 7,
+      "secim": "one_cikan",
+      "title": "CJ CheilJedang ve ADM, yemlik amino asit üretimi için ortak girişim kurma konusunda anlaştı",
+      "detail": "Güney Kore merkezli gıda ve biyoteknoloji şirketi CJ CheilJedang ile ABD merkezli ADM, hayvan yemlerinde kullanılan amino asitlerin üretimi ve tedarikini güçlendirmek amacıyla ortak girişim kurma konusunda anlaştı. Yeni girişim, Kuzey ve Güney Amerika pazarlarında fermantasyon yoluyla üretilen yemlik amino asitlerin geliştirilmesi, üretimi ve pazarlanmasına odaklanacak.\n\nOrtak girişim, CJ'nin ABD'nin Iowa eyaletindeki Fort Dodge ve Brezilya'nın Piracicaba kentlerindeki fermantasyon tesisleri ile ADM'nin ABD'nin Illinois eyaletindeki Decatur tesisinde bulunan yemlik amino asit üretim birimini bir araya getirecek. CJ'nin ABD, Meksika ve Brezilya'daki satış ofisleri de girişime dahil edilecek.\n\nCJ, yemlik amino asitlere ilişkin fikri mülkiyet haklarını Kuzey ve Güney Amerika'da kullanılmak üzere ortak girişime lisanslayacak. İki şirket, yeni girişime Amerika kıtalarında yemlik amino asit üretimi ve satışı konusunda münhasır haklar tanıyacak. CJ, ortak girişimin çoğunluk hissesine sahip olacak ve ilgili fikri mülkiyet haklarının sahipliğini koruyacak. Ortak girişimin faaliyete geçmesi, gerekli düzenleyici kurum onaylarının alınmasına ve diğer tamamlanma koşullarının yerine getirilmesine bağlı olacak.\n\nADM İnovasyon ve Büyümeden Sorumlu Başkan Yardımcısı Kris Lutt, zorlu küresel piyasa koşullarının özellikle lizin başta olmak üzere yemlik amino asitlerin ABD'deki üretiminin devamlılığını riske attığını belirtti. Lutt, ortak girişimin iki şirketin üretim altyapısını, teknolojik yetkinliklerini ve ürün portföylerini bir araya getirerek rekabetin yoğun olduğu pazarda ABD'nin yerli üretimini güçlendireceğini ve daha güvenilir bir tedarik kaynağı oluşturacağını ifade etti.",
+      "source": {
+        "url": "https://biofuelsdigest.com/cj-cheiljedang-adm-for-amino-acid-joint-venture",
+        "name": "biofuelsdigest.com",
+        "tier": 2,
+        "type": "trade_press",
+        "domain": "biofuelsdigest.com",
+        "primary": true
+      },
+      "excerpt": "CJ CheilJedang ve ADM, hayvancılık sektöründe kullanılan amino asitlerin güvenilir ve uzun vadeli tedarikini sağlamak amacıyla ortak girişim kurma konusunda anlaşmaya vardı. Yeni girişim, CJ'nin ABD ve Brezilya'daki fermantasyon tesisleri ile ADM'nin Illinois eyaletindeki amino asit üretim tesisini bir araya getirerek Kuzey ve Güney Amerika'da üretim ve tedarik kapasitesini güçlendirmeyi hedefliyor.",
+      "capacity": null,
+      "category": "rapor",
+      "maturity": "announced",
+      "companies": [
+        "CJ CheilJedang",
+        "ADM"
+      ],
+      "countries": [
+        "United States",
+        "Brazil",
+        "Mexico"
+      ],
+      "event_key": "cj-adm-amino-acid-jv",
+      "investment": null,
+      "value_chain": [
+        "donusum-fermantasyon",
+        "urun-uretim"
+      ],
+      "neden_onemli": null,
+      "technologies": [
+        "fermantasyon"
+      ],
+      "subcategories": [
+        "amino asit",
+        "hayvan yemi"
+      ],
+      "published_date": "2026-10-12",
+      "supporting_sources": []
+    },
+    {
+      "id": "eu-biotech-act-ii-stakeholder-workshop",
+      "slug": "ab-komisyonu-biyoteknoloji-yasasi-ii-icin-paydas-calistayi-duzenledi",
+      "image": {
+        "url": "https://single-market-economy.ec.europa.eu/sites/default/files/styles/ewcms_metatag_image/public/2026-09/Biotech%20Act%20Workshop%202_12%20October.jpg?h=9c7af096&amp;itok=941cja7b",
+        "type": "og-sayfa",
+        "credit": "single-market-economy.ec.europa.eu"
+      },
+      "score": 6,
+      "secim": "one_cikan",
+      "title": "Avrupa Komisyonu, Biyoteknoloji Yasası II için paydaş çalıştayı düzenledi",
+      "detail": "Avrupa Komisyonu, Biyoteknoloji Yasası II'nin (Biotech Act II) hazırlıklarına yönelik istişare süreci kapsamında 12 Ekim 2026 tarihinde Brüksel'deki Albert Borschette Kongre Merkezi'nde bir paydaş çalıştayı gerçekleştirdi. Etkinlikte, yasa teklifinin hazırlık sürecindeki gelişmeler hakkında bilgi verildi, kamuoyundan bilgi ve kanıt toplama çağrısının sonuçları paylaşıldı ve ön politika seçenekleri üzerine görüş alışverişinde bulunuldu. Programda ayrıca biyokütle kaynakları ve biyoekonomideki karbon akışlarına ilişkin sunumlara yer verildi.\n\nBiyoteknoloji Yasası II'nin, Avrupa Biyoteknoloji Yasası I'i tamamlayarak düzenleyici çerçevenin kapsamını endüstriyel biyoteknoloji ve biyolojik üretim alanlarına genişletmesi öngörülüyor. Girişim, bu sektörlerin gelişimini sınırlayan ortak sorunları ele almayı ve Avrupa Birliği'nin rekabet gücüne, ekonomik dayanıklılığına ve temiz üretime geçişine katkılarını artıracak elverişli bir düzenleyici çerçeve oluşturmayı amaçlıyor.\n\nGirişim, AB'nin biyoteknoloji ve biyolojik üretimin geliştirilmesine yönelik 2024 tarihli bildirimi, 2025 Avrupa Kimya Sanayisi Eylem Planı ve Kasım 2025'te kabul edilen Avrupa Biyoekonomi Stratejisi gibi mevcut politika belgelerini temel alıyor. Ayrıca Yaşam Bilimleri Stratejisi, Sanayi Hızlandırıcı Yasası, Döngüsel Ekonomi Yasası ve İleri Malzemeler Yasası kapsamında yürütülen çalışmaları tamamlaması hedefleniyor.\n\nBiyoteknoloji Yasası II'nin kesin kapsamı, paydaş görüşlerinin de dikkate alınacağı etki değerlendirmesi süreci sonucunda belirlenecek. Düzenlemenin, endüstriyel biyoteknoloji ve biyobazlı üretimin yaygınlaşmasının önündeki engelleri ele alması, biyobazlı ürünlere yönelik talebi teşvik etmesi ve fosil kaynaklı ham maddelerden biyobazlı alternatiflere geçişi desteklemesi bekleniyor.",
+      "source": {
+        "url": "https://single-market-economy.ec.europa.eu/events/stakeholder-workshop-biotech-act-ii-12-october-2026-2026-10-12_en",
+        "name": "single-market-economy.ec.europa.eu",
+        "tier": 1,
+        "type": "official",
+        "domain": "single-market-economy.ec.europa.eu",
+        "primary": true
+      },
+      "excerpt": "Avrupa Komisyonu, endüstriyel biyoteknoloji ve biyolojik üretim alanlarını kapsaması planlanan Biyoteknoloji Yasası II'nin hazırlıkları kapsamında 12 Ekim 2026 tarihinde Brüksel'de bir paydaş çalıştayı düzenledi. Çalıştayda, kamuoyundan bilgi ve kanıt toplama çağrısının sonuçları sunularak ön politika seçenekleri değerlendirildi.",
+      "capacity": null,
+      "category": "politika",
+      "maturity": "announced",
+      "companies": [],
+      "countries": [
+        "EU"
+      ],
+      "event_key": "eu-biotech-act-ii-stakeholder-workshop",
+      "investment": null,
+      "value_chain": [],
+      "neden_onemli": null,
+      "technologies": [],
+      "subcategories": [
+        "Biyoteknoloji Yasası",
+        "endüstriyel biyoteknoloji"
+      ],
+      "published_date": "2026-10-13",
+      "supporting_sources": []
+    },
+    {
+      "id": "ebb-de-fr-co2-standards-renewable-fuels",
+      "slug": "avrupa-biyodizel-kurulu-alman-fransiz-co2-standardi-onerisini-olumlu-k",
+      "image": {
+        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbH5uz6aevzjicA_ZGiybbP1-JFeCSttKku1xAUcKXfV4GVY6nX-KWxIQ&s=10",
+        "type": "hakem",
+        "credit": "encrypted-tbn0.gstatic.com"
+      },
+      "score": 6,
+      "secim": "one_cikan",
+      "title": "Avrupa Biyodizel Kurulu, Almanya ve Fransa'nın CO₂ emisyon standartlarına ilişkin önerisini olumlu karşıladı",
+      "detail": "Avrupa'daki biyodizel (FAME ve HVO) ve biyobazlı sürdürülebilir havacılık yakıtı (bioSAF) üreticilerini temsil eden Avrupa Biyodizel Kurulu (EBB), 16 Ekim 2026 tarihinde yaptığı açıklamada, Almanya ve Fransa hükümetlerinin CO₂ emisyon standartlarına ilişkin ortak önerisini olumlu karşıladığını duyurdu. EBB, bazı hükümlerin açıklığa kavuşturulması gerektiğini belirtmekle birlikte önerinin, sürdürülebilir yenilenebilir yakıtların AB karayolu taşımacılığında fosil yakıtlardan kaynaklanan emisyonların azaltılmasına katkısını tanıma açısından önemli bir ilerleme olduğunu vurguladı.\n\nÖneri, içten yanmalı motorlu araçların tamamen aşamalı olarak kullanımdan kaldırılmasının, yenilenebilir yakıtların AB enerji arzındaki artan rolünü göz ardı edeceğini kabul ediyor. Bu doğrultuda, egzoz kaynaklı CO₂ emisyonlarının %90 azaltılması hedefi desteklenirken yalnızca belirlenen kriterlere uygun yenilenebilir ve düşük karbonlu yakıtlarla çalışan araçların sıfır emisyonlu kabul edileceği yeni bir araç kategorisi oluşturulması öngörülüyor. Bununla birlikte EBB, Salini raporunda önerilen yenilenebilir yakıt kredilerine dayalı alternatif veya tamamlayıcı emisyon azaltım mekanizmalarının anlaşmaya dahil edilmemesini eksiklik olarak değerlendirdi. Kurula göre böyle bir kredi sistemi, yenilenebilir yakıtların kullanımının yaygınlaştırılmasını doğrudan teşvik edebilir.\n\nEBB Genel Sekreteri Xavier Noyon, önerinin önemli bir ilerleme olduğunu ancak yakıtların uygunluk kriterlerinin netleştirilmesi gerektiğini belirtti. Noyon, bu kriterlerin AB Yenilenebilir Enerji Direktifi (RED) temelinde belirlenmesi gerektiğini ve direktife uygun ham maddelerin kapsam dışında bırakılmasının emisyon azaltımına hâlihazırda katkı sağlayan çözümleri sınırlayabileceğini ifade etti. EBB ayrıca, uygun yakıtların AB'de üretilmesi yönündeki yaklaşımı desteklediğini ve önerinin hayata geçirilmesi için AB yasa koyucularıyla iş birliğine hazır olduğunu açıkladı.",
+      "source": {
+        "url": "https://ebb-eu.org/news/ebb-statement-german-and-french-government-proposal-on-co2-standards",
+        "name": "ebb-eu.org",
+        "tier": 1,
+        "type": "trade_press",
+        "domain": "ebb-eu.org",
+        "primary": true
+      },
+      "excerpt": "Avrupa Biyodizel Kurulu (EBB), Almanya ve Fransa hükümetlerinin karayolu taşımacılığında teknoloji tarafsızlığını destekleyen CO₂ emisyon standartlarına ilişkin ortak önerisini olumlu karşıladı. Öneri, araçların egzoz kaynaklı CO₂ emisyonlarında %90 azaltım hedefini desteklerken yalnızca uygun yenilenebilir ve düşük karbonlu yakıtlarla çalışan araçlar için yeni bir sıfır emisyonlu araç kategorisi oluşturulmasını öngörüyor.",
+      "capacity": null,
+      "category": "politika",
+      "maturity": "announced",
+      "companies": [
+        "European Biodiesel Board"
+      ],
+      "countries": [
+        "Germany",
+        "France",
+        "EU"
+      ],
+      "event_key": "ebb-de-fr-co2-standards-renewable-fuels",
+      "investment": null,
+      "value_chain": [],
+      "neden_onemli": null,
+      "technologies": [
+        "FAME",
+        "HVO",
+        "bioSAF (HEFA)"
+      ],
+      "subcategories": [
+        "CO2 standartları",
+        "yenilenebilir yakıtlar"
+      ],
+      "published_date": "2026-10-16",
+      "supporting_sources": []
+    },
+    {
+      "id": "life-biobcompo-plant-fibre-car-parts",
+      "slug": "life-biobcompo-nun-bitki-elyafli-hafif-arac-parcalari-avrupa-yollarind",
+      "image": {
+        "url": "https://cinea.ec.europa.eu/sites/default/files/styles/ewcms_metatag_image/public/2026-10/20261012%20LIFE%20BIOBCOMPO%20NEWS%20BANNER.png?h=08b2725e&amp;itok=oeC6OXXm",
+        "type": "og-sayfa",
+        "credit": "cinea.ec.europa.eu"
+      },
+      "score": 6,
+      "secim": "one_cikan",
+      "title": "LIFE BIOBCOMPO projesiyle geliştirilen bitkisel lif bazlı hafif araç parçaları Avrupa yollarında",
+      "detail": "SOtomotiv parçası üreticisi SAPA'nın koordinasyonunda, FCA Italy (günümüzde Stellantis Europe), Centro Ricerche Fiat ve Sòphia High Tech Group ortaklığında yürütülen LIFE BIOBCOMPO projesi kapsamında, geleneksel mineral dolgu maddeleri yerine yenilenebilir selüloz lifleri kullanılan hafif bir biyokompozit malzeme geliştirildi. Projenin otomotiv sektöründeki uygulama ortağı, Fiat, Lancia, Alfa Romeo, Peugeot ve Jeep gibi markaları bünyesinde barındıran Stellantis oldu. Proje, araç ağırlığını ve buna bağlı karbondioksit emisyonlarını azaltmanın yanı sıra fosil ve mineral bazlı ham maddelerin kullanımını sınırlandırmayı amaçlıyor.\n\nSAPA Teknik Müdürü Alfonso Molaro, geliştirilen malzemenin standart enjeksiyon kalıplama makinelerinde işlenebildiğini ve mevcut üretim hatlarında büyük değişiklikler gerektirmeden kullanılabildiğini belirtti. Malzemenin yaklaşık %20'si fosil kaynaklı olmayan selüloz liflerinden oluşuyor. Bu biyokompozitten üretilen araç parçaları, geleneksel mineral dolgulu malzemelerden üretilen eşdeğer parçalara kıyasla yaklaşık %8 daha hafif.\n\nLIFE BIOBCOMPO kapsamında geliştirilen biyokompozit, laboratuvar testlerinin yanı sıra Stellantis iş birliğiyle gerçek araç koşullarında da doğrulandı. Malzeme, Lancia Ypsilon modelinin gösterge panelinde seri üretime uyarlandı. Molaro'nun açıklamasına göre 2022 yılından bu yana yaklaşık 10 bin araç, söz konusu biyokompozitten üretilmiş parçalarla donatıldı.\n\nAB LIFE Programı, projenin laboratuvar ölçeğinden endüstriyel doğrulama ve ticarileştirme aşamasına geçişini destekledi. Program kapsamında sağlanan destekler, teknolojinin pazara hazırlanmasına ve potansiyel müşterilere tanıtılmasına da katkıda bulundu. Proje 2023 yılında tamamlanmasına rağmen geliştirilen teknolojinin etkileri devam ediyor. Molaro'ya göre proje, SAPA bünyesinde yaklaşık 36 kişilik istihdam oluşturulmasına katkı sağladı. Şirket, otomotiv sektörü için geri dönüştürülmüş ve biyobazlı malzemelere dayalı yeni formülasyonlar geliştirmeyi sürdürüyor.",
+      "source": {
+        "url": "https://cinea.ec.europa.eu/news-events/news/life-biobcompo-lightweight-car-parts-made-plant-fibres-now-rolling-out-europes-roads-2026-10-13_en",
+        "name": "cinea.ec.europa.eu",
+        "tier": 1,
+        "type": "official",
+        "domain": "cinea.ec.europa.eu",
+        "primary": true
+      },
+      "excerpt": "AB LIFE Programı desteğiyle geliştirilen bitkisel lif bazlı biyokompozit malzeme, Stellantis'in otomobil üretiminde kullanılmaya başlandı. Geleneksel malzemelere kıyasla daha hafif olan biyokompozitten üretilen parçalar, 2022 yılından bu yana yaklaşık 10 bin araçta kullanıldı.",
+      "capacity": null,
+      "category": "biyomalzeme",
+      "maturity": "operational",
+      "companies": [
+        "Stellantis",
+        "Centro Ricerche Fiat",
+        "Sòphia High Tech Group",
+        "SAPA"
+      ],
+      "countries": [
+        "EU"
+      ],
+      "event_key": "life-biobcompo-plant-fibre-car-parts",
+      "investment": null,
+      "value_chain": [
+        "urun-uretim",
+        "kullanim"
+      ],
+      "neden_onemli": null,
+      "technologies": [
+        "biyokompozit",
+        "selüloz elyaf"
+      ],
+      "subcategories": [
+        "biyokompozit",
+        "otomotiv"
+      ],
+      "published_date": "2026-10-13",
+      "supporting_sources": []
+    },
+    {
+      "id": "genera-bracco-tuscany-biomethane",
+      "slug": "genera-new-energy-ve-bracco-toskana-da-biyometan-tesisini-acti",
+      "image": {
+        "url": "https://www.hydronews.it/wp-content/uploads/2026/10/Bracchi.jpg",
+        "type": "hakem",
+        "credit": "hydronews.it"
+      },
+      "score": 6,
+      "secim": "one_cikan",
+      "title": "Genera New Energy ve Bracco Imaging, Toskana'da biyometan tesisini açtı",
+      "detail": "İtalya'da faaliyet gösteren Genera New Energy ve Bracco Imaging, Toskana bölgesinde biyometan üretim tesisini faaliyete geçirdi. Bracco'nun uzun vadeli sera gazı emisyonlarını azaltma stratejisinin önemli bir parçası olan proje, şirketin doğrudan katılımını Genera New Energy'nin sürdürülebilir enerji altyapısına yönelik yatırım, geliştirme ve işletme deneyimiyle bir araya getiriyor.\n\nİmzalanan Biyometan Alım Anlaşması kapsamında Bracco, tesisin toplam biyometan üretimiyle ilişkili yenilenebilir gazın çevresel niteliklerinden sertifikalı Menşe Garantileri (Guarantees of Origin) aracılığıyla yararlanacak. Tesisin yıllık üretim miktarı, Bracco'nun Ceriano Laghetto'daki üretim tesisinde endüstriyel süreçler için buhar elde etmek amacıyla kullanılan doğal gazın yaklaşık %35'ine eşdeğer. Anlaşma kapsamında sağlanan sertifikalı yenilenebilir gaz nitelikleri sayesinde, önümüzdeki 15 yıl boyunca buhar üretimiyle ilişkili sera gazı emisyonlarının yılda yaklaşık 8 bin ton karbondioksit eşdeğeri azaltılmasına katkı sağlanması bekleniyor.\n\nProje kapsamında mevcut Greenway tesisi biyometan üretimine uygun hale getirildi. Mart 2025'te başlayan dönüşüm çalışmaları Eylül 2026'da tamamlandı. Genera Group, projenin çoğunluk payına sahip yatırımcısı ve geliştirme ortağı olurken tesisin işletilmesinden Greenway Srl sorumlu olacak.\n\nTesiste biyometan üretimi için tarımsal yan ürünler, hayvansal gübreler ve enerji bitkileri ham madde olarak kullanılacak. Üretim sürecinde ortaya çıkan fermantasyon kalıntısının (digestat) tarımsal faaliyetlerde değerlendirilmesi planlanıyor. Böylece proje, yenilenebilir enerji üretiminin yanı sıra organik kaynakların verimli kullanılmasına ve döngüsel ekonominin geliştirilmesine de katkı sağlayacak.",
+      "source": {
+        "url": "https://biofuelsdigest.com/genera-new-energy-and-bracco-inaugurate-biomethane-plant-in-tuscany",
+        "name": "biofuelsdigest.com",
+        "tier": 2,
+        "type": "trade_press",
+        "domain": "biofuelsdigest.com",
+        "primary": true
+      },
+      "excerpt": "Genera New Energy ve Bracco Imaging, İtalya'nın Toskana bölgesinde bir biyometan üretim tesisinin açılışını gerçekleştirdi. Tesisin yıllık biyometan üretimi, Bracco'nun Ceriano Laghetto'daki üretim tesisinde buhar elde etmek amacıyla tüketilen doğal gaz miktarının yaklaşık %35'ine karşılık geliyor. Projenin yılda yaklaşık 8 bin ton karbondioksit eşdeğeri emisyonun azaltılmasına katkı sağlaması bekleniyor.",
+      "capacity": null,
+      "category": "biyoyakit",
+      "maturity": "operational",
+      "companies": [
+        "Genera New Energy",
+        "Bracco Imaging"
+      ],
+      "countries": [
+        "Italy"
+      ],
+      "event_key": "genera-bracco-tuscany-biomethane",
+      "investment": null,
+      "value_chain": [
+        "urun-uretim",
+        "kullanim"
+      ],
+      "neden_onemli": null,
+      "technologies": [
+        "biyometan"
+      ],
+      "subcategories": [
+        "biyometan"
+      ],
+      "published_date": "2026-10-14",
+      "supporting_sources": []
+    },
+    {
+      "id": "mol-szarvas-biomethane-handover",
+      "slug": "mol-group-macaristan-da-ilk-biyometan-tesisini-szarvas-ta-devreye-aldi",
+      "image": {
+        "url": "https://www.enerjigunlugu.net/d/news/55848.jpg",
+        "type": "og-sayfa",
+        "credit": "enerjigunlugu.net"
+      },
+      "score": 6,
+      "secim": "one_cikan",
+      "title": "MOL Group, Macaristan'daki ilk biyometan tesisini Szarvas'ta açtı",
+      "detail": "Macaristan merkezli enerji şirketi MOL Group, ülkenin güneyindeki Békés eyaletinin Szarvas kentinde ilk biyometan tesisini açtı. Macaristan'da türünün üçüncü örneği olan tesisin biyometan üretim teknolojisi, İtalyan Gruppo AB tarafından sağlandı. MOL Group, mevcut Szarvas Biyogaz Tesisi'ni 2023 yılında satın almıştı.\n\nTesiste daha önce yılda yaklaşık 11-12 milyon metreküp biyogaz üretiliyor ve bu biyogaz, kojenerasyon sistemiyle değerlendirilerek yaklaşık 24 GWh yenilenebilir elektrik ile ısı enerjisi elde ediliyordu. Yeni yatırımla tesise eklenen biyometan üretim ünitesi, biyogazdaki karbondioksit ve diğer bileşenleri uzaklaştırarak ulusal doğal gaz şebekesine verilebilecek saflıkta biyometan üretilmesini sağlayacak. Yatırım, MOL Group'un uzun vadeli SHAPE TOMORROW stratejisi kapsamında yenilenebilir enerji portföyünü genişletme ve enerji arz güvenliğini güçlendirme hedeflerine katkı sağlayacak.\n\n2,7 milyar Macar forintini aşan yatırımla hayata geçirilen tesisin yıllık 7 milyon metreküpten fazla biyometan üretmesi öngörülüyor. Bu miktar, yaklaşık 8.500 ortalama hanenin yıllık doğal gaz tüketimine eşdeğer. Üretilen biyometan, fosil kaynaklı doğal gazın yerine kullanılabilecek ve ISCC sürdürülebilirlik sertifikasyonu sayesinde daha yüksek katma değerli bir ürün olarak değerlendirilebilecek. Biyometan ayrıca sıkıştırılmış biyometan (bio-CNG) veya sıvılaştırılmış biyometan (bio-LNG) formunda toplu taşıma ve yük taşımacılığında yakıt olarak kullanılabiliyor.\n\nTesis, bölgedeki et işleme sanayisinden kaynaklanan yılda 40 bin tonun üzerinde organik atığın yanı sıra çevredeki hayvancılık işletmeleri ve et işleme tesislerinden sağlanan, sıvı hayvan gübresi ve hindi gübresi gibi yaklaşık 53 bin ton ilave atığı değerlendiriyor. Bunlara ek olarak biyogaz üretiminde yaklaşık 18 bin ton tarımsal hammadde kullanılıyor. Böylece organik atıkların enerjiye dönüştürülmesiyle hem atıkların değerlendirilmesi hem de fosil yakıt kullanımının azaltılması hedefleniyor.",
+      "source": {
+        "url": "https://enerjigunlugu.net/macar-mol-grup-organik-atiklardan-biyometan-uretecek-70188h.htm",
+        "name": "enerjigunlugu.net",
+        "tier": 2,
+        "type": "news_agency",
+        "domain": "enerjigunlugu.net",
+        "primary": true
+      },
+      "excerpt": "MOL Group, Macaristan'ın Békés eyaletindeki Szarvas kentinde grubun ilk, ülkenin ise üçüncü biyometan tesisinin açılışını gerçekleştirdi. 2,7 milyar Macar forintini (yaklaşık 8,25 milyon ABD doları) aşan yatırımla hayata geçirilen tesis, yılda 7 milyon metreküpten fazla biyometan üreterek doğal gaz tüketiminin yenilenebilir kaynaklarla karşılanmasına katkı sağlayacak.",
+      "capacity": "7 milyon m3/yıl biyometan (yaklaşık 8.500 hane eşdeğeri)",
+      "category": "biyoyakit",
+      "maturity": "operational",
+      "companies": [
+        "MOL",
+        "MOL Group",
+        "Gruppo AB"
+      ],
+      "countries": [
+        "Hungary"
+      ],
+      "event_key": "mol-szarvas-biomethane-handover",
+      "investment": {
+        "currency": "HUF",
+        "amount_original": 2.7,
+        "amount_usd_million": 8.25,
+        "public_support_usd_million": null
+      },
+      "value_chain": [
+        "biyokutle",
+        "donusum-fermantasyon",
+        "urun-uretim"
+      ],
+      "neden_onemli": null,
+      "technologies": [
+        "biyometan",
+        "kojenerasyon"
+      ],
+      "subcategories": [
+        "biyometan",
+        "atık değerlendirme"
+      ],
+      "published_date": "2026-10-15",
+      "supporting_sources": [
+        {
+          "url": "https://biofuelsdigest.com/hungarys-first-ever-8-25m-biomethane-plant-comes-online",
+          "name": "biofuelsdigest.com",
+          "domain": "biofuelsdigest.com"
+        }
+      ]
+    }
+  ],
+  "radar": [
+    {
+      "kume": "Anaerobik çürütme ve biyometan tesisleri",
+      "maddeler": [
+        {
+          "url": "https://bioenergy-news.com/news/nopetro-breaks-ground-on-50m-landfill-gas-to-rng-facility-in-florida",
+          "date": "2026-10-12",
+          "title": "Nopetro Energy, Florida'da 50 milyon dolarlık çöp sahası gazından RNG tesisinin temelini attı, 2027'de açılacak",
+          "source": "Bioenergy News",
+          "category": "biyoyakit"
+        },
+        {
+          "url": "https://bioenergy-news.com/news/115m-biogas-plant-approved-in-lincolnshire-despite-447-objections",
+          "date": "2026-10-13",
+          "title": "Lincolnshire County Council, tavuk atığını işleyecek 115 milyon sterlinlik anaerobik çürütme tesisine 447 itiraza rağmen onay verdi",
+          "source": "Bioenergy News",
+          "category": "biyoyakit"
+        },
+        {
+          "url": "https://bioenergy-news.com/news/dorset-food-waste-operator-opens-20m-anaerobic-digestion-plant-with-grid-injection",
+          "date": "2026-10-16",
+          "title": "Eco Sustainable Solutions, Dorset'te şebekeye biyometan enjekte eden 20 milyon sterlinlik çürütme tesisini açtı",
+          "source": "Bioenergy News",
+          "category": "biyoyakit"
+        },
+        {
+          "url": "https://biofuelsdigest.com/cma-cgm-group-and-engie-group-to-develop-biomethane-facility-in-france",
+          "date": "2026-10-13",
+          "title": "CMA CGM ve ENGIE, Le Havre'da büyük bir biyometan tesisi geliştirmek için anlaştı, nihai yatırım kararı bekleniyor",
+          "source": "Biofuels Digest",
+          "category": "biyoyakit"
+        },
+        {
+          "url": "https://bioenergy-news.com/news/french-investors-launch-e10m-platform-to-finance-biomethane-injection-projects",
+          "date": "2026-10-14",
+          "title": "Epopee Gestion ve Enervivo, Fransa'da yaklaşık 10 biyometan şebeke enjeksiyon projesini finanse edecek 10 milyon euroluk platform kurdu",
+          "source": "Bioenergy News",
+          "category": "biyoyakit"
+        }
+      ]
+    },
+    {
+      "kume": "SAF ve havacılık yakıtları",
+      "maddeler": [
+        {
+          "url": "https://worldports.org/co-processing-saf-faces-technical-cost-policy-hurdles",
+          "date": "2026-10-16",
+          "title": "Ortak işleme yöntemiyle SAF üretimi teknik, maliyet ve politika engelleriyle karşı karşıya, hammadde kuralları yatırımı zorluyor",
+          "source": "World Ports Organization",
+          "category": "biyoyakit"
+        },
+        {
+          "url": "https://biofuelsdigest.com/etfuels-selected-by-q8aviation-for-proposed-long-term-e-saf-supply-in-the-uk",
+          "date": "2026-10-13",
+          "title": "Q8Aviation, İngiltere'deki 70 bin ton/yıl Kings Road Humber projesinden uzun vadeli e-SAF tedariki için ETFuels'i seçti",
+          "source": "Biofuels Digest",
+          "category": "biyoyakit"
+        },
+        {
+          "url": "https://biofuelsdigest.com/singapore-advances-ammonia-and-bioethanol-bunkering-with-new-standards-and-trials",
+          "date": "2026-10-14",
+          "title": "Singapur Deniz ve Liman Kurumu, yeni amonyak bunker standartları duyurdu ve ilk biyoetanol bunker operasyonunu gerçekleştirdi",
+          "source": "Biofuels Digest",
+          "category": "biyoyakit"
+        }
+      ]
+    },
+    {
+      "kume": "Biyomalzeme ve biyobazlı kimyasallar",
+      "maddeler": [
+        {
+          "url": "https://biofuelsdigest.com/sumitomo-chemical-achieves-production-scale-manufacturing-of-liquid-crystal-polymer-using-biomass-feedstock",
+          "date": "2026-10-11",
+          "title": "Sumitomo Chemical, biyokütle kaynaklı monomerle sıvı kristal polimerin üretim ölçeğinde imalatını başardı",
+          "source": "Biofuels Digest",
+          "category": "biyomalzeme"
+        },
+        {
+          "url": "https://biofuelsdigest.com/michelin-advances-bio-based-resin-production-in-france",
+          "date": "2026-10-16",
+          "title": "Michelin, Ajinomoto'nun Nesle sahasında fermantasyon temelli biyoaromatik molekül hattının inşasına başladı, 2027 2. çeyrekte açılacak",
+          "source": "Biofuels Digest",
+          "category": "biyomanufaktur"
+        },
+        {
+          "url": "https://renewable-carbon.eu/news/furanova-plans-pilot-plant-for-bio-based-plastics-feedstock-at-gendorf-chemical-park",
+          "date": "2026-10-12",
+          "title": "Furanova, Gendorf Kimya Parkı'nda FDCA biyobazlı plastik hammaddesi için pilot tesis planlıyor, açılış 2027 1. çeyrekte",
+          "source": "renewable-carbon.eu",
+          "category": "biyomalzeme"
+        }
+      ]
+    },
+    {
+      "kume": "Biyoteknoloji, ilaç ve alternatif protein",
+      "maddeler": [
+        {
+          "url": "https://worldbank.org/en/news/statement/2026/10/16/health-works-vaccines-to-budgets-wbg-backs-proven-solutions-asean",
+          "date": "2026-10-16",
+          "title": "Dünya Bankası Grubu, Güneydoğu Asya aşı üretimi için 654 milyon dolar seferber etmeyi ve UHC merkezini genişletmeyi hedefliyor",
+          "source": "World Bank",
+          "category": "biyoteknoloji"
+        },
+        {
+          "url": "https://biopharminternational.com/view/viking-starts-phase-3-sunrise-program-for-oral-vk2735-in-obesity",
+          "date": "2026-10-18",
+          "title": "Viking Therapeutics, obezite için oral VK2735 peptidinin (GLP-1/GIP) SUNRISE Faz 3 programını başlattı",
+          "source": "BioPharm International",
+          "category": "biyoteknoloji"
+        },
+        {
+          "url": "https://greenqueen.com.hk/abu-dhabi-novel-food-tasting-cultivated-meat-precision-fermentation-approval",
+          "date": "2026-10-12",
+          "title": "Abu Dabi, kültürlenmiş et ve hassas fermantasyon gıdalarının onay öncesi tadımlarına izin verdi; 4 milyon litrelik tesis araştırılıyor",
+          "source": "Green Queen",
+          "category": "gida-protein"
+        }
+      ]
+    },
+    {
+      "kume": "Türkiye'den gelişmeler",
+      "maddeler": [
+        {
+          "url": "https://tarimdanhaber.com/cay-atigindan-domates-yetistirdiler-caykurdan-ithal-urune-yerli-alternatif",
+          "date": "2026-10-16",
+          "title": "ÇAYKUR, çay atığını kokopit üretimi dahil ekonomik değere dönüştürecek yerli bir proje duyurdu",
+          "source": "Tarımdan Haber",
+          "category": "atik-donusum"
+        },
+        {
+          "url": "https://mam.tubitak.gov.tr/en/work-on-developing-sustainable-aviation-fuel-continues-as-part-of-the-susteps-project",
+          "date": "2026-10-14",
+          "title": "TÜBİTAK MAM, Horizon Europe SUSTEPS projesiyle atık su ve baca gazından mikroalg bazlı SAF geliştirmeyi sürdürüyor",
+          "source": "TÜBİTAK MAM",
+          "category": "biyoyakit"
+        }
+      ]
+    },
+    {
+      "kume": "Politika ve düzenleme",
+      "maddeler": [
+        {
+          "url": "https://energy.gov/cmei/fuels/notice-intent-leveraging-domestic-infrastructure-and-resources-unleash-alternative",
+          "date": "2026-10-13",
+          "title": "ABD Enerji Bakanlığı, yerli biyokütle ve hidrojen kaynaklarını kullanan alternatif kimyasal ve yakıtlara 60 milyon dolara kadar destek niyetini açıkladı",
+          "source": "US DOE",
+          "category": "politika"
+        },
+        {
+          "url": "https://cer.gov.au/schemes/guarantee-origin-scheme/product-guarantee-origin",
+          "date": null,
+          "title": "Avustralya Temiz Enerji Düzenleyicisi, Ürün Köken Garantisi Planı'nı biyogaz ve biyometan üreticilerine açtı",
+          "source": "Clean Energy Regulator",
+          "category": "politika"
+        },
+        {
+          "url": "https://renewable-carbon.eu/news/russian-government-approves-bioeconomy-development-strategy-through-2036",
+          "date": "2026-10-13",
+          "title": "Rusya hükümeti, 2036 yılına kadar geçerli bir biyoekonomi geliştirme stratejisini onayladı",
+          "source": "renewable-carbon.eu",
+          "category": "politika"
+        },
+        {
+          "url": "https://renewable-carbon.eu/news/croatia-creates-new-framework-for-bioeconomy",
+          "date": "2026-10-12",
+          "title": "Hırvatistan, ulusal biyoekonomi çerçevesi için hükümet düzeyinde yeni tedbirler hazırlamaya başladı",
+          "source": "renewable-carbon.eu",
+          "category": "politika"
+        },
+        {
+          "url": "https://biofuelsdigest.com/singapore-looking-into-wider-adoption-of-biofuels-bio-resources-to-hit-net-zero-emissions-target",
+          "date": "2026-10-11",
+          "title": "Singapur Ticaret ve Sanayi Bakanlığı ile NCCS, sekiz ülkeden biyoyakıt ve biyokaynak tedarikini araştırmak için ihale açtı",
+          "source": "Biofuels Digest",
+          "category": "politika"
+        }
+      ]
+    },
+    {
+      "kume": "Raporlar",
+      "maddeler": [
+        {
+          "url": "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/homegrown-solutions-can-reduce-eus-dependence-imported-fertilisers-2026-10-16_en",
+          "date": "2026-10-16",
+          "title": "AB Ortak Araştırma Merkezi, çürütük gibi yerli gübre çözümlerinin AB'nin ithal gübre bağımlılığını azaltabileceğini bildirdi",
+          "source": "Joint Research Centre",
+          "category": "rapor"
+        },
+        {
+          "url": "https://iata.org/en/pressroom/2026-releases/10-14-corporate-demand-could-support-up-to-1-9-million-tonnes-of-saf-by-2030",
+          "date": "2026-10-14",
+          "title": "IATA, Airbus ve Accenture araştırmasına göre kurumsal alımlar 2030'a kadar 1,0-1,9 milyon ton SAF talebini destekleyebilir",
+          "source": "IATA",
+          "category": "rapor"
+        }
+      ]
+    },
+    {
+      "kume": "Endüstriyel biyoenerji dönüşümleri",
+      "maddeler": [
+        {
+          "url": "https://biofuelsdigest.com/incobrasa-more-than-doubles-biodiesel-production-at-illinois-plant",
+          "date": "2026-10-15",
+          "title": "Incobrasa, Illinois'teki Gilman tesisinde biyodizel kapasitesini yılda 75 milyon galondan 170 milyon galona çıkardı",
+          "source": "Biofuels Digest",
+          "category": "biyoyakit"
+        },
+        {
+          "url": "https://bioenergy-news.com/news/ence-replaces-fossil-fuels-with-biomass-at-spanish-pulp-plant-in-e200m-upgrade",
+          "date": "2026-10-12",
+          "title": "Ence, İspanya'nın Navia selüloz tesisinde 200 milyon euroluk yenilemeyle kireç fırınında fosil yakıtı biyokütleyle değiştirdi",
+          "source": "Bioenergy News",
+          "category": "biyoenerji"
+        },
+        {
+          "url": "https://bioenergy-news.com/news/eu-energy-commissioner-calls-biomethane-a-strategic-asset",
+          "date": "2026-10-15",
+          "title": "AB Enerji Komiseri, biyometanı stratejik varlık olarak tanımladı; AB kapasitesi 8 milyar metreküpü aştı, 36 milyar euro yatırım duyuruldu",
+          "source": "Bioenergy News",
+          "category": "biyoyakit"
+        }
+      ]
+    }
+  ]
+}

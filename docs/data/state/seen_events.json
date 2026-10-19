@@ -1,5 +1,5 @@
 {
-  "issue_no": 11,
+  "issue_no": 12,
   "events": [
     {
       "baslik_ozet": "HAMR Energy, orman biyokütlesinden yakıt için ARENA'dan 32 milyon dolar aldı",
@@ -436,6 +436,50 @@
     {
       "baslik_ozet": "Sterling Pharma, Deeside'de 500 litrelik GMP ADC üretim süitini tamamladı",
       "hafta": "2026-H41"
+    },
+    {
+      "baslik_ozet": "Novonesis, Hindistan'da 600 milyon euroluk enzim üretim tesisi yatırımı yapacak",
+      "hafta": "2026-H42"
+    },
+    {
+      "baslik_ozet": "YPF ve Essential Energy ortaklığı, TotalEnergies ile SAF alım anlaşması imzaladı",
+      "hafta": "2026-H42"
+    },
+    {
+      "baslik_ozet": "Singapur, biyoekonomi araştırmaları için 118 milyon Singapur doları ayırdı",
+      "hafta": "2026-H42"
+    },
+    {
+      "baslik_ozet": "Endonezya, benzindeki etanol oranını 2028'e kadar %50'ye çıkarmayı hedefliyor",
+      "hafta": "2026-H42"
+    },
+    {
+      "baslik_ozet": "Fransa'nın 2027 bütçe taslağı, e-SAF ihalesini ve 1,4 milyar dolarlık hidrojen desteğini içeriyor",
+      "hafta": "2026-H42"
+    },
+    {
+      "baslik_ozet": "CJ CheilJedang ve ADM, yemlik amino asit üretimi için ortak girişim kurma konusunda anlaştı",
+      "hafta": "2026-H42"
+    },
+    {
+      "baslik_ozet": "Avrupa Komisyonu, Biyoteknoloji Yasası II için paydaş çalıştayı düzenledi",
+      "hafta": "2026-H42"
+    },
+    {
+      "baslik_ozet": "Avrupa Biyodizel Kurulu, Almanya ve Fransa'nın CO₂ emisyon standartlarına ilişkin önerisini olumlu karşıladı",
+      "hafta": "2026-H42"
+    },
+    {
+      "baslik_ozet": "LIFE BIOBCOMPO projesiyle geliştirilen bitkisel lif bazlı hafif araç parçaları Avrupa yollarında",
+      "hafta": "2026-H42"
+    },
+    {
+      "baslik_ozet": "Genera New Energy ve Bracco Imaging, Toskana'da biyometan tesisini açtı",
+      "hafta": "2026-H42"
+    },
+    {
+      "baslik_ozet": "MOL Group, Macaristan'daki ilk biyometan tesisini Szarvas'ta açtı",
+      "hafta": "2026-H42"
     }
   ],
   "urls": [
@@ -902,6 +946,51 @@
     "https://biofuelsdigest.com/indian-minister-launches-commercial-use-of-bio-based-biodegradable-pla-plastic",
     "https://research-and-innovation.ec.europa.eu/news/all-research-and-innovation-news/commission-earmarks-eur65-million-safeguard-critical-data-life-sciences-and-biotechnology-2026-10-06_en",
     "https://labiotech.eu/partner/biologics-testing-europe-merck-darmstadt",
-    "https://unite.ai/xtalpi-unveils-kodexia-a-closed-loop-ai-platform-for-sirna-discovery"
+    "https://unite.ai/xtalpi-unveils-kodexia-a-closed-loop-ai-platform-for-sirna-discovery",
+    "https://renewable-carbon.eu/news/verbio-startet-industrielle-produktion-erneuerbarer-chemikalien",
+    "https://epa.gov/newsreleases/while-iowa-administrator-zeldin-proposes-100-reallocation-additional-2025-small",
+    "https://ethanolproducer.com/articles/epa-proposes-2-options-for-reallocating-waived-2025-rfs-blending-obligations",
+    "https://biofuelsdigest.com/agenda-2026-2027-the-rfs-increases-domestic-diesel-supplies-and-saves-consumers-money",
+    "https://biofuelsdigest.com/ypf-to-start-producing-saf-in-santa-fe",
+    "https://renewable-carbon.eu/news/novonesis-to-build-next-generation-enzyme-production-facility-in-india",
+    "https://renewable-carbon.eu/news/announcement-of-bioeconomy-funding-initiative-fi",
+    "https://biofuelsdigest.com/singapore-sets-aside-92-million-for-research-into-bio-based-chemicals",
+    "https://biofuelsdigest.com/indonesia-pushes-ethanol-expansion-to-curb-gasoline-imports-targets-e50-blending",
+    "https://biofuelsdigest.com/frances-2027-budget-backs-e-saf-auction-iricc-and-1-4-billion-hydrogen-support",
+    "https://lanzajet.com/news-insights/lanzajet-secures-financing-to-scale-saf-production-and-supply-global-customers-from-first-of-a-kind-to-commercial-growth",
+    "https://biomassmagazine.com/articles/lanzajet-secures-financing-to-scale-saf-production-and-supply-global",
+    "https://biofuelsdigest.com/cj-cheiljedang-adm-for-amino-acid-joint-venture",
+    "https://single-market-economy.ec.europa.eu/events/stakeholder-workshop-biotech-act-ii-12-october-2026-2026-10-12_en",
+    "https://ebb-eu.org/news/ebb-statement-german-and-french-government-proposal-on-co2-standards",
+    "https://cinea.ec.europa.eu/news-events/news/life-biobcompo-lightweight-car-parts-made-plant-fibres-now-rolling-out-europes-roads-2026-10-13_en",
+    "https://biofuelsdigest.com/genera-new-energy-and-bracco-inaugurate-biomethane-plant-in-tuscany",
+    "https://enerjigunlugu.net/macar-mol-grup-organik-atiklardan-biyometan-uretecek-70188h.htm",
+    "https://biofuelsdigest.com/hungarys-first-ever-8-25m-biomethane-plant-comes-online",
+    "https://bioenergy-news.com/news/nopetro-breaks-ground-on-50m-landfill-gas-to-rng-facility-in-florida",
+    "https://bioenergy-news.com/news/115m-biogas-plant-approved-in-lincolnshire-despite-447-objections",
+    "https://bioenergy-news.com/news/dorset-food-waste-operator-opens-20m-anaerobic-digestion-plant-with-grid-injection",
+    "https://biofuelsdigest.com/cma-cgm-group-and-engie-group-to-develop-biomethane-facility-in-france",
+    "https://bioenergy-news.com/news/french-investors-launch-e10m-platform-to-finance-biomethane-injection-projects",
+    "https://worldports.org/co-processing-saf-faces-technical-cost-policy-hurdles",
+    "https://biofuelsdigest.com/etfuels-selected-by-q8aviation-for-proposed-long-term-e-saf-supply-in-the-uk",
+    "https://biofuelsdigest.com/singapore-advances-ammonia-and-bioethanol-bunkering-with-new-standards-and-trials",
+    "https://biofuelsdigest.com/sumitomo-chemical-achieves-production-scale-manufacturing-of-liquid-crystal-polymer-using-biomass-feedstock",
+    "https://biofuelsdigest.com/michelin-advances-bio-based-resin-production-in-france",
+    "https://renewable-carbon.eu/news/furanova-plans-pilot-plant-for-bio-based-plastics-feedstock-at-gendorf-chemical-park",
+    "https://worldbank.org/en/news/statement/2026/10/16/health-works-vaccines-to-budgets-wbg-backs-proven-solutions-asean",
+    "https://biopharminternational.com/view/viking-starts-phase-3-sunrise-program-for-oral-vk2735-in-obesity",
+    "https://greenqueen.com.hk/abu-dhabi-novel-food-tasting-cultivated-meat-precision-fermentation-approval",
+    "https://tarimdanhaber.com/cay-atigindan-domates-yetistirdiler-caykurdan-ithal-urune-yerli-alternatif",
+    "https://mam.tubitak.gov.tr/en/work-on-developing-sustainable-aviation-fuel-continues-as-part-of-the-susteps-project",
+    "https://energy.gov/cmei/fuels/notice-intent-leveraging-domestic-infrastructure-and-resources-unleash-alternative",
+    "https://cer.gov.au/schemes/guarantee-origin-scheme/product-guarantee-origin",
+    "https://renewable-carbon.eu/news/russian-government-approves-bioeconomy-development-strategy-through-2036",
+    "https://renewable-carbon.eu/news/croatia-creates-new-framework-for-bioeconomy",
+    "https://biofuelsdigest.com/singapore-looking-into-wider-adoption-of-biofuels-bio-resources-to-hit-net-zero-emissions-target",
+    "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/homegrown-solutions-can-reduce-eus-dependence-imported-fertilisers-2026-10-16_en",
+    "https://iata.org/en/pressroom/2026-releases/10-14-corporate-demand-could-support-up-to-1-9-million-tonnes-of-saf-by-2030",
+    "https://biofuelsdigest.com/incobrasa-more-than-doubles-biodiesel-production-at-illinois-plant",
+    "https://bioenergy-news.com/news/ence-replaces-fossil-fuels-with-biomass-at-spanish-pulp-plant-in-e200m-upgrade",
+    "https://bioenergy-news.com/news/eu-energy-commissioner-calls-biomethane-a-strategic-asset"
   ]
 }
